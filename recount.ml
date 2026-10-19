@@ -27,12 +27,15 @@ let tally_name year vid =
   | ("2003" | "2004"), _ -> "none"
   | _ -> vid ^ "_tally.txt"
 
-(* majority ratios that the published page states in prose but whose per-option
-   lines are lost to an HTML escaping error on the page (the text after the
-   first '<' of the devotee output is missing) *)
+(* majority ratios that the published page states in prose but whose
+   per-option lines are lost to an HTML escaping error on the page (the text
+   from the first '<' of the devotee output is missing). The second component
+   says whether the loss also removed the published dropping decisions, so that
+   the set of dropped options cannot be compared. *)
 let ratio_override year vid =
   match year, vid with
-  | "2004", "vote_004" -> Some [1, 3; 2, 3; 3, 3; 4, 3; 5, 3; 6, 1]
+  | "2004", "vote_002" -> Some ([1, 3], false)
+  | "2004", "vote_004" -> Some ([1, 3; 2, 3; 3, 3; 4, 3; 5, 3; 6, 1], true)
   | _ -> None
 
 (* ---------- text utilities ---------- *)
@@ -296,7 +299,7 @@ let () =
             let pub = parse_outcome (text_of src) in
             let pub = if pub.beat = None && src <> page then merge pub (parse_outcome (text_of page)) else pub in
             let pub, from_prose = match ratio_override year vid with
-              | Some rs -> ({ pub with ratios = rs }, true) | None -> (pub, false) in
+              | Some (rs, incomplete) -> ({ pub with ratios = rs }, incomplete) | None -> (pub, false) in
             let m = match pub.beat with
               | Some bm -> Array.length bm
               | None -> List.fold_left (fun a (i, _) -> max a i) 0 pub.options in

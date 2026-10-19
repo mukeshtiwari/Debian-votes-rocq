@@ -77,10 +77,11 @@ published outcome. It writes `recount_summary.json` (one record per vote) and
 
 Result (October 2026): 59 vote pages, 2004 to 2026; 5 were withdrawn before a
 ballot; all 54 that went to a ballot (24 DPL elections, 30 general
-resolutions, 18,081 ballots) agree with the published outcome. One page
+resolutions, 18,477 ballots) agree with the published outcome. One page
 (2004-004, the sarge release GR) is truncated on debian.org after the first
 `<` of the majority section; the verified recount reproduces everything the
-page still shows.
+page still shows. The 2004-002 page loses the `< 3` of its one majority line
+the same way; the ratio (3:1 for option 1) is taken from the page's prose.
 
 Findings from the recount:
 

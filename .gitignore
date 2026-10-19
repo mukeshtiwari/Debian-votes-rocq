@@ -1,0 +1,15 @@
+*.vo
+*.vos
+*.vok
+*.glob
+.*.aux
+.lia.cache
+Makefile.coq
+Makefile.coq.conf
+devote_main
+devote.ml
+devote.mli
+*.cm*
+*.o
+recount
+random_cycles
