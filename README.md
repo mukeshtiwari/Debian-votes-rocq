@@ -66,6 +66,12 @@ R = 3√n/2), the majority ratio of each option, and optionally `strict` for the
 majority rule before 2016; it prints the beat matrix, the dropped options, the
 pairwise defeats and the winners.
 
+    ./devote_main --batch test/devotee_cases.batch
+
+reads instead a batch of profiles in the input format of
+`devotee/run_devotee.pl` and prints one line per profile in that program's
+output format, so that the two can be compared with `diff`.
+
 ## Data
 
     sh scripts/fetch_debian_votes.sh
