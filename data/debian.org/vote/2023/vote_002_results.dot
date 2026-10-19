@@ -1,0 +1,13 @@
+digraph Results {
+  ranksep=0.25;
+ "CRA and PLD proposals include regulations detrimental to FOSS\n3.46" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "CRA and PLD proposals include regulations detrimental to FOSS\n3.46" -> "CRA and PLD proposals should only apply to commercial ventures\n3.72" [ label="5" ];
+ "CRA and PLD proposals include regulations detrimental to FOSS\n3.46" -> "The EU should not overrule DFSG 6 and FOSS licenses\n2.92" [ label="13" ];
+ "CRA and PLD proposals include regulations detrimental to FOSS\n3.46" -> "None of the above" [ label="86" ];
+ "CRA and PLD proposals should only apply to commercial ventures\n3.72" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "CRA and PLD proposals should only apply to commercial ventures\n3.72" -> "The EU should not overrule DFSG 6 and FOSS licenses\n2.92" [ label="9" ];
+ "CRA and PLD proposals should only apply to commercial ventures\n3.72" -> "None of the above" [ label="87" ];
+ "The EU should not overrule DFSG 6 and FOSS licenses\n2.92" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "The EU should not overrule DFSG 6 and FOSS licenses\n2.92" -> "None of the above" [ label="75" ];
+ "None of the above" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

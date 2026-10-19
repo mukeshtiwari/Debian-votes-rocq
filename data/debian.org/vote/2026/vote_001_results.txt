@@ -1,0 +1,46 @@
+Starting results calculation at Sat Apr 18 00:07:47 2026
+
+Option 1 "Sruthi Chandran"
+Option 2 "None of the above"
+
+In the following table, tally[row x][col y] represents the votes that
+option x received over option y.
+
+                  Option
+              1     2 
+            ===   === 
+Option 1          289 
+Option 2     50       
+
+
+
+Looking at row 2, column 1, None of the above
+received 50 votes over Sruthi Chandran
+
+Looking at row 1, column 2, Sruthi Chandran
+received 289 votes over None of the above.
+
+Option 1 Reached quorum: 289 > 48.3502843838586
+
+
+Option 1 passes Majority.               5.780 (289/50) > 1
+
+
+  Option 1 defeats Option 2 by ( 289 -   50) =  239 votes.
+
+
+The Schwartz Set contains:
+	 Option 1 "Sruthi Chandran"
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The winners are:
+	 Option 1 "Sruthi Chandran"
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The total numbers of votes tallied = 347

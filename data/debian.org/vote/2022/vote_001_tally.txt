@@ -1,0 +1,273 @@
+
+		       Tally Sheet for the votes cast. 
+ 
+   The format is:
+       "V: vote 	Login	Name"
+ The vote block represents the ranking given to each of the 
+ candidates by the voter. 
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+     Option 1----->: Hide identities of Developers casting a particular vote
+   /  Option 2---->: Hide identities of Developers casting a particular vote and allow verification
+   |/  Option 3--->: Reaffirm public voting
+   ||/  Option 4-->: None of the above
+   |||/
+V: 1243	          93sam	Steve McIntyre
+V: 4213	            abe	Axel Beckert
+V: 2134	       abhijith	Abhijith PA
+V: 21-3	          alexm	Alex Muntada
+V: 4123	          alexp	Alex Pennace
+V: 3124	       amacater	Andrew Martin Adrian Cater
+V: --1-	          amaya	Amaya Rodrigo Sastre
+V: 3132	            ana	Ana Guerrero López
+V: 1234	        anarcat	Antoine Beaupré
+V: 312-	           anbe	Andreas Beckmann
+V: 3214	           andi	Andreas Mundt
+V: 3312	          angel	Angel Abad
+V: 2213	         ansgar	Ansgar
+V: --1-	            apo	Markus Koschany
+V: 3112	        aurel32	Aurelien Jarno
+V: --12	             az	Alexander Zangerl
+V: 1---	       azekulic	Alen Zekulic
+V: 312-	     babelouest	Nicolas Mora
+V: 4312	       ballombe	Bill Allombert
+V: 1234	            bam	Brian May
+V: 2143	            bap	Barak Pearlmutter
+V: 3412	          bartm	Bart Martens
+V: -123	            bas	Bas Zoetekouw
+V: 21--	        bblough	William Blough
+V: 2314	          bdale	Bdale Garbee
+V: 4123	         bengen	Hilko Bengen
+V: --1-	         bernat	Vincent Bernat
+V: 2143	        bgoglin	Brice Goglin
+V: 4213	          biebl	Michael Biebl
+V: 2143	          blade	Eduard Bloch
+V: 3412	          bluca	Luca Boccassi
+V: --12	            bod	Brendan O'Dea
+V: 2134	          bootc	Chris Boot
+V: 2134	         boutil	Cédric Boutillier
+V: 3124	        bpellin	Brian Pellin
+V: 2133	        bremner	David Bremner
+V: 4213	       calculus	Jerome Benoit
+V: 1132	         carnil	Salvatore Bonaccorso
+V: 4213	          cavok	Domenico Andreoli
+V: 3124	         chrism	Christoph Martin
+V: 21--	      chronitis	Gordon Ball
+V: 2143	            ckk	Christian Kastner
+V: 2213	          clint	Clint Adams
+V: 2134	       codehelp	Neil Williams
+V: 2143	          cwryu	Changwoo Ryu
+V: 4123	         czchen	ChangZhuo Chen
+V: 12--	          dapal	David Paleino
+V: 4312	       deltaone	Patrick Franz
+V: --1-	      dktrkranz	Luca Falavigna
+V: --12	         dlange	Daniel Lange
+V: 321-	          dlehn	David Lehn
+V: 1243	            dmn	Damyan Ivanov
+V: 213-	            dod	Dominique Dumont
+V: 12--	            dom	Dominic Hargreaves
+V: 3124	            don	Don Armstrong
+V: 2143	        donkult	David Kalnischkies
+V: --1-	      dtorrance	Douglas Torrance
+V: 4312	         eevans	Eric Evans
+V: 3312	       ehashman	Elana Hashman
+V: 431-	         elbrus	Paul Gevers
+V: 1---	            ema	Emanuele Rocca
+V: 1144	       emollier	Étienne Mollier
+V: 1243	         enrico	Enrico Zini
+V: 1---	       eriberto	Joao Eriberto Mota Filho
+V: 4312	           eric	Eric Dorland
+V: 3412	          eriks	Erik Schanze
+V: 3214	            evo	Davide Puricelli
+V: 1432	       federico	Federico Ceratto
+V: 2134	          felix	Félix Sipma
+V: 2311	         fgeyer	Felix Geyer
+V: 123-	        florian	Florian Ernst
+V: 321-	        fpeters	Frederic Peters
+V: 1243	       francois	Francois Marier
+V: 3312	        gabriel	Gabriel F. T. Gomes
+V: 1243	          georg	Georg Faerber
+V: 3412	       georgesk	Georges Khaznadar
+V: 3312	            gio	Giovanni Mascellani
+V: 1144	        giovani	Giovani Ferreira
+V: 2143	          gladk	Anton Gladky
+V: 1243	         glondu	Stéphane Glondu
+V: 3214	         gniibe	NIIBE Yutaka
+V: --12	        godisch	Martin Godisch
+V: 4213	         gregoa	Gregor Herrmann
+V: 2221	           gspr	Gard Spreemann
+V: 3214	        guilhem	Guilhem Moulin
+V: 4312	        guillem	Guillem Jover
+V: -12-	         gusnan	Andreas Rönnquist
+V: 4213	          gwolf	Gunnar Wolf
+V: --1-	           haas	Christoph Haas
+V: 1243	       hartmans	Sam Hartman
+V: 3214	          hefee	Sandro Knauß
+V: 1243	        hertzog	Raphaël Hertzog
+V: 4321	     hlieberman	Harlan Lieberman-Berg
+V: 2143	        hoexter	Sven Hoexter
+V: 4213	         holger	Holger Levsen
+V: 4132	     hvhaugwitz	Hannes von Haugwitz
+V: 2143	            ijc	Ian Campbell
+V: 1243	      intrigeri	Intrigeri
+V: --12	        jaldhar	Jaldhar Vyas
+V: 213-	       jamessan	James McCoy
+V: 4123	          jandd	Jan Dittberner
+V: 4312	         jaqque	John Robinson
+V: 1143	           jcfp	Jeroen Ploemen
+V: 321-	            jdg	Julian Gilbey
+V: 1234	         jlines	John Lines
+V: 2143	          joerg	Joerg Jaspert
+V: 12--	         johfel	Johann Felix Soden
+V: 3124	        joostvb	Joost van Baal
+V: 4123	          jordi	Jordi Mallach
+V: --12	          josue	Josué Ortega
+V: 4213	        joussen	Mario Joussen
+V: 12--	      jpmengual	Jean-Philippe MENGUAL
+V: 3214	         jpuydt	Julien Puydt
+V: 21--	       jredrejo	José L. Redrejo Rodríguez
+V: 3321	       jspricke	Jochen Sprickerhof
+V: 3214	         kartik	Kartik Mistry
+V: 12-3	         kenhys	HAYASHI Kentaro
+V: 1132	           kibi	Cyril Brulebois
+V: 3124	           knok	Takatsugu Nokubi
+V: 3214	          kobla	Ondřej Kobližek
+V: -12-	          krala	Antonin Kral
+V: 3112	     kritzefitz	Sven Bartscher
+V: 321-	           kula	Marcin Kulisz
+V: 21--	        larjona	Laura Arjona Reina
+V: 4123	       lavamind	Jerome Charaoui
+V: 2134	     lazyfrosch	Markus Frosch
+V: --1-	        ldrolez	Ludovic Drolez
+V: 4123	        lechner	Felix Lechner
+V: 321-	        lenharo	Daniel Souza
+V: 4123	            leo	Carsten Leonhardt
+V: --12	       lfaraone	Luke Faraone
+V: 3214	        lingnau	Anselm Lingnau
+V: 4312	         lkajan	Laszlo Kajan
+V: 3112	          lucab	Luca Bruno
+V: 4321	          lucas	Lucas Nussbaum
+V: 4123	        lyknode	Baptiste Beauplat
+V: 3123	        madduck	Martin Krafft
+V: 4312	          mattb	Matthew Brown
+V: 4312	         mattia	Mattia Rizzolo
+V: 4213	           maxx	Martin Wuertele
+V: 3124	           maxy	Maximiliano Curia
+V: 4312	        mbehrle	Mathias Behrle
+V: 3312	             md	Marco d'Itri
+V: 1243	           mejo	Jonas Meurer
+V: 2134	         merker	Karsten Merker
+V: 4312	          micha	Micha Lenk
+V: --12	           mika	Michael Prokop
+V: 2134	          milan	Milan Kupcevic
+V: 3312	       mjeanson	Michael Jeanson
+V: 4312	          moray	Moray Allan
+V: 231-	          mpitt	Martin Pitt
+V: -21-	       mquinson	Martin Quinson
+V: 4132	    mtecknology	Michael Lustfield
+V: -1--	          murat	Murat Demirten
+V: 1233	           myon	Christoph Berg
+V: 2134	         nbreen	Nicholas Breen
+V: 1243	          neilm	Neil McGovern
+V: 2134	          nickm	Nick Morrott
+V: 123-	        nicolas	Nicolas Boulenguez
+V: 2144	         nilesh	Nilesh Patra
+V: 4312	           noel	Noèl Köthe
+V: 123-	        noodles	Jonathan McDowell
+V: 1234	       nthykier	Niels Thykier
+V: 123-	          ntyni	Niko Tyni
+V: 1234	          olasd	Nicolas Dandrimont
+V: 4312	        olebole	Ole Streicher
+V: 2143	           olly	Olly Betts
+V: 1234	          osamu	Osamu Aoki
+V: 4312	           pabs	Paul Wise
+V: 12-3	   paddatrapper	Kyle Robbertze
+V: 12-3	         paride	Paride Legovini
+V: 2133	            peb	Pierre-Elliott Bécue
+V: 4132	            pgt	Pierre Gruet
+V: --12	          philh	Philip Hands
+V: 2-11	            pik	Paul Cannon
+V: 4213	           pini	Gilles Filippini
+V: 3214	            pjb	Phil Brooke
+V: 1234	         plessy	Charles Plessy
+V: 1243	      pmatthaei	Patrick Matthäi
+V: 2143	          pollo	Louis-Philippe Véronneau
+V: 1243	         pollux	Pierre Chifflier
+V: 123-	       pvaneynd	Peter Van Eynde
+V: 4132	            ras	Russell Stuart
+V: 2134	        rbalint	Balint Reczey
+V: 2143	         rbasak	Robie Basak
+V: 1243	        reichel	Joachim Reichel
+V: 3312	     rfrancoise	Romain Francoise
+V: 4312	         rhonda	Rhonda D'Vine
+V: 1243	        rlaager	Richard Laager
+V: 3213	       rmayorga	Rene Mayorga
+V: 1243	           roam	Peter Pentchev
+V: 21-3	        roberto	Roberto Sanchez
+V: 2221	       roehling	Timo Röhling
+V: --12	            ron	Ron Lee
+V: 321-	       rousseau	Ludovic Rousseau
+V: 1243	            rra	Russ Allbery
+V: 1212	    rvandegrift	Ross Vandegrift
+V: 3214	       santiago	Santiago Rincón
+V: -1--	          satta	Sascha Steinbiss
+V: 1243	            seb	Sebastien Delafond
+V: 4312	      sebastien	Sébastien Villemot
+V: --12	        serpent	Tomasz Rybak
+V: 4321	          sesse	Steinar Gunderson
+V: 1234	       siretart	Reinhard Tartler
+V: 4213	            sjr	Simon Richter
+V: 4123	          skitt	Stephen Kitt
+V: 1243	           smcv	Simon McVittie
+V: --12	            smr	Steven Robbins
+V: 2134	          smurf	Matthias Urlichs
+V: 12--	      spwhitton	Sean Whitton
+V: 2143	      sramacher	Sebastian Ramacher
+V: 1233	       stefanor	Stefano Rivera
+V: 1234	 stephanlachnit	Stephan Lachnit
+V: --12	          steve	Steve Kostecke
+V: 1234	      sthibault	Samuel Thibault
+V: 321-	            sto	Sergio Talens-Oliag
+V: 1243	         stuart	Stuart Prescott
+V: 1234	          szlin	SZ Lin
+V: 1324	           tach	Taku Yasui
+V: 4312	         taffit	David Prévot
+V: 3214	         takaki	Takaki Taniguchi
+V: 4312	          taowa	Taowa
+V: 1243	            tbm	Martin Michlmayr
+V: 12--	       terceiro	Antonio Terceiro
+V: 4123	             tg	Thorsten Glaser
+V: 2143	        thibaut	Thibaut Paumard
+V: 12--	          thijs	Thijs Kinkhorst
+V: 2143	          tiago	Tiago Bortoletto Vaz
+V: 1243	         tianon	Tianon Gravi
+V: 3142	           tiwe	Timo Weingärtner
+V: 4132	       tjhukkan	Teemu Hukkanen
+V: --12	       tmancill	Tony Mancill
+V: --1-	          toddy	Tobias Quathamer
+V: -312	           toni	Toni Mueller
+V: 1234	        treinen	Ralf Treinen
+V: 2134	          troyh	Troy Heber
+V: 3312	       tvainika	Tommi Vainikainen
+V: 3421	        tzafrir	Tzafrir Cohen
+V: 1243	           ucko	Aaron Ucko
+V: 1243	      ultrotter	Guido Trotter
+V: 12-3	        unit193	Unit 193  
+V: -1-2	          urbec	Judit Foglszinger
+V: 12--	        vagrant	Vagrant Cascadian
+V: 2134	        vasudev	Vasudev Kamath
+V: 21-3	           vivi	Vincent Prat
+V: 321-	         vvidic	Valentin Vidic
+V: 2134	         wagner	Hanno Wagner
+V: 4312	       weinholt	Göran Weinholt
+V: 4312	         wijnen	Bas Wijnen
+V: 2113	         wookey	Wookey
+V: 213-	         wouter	Wouter Verhelst
+V: 2133	           wrar	Andrey Rahmatullin
+V: 123-	         xluthi	Xavier Lüthi
+V: 1243	           zack	Stefano Zacchiroli
+V: --12	           zeha	Christian Hofstaedtler
+V: --12	           zhsj	Shengjing Zhu
+V: 4321	           zigo	Thomas Goirand
+V: 2134	      zugschlus	Marc Haber

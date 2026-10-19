@@ -1,0 +1,59 @@
+Starting results calculation at Sat Dec 23 00:02:05 2023
+
+Option 1 "CRA and PLD proposals include regulations detrimental to FOSS"
+Option 2 "CRA and PLD proposals should only apply to commercial ventures"
+Option 3 "The EU should not overrule DFSG 6 and FOSS licenses"
+Option 4 "None of the above"
+
+In the following table, tally[row x][col y] represents the votes that
+option x received over option y.
+
+                  Option
+              1     2     3     4 
+            ===   ===   ===   === 
+Option 1           72    71   121 
+Option 2     67          73   119 
+Option 3     58    64         114 
+Option 4     35    32    39       
+
+
+
+Looking at row 2, column 1, CRA and PLD proposals should only apply to commercial ventures
+received 67 votes over CRA and PLD proposals include regulations detrimental to FOSS
+
+Looking at row 1, column 2, CRA and PLD proposals include regulations detrimental to FOSS
+received 72 votes over CRA and PLD proposals should only apply to commercial ventures.
+
+Option 1 Reached quorum: 121 > 46.2087654022481
+Option 2 Reached quorum: 119 > 46.2087654022481
+Option 3 Reached quorum: 114 > 46.2087654022481
+
+
+Option 1 passes Majority.               3.457 (121/35) > 1
+Option 2 passes Majority.               3.719 (119/32) > 1
+Option 3 passes Majority.               2.923 (114/39) > 1
+
+
+  Option 1 defeats Option 2 by (  72 -   67) =    5 votes.
+  Option 1 defeats Option 3 by (  71 -   58) =   13 votes.
+  Option 1 defeats Option 4 by ( 121 -   35) =   86 votes.
+  Option 2 defeats Option 3 by (  73 -   64) =    9 votes.
+  Option 2 defeats Option 4 by ( 119 -   32) =   87 votes.
+  Option 3 defeats Option 4 by ( 114 -   39) =   75 votes.
+
+
+The Schwartz Set contains:
+	 Option 1 "CRA and PLD proposals include regulations detrimental to FOSS"
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The winners are:
+	 Option 1 "CRA and PLD proposals include regulations detrimental to FOSS"
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The total numbers of votes tallied = 163

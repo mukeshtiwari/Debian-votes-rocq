@@ -1,0 +1,67 @@
+Starting results calculation at Sun Apr 21 00:00:04 2019
+
+Option 1 "Joerg Jaspert"
+Option 2 "Jonathan Carter"
+Option 3 "Sam Hartman"
+Option 4 "Martin Michlmayr"
+Option 5 "None Of The Above"
+
+In the following table, tally[row x][col y] represents the votes that
+option x received over option y.
+
+                  Option
+              1     2     3     4     5 
+            ===   ===   ===   ===   === 
+Option 1          169   128   169   319 
+Option 2    166         109   172   323 
+Option 3    217   206         202   336 
+Option 4    180   174   134         324 
+Option 5     51    37    26    35       
+
+
+
+Looking at row 2, column 1, Jonathan Carter
+received 166 votes over Joerg Jaspert
+
+Looking at row 1, column 2, Joerg Jaspert
+received 169 votes over Jonathan Carter.
+
+Option 1 Reached quorum: 319 > 47.5052628663393
+Option 2 Reached quorum: 323 > 47.5052628663393
+Option 3 Reached quorum: 336 > 47.5052628663393
+Option 4 Reached quorum: 324 > 47.5052628663393
+
+
+Option 1 passes Majority.               6.255 (319/51) >= 1
+Option 2 passes Majority.               8.730 (323/37) >= 1
+Option 3 passes Majority.              12.923 (336/26) >= 1
+Option 4 passes Majority.               9.257 (324/35) >= 1
+
+
+  Option 1 defeats Option 2 by ( 169 -  166) =    3 votes.
+  Option 3 defeats Option 1 by ( 217 -  128) =   89 votes.
+  Option 4 defeats Option 1 by ( 180 -  169) =   11 votes.
+  Option 1 defeats Option 5 by ( 319 -   51) =  268 votes.
+  Option 3 defeats Option 2 by ( 206 -  109) =   97 votes.
+  Option 4 defeats Option 2 by ( 174 -  172) =    2 votes.
+  Option 2 defeats Option 5 by ( 323 -   37) =  286 votes.
+  Option 3 defeats Option 4 by ( 202 -  134) =   68 votes.
+  Option 3 defeats Option 5 by ( 336 -   26) =  310 votes.
+  Option 4 defeats Option 5 by ( 324 -   35) =  289 votes.
+
+
+The Schwartz Set contains:
+	 Option 3 "Sam Hartman"
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The winners are:
+	 Option 3 "Sam Hartman"
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The total numbers of votes tallied = 378

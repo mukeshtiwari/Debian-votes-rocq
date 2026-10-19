@@ -1,0 +1,742 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>    General Resolution: init system coupling </title>
+  <link rel="author" href="mailto:webmaster@debian.org">
+  <meta name="Generator" content="WML 2.32.0">
+  <meta name="Modified" content="2026-10-18 03:32:07">
+  <meta name="viewport" content="width=device-width">
+  <meta name="mobileoptimized" content="300">
+  <meta name="HandheldFriendly" content="true">
+<link href="../../debian.css" rel="stylesheet" type="text/css">
+  <link href="../../debian-en.css" rel="stylesheet" type="text/css" media="all">
+<link rel="search" type="application/opensearchdescription+xml" title="Debian website search" href="../../search.en.xml">
+</head>
+<body>
+<div id="header">
+  <div id="upperheader">
+    <div id="logo">
+    <a href="../../" title="Debian Home"><img src="../../Pics/openlogo-50.png" alt="Debian" width="50" height="61"></a>
+    </div> <!-- end logo -->
+    <div id="searchbox">
+      <form name="p" method="get" action="https://search.debian.org/cgi-bin/omega">
+      <p>
+<input type="hidden" name="DB" value="en">
+        <input name="P" value="" size="14">
+        <input type="submit" value="Search">
+      </p>
+      </form>
+    </div>   <!-- end sitetools -->
+  </div> <!-- end upperheader -->
+  <!--UdmComment-->
+  <div id="navbar">
+    <p class="hidecss"><a href="#content">Skip Quicknav</a></p>
+    <ul>
+      <!-- Link to Debian's own Social Media resources -->
+      <li><a href="https://bits.debian.org/" title="Bits from Debian">Blog</a></li>
+      <li><a href="https://micronews.debian.org" title="Micronews from Debian">Micronews</a></li>
+      <li><a href="https://planet.debian.org/" title="The Planet of Debian">Planet</a></li>
+      <li><a href="https://wiki.debian.org/" title="The Debian Wiki">Wiki</a></li>
+    </ul>
+  </div> <!-- end navbar -->
+<p id="breadcrumbs"><a href="./../">Debian Voting Information</a>
+ &#x2F; <a href="./">2014</a>
+ &#x2F;
+General Resolution: init system coupling</p>
+</div> <!-- end header -->
+<!--/UdmComment-->
+<div id="content">
+<div id="second-nav">
+<!--UdmComment-->
+	<ul class="votemenu">
+	<li>Home
+	<ul>
+	 <li><a href="../../vote/">Home&nbsp;Vote&nbsp;Page</a></li>
+	</ul>
+	</li>
+	<li>How&nbsp;To
+	<ul>
+	<li><a href="../../vote/howto_proposal">Submit&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_proposal#amend">Amend&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_follow">Follow&nbsp;a&nbsp;Proposal</a></li>
+	<!-- <li><a href="howto_vote">&bull;&nbsp;Vote</a></li>
+		<li>*<a href="howto_result">Read&nbsp;a&nbsp;Result</a></li> -->
+	</ul>
+	</li>
+	<li>Decided<ul><li><a href="../../vote/2026/vote_002">General Resolution: LLM usage in Debian</a></li>
+<li><a href="../../vote/2026/vote_001">Debian Project Leader Elections 2026</a></li>
+<li><a href="../../vote/2025/vote_001">Debian Project Leader Elections 2025</a></li>
+<li><a href="../../vote/2024/vote_001">Debian Project Leader Elections 2024</a></li>
+<li><a href="../../vote/2023/vote_002">General Resolution: Statement about the EU Legislation "Cyber Resilience Act and Product Liability Directive"</a></li>
+<li><a href="../../vote/2023/vote_001">Debian Project Leader Elections 2023</a></li>
+<li><a href="../../vote/2022/vote_003">General Resolution: non-free firmware</a></li>
+<li><a href="../../vote/2022/vote_002">Debian Project Leader Elections 2022</a></li>
+<li><a href="../../vote/2022/vote_001">General Resolution: Voting secrecy</a></li>
+<li><a href="../../vote/2021/vote_003">General Resolution: Change the resolution process</a></li>
+<li><a href="../../vote/2021/vote_002">General Resolution: Statement regarding Richard Stallman's readmission to the FSF board</a></li>
+<li><a href="../../vote/2021/vote_001">Debian Project Leader Elections 2021</a></li>
+<li><a href="../../vote/2020/vote_001">Debian Project Leader Elections 2020</a></li>
+<li><a href="../../vote/2019/vote_002">General Resolution: Init systems and systemd</a></li>
+<li><a href="../../vote/2019/vote_001">Debian Project Leader Elections 2019</a></li>
+<li><a href="../../vote/2018/vote_001">Debian Project Leader Elections 2018</a></li>
+<li><a href="../../vote/2017/vote_001">Debian Project Leader Elections 2017</a></li>
+<li><a href="../../vote/2016/vote_004">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_003">General Resolution: Replace "Chairman" with "Chair" throughout the Debian Constitution</a></li>
+<li><a href="../../vote/2016/vote_002">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_001">Debian Project Leader Elections 2016</a></li>
+<li><a href="../../vote/2015/vote_003">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2015/vote_001">Debian Project Leader Elections 2015</a></li>
+<li><a href="../../vote/2014/vote_004">General Resolution: Limiting the term of the technical committee members</a></li>
+<li><a href="../../vote/2014/vote_003">General Resolution: init system coupling</a></li>
+<li><a href="../../vote/2014/vote_002">General Resolution: code of conduct</a></li>
+<li><a href="../../vote/2014/vote_001">Debian Project Leader Elections 2014</a></li>
+<li><a href="../../vote/2013/vote_001">Debian Project Leader Elections 2013</a></li>
+<li><a href="../../vote/2012/vote_002">General Resolution: Diversity statement</a></li>
+<li><a href="../../vote/2012/vote_001">Debian Project Leader Elections 2012</a></li>
+<li><a href="../../vote/2011/vote_001">Debian Project Leader Elections 2011</a></li>
+<li><a href="../../vote/2010/vote_002">General Resolution: Debian project members</a></li>
+<li><a href="../../vote/2010/vote_001">Debian Project Leader Elections 2010</a></li>
+<li><a href="../../vote/2009/vote_001">Debian Project Leader Elections 2009</a></li>
+<li><a href="../../vote/2008/vote_003">General Resolution: Lenny and resolving DFSG violations</a></li>
+<li><a href="../../vote/2008/vote_002">General Resolution: Project membership procedures</a></li>
+<li><a href="../../vote/2008/vote_001">Debian Project Leader Elections 2008</a></li>
+<li><a href="../../vote/2007/vote_004">Constitutional amendment: reduce the length of DPL election process</a></li>
+<li><a href="../../vote/2007/vote_003">General Resolution: Endorse the concept of Debian Maintainers</a></li>
+<li><a href="../../vote/2007/vote_002">General Resolution: Altering package upload rules</a></li>
+<li><a href="../../vote/2007/vote_001">Debian Project Leader Elections 2007</a></li>
+<li><a href="../../vote/2006/vote_007">General Resolution: Handling source-less firmware in the Linux kernel</a></li>
+<li><a href="../../vote/2006/vote_006">General Resolution: Re-affirm support to the Debian Project Leader</a></li>
+<li><a href="../../vote/2006/vote_005">General Resolution: Recall the project leader</a></li>
+<li><a href="../../vote/2006/vote_004">General Resolution: Position statement clarifying DFSG #2</a></li>
+<li><a href="../../vote/2006/vote_003">Constitutional Amendment General Resolution: Handling assets for the project</a></li>
+<li><a href="../../vote/2006/vote_002">Debian Project Leader Elections 2006</a></li>
+<li><a href="../../vote/2006/vote_001">General Resolution: Why the GNU Free Documentation License is not suitable for Debian main</a></li>
+<li><a href="../../vote/2005/vote_002">General Resolution: Declassification of debian-private list archives</a></li>
+<li><a href="../../vote/2005/vote_001">Debian Project Leader Elections 2005</a></li>
+<li><a href="../../vote/2004/vote_004">General Resolution: Sarge Release Schedule in view of GR 2004-003</a></li>
+<li><a href="../../vote/2004/vote_003">General Resolution: Editorial amendments to the social contract</a></li>
+<li><a href="../../vote/2004/vote_002">General Resolution: Status of the non-free section</a></li>
+<li><a href="../../vote/2004/vote_001">Debian Project Leader Elections 2004</a></li>
+<li><a href="../../vote/2003/vote_0003">Constitutional Amendment: Disambiguation of Section 4.1.5</a></li>
+<li><a href="../../vote/2003/vote_0002">Constitutional Amendment: Condorcet/Clone Proof SSD Voting Method </a></li>
+<li><a href="../../vote/2003/vote_0001">Debian Project Leader Elections 2003</a></li>
+<li><a href="../../vote/2002/vote_0001">Debian Project Leader Elections 2002</a></li>
+<li><a href="../../vote/2001/vote_0001">Leader Elections 2001</a></li>
+<li><a href="../../vote/2000/vote_0007">Leader Elections 2000</a></li>
+<li><a href="../../vote/1999/vote_0005">Swap Logos</a></li>
+<li><a href="../../vote/1999/vote_0004">New Logo</a></li>
+<li><a href="../../vote/1999/vote_0002">Logo License</a></li>
+<li><a href="../../vote/1999/vote_0001">Leader Elections 1999</a></li>
+<li><a href="../../vote/1999/vote_0000">Constitution</a></li>
+</ul></li><li>Withdrawn<ul><li><a href="../../vote/2025/vote_002">General Resolution: Interpretation of DFSG on Artificial Intelligence (AI) Models</a></li>
+<li><a href="../../vote/2024/vote_002">General Resolution: tag2upload</a></li>
+<li><a href="../../vote/2015/vote_002">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2009/vote_002">General Resolution: Sponsorship requirements for General Resolutions</a></li>
+<li><a href="../../vote/2004/vote_005">General Resolution: Force AMD64 architecture into Sarge</a></li>
+<li><a href="../../vote/2001/vote_0002">IRC as a Debian communication channel</a></li>
+</ul></li><li>Other<ul><li><a href="../../vote/2000/vote_0011">Superseded: Constitutional amendment: Smith/Condorcet vote tallying</a></li>
+<li><a href="../../vote/2000/vote_0010">Superseded: Constitutional amendment: alternate disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0009">Superseded: Constitutional amendment: disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0008">Superseded: Non-free Archive Removal</a></li>
+</ul></li>
+	</ul>
+	<!--/UdmComment-->
+</div> <!-- end second-nav -->
+<div id="maincol">
+    <h1>General Resolution: init system coupling</h1>
+<ul class="toc">
+  <li><a href="#timeline">Time Line</a></li>
+  <li><a href="#proposer">Proposer</a></li>
+  <li><a href="#seconds">Seconds</a></li>
+  <li><a href="#text">Text</a></li>
+  <li><a href="#amendmentproposera">Amendment Proposer A</a></li>
+  <li><a href="#amendmentsecondsa">Amendment Seconds A</a></li>
+  <li><a href="#amendmenttexta">Amendment Text A</a></li>
+  <li><a href="#amendmentproposerb">Amendment Proposer B</a></li>
+  <li><a href="#amendmentsecondsb">Amendment Seconds B</a></li>
+  <li><a href="#amendmenttextb">Amendment Text B</a></li>
+  <li><a href="#amendmentproposerc">Amendment Proposer C</a></li>
+  <li><a href="#amendmentsecondsc">Amendment Seconds C</a></li>
+  <li><a href="#amendmenttextc">Amendment Text C</a></li>
+  <li><a href="#quorum">Quorum</a></li>
+  <li><a href="#statistics">Data and Statistics</a></li>
+  <li><a href="#majorityreq">Majority Requirement</a></li>
+  <li><a href="#outcome">Outcome</a></li>
+</ul>
+<h3><a name="timeline" id="timeline">Time Line</a></h3>
+    <table class="vote" summary="">
+      <tr>
+        <th>Proposal and amendment</th>
+        <td>Thursday, 16th October 2014</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Discussion Period:</th>
+        <td>Sunday, 19th October 2014</td>
+		<td>Sunday, 2nd November, 2014</td>
+      </tr>
+      <tr>
+        <th>Voting Period:</th>
+            <td>Wednesday, November 5th, 00:00:00 UTC, 2014</td>
+            <td>Tuesday, November 18th, 23:59:59 UTC, 2014</td>
+      </tr>
+    </table>
+<h3><a name="proposer" id="proposer">Proposer</a></h3>
+    <p>Ian Jackson [<a href="mailto:ijackson@chiark.greenend.org.uk">ijackson@chiark.greenend.org.uk</a>]
+	[<a href='https://lists.debian.org/debian-vote/2014/10/msg00001.html'>text of proposal</a>]
+	[<a href='https://lists.debian.org/debian-vote/2014/10/msg00197.html'>proposing and accepting amendment</a>]
+	[<a href='https://lists.debian.org/debian-vote/2014/11/msg00001.html'>Call for vote</a>]
+    </p>
+<h3><a name="seconds" id="seconds">Seconds</a></h3>
+    <ol>
+	<!-- <li>[<a href="mailto:"></a>] [<a href=''>mail</a>] </li> -->
+	<li>Simon Richter [<a href="mailto:Simon.Richter@hogyros.de">Simon.Richter@hogyros.de</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00003.html'>mail</a>] </li>
+	<li>Alessio Treglia [<a href="mailto:quadrispro@gmail.com">quadrispro@gmail.com</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00004.html'>mail</a>] </li>
+	<li>Iustin Pop [<a href="mailto:iustin@debian.org">iustin@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00006.html'>mail</a>] </li>
+	<li>Florian Lohoff [<a href="mailto:f@zz.de">f@zz.de</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00008.html'>mail</a>] </li>
+	<li>Ritesh Raj Sarraf [<a href="mailto:rrs@debian.org">rrs@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00007.html'>mail</a>] </li>
+	<li>Bernhard R. Link [<a href="mailto:brlink@debian.org">brlink@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00032.html'>mail</a>] </li>
+	<li>Dimitri John Ledkov [<a href="mailto:xnox@debian.org">xnox@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00038.html'>mail</a>] </li>
+	<li>Jonas Smedegaard [<a href="mailto:jonas@jones.dk">jonas@jones.dk</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00019.html'>mail</a>] </li>
+	<li>Craig Sanders [<a href="mailto:cas@taz.net.au">cas@taz.net.au</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00030.html'>mail</a>] </li>
+	<li>Thorsten Glaser [<a href="mailto:tg@debian.org">tg@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00054.html'>mail</a>] </li>
+	<li>Tobias Frost [<a href="mailto:tobi@debian.org">tobi@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00290.html'>mail</a>] </li>
+    </ol>
+<h3><a name="text" id="text">Text</a></h3>
+	<h3>Choice 1: Packages may not (in general) require a specific init system</h3>
+    <pre>
+0. Rationale
+
+  Debian has decided (via the technical committee) to change its
+  default init system for the next release. The technical committee
+  decided not to decide about the question of "coupling" i.e. whether
+  other packages in Debian may depend on a particular init system.
+
+  This GR seeks to preserve the freedom of our users now to select an
+  init system of their choice, and the project's freedom to select a
+  different init system in the future. It will avoid Debian becoming
+  accidentally locked in to a particular init system (for example,
+  because so much unrelated software has ended up depending on a
+  particular init system that the burden of effort required to change
+  init system becomes too great). A number of init systems exist, and
+  it is clear that there is not yet broad consensus as to what the
+  best init system might look like.
+
+  This GR does not make any comment on the relative merits of
+  different init systems; the technical committee has decided upon the
+  default init system for Linux for jessie.
+
+1. Exercise of the TC's power to set policy
+
+  For jessie and later releases, the TC's power to set technical
+  policy (Constitution 6.1.1) is exercised as follows:
+
+2. Loose coupling of init systems
+
+  In general, software may not require one specific init system to be
+  pid 1.  The exceptions to this are as follows:
+
+   * alternative init system implementations
+   * special-use packages such as managers for init systems
+   * cooperating groups of packages intended for use with specific init
+     systems
+
+  provided that these are not themselves required by other software
+  whose main purpose is not the operation of a specific init system.
+
+  Degraded operation with some init systems is tolerable, so long as
+  the degradation is no worse than what the Debian project would
+  consider a tolerable (non-RC) bug even if it were affecting all
+  users.  So the lack of support for a particular init system does not
+  excuse a bug nor reduce its severity; but conversely, nor is a bug
+  more serious simply because it is an incompatibility of some software
+  with some init system(s).
+
+  Maintainers are encouraged to accept technically sound patches
+  to enable improved interoperation with various init systems.
+
+3. As far as we are aware there are currently (17th of October) no
+   bugs in jessie which would be declared RC by this GR.
+
+   Given the late passage of this resolution, we expect that any
+   intractable bugs which are RC by virtue only of this resolution
+   would be tagged by the release team as `jessie-ignore'.
+
+   So this proposal is not thought to add blockers to the jessie
+   release.
+
+4. Notes and rubric
+
+  This resolution is a Position Statement about Issues of the Day
+  (Constitution 4.1.5), triggering the General Resolution override
+  clause in the TC's resolution of the 11th of February.
+
+  The TC's decision on the default init system for Linux in jessie
+  stands undisturbed.
+
+  However, the TC resolution is altered to add the additional text
+  in sections (1) and (2) above.
+    </pre>
+	<hr>
+<h3><a name="amendmentproposera" id="amendmentproposera">Amendment Proposer A</a></h3>
+    <p>Lucas Nussbaum [<a href="mailto:lucas@debian.org">lucas@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2014/10/msg00043.html'>text of original amendment</a>]
+    [<a href='https://lists.debian.org/debian-vote/2014/10/msg00101.html'>update of amendment</a>]
+    </p>
+<h3><a name="amendmentsecondsa" id="amendmentsecondsa">Amendment Seconds A</a></h3>
+    <ul>
+    <li><em>Note: This amendment has been submitted by the current
+    Project Leader, and thus does not require seconding</em></li>
+    </ul>
+    <ol>
+	<li>Andrey Rahmatullin [<a href="mailto:wrar@debian.org">wrar@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00051.html'>mail</a>] </li>
+	<li>Holger Levsen [<a href="mailto:holger@layer-acht.org">holger@layer-acht.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00057.html'>mail</a>] </li>
+	<li>Vincent Cheng [<a href="mailto:vcheng@debian.org">vcheng@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00065.html'>mail</a>] </li>
+	<li>Matthias Urlichs [<a href="mailto:matthias@urlichs.de">matthias@urlichs.de</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00072.html'>mail</a>] </li>
+	<li>Marco d'Itri [<a href="mailto:md@linux.it">md@linux.it</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00067.html'>mail</a>] </li>
+    </ol>
+<h3><a name="amendmenttexta" id="amendmenttexta">Amendment Text A</a></h3>
+	<h3>Choice 2: Support for other init systems is recommended, but not mandatory</h3>
+<pre>
+Debian has decided (via the technical committee) to change its default
+init system for the next release. The technical committee decided not to
+decide about the question of "coupling" i.e. whether other packages in
+Debian may depend on a particular init system.  However, the technical
+committee stated in #746715 that "[it] expects maintainers to continue to
+support the multiple available init systems in Debian.  That includes
+merging reasonable contributions, and not reverting existing support
+without a compelling reason."
+
+The Debian Project states that:
+
+   Software should support as many architectures as reasonably possible,
+   and it should normally support the default init system on all
+   architectures for which it is built.  There are some exceptional cases
+   where lack of support for the default init system may be appropriate,
+   such as alternative init system implementations, special-use packages
+   such as managers for non-default init systems, and cooperating
+   groups of packages intended for use with non-default init systems.
+   However, package maintainers should be aware that a requirement for a
+   non-default init system will mean the software will be unusable for
+   most Debian users and should normally be avoided.
+
+   Package maintainers are strongly encouraged to merge any contributions
+   for support of any init system, and to add that support themselves if
+   they're willing and capable of doing so.  In particular, package
+   maintainers should put a high priority on merging changes to support
+   any init system which is the default on one of Debian's non-Linux
+   ports.
+
+   
+   For the jessie release, all software available in Debian 'wheezy'
+   that supports being run under sysvinit should continue to support
+   sysvinit unless there is no technically feasible way to do so.
+   Reasonable changes to preserve or improve sysvinit support should be
+   accepted through the jessie release.  There may be some loss of
+   functionality under sysvinit if that loss is considered acceptable by
+   the package maintainer and the package is still basically functional,
+   but Debian's standard requirement to support smooth upgrades from
+   wheezy to jessie still applies, even when the system is booted with
+   sysvinit.
+
+The Debian Project makes no statement at this time on sysvinit support
+beyond the jessie release.
+
+
+This resolution is a Position Statement about Issues of the Day
+(Constitution 4.1.5), triggering the General Resolution override clause
+in the TC's resolution of the 11th of February.
+
+The TC's decision on the default init system for Linux in jessie stands
+undisturbed.
+
+However, the TC resolution is altered to add the additional text above.
+</pre>
+<hr>
+<h3><a name="amendmentproposerb" id="amendmentproposerb">Amendment Proposer B</a></h3>
+    <p>Luca Falavigna [<a href="mailto:dktrkranz@debian.org">dktrkranz@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2014/10/msg00173.html'>text of amendment</a>]
+    </p>
+<h3><a name="amendmentsecondsb" id="amendmentsecondsb">Amendment Seconds B</a></h3>
+    <ol>
+    <li>Holger Levsen [<a href="mailto:holger@layer-acht.org">holger@layer-acht.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00175.html'>mail</a>] </li>
+    <li>Nicolas Dandrimont [<a href="mailto:olasd@debian.org">olasd@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00176.html'>mail</a>] </li>
+    <li>Andrey Rahmatullin [<a href="mailto:wrar@debian.org">wrar@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00177.html'>mail</a>] </li>
+    <li>Antonio Terceiro [<a href="mailto:terceiro@debian.org">terceiro@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00185.html'>mail</a>] </li>
+    <li>Arno Töll [<a href="mailto:arno@debian.org">arno@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00186.html'>mail</a>] </li>
+    <li>Philipp Kern [<a href="mailto:pkern@debian.org">pkern@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00187.html'>mail</a>] </li>
+    <li>Vincent Bernat [<a href="mailto:bernat@debian.org">bernat@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00188.html'>mail</a>] </li>
+    <li>Gergely Nagy [<a href="mailto:algernon@madhouse-project.org">algernon@madhouse-project.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00219.html'>mail</a>] </li>
+    <li>Cyril Brulebois [<a href="mailto:kibi@debian.org">kibi@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00235.html'>mail</a>] </li>
+    <li>Paul Tagliamonte [<a href="mailto:paultag@debian.org">paultag@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00236.html'>mail</a>] </li>
+    <li>Ansgar Burchardt [<a href="mailto:ansgar@debian.org">ansgar@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00242.html'>mail</a>] </li>
+    </ol>
+<h3><a name="amendmenttextb" id="amendmenttextb">Amendment Text B</a></h3>
+    <h3>Choice 3: Packages may require specific init systems if maintainers decide</h3>
+<pre>
+0. Rationale
+
+  Debian has decided (via the Technical Committee) to change its
+  default init system for the next release. The Technical Committee
+  decided not to decide about the question of "coupling" i.e. whether
+  other packages in Debian may depend on a particular init system.
+
+  This GR reaffirms the Debian Social Contract #4, in such a way
+  that Debian acknowledges the choices made by both the software
+  developers (also known as upstream developers) and the Debian
+  package maintainers to provide the best free software to our users.
+
+  Upstream developers considering specific free software (including,
+  but not limited to, a particular init system executed as PID 1)
+  fundamental to deliver the best software releases, are fully entitled
+  to require, link, or depend on that software, or portions of it.
+
+  Debian maintainers' work is aiming to respect the Debian Social
+  Contract, in such a way to provide our users the best free software
+  available.
+
+  Debian maintainers are fully entitled to provide modifications to
+  the free software packages they maintain as per DFSG #3, if they
+  judge this necessary to provide the best software releases.
+  On the other hand, Debian maintainers are fully entitled to adhere
+  to upstream's decisions to require, link, or depend on specific free
+  software (including, but no limited to, particular init system executed
+  as PID 1), if they consider it necessary to prevent delivering broken,
+  buggy, or otherwise incomplete software packages.
+
+The Debian Project states that:
+
+1. Exercise of the TC's power to set policy
+
+  For jessie and later releases, the TC's power to set technical
+  policy (Constitution 6.1.1) is exercised as follows:
+
+2. Specific init systems as PID 1
+
+  Debian packages may require a specific init system to be executed
+  as PID 1 if their maintainers consider this a requisite for its proper
+  operation by clearly mark this in package descriptions and/or
+  by adding dependencies in order to enforce this; and no patches
+  or other derived works exist in order to support other init systems
+  in such a way to render software usable to the same extent.
+
+3. Evidence of defects (bugs)
+
+  We strongly reaffirm Debian maintainers are not deliberately hiding
+  problems (Social Contract #3). No technical decisions shall be
+  overruled if no proper evidence of defects, issued in the Debian Bug
+  Tracking system, is found. Fear, uncertainty, and doubt are not
+  considered as evidence of defects.
+
+This resolution is a Position Statement about Issues of the Day
+(Constitution 4.1.5), triggering the General Resolution override clause
+in the TC's resolution of the 11th of February.
+
+The TC's decision on the default init system for Linux in jessie stands
+undisturbed.
+
+However, the TC resolution is altered to add the additional text above
+in sections #1, #2 and #3.
+</pre>
+<hr>
+<h3><a name="amendmentproposerc" id="amendmentproposerc">Amendment Proposer C</a></h3>
+    <p>Charles Plessy [<a href="mailto:plessy@debian.org">plessy@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2014/10/msg00200.html'>text of original amendment</a>]
+    [<a href='https://lists.debian.org/debian-vote/2014/10/msg00296.html'>update of amendment</a>]
+    </p>
+<h3><a name="amendmentsecondsc" id="amendmentsecondsc">Amendment Seconds C</a></h3>
+    <ol>
+	<li>Matthias Urlichs [<a href="mailto:matthias@urlichs.de">matthias@urlichs.de</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00301.html'>mail</a>] </li>
+	<li>Holger Levsen [<a href="mailto:holger@layer-acht.org">holger@layer-acht.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00228.html'>mail</a>] </li>
+	<li>Didier 'OdyX' Raboud [<a href="mailto:odyx@debian.org">odyx@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00229.html'>mail</a>] </li>
+	<li>Raphael Hertzog [<a href="mailto:hertzog@debian.org">hertzog@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00230.html'>mail</a>] </li>
+	<li>Cyril Brulebois [<a href="mailto:kibi@debian.org">kibi@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00311.html'>mail</a>] </li>
+	<li>Gergely Nagy [<a href="mailto:algernon@madhouse-project.org">algernon@madhouse-project.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00232.html'>mail</a>] </li>
+	<li>Paul Tagliamonte [<a href="mailto:paultag@debian.org">paultag@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00237.html'>mail</a>] </li>
+	<li>Lucas Nussbaum [<a href="mailto:lucas@debian.org">lucas@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00302.html'>mail</a>] </li>
+	<li>Joey Hess [<a href="mailto:joeyh@debian.org">joeyh@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00240.html'>mail</a>] </li>
+	<li>Philipp Kern [<a href="mailto:pkern@debian.org">pkern@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00288.html'>mail</a>] </li>
+    <li>Anthony Towns [<a href="mailto:aj@erisian.com.au">aj@erisian.com.au</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00324.html'>mail</a>] </li>
+    <li>Sam Hartman [<a href="mailto:hartmans@debian.org">hartmans@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00299.html'>mail</a>] </li>
+    <li>Philip Hands [<a href="mailto:phil@hands.com">phil@hands.com</a>] [<a href='https://lists.debian.org/debian-vote/2014/10/msg00303.html'>mail</a>] </li>
+    </ol>
+<h3><a name="amendmenttextc" id="amendmenttextc">Amendment Text C</a></h3>
+    <h3>Choice 4: General Resolution is not required</h3>
+<pre>
+The Debian project asks its members to be considerate when proposing General
+Resolutions, as the GR process may be disruptive regardless of the outcome of
+the vote.
+
+Regarding the subject of this ballot, the Project affirms that the procedures
+for decision making and conflict resolution are working adequately and thus
+a General Resolution is not required.
+</pre>
+<hr>
+<h3><a name="quorum" id="quorum">Quorum</a></h3>
+     <p>
+        With the current list of <a href="vote_003_quorum.log">voting
+          developers</a>, we have:
+     </p>
+    <pre>
+ Current Developer Count = 1006
+ Q ( sqrt(#devel) / 2 ) = 15.8587515271537
+ K min(5, Q )           = 5
+ Quorum  (3 x Q )       = 47.5762545814611
+    </pre>
+              <h3>Quorum</h3>
+              <ul>
+                <li>Option1 Reached quorum: 241 &gt; 47.5762545814611</li>
+                <li>Option2 Reached quorum: 366 &gt; 47.5762545814611</li>
+                <li>Option3 Reached quorum: 286 &gt; 47.5762545814611</li>
+                <li>Option4 Reached quorum: 358 &gt; 47.5762545814611</li>
+              </ul>
+<h3><a name="statistics" id="statistics">Data and Statistics</a></h3>
+    <p>
+	For this GR, like always,
+               <a href="suppl_003_stats">statistics</a>
+             will be gathered about ballots received and
+             acknowledgements sent periodically during the voting
+             period.
+               Additionally, the list of <a
+             href="vote_003_voters.txt">voters</a> will be
+             recorded. Also, the <a href="vote_003_tally.txt">tally
+             sheet</a> will also be made available to be viewed.
+         </p>
+<h3><a name="majorityreq" id="majorityreq">Majority Requirement</a></h3>
+    <p>
+      The proposal needs simple majority
+    </p>
+              <h3>Majority</h3>
+              <ul>
+                <li>Option1 passes Majority.
+  1.137 (241/212) &gt;= 1</li>
+                <li>Option2 passes Majority.
+  3.697 (366/99) &gt;= 1</li>
+                <li>Option3 passes Majority.
+  1.723 (286/166) &gt;= 1</li>
+                <li>Option4 passes Majority.
+  3.768 (358/95) &gt;= 1</li>
+              </ul>
+<h3><a name="outcome" id="outcome">Outcome</a></h3>
+           <p class="center">
+             <a style="margin-left: auto; margin-right: auto;" href="vote_003_results.dot">
+               <img src="vote_003_results.png" alt="Graphical rendering of the results" width="952" height="496">
+               </a>
+           </p>
+             <p>
+               In the graph above, any pink colored nodes imply that
+               the option did not pass majority, the Blue is the
+               winner. The Octagon is used for the options that did
+               not beat the default.
+           </p>
+           <ul>
+<li>Option 1 "Packages may not (in general) require a specific init system"</li>
+<li>Option 2 "Support for other init systems is recommended, but not mandatory"</li>
+<li>Option 3 "Packages may require specific init systems if maintainers decide"</li>
+<li>Option 4 "General Resolution is not required"</li>
+<li>Option 5 "Further Discussion"</li>
+           </ul>
+            <p>
+               In the following table, tally[row x][col y] represents
+               the votes that option x received over option y. A
+               <a href="https://en.wikipedia.org/wiki/Schwartz_method">more
+                 detailed explanation of the beat matrix</a> may help in
+               understanding the table. For understanding the Condorcet method, the
+               <a href="https://en.wikipedia.org/wiki/Condorcet_method">Wikipedia
+                 entry</a> is fairly informative.
+           </p>
+           <table class="vote" summary="">
+             <caption class="center"><strong>The Beat Matrix</strong></caption>
+	     <tr><th>&nbsp;</th><th colspan="5" class="center">Option</th></tr>
+              <tr>
+                   <th>&nbsp;</th>
+                   <th>    1 </th>
+                   <th>    2 </th>
+                   <th>    3 </th>
+                   <th>    4 </th>
+                   <th>    5 </th>
+              </tr>
+                 <tr>
+                   <th>Option 1 </th>
+                   <td>&nbsp;</td>
+                   <td>  133 </td>
+                   <td>  183 </td>
+                   <td>  147 </td>
+                   <td>  241 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 2 </th>
+                   <td>  313 </td>
+                   <td>&nbsp;</td>
+                   <td>  251 </td>
+                   <td>  180 </td>
+                   <td>  366 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 3 </th>
+                   <td>  263 </td>
+                   <td>  172 </td>
+                   <td>&nbsp;</td>
+                   <td>  135 </td>
+                   <td>  286 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 4 </th>
+                   <td>  323 </td>
+                   <td>  280 </td>
+                   <td>  308 </td>
+                   <td>&nbsp;</td>
+                   <td>  358 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 5 </th>
+                   <td>  212 </td>
+                   <td>   99 </td>
+                   <td>  166 </td>
+                   <td>   95 </td>
+                   <td>&nbsp;</td>
+                 </tr>
+               </table>
+              <p>
+Looking at row 2, column 1, Support for other init systems is recommended, but not mandatory<br>
+received 313 votes over Packages may not (in general) require a specific init system<br>
+<br>
+Looking at row 1, column 2, Packages may not (in general) require a specific init system<br>
+received 133 votes over Support for other init systems is recommended, but not mandatory.<br>
+              <h3>Pair-wise defeats</h3>
+              <ul>
+                <li>Option 2 defeats Option 1 by ( 313 - 133) = 180 votes.</li>
+                <li>Option 3 defeats Option 1 by ( 263 - 183) = 80 votes.</li>
+                <li>Option 4 defeats Option 1 by ( 323 - 147) = 176 votes.</li>
+                <li>Option 1 defeats Option 5 by ( 241 - 212) = 29 votes.</li>
+                <li>Option 2 defeats Option 3 by ( 251 - 172) = 79 votes.</li>
+                <li>Option 4 defeats Option 2 by ( 280 - 180) = 100 votes.</li>
+                <li>Option 2 defeats Option 5 by ( 366 - 99) = 267 votes.</li>
+                <li>Option 4 defeats Option 3 by ( 308 - 135) = 173 votes.</li>
+                <li>Option 3 defeats Option 5 by ( 286 - 166) = 120 votes.</li>
+                <li>Option 4 defeats Option 5 by ( 358 - 95) = 263 votes.</li>
+              </ul>
+              <h3>The Schwartz Set contains</h3>
+              <ul>
+                <li>Option 4 "General Resolution is not required"</li>
+              </ul>
+              <h3>The winners</h3>
+              <ul>
+                <li>Option 4 "General Resolution is not required"</li>
+              </ul>
+              <p>
+               Debian uses the Condorcet method for voting.
+               Simplistically, plain Condorcets method
+               can be stated like so : <br>
+               <q>Consider all possible two-way races between candidates.
+                  The Condorcet winner, if there is one, is the one
+                  candidate who can beat each other candidate in a two-way
+                  race with that candidate.</q>
+               The problem is that in complex elections, there may well
+               be a circular relationship in which A beats B, B beats C,
+               and C beats A. Most of the variations on Condorcet use
+               various means of resolving the tie. See
+               <a href="https://en.wikipedia.org/wiki/Cloneproof_Schwartz_Sequential_Dropping">Cloneproof Schwartz Sequential Dropping</a>
+               for details. Debian's variation is spelled out in the
+               <a href="../../devel/constitution">constitution</a>,
+               specifically, A.6.
+              </p>
+    <hr>
+      <address>
+        <a href="mailto:secretary@debian.org">Debian Project Secretary</a>
+      </address>
+</div> <!-- end maincol -->
+<div class="clr"></div>
+</div> <!-- end content -->
+<div id="footer">
+<hr class="hidecss">
+<p>Back to the <a href="../../">Debian Project homepage</a>.</p>
+<hr>
+<!--UdmComment-->
+<div id="pageLang">
+<div id="langSelector">
+This page is also available in the following languages:
+<div id="langContainer">
+<select onchange="location = this.value;">
+<option value="" disabled selected>Select your language</option>
+ <option value="vote_003.fr.html" title="French" lang="fr">fran&ccedil;ais</option>
+</select>
+</div>
+How to set <a href="../../intro/cn">the default document language</a>
+</div></div><!--/UdmComment-->
+<hr>
+<div id="footermap">
+<!--UdmComment-->
+<p><strong><a href="/">Home</a></strong></p>
+    <ul id="footermap-cola">
+		<li><a href="../../intro/about">About</a>
+		  <ul>
+		  <li><a href="../../social_contract">Social Contract</a></li>
+		  <li><a href="../../code_of_conduct">Code of Conduct</a></li>
+		  <li><a href="../../intro/free">Free Software</a></li>
+          <li><a href="../../legal">Legal Info</a></li>
+		  </ul>
+		</li>
+        <li><a href="../../intro/help">Help Debian</a></li>
+    </ul>
+	<ul id="footermap-colb">
+			<li><a href="../../distrib/">Getting Debian</a>
+			  <ul>
+			  <li><a href="../../distrib/netinst">Network install</a></li>
+			  <li><a href="../../CD/">CD/USB ISO images</a></li>
+            <li><a href="../../blends/">Pure Blends</a></li>
+			<li><a href="../../distrib/packages">Debian Packages</a></li>
+			<li><a href="../../devel/">Developers' Corner</a></li>
+			  </ul>
+			</li>
+	</ul>
+	<ul id="footermap-colc">
+		<li><a href="../../News/">News</a>
+		  <ul>
+		  <li><a href="../../News/weekly/">Project News</a></li>
+		  <li><a href="../../events/">Events</a></li>
+		  </ul>
+		</li>
+    <li><a href="../../doc/">Documentation</a>
+      <ul>
+      <li><a href="../../releases/">Release Info</a></li>
+      <li><a href="https://wiki.debian.org/">Debian Wiki</a></li>
+      </ul>
+    </li>
+   </ul>
+   <ul id="footermap-cold">
+    <li><a href="../../support">Support</a>
+	  <ul>
+			  <li><a href="../../international/">Debian International</a></li>
+			  <li><a href="../../security/">Security Information</a></li>
+			  <li><a href="../../Bugs/">Bug reports</a></li>
+			  <li><a href="../../MailingLists/">Mailing Lists</a></li>
+      </ul>
+    </li>
+</ul>
+<ul id="footermap-cole">
+  <li><a href="../../sitemap">Site map</a></li>
+  <li><a href="https://search.debian.org/">Search</a></li>
+  <li><a href="https://bits.debian.org">The Debian Blog</a></li>
+  <li><a href="https://micronews.debian.org">Debian Micronews</a></li>
+  <li><a href="https://planet.debian.org">Debian Planet</a></li>
+</ul>
+<!--/UdmComment-->
+</div> <!-- end footermap -->
+<div id="fineprint">
+<!--UdmComment-->
+  <p>See our <a href="../../contact">contact page</a> to get in touch. Web site source code is <a href="https://salsa.debian.org/webmaster-team/webwml">available</a>.</p>
+<p>
+Last Modified: Fri, Jul 24 20:17:23 UTC 2026
+&emsp;
+Last Built: Sun, Oct 18 03:32:07 UTC 2026
+  <br>
+  Copyright &copy; 2014-2026 <a href="https://www.spi-inc.org/">SPI</a> and others; See <a href="../../license" rel="copyright">license terms</a><br>
+  Debian is a registered <a href="../../trademark">trademark</a> of Software in the Public Interest, Inc.
+</p>
+<!--/UdmComment-->
+</div>
+</div> <!-- end footer -->
+</body>
+</html>

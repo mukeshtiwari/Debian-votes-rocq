@@ -1,0 +1,11 @@
+digraph Results {
+  ranksep=0.25;
+ "Felix Lechner\n0.80" [ style="filled" , color="pink", shape=octagon, fontname="Helvetica", fontsize=10  ];
+ "None of the above" -> "Felix Lechner\n0.80" [ label="37" ];
+ "Jonathan Carter\n14.86" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "Jonathan Carter\n14.86" -> "Hideki Yamane\n5.47" [ label="197" ];
+ "Jonathan Carter\n14.86" -> "None of the above" [ label="305" ];
+ "Hideki Yamane\n5.47" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Hideki Yamane\n5.47" -> "None of the above" [ label="237" ];
+ "None of the above" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

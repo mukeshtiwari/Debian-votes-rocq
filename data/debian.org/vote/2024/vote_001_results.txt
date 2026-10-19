@@ -1,0 +1,52 @@
+Starting results calculation at Sat Apr 20 00:02:05 2024
+
+Option 1 "Andreas Tille"
+Option 2 "Sruthi Chandran"
+Option 3 "None of the above"
+
+In the following table, tally[row x][col y] represents the votes that
+option x received over option y.
+
+                  Option
+              1     2     3 
+            ===   ===   === 
+Option 1          201   293 
+Option 2    135         280 
+Option 3     64    66       
+
+
+
+Looking at row 2, column 1, Sruthi Chandran
+received 135 votes over Andreas Tille
+
+Looking at row 1, column 2, Andreas Tille
+received 201 votes over Sruthi Chandran.
+
+Option 1 Reached quorum: 293 > 47.6707457462121
+Option 2 Reached quorum: 280 > 47.6707457462121
+
+
+Option 1 passes Majority.               4.578 (293/64) >= 1
+Option 2 passes Majority.               4.242 (280/66) >= 1
+
+
+  Option 1 defeats Option 2 by ( 201 -  135) =   66 votes.
+  Option 1 defeats Option 3 by ( 293 -   64) =  229 votes.
+  Option 2 defeats Option 3 by ( 280 -   66) =  214 votes.
+
+
+The Schwartz Set contains:
+	 Option 1 "Andreas Tille"
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The winners are:
+	 Option 1 "Andreas Tille"
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The total numbers of votes tallied = 362

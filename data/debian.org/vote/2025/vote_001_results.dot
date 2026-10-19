@@ -1,0 +1,18 @@
+digraph Results {
+  ranksep=0.25;
+ "Gianfranco Costamagna\n3.90" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Gianfranco Costamagna\n3.90" -> "Sruthi Chandran\n2.01" [ label="52" ];
+ "Gianfranco Costamagna\n3.90" -> "None of the above" [ label="203" ];
+ "Julian Andres Klode\n3.26" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Julian Andres Klode\n3.26" -> "Gianfranco Costamagna\n3.90" [ label="71" ];
+ "Julian Andres Klode\n3.26" -> "Sruthi Chandran\n2.01" [ label="116" ];
+ "Julian Andres Klode\n3.26" -> "None of the above" [ label="183" ];
+ "Andreas Tille\n8.15" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "Andreas Tille\n8.15" -> "Gianfranco Costamagna\n3.90" [ label="216" ];
+ "Andreas Tille\n8.15" -> "Julian Andres Klode\n3.26" [ label="183" ];
+ "Andreas Tille\n8.15" -> "Sruthi Chandran\n2.01" [ label="212" ];
+ "Andreas Tille\n8.15" -> "None of the above" [ label="279" ];
+ "Sruthi Chandran\n2.01" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Sruthi Chandran\n2.01" -> "None of the above" [ label="113" ];
+ "None of the above" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

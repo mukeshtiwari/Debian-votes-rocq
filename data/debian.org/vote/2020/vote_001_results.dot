@@ -1,0 +1,13 @@
+digraph Results {
+  ranksep=0.25;
+ "Jonathan Carter\n8.85" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "Jonathan Carter\n8.85" -> "Sruthi Chandran\n3.21" [ label="201" ];
+ "Jonathan Carter\n8.85" -> "Brian Gupta\n1.55" [ label="241" ];
+ "Jonathan Carter\n8.85" -> "None Of The Above" [ label="267" ];
+ "Sruthi Chandran\n3.21" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Sruthi Chandran\n3.21" -> "Brian Gupta\n1.55" [ label="49" ];
+ "Sruthi Chandran\n3.21" -> "None Of The Above" [ label="168" ];
+ "Brian Gupta\n1.55" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Brian Gupta\n1.55" -> "None Of The Above" [ label="69" ];
+ "None Of The Above" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

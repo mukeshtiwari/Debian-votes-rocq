@@ -1,0 +1,461 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>    General Resolution: Update Standard Resolution Procedure </title>
+  <link rel="author" href="mailto:webmaster@debian.org">
+  <meta name="Generator" content="WML 2.32.0">
+  <meta name="Modified" content="2026-10-18 03:32:11">
+  <meta name="viewport" content="width=device-width">
+  <meta name="mobileoptimized" content="300">
+  <meta name="HandheldFriendly" content="true">
+<link href="../../debian.css" rel="stylesheet" type="text/css">
+  <link href="../../debian-en.css" rel="stylesheet" type="text/css" media="all">
+<link rel="search" type="application/opensearchdescription+xml" title="Debian website search" href="../../search.en.xml">
+</head>
+<body>
+<div id="header">
+  <div id="upperheader">
+    <div id="logo">
+    <a href="../../" title="Debian Home"><img src="../../Pics/openlogo-50.png" alt="Debian" width="50" height="61"></a>
+    </div> <!-- end logo -->
+    <div id="searchbox">
+      <form name="p" method="get" action="https://search.debian.org/cgi-bin/omega">
+      <p>
+<input type="hidden" name="DB" value="en">
+        <input name="P" value="" size="14">
+        <input type="submit" value="Search">
+      </p>
+      </form>
+    </div>   <!-- end sitetools -->
+  </div> <!-- end upperheader -->
+  <!--UdmComment-->
+  <div id="navbar">
+    <p class="hidecss"><a href="#content">Skip Quicknav</a></p>
+    <ul>
+      <!-- Link to Debian's own Social Media resources -->
+      <li><a href="https://bits.debian.org/" title="Bits from Debian">Blog</a></li>
+      <li><a href="https://micronews.debian.org" title="Micronews from Debian">Micronews</a></li>
+      <li><a href="https://planet.debian.org/" title="The Planet of Debian">Planet</a></li>
+      <li><a href="https://wiki.debian.org/" title="The Debian Wiki">Wiki</a></li>
+    </ul>
+  </div> <!-- end navbar -->
+<p id="breadcrumbs"><a href="./../">Debian Voting Information</a>
+ &#x2F; <a href="./">2015</a>
+ &#x2F;
+General Resolution: Update Standard Resolution Procedure</p>
+</div> <!-- end header -->
+<!--/UdmComment-->
+<div id="content">
+<div id="second-nav">
+<!--UdmComment-->
+	<ul class="votemenu">
+	<li>Home
+	<ul>
+	 <li><a href="../../vote/">Home&nbsp;Vote&nbsp;Page</a></li>
+	</ul>
+	</li>
+	<li>How&nbsp;To
+	<ul>
+	<li><a href="../../vote/howto_proposal">Submit&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_proposal#amend">Amend&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_follow">Follow&nbsp;a&nbsp;Proposal</a></li>
+	<!-- <li><a href="howto_vote">&bull;&nbsp;Vote</a></li>
+		<li>*<a href="howto_result">Read&nbsp;a&nbsp;Result</a></li> -->
+	</ul>
+	</li>
+	<li>Decided<ul><li><a href="../../vote/2026/vote_002">General Resolution: LLM usage in Debian</a></li>
+<li><a href="../../vote/2026/vote_001">Debian Project Leader Elections 2026</a></li>
+<li><a href="../../vote/2025/vote_001">Debian Project Leader Elections 2025</a></li>
+<li><a href="../../vote/2024/vote_001">Debian Project Leader Elections 2024</a></li>
+<li><a href="../../vote/2023/vote_002">General Resolution: Statement about the EU Legislation "Cyber Resilience Act and Product Liability Directive"</a></li>
+<li><a href="../../vote/2023/vote_001">Debian Project Leader Elections 2023</a></li>
+<li><a href="../../vote/2022/vote_003">General Resolution: non-free firmware</a></li>
+<li><a href="../../vote/2022/vote_002">Debian Project Leader Elections 2022</a></li>
+<li><a href="../../vote/2022/vote_001">General Resolution: Voting secrecy</a></li>
+<li><a href="../../vote/2021/vote_003">General Resolution: Change the resolution process</a></li>
+<li><a href="../../vote/2021/vote_002">General Resolution: Statement regarding Richard Stallman's readmission to the FSF board</a></li>
+<li><a href="../../vote/2021/vote_001">Debian Project Leader Elections 2021</a></li>
+<li><a href="../../vote/2020/vote_001">Debian Project Leader Elections 2020</a></li>
+<li><a href="../../vote/2019/vote_002">General Resolution: Init systems and systemd</a></li>
+<li><a href="../../vote/2019/vote_001">Debian Project Leader Elections 2019</a></li>
+<li><a href="../../vote/2018/vote_001">Debian Project Leader Elections 2018</a></li>
+<li><a href="../../vote/2017/vote_001">Debian Project Leader Elections 2017</a></li>
+<li><a href="../../vote/2016/vote_004">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_003">General Resolution: Replace "Chairman" with "Chair" throughout the Debian Constitution</a></li>
+<li><a href="../../vote/2016/vote_002">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_001">Debian Project Leader Elections 2016</a></li>
+<li><a href="../../vote/2015/vote_003">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2015/vote_001">Debian Project Leader Elections 2015</a></li>
+<li><a href="../../vote/2014/vote_004">General Resolution: Limiting the term of the technical committee members</a></li>
+<li><a href="../../vote/2014/vote_003">General Resolution: init system coupling</a></li>
+<li><a href="../../vote/2014/vote_002">General Resolution: code of conduct</a></li>
+<li><a href="../../vote/2014/vote_001">Debian Project Leader Elections 2014</a></li>
+<li><a href="../../vote/2013/vote_001">Debian Project Leader Elections 2013</a></li>
+<li><a href="../../vote/2012/vote_002">General Resolution: Diversity statement</a></li>
+<li><a href="../../vote/2012/vote_001">Debian Project Leader Elections 2012</a></li>
+<li><a href="../../vote/2011/vote_001">Debian Project Leader Elections 2011</a></li>
+<li><a href="../../vote/2010/vote_002">General Resolution: Debian project members</a></li>
+<li><a href="../../vote/2010/vote_001">Debian Project Leader Elections 2010</a></li>
+<li><a href="../../vote/2009/vote_001">Debian Project Leader Elections 2009</a></li>
+<li><a href="../../vote/2008/vote_003">General Resolution: Lenny and resolving DFSG violations</a></li>
+<li><a href="../../vote/2008/vote_002">General Resolution: Project membership procedures</a></li>
+<li><a href="../../vote/2008/vote_001">Debian Project Leader Elections 2008</a></li>
+<li><a href="../../vote/2007/vote_004">Constitutional amendment: reduce the length of DPL election process</a></li>
+<li><a href="../../vote/2007/vote_003">General Resolution: Endorse the concept of Debian Maintainers</a></li>
+<li><a href="../../vote/2007/vote_002">General Resolution: Altering package upload rules</a></li>
+<li><a href="../../vote/2007/vote_001">Debian Project Leader Elections 2007</a></li>
+<li><a href="../../vote/2006/vote_007">General Resolution: Handling source-less firmware in the Linux kernel</a></li>
+<li><a href="../../vote/2006/vote_006">General Resolution: Re-affirm support to the Debian Project Leader</a></li>
+<li><a href="../../vote/2006/vote_005">General Resolution: Recall the project leader</a></li>
+<li><a href="../../vote/2006/vote_004">General Resolution: Position statement clarifying DFSG #2</a></li>
+<li><a href="../../vote/2006/vote_003">Constitutional Amendment General Resolution: Handling assets for the project</a></li>
+<li><a href="../../vote/2006/vote_002">Debian Project Leader Elections 2006</a></li>
+<li><a href="../../vote/2006/vote_001">General Resolution: Why the GNU Free Documentation License is not suitable for Debian main</a></li>
+<li><a href="../../vote/2005/vote_002">General Resolution: Declassification of debian-private list archives</a></li>
+<li><a href="../../vote/2005/vote_001">Debian Project Leader Elections 2005</a></li>
+<li><a href="../../vote/2004/vote_004">General Resolution: Sarge Release Schedule in view of GR 2004-003</a></li>
+<li><a href="../../vote/2004/vote_003">General Resolution: Editorial amendments to the social contract</a></li>
+<li><a href="../../vote/2004/vote_002">General Resolution: Status of the non-free section</a></li>
+<li><a href="../../vote/2004/vote_001">Debian Project Leader Elections 2004</a></li>
+<li><a href="../../vote/2003/vote_0003">Constitutional Amendment: Disambiguation of Section 4.1.5</a></li>
+<li><a href="../../vote/2003/vote_0002">Constitutional Amendment: Condorcet/Clone Proof SSD Voting Method </a></li>
+<li><a href="../../vote/2003/vote_0001">Debian Project Leader Elections 2003</a></li>
+<li><a href="../../vote/2002/vote_0001">Debian Project Leader Elections 2002</a></li>
+<li><a href="../../vote/2001/vote_0001">Leader Elections 2001</a></li>
+<li><a href="../../vote/2000/vote_0007">Leader Elections 2000</a></li>
+<li><a href="../../vote/1999/vote_0005">Swap Logos</a></li>
+<li><a href="../../vote/1999/vote_0004">New Logo</a></li>
+<li><a href="../../vote/1999/vote_0002">Logo License</a></li>
+<li><a href="../../vote/1999/vote_0001">Leader Elections 1999</a></li>
+<li><a href="../../vote/1999/vote_0000">Constitution</a></li>
+</ul></li><li>Withdrawn<ul><li><a href="../../vote/2025/vote_002">General Resolution: Interpretation of DFSG on Artificial Intelligence (AI) Models</a></li>
+<li><a href="../../vote/2024/vote_002">General Resolution: tag2upload</a></li>
+<li><a href="../../vote/2015/vote_002">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2009/vote_002">General Resolution: Sponsorship requirements for General Resolutions</a></li>
+<li><a href="../../vote/2004/vote_005">General Resolution: Force AMD64 architecture into Sarge</a></li>
+<li><a href="../../vote/2001/vote_0002">IRC as a Debian communication channel</a></li>
+</ul></li><li>Other<ul><li><a href="../../vote/2000/vote_0011">Superseded: Constitutional amendment: Smith/Condorcet vote tallying</a></li>
+<li><a href="../../vote/2000/vote_0010">Superseded: Constitutional amendment: alternate disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0009">Superseded: Constitutional amendment: disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0008">Superseded: Non-free Archive Removal</a></li>
+</ul></li>
+	</ul>
+	<!--/UdmComment-->
+</div> <!-- end second-nav -->
+<div id="maincol">
+    <h1>General Resolution: Update Standard Resolution Procedure</h1>
+<ul class="toc">
+  <li><a href="#timeline">Time Line</a></li>
+  <li><a href="#proposer">Proposer</a></li>
+  <li><a href="#seconds">Seconds</a></li>
+  <li><a href="#text">Text</a></li>
+  <li><a href="#amendmentproposera">Amendment Proposer A</a></li>
+  <li><a href="#amendmentsecondsa">Amendment Seconds A</a></li>
+  <li><a href="#amendmenttexta">Amendment Text A</a></li>
+  <li><a href="#majorityreq">Majority Requirement</a></li>
+</ul>
+<h1>This vote has been <a href='https://lists.debian.org/debian-vote/2015/10/msg00001.html'>withdrawn</a></h1>
+<h3><a name="timeline" id="timeline">Time Line</a></h3>
+    <table class="vote" summary="">
+      <tr>
+        <th>Proposal and amendment</th>
+        <td>Wednesday, 26 August 2015</td>
+		<td></td>
+      </tr>
+      <tr>
+        <th>Discussion Period:</th>
+		<td>Wednesday, 9 September 2015</td>
+		<td></td>
+      </tr>
+      <tr>
+        <th>Voting Period:</th>
+            <td></td>
+            <td></td>
+      </tr>
+    </table>
+<h3><a name="proposer" id="proposer">Proposer</a></h3>
+    <p>Andreas Barth [<a href="mailto:aba@debian.org">aba@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2015/08/msg00002.html'>text of proposal</a>]
+    </p>
+<h3><a name="seconds" id="seconds">Seconds</a></h3>
+    <ol>
+	<li>Didier Raboud [<a href="mailto:odyx@debian.org">odyx@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2015/08/msg00003.html'>mail</a>] </li>
+	<li>Martin F. Krafft [<a href="mailto:madduck@debian.org">madduck@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2015/08/msg00004.html'>mail</a>] </li>
+	<li>Russ Allbery [<a href="mailto:rra@debian.org">rra@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2015/08/msg00005.html'>mail</a>] </li>
+	<li>Colin Tuckley [<a href="mailto:colint@debian.org">colint@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2015/08/msg00006.html'>mail</a>] </li>
+	<li>Philip Hands [<a href="mailto:philh@debian.org">philh@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2015/08/msg00007.html'>mail</a>] </li>
+	<li>Bdale Garbee [<a href="mailto:bdale@debian.org">bdale@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2015/08/msg00012.html'>mail</a>] </li>
+    </ol>
+<h3><a name="text" id="text">Text</a></h3>
+	<h3>Choice 1</h3>
+<pre>
+   Constitutional Amendment: TC Supermajority Fix
+
+   Prior to the Clone Proof SSD GR in June 2003, the Technical
+   Committee could overrule a Developer with a supermajority of 3:1.
+
+   Unfortunately, the definition of supermajorities in the SSD GR has a
+   fencepost error.  In the new text a supermajority requirement is met
+   only if the ratio of votes in favour to votes against is strictly
+   greater than the supermajority ratio.
+
+   In the context of the Technical Committee voting to overrule a
+   developer that means that it takes 4 votes to overcome a single
+   dissenter.  And with a maximum committee size of 8, previously two
+   dissenters could be outvoted by all 6 remaining members; now that
+   is no longer possible.
+
+   This change was unintentional, was contrary to the original intent
+   of the Constitution, and is unhelpful.
+
+   Additionally, following discussion of the supermajority mechanism
+   within the project, it was realised that certain situations could
+   cause anomalous results:
+
+   * The existing rules might result in a GR or TC resolution passing
+     which was actually the diametric opposite of the majority view.
+
+   * The existing rules unintentionally privilege the default option
+     in evenly contested TC votes where no supermajority is required,
+     possibly encouraging tactical voting.
+
+   Therefore, amend the Debian Constitution as follows:
+
+   (i) Delete most of A.6(3) (which implemented the supermajority
+   by dropping options at an early stage).  Specifically:
+      - Move A.6(3)(1) (the definition of V(A,B)) to a new subparagraph
+        A.6(3)(0) before A.6(3)(1).
+      - Remove the rest of A.6(3) entirely, leaving A.6(2) to be
+        followed by A.6(4).
+
+   (ii) In A.6(8) replace all occurrences of "winner" with
+   "prospective winner".  Replace "wins" in "which of those options
+   wins" with "is the prospective winner".
+
+   (iii) In A.6(8) add a new sentence at the end:
+     + If there is no elector with a casting vote, the default option
+     + wins.
+
+   (iv) Add a new section A.6(9) after A.6(8):
+     + 9. 1. If the prospective winner W has no majority requirement,
+     +       or defeats the default option D by its majority
+     +       requirement, the prospective winner is the actual winner.
+     +    2. Otherwise, the motion has failed its supermajority with
+     +       the consequences set out alongside the majority
+     +       requirement (or, if unspecified, the default option
+     +       wins).
+     +    3. An option A defeats the default option D by a
+     +       majority of N:M if M * V(A,D) is greater than or equal to
+     +       N * V(D,A).
+
+   (v) In
+       * 6.1(4) (Technical Commitee power to overrule a Developer)
+       * 4.1(4) (Developers' use of TC powers by GR) (if another
+           constitutional amendment has not abolished that
+           supermajority requirement)
+   in each case after the "N:M majority" add
+     +   ; failing that, the prospective winning resolution text becomes
+     +   a non-binding statement of opinion.
+
+   (vi) In A.3(2) delete as follows:
+         2. The default option must not have any supermajority requirements.
+     -       Options which do not have an explicit supermajority requirement
+     -       have a 1:1 majority requirement.
+
+   For the avoidance of any doubt, this change does not affect any
+   votes (whether General Resolutions or votes in the Technical
+   Committee) in progress at the time the change is made.
+
+   The effect is to fix the fencepost bug, and arrange that failing a
+   supermajority voids the whole decision (or makes it advisory),
+   rather than promoting another option.  The fencepost bugfix will
+   also have a (negligible) effect on any General Resolutions
+   requiring supermajorities.  And after this change the TC chair can
+   choose a non-default option even if it is tied with a default
+   option.
+
+
+
+
+
+   Constitutional Amendment: Fix duplicate section numbering.
+
+   The current Debian Constitution has two sections numbered A.1.
+   This does not currently give rise to any ambiguity but it is
+   undesirable.
+
+   Fix this with the following semantically neutral amendment:
+
+    - Renumber the first section A.1 to A.0.
+</pre>
+<h3><a name="amendmentproposera" id="amendmentproposera">Amendment Proposer A</a></h3>
+    <p>Sam Hartman [<a href="mailto:hartmans@debian.org">hartmans@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2015/09/msg00016.html'>text of amendment</a>]
+    </p>
+<h3><a name="amendmentsecondsa" id="amendmentsecondsa">Amendment Seconds A</a></h3>
+    <ol>
+        <li>Wouter Verhelst [<a href="mailto:wouter@debian.org">wouter@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2015/09/msg00018.html'>mail</a>] </li>
+        <li>Jakub Wilk [<a href="mailto:jwilk@debian.org">jwilk@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2015/09/msg00020.html'>mail</a>] </li>
+        <li>Didier Raboud [<a href="mailto:odyx@debian.org">odyx@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2015/09/msg00021.html'>mail</a>] </li>
+        <li>Scott Kitterman [<a href="mailto:kitterman@debian.org">kitterman@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2015/09/msg00025.html'>mail</a>] </li>
+        <li>Philip Hands [<a href="mailto:philh@debian.org">philh@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2015/09/msg00026.html'>mail</a>] </li>
+    </ol>
+<h3><a name="amendmenttexta" id="amendmenttexta">Amendment Text A</a></h3>
+	<h3>Choice 2</h3>
+<pre>
+   Constitutional Amendment: TC Supermajority Fix
+
+   Prior to the Clone Proof SSD GR in June 2003, the Technical
+   Committee could overrule a Developer with a supermajority of 3:1.
+
+   Unfortunately, the definition of supermajorities in the SSD GR has a
+   off-by-one  error.  In the new text a supermajority requirement is met
+   only if the ratio of votes in favour to votes against is strictly
+   greater than the supermajority ratio.
+
+   In the context of the Technical Committee voting to overrule a
+   developer that means that it takes 4 votes to overcome a single
+   dissenter.  And with a maximum committee size of 8, previously two
+   dissenters could be outvoted by all 6 remaining members; now that
+   is no longer possible.
+
+   This change was unintentional, was contrary to the original intent
+   of the Constitution, and is unhelpful.
+
+   For the avoidance of any doubt, this change does not affect any
+   votes (whether General Resolutions or votes in the Technical
+   Committee) in progress at the time the change is made.
+
+   Therefore, amend the Debian Constitution as follows:
+
+Index: doc/constitution.wml
+===================================================================
+--- doc/constitution.wml        (revision 10982)
++++ doc/constitution.wml        (working copy)
+@@ -913,7 +913,7 @@
+              &lt;/li&gt;
+              &lt;li&gt;
+                   An option A defeats the default option D by a majority
+-                  ratio N, if V(A,D) is strictly greater than N * V(D,A).
++                  ratio N, if V(A,D) is greater or equal to  N * V(D,A) and V(A,D) is strictly greater than V(D,A).
+              &lt;/li&gt;
+              &lt;li&gt;
+                   If a supermajority of S:1 is required for A, its majority ratio
+
+
+
+
+
+
+   Constitutional Amendment: Fix duplicate section numbering.
+
+   The current Debian Constitution has two sections numbered A.1.
+   This does not currently give rise to any ambiguity but it is
+   undesirable.
+
+   Fix this with the following semantically neutral amendment:
+
+    - Renumber the first section A.1 to A.0.
+</pre>
+<h3><a name="majorityreq" id="majorityreq">Majority Requirement</a></h3>
+    <p>
+      The proposals need a 3:1 majority
+    </p>
+    <hr>
+      <address>
+        <a href="mailto:secretary@debian.org">Debian Project Secretary</a>
+      </address>
+</div> <!-- end maincol -->
+<div class="clr"></div>
+</div> <!-- end content -->
+<div id="footer">
+<hr class="hidecss">
+<p>Back to the <a href="../../">Debian Project homepage</a>.</p>
+<hr>
+<!--UdmComment-->
+<div id="pageLang">
+<div id="langSelector">
+This page is also available in the following languages:
+<div id="langContainer">
+<select onchange="location = this.value;">
+<option value="" disabled selected>Select your language</option>
+ <option value="vote_002.fr.html" title="French" lang="fr">fran&ccedil;ais</option>
+</select>
+</div>
+How to set <a href="../../intro/cn">the default document language</a>
+</div></div><!--/UdmComment-->
+<hr>
+<div id="footermap">
+<!--UdmComment-->
+<p><strong><a href="/">Home</a></strong></p>
+    <ul id="footermap-cola">
+		<li><a href="../../intro/about">About</a>
+		  <ul>
+		  <li><a href="../../social_contract">Social Contract</a></li>
+		  <li><a href="../../code_of_conduct">Code of Conduct</a></li>
+		  <li><a href="../../intro/free">Free Software</a></li>
+          <li><a href="../../legal">Legal Info</a></li>
+		  </ul>
+		</li>
+        <li><a href="../../intro/help">Help Debian</a></li>
+    </ul>
+	<ul id="footermap-colb">
+			<li><a href="../../distrib/">Getting Debian</a>
+			  <ul>
+			  <li><a href="../../distrib/netinst">Network install</a></li>
+			  <li><a href="../../CD/">CD/USB ISO images</a></li>
+            <li><a href="../../blends/">Pure Blends</a></li>
+			<li><a href="../../distrib/packages">Debian Packages</a></li>
+			<li><a href="../../devel/">Developers' Corner</a></li>
+			  </ul>
+			</li>
+	</ul>
+	<ul id="footermap-colc">
+		<li><a href="../../News/">News</a>
+		  <ul>
+		  <li><a href="../../News/weekly/">Project News</a></li>
+		  <li><a href="../../events/">Events</a></li>
+		  </ul>
+		</li>
+    <li><a href="../../doc/">Documentation</a>
+      <ul>
+      <li><a href="../../releases/">Release Info</a></li>
+      <li><a href="https://wiki.debian.org/">Debian Wiki</a></li>
+      </ul>
+    </li>
+   </ul>
+   <ul id="footermap-cold">
+    <li><a href="../../support">Support</a>
+	  <ul>
+			  <li><a href="../../international/">Debian International</a></li>
+			  <li><a href="../../security/">Security Information</a></li>
+			  <li><a href="../../Bugs/">Bug reports</a></li>
+			  <li><a href="../../MailingLists/">Mailing Lists</a></li>
+      </ul>
+    </li>
+</ul>
+<ul id="footermap-cole">
+  <li><a href="../../sitemap">Site map</a></li>
+  <li><a href="https://search.debian.org/">Search</a></li>
+  <li><a href="https://bits.debian.org">The Debian Blog</a></li>
+  <li><a href="https://micronews.debian.org">Debian Micronews</a></li>
+  <li><a href="https://planet.debian.org">Debian Planet</a></li>
+</ul>
+<!--/UdmComment-->
+</div> <!-- end footermap -->
+<div id="fineprint">
+<!--UdmComment-->
+  <p>See our <a href="../../contact">contact page</a> to get in touch. Web site source code is <a href="https://salsa.debian.org/webmaster-team/webwml">available</a>.</p>
+<p>
+Last Modified: Fri, Jul 24 20:17:23 UTC 2026
+&emsp;
+Last Built: Sun, Oct 18 03:32:11 UTC 2026
+  <br>
+  Copyright &copy; 2015-2026 <a href="https://www.spi-inc.org/">SPI</a> and others; See <a href="../../license" rel="copyright">license terms</a><br>
+  Debian is a registered <a href="../../trademark">trademark</a> of Software in the Public Interest, Inc.
+</p>
+<!--/UdmComment-->
+</div>
+</div> <!-- end footer -->
+</body>
+</html>

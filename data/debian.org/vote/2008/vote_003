@@ -1,0 +1,947 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>    General Resolution: Lenny and resolving DFSG violations </title>
+  <link rel="author" href="mailto:webmaster@debian.org">
+  <meta name="Generator" content="WML 2.32.0">
+  <meta name="Modified" content="2026-10-18 03:31:48">
+  <meta name="viewport" content="width=device-width">
+  <meta name="mobileoptimized" content="300">
+  <meta name="HandheldFriendly" content="true">
+<link href="../../debian.css" rel="stylesheet" type="text/css">
+  <link href="../../debian-en.css" rel="stylesheet" type="text/css" media="all">
+<link rel="search" type="application/opensearchdescription+xml" title="Debian website search" href="../../search.en.xml">
+</head>
+<body>
+<div id="header">
+  <div id="upperheader">
+    <div id="logo">
+    <a href="../../" title="Debian Home"><img src="../../Pics/openlogo-50.png" alt="Debian" width="50" height="61"></a>
+    </div> <!-- end logo -->
+    <div id="searchbox">
+      <form name="p" method="get" action="https://search.debian.org/cgi-bin/omega">
+      <p>
+<input type="hidden" name="DB" value="en">
+        <input name="P" value="" size="14">
+        <input type="submit" value="Search">
+      </p>
+      </form>
+    </div>   <!-- end sitetools -->
+  </div> <!-- end upperheader -->
+  <!--UdmComment-->
+  <div id="navbar">
+    <p class="hidecss"><a href="#content">Skip Quicknav</a></p>
+    <ul>
+      <!-- Link to Debian's own Social Media resources -->
+      <li><a href="https://bits.debian.org/" title="Bits from Debian">Blog</a></li>
+      <li><a href="https://micronews.debian.org" title="Micronews from Debian">Micronews</a></li>
+      <li><a href="https://planet.debian.org/" title="The Planet of Debian">Planet</a></li>
+      <li><a href="https://wiki.debian.org/" title="The Debian Wiki">Wiki</a></li>
+    </ul>
+  </div> <!-- end navbar -->
+<p id="breadcrumbs"><a href="./../">Debian Voting Information</a>
+ &#x2F; <a href="./">2008</a>
+ &#x2F;
+General Resolution: Lenny and resolving DFSG violations</p>
+</div> <!-- end header -->
+<!--/UdmComment-->
+<div id="content">
+<div id="second-nav">
+<!--UdmComment-->
+	<ul class="votemenu">
+	<li>Home
+	<ul>
+	 <li><a href="../../vote/">Home&nbsp;Vote&nbsp;Page</a></li>
+	</ul>
+	</li>
+	<li>How&nbsp;To
+	<ul>
+	<li><a href="../../vote/howto_proposal">Submit&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_proposal#amend">Amend&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_follow">Follow&nbsp;a&nbsp;Proposal</a></li>
+	<!-- <li><a href="howto_vote">&bull;&nbsp;Vote</a></li>
+		<li>*<a href="howto_result">Read&nbsp;a&nbsp;Result</a></li> -->
+	</ul>
+	</li>
+	<li>Decided<ul><li><a href="../../vote/2026/vote_002">General Resolution: LLM usage in Debian</a></li>
+<li><a href="../../vote/2026/vote_001">Debian Project Leader Elections 2026</a></li>
+<li><a href="../../vote/2025/vote_001">Debian Project Leader Elections 2025</a></li>
+<li><a href="../../vote/2024/vote_001">Debian Project Leader Elections 2024</a></li>
+<li><a href="../../vote/2023/vote_002">General Resolution: Statement about the EU Legislation "Cyber Resilience Act and Product Liability Directive"</a></li>
+<li><a href="../../vote/2023/vote_001">Debian Project Leader Elections 2023</a></li>
+<li><a href="../../vote/2022/vote_003">General Resolution: non-free firmware</a></li>
+<li><a href="../../vote/2022/vote_002">Debian Project Leader Elections 2022</a></li>
+<li><a href="../../vote/2022/vote_001">General Resolution: Voting secrecy</a></li>
+<li><a href="../../vote/2021/vote_003">General Resolution: Change the resolution process</a></li>
+<li><a href="../../vote/2021/vote_002">General Resolution: Statement regarding Richard Stallman's readmission to the FSF board</a></li>
+<li><a href="../../vote/2021/vote_001">Debian Project Leader Elections 2021</a></li>
+<li><a href="../../vote/2020/vote_001">Debian Project Leader Elections 2020</a></li>
+<li><a href="../../vote/2019/vote_002">General Resolution: Init systems and systemd</a></li>
+<li><a href="../../vote/2019/vote_001">Debian Project Leader Elections 2019</a></li>
+<li><a href="../../vote/2018/vote_001">Debian Project Leader Elections 2018</a></li>
+<li><a href="../../vote/2017/vote_001">Debian Project Leader Elections 2017</a></li>
+<li><a href="../../vote/2016/vote_004">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_003">General Resolution: Replace "Chairman" with "Chair" throughout the Debian Constitution</a></li>
+<li><a href="../../vote/2016/vote_002">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_001">Debian Project Leader Elections 2016</a></li>
+<li><a href="../../vote/2015/vote_003">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2015/vote_001">Debian Project Leader Elections 2015</a></li>
+<li><a href="../../vote/2014/vote_004">General Resolution: Limiting the term of the technical committee members</a></li>
+<li><a href="../../vote/2014/vote_003">General Resolution: init system coupling</a></li>
+<li><a href="../../vote/2014/vote_002">General Resolution: code of conduct</a></li>
+<li><a href="../../vote/2014/vote_001">Debian Project Leader Elections 2014</a></li>
+<li><a href="../../vote/2013/vote_001">Debian Project Leader Elections 2013</a></li>
+<li><a href="../../vote/2012/vote_002">General Resolution: Diversity statement</a></li>
+<li><a href="../../vote/2012/vote_001">Debian Project Leader Elections 2012</a></li>
+<li><a href="../../vote/2011/vote_001">Debian Project Leader Elections 2011</a></li>
+<li><a href="../../vote/2010/vote_002">General Resolution: Debian project members</a></li>
+<li><a href="../../vote/2010/vote_001">Debian Project Leader Elections 2010</a></li>
+<li><a href="../../vote/2009/vote_001">Debian Project Leader Elections 2009</a></li>
+<li><a href="../../vote/2008/vote_003">General Resolution: Lenny and resolving DFSG violations</a></li>
+<li><a href="../../vote/2008/vote_002">General Resolution: Project membership procedures</a></li>
+<li><a href="../../vote/2008/vote_001">Debian Project Leader Elections 2008</a></li>
+<li><a href="../../vote/2007/vote_004">Constitutional amendment: reduce the length of DPL election process</a></li>
+<li><a href="../../vote/2007/vote_003">General Resolution: Endorse the concept of Debian Maintainers</a></li>
+<li><a href="../../vote/2007/vote_002">General Resolution: Altering package upload rules</a></li>
+<li><a href="../../vote/2007/vote_001">Debian Project Leader Elections 2007</a></li>
+<li><a href="../../vote/2006/vote_007">General Resolution: Handling source-less firmware in the Linux kernel</a></li>
+<li><a href="../../vote/2006/vote_006">General Resolution: Re-affirm support to the Debian Project Leader</a></li>
+<li><a href="../../vote/2006/vote_005">General Resolution: Recall the project leader</a></li>
+<li><a href="../../vote/2006/vote_004">General Resolution: Position statement clarifying DFSG #2</a></li>
+<li><a href="../../vote/2006/vote_003">Constitutional Amendment General Resolution: Handling assets for the project</a></li>
+<li><a href="../../vote/2006/vote_002">Debian Project Leader Elections 2006</a></li>
+<li><a href="../../vote/2006/vote_001">General Resolution: Why the GNU Free Documentation License is not suitable for Debian main</a></li>
+<li><a href="../../vote/2005/vote_002">General Resolution: Declassification of debian-private list archives</a></li>
+<li><a href="../../vote/2005/vote_001">Debian Project Leader Elections 2005</a></li>
+<li><a href="../../vote/2004/vote_004">General Resolution: Sarge Release Schedule in view of GR 2004-003</a></li>
+<li><a href="../../vote/2004/vote_003">General Resolution: Editorial amendments to the social contract</a></li>
+<li><a href="../../vote/2004/vote_002">General Resolution: Status of the non-free section</a></li>
+<li><a href="../../vote/2004/vote_001">Debian Project Leader Elections 2004</a></li>
+<li><a href="../../vote/2003/vote_0003">Constitutional Amendment: Disambiguation of Section 4.1.5</a></li>
+<li><a href="../../vote/2003/vote_0002">Constitutional Amendment: Condorcet/Clone Proof SSD Voting Method </a></li>
+<li><a href="../../vote/2003/vote_0001">Debian Project Leader Elections 2003</a></li>
+<li><a href="../../vote/2002/vote_0001">Debian Project Leader Elections 2002</a></li>
+<li><a href="../../vote/2001/vote_0001">Leader Elections 2001</a></li>
+<li><a href="../../vote/2000/vote_0007">Leader Elections 2000</a></li>
+<li><a href="../../vote/1999/vote_0005">Swap Logos</a></li>
+<li><a href="../../vote/1999/vote_0004">New Logo</a></li>
+<li><a href="../../vote/1999/vote_0002">Logo License</a></li>
+<li><a href="../../vote/1999/vote_0001">Leader Elections 1999</a></li>
+<li><a href="../../vote/1999/vote_0000">Constitution</a></li>
+</ul></li><li>Withdrawn<ul><li><a href="../../vote/2025/vote_002">General Resolution: Interpretation of DFSG on Artificial Intelligence (AI) Models</a></li>
+<li><a href="../../vote/2024/vote_002">General Resolution: tag2upload</a></li>
+<li><a href="../../vote/2015/vote_002">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2009/vote_002">General Resolution: Sponsorship requirements for General Resolutions</a></li>
+<li><a href="../../vote/2004/vote_005">General Resolution: Force AMD64 architecture into Sarge</a></li>
+<li><a href="../../vote/2001/vote_0002">IRC as a Debian communication channel</a></li>
+</ul></li><li>Other<ul><li><a href="../../vote/2000/vote_0011">Superseded: Constitutional amendment: Smith/Condorcet vote tallying</a></li>
+<li><a href="../../vote/2000/vote_0010">Superseded: Constitutional amendment: alternate disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0009">Superseded: Constitutional amendment: disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0008">Superseded: Non-free Archive Removal</a></li>
+</ul></li>
+	</ul>
+	<!--/UdmComment-->
+</div> <!-- end second-nav -->
+<div id="maincol">
+    <h1>General Resolution: Lenny and resolving DFSG violations</h1>
+<ul class="toc">
+  <li><a href="#timeline">Time Line</a></li>
+  <li><a href="#proposera">Proposal A Proposer</a></li>
+  <li><a href="#secondsa">Proposal A Seconds</a></li>
+  <li><a href="#texta">Proposal A</a></li>
+  <li><a href="#proposerb">Proposal B Proposer</a></li>
+  <li><a href="#secondsb">Proposal B Seconds</a></li>
+  <li><a href="#textb">Proposal B</a></li>
+  <li><a href="#proposerc">Proposal C Proposer</a></li>
+  <li><a href="#secondsc">Proposal C Seconds</a></li>
+  <li><a href="#textc">Proposal C</a></li>
+  <li><a href="#proposerd">Proposal D Proposer</a></li>
+  <li><a href="#secondsd">Proposal D Seconds</a></li>
+  <li><a href="#textd">Proposal D</a></li>
+  <li><a href="#proposere">Proposal E Proposer</a></li>
+  <li><a href="#secondse">Proposal E Seconds</a></li>
+  <li><a href="#texte">Proposal E</a></li>
+  <li><a href="#proposerf">Proposal F Proposer</a></li>
+  <li><a href="#secondsf">Proposal F Seconds</a></li>
+  <li><a href="#textf">Proposal F</a></li>
+  <li><a href="#mindiscuss">Minimum Discussion</a></li>
+  <li><a href="#quorum">Quorum</a></li>
+  <li><a href="#statistics">Data and Statistics</a></li>
+  <li><a href="#majorityreq">Majority Requirement</a></li>
+  <li><a href="#outcome">Outcome</a></li>
+</ul>
+<h3><a name="timeline" id="timeline">Time Line</a></h3>
+    <table class="vote" summary="">
+      <tr>
+        <th>Proposal and amendment</th>
+        <td>Friday, 24 Oct 2008</td>
+        <td>Friday, 14 Nov 2008</td>
+      </tr>
+      <tr>
+        <th>Discussion Period:</th>
+        <td>Friday, 14 Nov 2008</td>
+        <td>Wednesday, 10 Dec 2008</td>
+      </tr>
+      <tr>
+        <th>Voting Period</th>
+        <td>00:00:01 UTC on Sunday, 14 Dec 2008</td>
+        <td>23:59:59 UTC on Saturday, 27 Dec 2008</td>
+      </tr>
+    </table>
+<h3><a name="proposera" id="proposera">Proposal A Proposer</a></h3>
+    <p> Robert Millan
+      [<a href="mailto:rmh@debian.org">rmh@debian.org</a>]
+    </p>
+<h3><a name="secondsa" id="secondsa">Proposal A Seconds</a></h3>
+    <ol>
+      <li> Bas Wijnen
+        [<a href="mailto:wijnen@debian.org">wijnen@debian.org</a>]
+      </li>
+      <li> Manoj Srivastava
+        [<a href="mailto:srivasta@debian.org">srivasta@debian.org</a>]
+      </li>
+      <li> Holger Levsen
+        [<a href="mailto:holger@debian.org">holger@debian.org</a>]
+      </li>
+      <li> Peter Samuelson
+        [<a href="mailto:peters@debian.org">peters@debian.org</a>]
+      </li>
+      <li> Hubert Chan
+        [<a href="mailto:uhoreg@debian.org">uhoreg@debian.org</a>]
+      </li>
+      <li> Rémi Vanicat
+        [<a href="mailto:vanicat@debian.org">vanicat@debian.org</a>]
+      </li>
+    </ol>
+<h3><a name="texta" id="texta">Proposal A</a></h3>
+    <p> <strong>Choice 1.</strong><br>
+      The actual text of the resolution is as follows. Please note
+      that this does not include preludes, prologues, any preambles to
+      the resolution, post-ambles to the resolution, abstracts,
+      fore-words, after-words, rationales, supporting documents,
+      opinion polls, arguments for and against, and any of the other
+      important material you will find on the mailing list
+      archives. Please read the debian-vote mailing list archives for
+      details.
+    </p>
+    <h2>Reaffirm the Social Contract</h2>
+    <ol>
+       <li>
+          <p>
+             We affirm that our Priorities are our users and the free
+             software community (Social Contract #4);
+          </p>
+       </li>
+       <li>
+          <p>
+             We acknowledge that we promised to deliver a 100% free
+             operating system (Social Contract #1);
+          </p>
+       </li>
+       <li>
+          <p>
+              Given that we have known for two previous releases that
+              we have non-free bits in various parts of Debian, and a
+              lot of progress has been made, and we are almost to the
+              point where we can provide a free version of the Debian
+              operating system, we will delay the release of Lenny
+              until such point that the work to free the operating
+              system is complete (to the best of our knowledge as of 1
+              November 2008).
+          </p>
+       </li>
+    </ol>
+<h3><a name="proposerb" id="proposerb">Proposal B Proposer</a></h3>
+    <p> Robert Millan
+      [<a href="mailto:rmh@debian.org">rmh@debian.org</a>]
+    </p>
+<h3><a name="secondsb" id="secondsb">Proposal B Seconds</a></h3>
+    <ol>
+      <li> Manoj Srivastava
+        [<a href="mailto:srivasta@debian.org">srivasta@debian.org</a>]
+      </li>
+      <li> Holger Levsen
+        [<a href="mailto:holger@debian.org">holger@debian.org</a>]
+      </li>
+      <li> Peter Samuelson
+        [<a href="mailto:peters@debian.org">peters@debian.org</a>]
+      </li>
+      <li> Hubert Chan
+        [<a href="mailto:uhoreg@debian.org">uhoreg@debian.org</a>]
+      </li>
+      <li> Rémi Vanicat
+        [<a href="mailto:vanicat@debian.org">vanicat@debian.org</a>]
+      </li>
+      <li> Frans Pop
+        [<a href="mailto:fjp@debian.org">fjp@debian.org</a>]
+      </li>
+    </ol>
+<h3><a name="textb" id="textb">Proposal B</a></h3>
+    <p> <strong>Choice 2.</strong><br>
+      The actual text of the resolution is as follows. Please note
+      that this does not include preludes, prologues, any preambles to
+      the resolution, post-ambles to the resolution, abstracts,
+      fore-words, after-words, rationales, supporting documents,
+      opinion polls, arguments for and against, and any of the other
+      important material you will find on the mailing list
+      archives. Please read the debian-vote mailing list archives for
+      details.
+    </p>
+    <h2>Allow Lenny to release with proprietary firmware</h2>
+    <ol>
+       <li>
+          <p>
+              We affirm that our Priorities are our users and the free
+              software community (Social Contract #4);
+          </p>
+       </li>
+       <li>
+          <p>
+              We acknowledge that there is a lot of progress in the
+              kernel firmware issue; most of the issues that were
+              outstanding at the time of the last stable release have
+              been sorted out. However, new issues in the kernel
+              sources have cropped up fairly recently, and these new
+              issues have not yet been addressed;
+          </p>
+       </li>
+       <li>
+          <p>
+              We assure the community that there will be no
+              regressions in the progress made for freedom in the
+              kernel distributed by Debian relative to the Etch
+              release in Lenny (to the best of our knowledge as of 1
+              November 2008);
+          </p>
+       </li>
+       <li>
+          <p>
+              We give priority to the timely release of Lenny over
+              sorting every bit out; for this reason, we will treat
+              removal of sourceless firmware as a best-effort process,
+              and deliver firmware as part of Debian Lenny as long as
+              we are legally allowed to do so.
+          </p>
+       </li>
+    </ol>
+<h3><a name="proposerc" id="proposerc">Proposal C Proposer</a></h3>
+    <p> Robert Millan
+      [<a href="mailto:rmh@debian.org">rmh@debian.org</a>]
+    </p>
+<h3><a name="secondsc" id="secondsc">Proposal C Seconds</a></h3>
+    <ol>
+      <li> Holger Levsen
+        [<a href="mailto:holger@debian.org">holger@debian.org</a>]
+      </li>
+      <li> Peter Samuelson
+        [<a href="mailto:peters@debian.org">peters@debian.org</a>]
+      </li>
+      <li> Hubert Chan
+        [<a href="mailto:uhoreg@debian.org">uhoreg@debian.org</a>]
+      </li>
+      <li> Rémi Vanicat
+        [<a href="mailto:vanicat@debian.org">vanicat@debian.org</a>]
+      </li>
+      <li> Frans Pop
+        [<a href="mailto:fjp@debian.org">fjp@debian.org</a>]
+      </li>
+    </ol>
+<h3><a name="textc" id="textc">Proposal C</a></h3>
+    <p> <strong>Choice 3.</strong><br>
+      The actual text of the resolution is as follows. Please note
+      that this does not include preludes, prologues, any preambles to
+      the resolution, post-ambles to the resolution, abstracts,
+      fore-words, after-words, rationales, supporting documents,
+      opinion polls, arguments for and against, and any of the other
+      important material you will find on the mailing list
+      archives. Please read the debian-vote mailing list archives for
+      details.
+    </p>
+    <h2>Allow Lenny to release with DFSG violations</h2>
+    <ol>
+       <li>
+          <p>
+              We affirm that our Priorities are our users and the free
+              software community (Social Contract #4);
+          </p>
+       </li>
+       <li>
+          <p>
+              We acknowledge that there is a lot of progress in the
+              kernel firmware issue; however, they are not yet finally
+              sorted out;
+          </p>
+       </li>
+       <li>
+          <p>
+              We assure the community that there will be no
+              regressions in the progress made for freedom in the
+              kernel distributed by Debian relative to the Etch
+              release in Lenny (to the best of our knowledge as of 1
+              November 2008);
+          </p>
+       </li>
+       <li>
+          <p>
+              We give priority to the timely release of Lenny over
+              sorting every bit out; for this reason, we will treat
+              removal of sourceless firmware as a best-effort process.
+          </p>
+       </li>
+    </ol>
+<h3><a name="proposerd" id="proposerd">Proposal D Proposer</a></h3>
+    <p> Andreas Barth
+      [<a href="mailto:aba@debian.org">aba@debian.org</a>]
+    </p>
+<h3><a name="secondsd" id="secondsd">Proposal D Seconds</a></h3>
+    <ol>
+      <li> Holger Levsen
+        [<a href="mailto:holger@debian.org">holger@debian.org</a>]
+      </li>
+      <li> Rémi Vanicat
+        [<a href="mailto:vanicat@debian.org">vanicat@debian.org</a>]
+      </li>
+      <li> Alexander Reichle-Schmehl
+        [<a href="mailto:tolimar@debian.org">tolimar@debian.org</a>]
+      </li>
+      <li> Reinhard Tartler
+        [<a href="mailto:siretart@debian.org">siretart@debian.org</a>]
+      </li>
+      <li> Bernd Zeimetz
+        [<a href="mailto:bzed@debian.org">bzed@debian.org</a>]
+      </li>
+      <li> Neil McGovern
+        [<a href="mailto:neilm@debian.org">neilm@debian.org</a>]
+      </li>
+    </ol>
+<h3><a name="textd" id="textd">Proposal D</a></h3>
+    <p> <strong>Choice 4.</strong><br>
+      The actual text of the resolution is as follows. Please note
+      that this does not include preludes, prologues, any preambles to
+      the resolution, post-ambles to the resolution, abstracts,
+      fore-words, after-words, rationales, supporting documents,
+      opinion polls, arguments for and against, and any of the other
+      important material you will find on the mailing list
+      archives. Please read the debian-vote mailing list archives for
+      details.
+    </p>
+    <h2>Empower the release team to decide about allowing DFSG violations</h2>
+    <ol>
+       <li>
+          <p>
+              Debian's priorities are our users and free software. We
+              don't trade them against each other. However, while
+              getting a release out of the door, decisions need to be
+              made about how to get a rock-stable release of the high
+              quality Debian is known for, release more or less on
+              time, and to minimize the usage of problematic
+              software. We acknowledge that there is more than just
+              one minefield our core developers and the release team
+              are working on.
+          </p>
+       </li>
+       <li>
+          <p>
+              We as Developers at large continue to trust our release
+              team to follow all these goals, and therefore encourage
+              them to continue making case-by-case decisions as they
+              consider fit, and if necessary we authorize these
+              decisions.
+          </p>
+       </li>
+    </ol>
+<h3><a name="proposere" id="proposere">Proposal E Proposer</a></h3>
+    <p> Manoj Srivastava
+      [<a href="mailto:srivasta@debian.org">srivasta@debian.org</a>]
+    </p>
+<h3><a name="secondse" id="secondse">Proposal E Seconds</a></h3>
+    <ol>
+      <li> Robert Millan
+         [<a href="mailto:rmh@debian.org">rmh@debian.org</a>]
+      </li>
+      <li> Bernd Zeimetz
+        [<a href="mailto:bzed@debian.org">bzed@debian.org</a>]
+      </li>
+      <li> Neil McGovern
+        [<a href="mailto:neilm@debian.org">neilm@debian.org</a>]
+      </li>
+      <li> John H. Robinson, IV
+        [<a href="mailto:jaqque@debian.org">jaqque@debian.org</a>]
+      </li>
+      <li> Lars Wirzenius
+        [<a href="mailto:liw@debian.org">liw@debian.org</a>]
+      </li>
+      <li> Damyan Ivanov
+        [<a href="mailto:dmn@debian.org">dmn@debian.org</a>]
+      </li>
+      <li> Colin Tuckley
+        [<a href="mailto:colin@debian.org">colin@debian.org</a>]
+      </li>
+      <li> Pierre Habouzit
+        [<a href="mailto:madcoder@debian.org">madcoder@debian.org</a>]
+      </li>
+      <li> Gunnar Wolf
+        [<a href="mailto:gwolf@debian.org">gwolf@debian.org</a>]
+      </li>
+    </ol>
+<h3><a name="texte" id="texte">Proposal E</a></h3>
+    <p> <strong>Choice 5.</strong><br>
+      The actual text of the resolution is as follows. Please note
+      that this does not include preludes, prologues, any preambles to
+      the resolution, post-ambles to the resolution, abstracts,
+      fore-words, after-words, rationales, supporting documents,
+      opinion polls, arguments for and against, and any of the other
+      important material you will find on the mailing list
+      archives. Please read the debian-vote mailing list archives for
+      details.
+    </p>
+    <h2>Assume blobs comply with GPL unless proven otherwise</h2>
+    <ol>
+       <li>
+          <p>
+              We affirm that our Priorities are our users and the free
+              software community (Social Contract #4);
+          </p>
+       </li>
+       <li>
+          <p>
+              We acknowledge that there is a lot of progress in the
+              kernel firmware issue; most of the issues that were
+              outstanding at the time of the last stable release have
+              been sorted out. However, new issues in the kernel
+              sources have cropped up fairly recently, and these new
+              issues have not yet been addressed;
+          </p>
+       </li>
+       <li>
+          <p>
+              We assure the community that there will be no
+              regressions in the progress made for freedom in the
+              kernel distributed by Debian relative to the Etch
+              release in Lenny (to the best of our knowledge as of 1
+              November 2008);
+          </p>
+       </li>
+       <li>
+          <p>
+              We give priority to the timely release of Lenny over
+              sorting every bit out; for this reason, we will treat
+              removal of sourceless firmware as a best-effort process,
+              and deliver firmware as part of Debian Lenny as long as
+              we are legally allowed to do so, and the firmware is
+              distributed upstream under a license that complies with
+              the DFSG.
+          </p>
+       </li>
+    </ol>
+<h3><a name="proposerf" id="proposerf">Proposal F Proposer</a></h3>
+    <p> Peter Palfrader
+      [<a href="mailto:weasel@debian.org">weasel@debian.org</a>]
+    </p>
+<h3><a name="secondsf" id="secondsf">Proposal F Seconds</a></h3>
+    <ol>
+      <li> Holger Levsen
+        [<a href="mailto:holger@debian.org">holger@debian.org</a>]
+      </li>
+      <li> Alexander Reichle-Schmehl
+        [<a href="mailto:tolimar@debian.org">tolimar@debian.org</a>]
+      </li>
+      <li> Bernd Zeimetz
+        [<a href="mailto:bzed@debian.org">bzed@debian.org</a>]
+      </li>
+      <li> Frans Pop
+        [<a href="mailto:fjp@debian.org">fjp@debian.org</a>]
+      </li>
+      <li> Colin Tuckley
+        [<a href="mailto:colin@debian.org">colin@debian.org</a>]
+      </li>
+      <li> Russ Allbery
+        [<a href="mailto:rra@debian.org">rra@debian.org</a>]
+      </li>
+      <li> Martin Michlmayr
+        [<a href="mailto:tbm@debian.org">tbm@debian.org</a>]
+      </li>
+      <li> Steve McIntyre
+        [<a href="mailto:93sam@debian.org">93sam@debian.org</a>]
+      </li>
+      <li> Mark Hymers
+        [<a href="mailto:mhy@debian.org">mhy@debian.org</a>]
+      </li>
+      <li> Moritz Muehlenhoff
+        [<a href="mailto:jmm@debian.org">jmm@debian.org</a>]
+      </li>
+      <li> Ben Pfaff
+        [<a href="mailto:pfaffben@debian.org">pfaffben@debian.org</a>]
+      </li>
+      <li> Cyril Brulebois
+        [<a href="mailto:kibi@debian.org">kibi@debian.org</a>]
+      </li>
+      <li> Stephen Gran
+        [<a href="mailto:sgran@debian.org">sgran@debian.org</a>]
+      </li>
+      <li> Andreas Barth
+        [<a href="mailto:aba@debian.org">aba@debian.org</a>]
+      </li>
+      <li> Loïc Minier
+        [<a href="mailto:lool@debian.org">lool@debian.org</a>]
+      </li>
+      <li> Patrick Schoenfeld
+        [<a href="mailto:schoenfeld@debian.org">schoenfeld@debian.org</a>]
+      </li>
+      <li> Philipp Kern
+        [<a href="mailto:pkern@debian.org">pkern@debian.org</a>]
+      </li>
+    </ol>
+<h3><a name="textf" id="textf">Proposal F</a></h3>
+    <p> <strong>Choice 6.</strong><br>
+      The actual text of the resolution is as follows. Please note
+      that this does not include preludes, prologues, any preambles to
+      the resolution, post-ambles to the resolution, abstracts,
+      fore-words, after-words, rationales, supporting documents,
+      opinion polls, arguments for and against, and any of the other
+      important material you will find on the mailing list
+      archives. Please read the debian-vote mailing list archives for
+      details.
+    </p>
+    <h2>Exclude source requirements for firmware (defined)</h2>
+    <p>
+        Firmware is data such as microcode or lookup tables that
+        is loaded into hardware components in order to make the
+        component function properly. It is not code that is run
+        on the host CPU.
+    </p>
+    <p>
+        Unfortunately such firmware often is distributed as so-called blobs,
+        with no source or further documentation that lets us learn how it works
+        or interacts with the hardware in question. By excluding such firmware
+        from Debian we exclude users that require such devices from installing
+        our operating system, or make it unnecessarily hard for them.
+    </p>
+    <ol>
+       <li>
+          <p>
+              firmware in Debian does not have to come with source.
+              While we do prefer firmware that comes with source and
+              documentation we will not require it,
+          </p>
+       </li>
+       <li>
+          <p>
+              we however do require all other freedoms that the DFSG
+              mandate from components of our operating system, and
+          </p>
+       </li>
+       <li>
+          <p>
+              such firmware can and should be part of our official installation media.
+          </p>
+       </li>
+    </ol>
+<h3><a name="mindiscuss" id="mindiscuss">Minimum Discussion</a></h3>
+    <p>
+     As per <a href="https://lists.debian.org/debian-vote/2008/11/msg00046.html">
+     the request from the Debian Project Leader</a>, the voting and
+     minimum discussion periods are one week long.
+    </p>
+<h3><a name="quorum" id="quorum">Quorum</a></h3>
+     <p>
+        With the current list of <a href="vote_003_quorum.log">voting
+          developers</a>, we have:
+     </p>
+    <pre>
+ Current Developer Count = 1018
+ Q ( sqrt(#devel) / 2 ) = 15.9530561335438
+ K min(5, Q )           = 5
+ Quorum  (3 x Q )       = 47.8591684006314
+    </pre>
+              <h3>Quorum</h3>
+              <ul>
+                <li>Option1 Reached quorum: 117 &gt; 47.8591684006314</li>
+                <li>Option2 Reached quorum: 224 &gt; 47.8591684006314</li>
+                <li>Option3 Reached quorum: 204 &gt; 47.8591684006314</li>
+                <li>Option4 Reached quorum: 194 &gt; 47.8591684006314</li>
+                <li>Option5 Reached quorum: 191 &gt; 47.8591684006314</li>
+                <li>Option6 Reached quorum: 180 &gt; 47.8591684006314</li>
+              </ul>
+<h3><a name="statistics" id="statistics">Data and Statistics</a></h3>
+    <p>
+      For this GR, as always
+      <a href="suppl_003_stats">statistics</a>
+      shall be gathered about ballots received and acknowledgements
+      sent periodically during the voting period. Additionally, the
+      list of
+      <a href="vote_003_voters.txt">voters</a>
+      would be made publicly available. Also, the
+      <a href="vote_003_tally.txt">tally sheet</a>
+      may also be viewed after to voting is done (Note that
+	  while the vote is in progress it is a dummy tally sheet).
+	  Until these are published,
+	  <a href='http://master.debian.org/~secretary/gr_lenny'>live stats</a>
+	  are available.
+    </p>
+<h3><a name="majorityreq" id="majorityreq">Majority Requirement</a></h3>
+    <p>
+      Amendments A (choice 2), B (choice 3), C (choice 4), and E
+      (choice 6) supersede foundation documents, temporarily or
+      permanently, and thus need a 3:1 majority. The Proposal (choice
+      1) and Amendment D (choice 5) require a simple majority to pass.
+    </p>
+              <h3>Majority</h3>
+              <ul>
+                <li>Dropping Option1 because of Majority. 0.518 (117/226) &lt;= 1</li>
+                <li>Dropping Option2 because of Majority. 1.736 (224/129) &lt;= 3</li>
+                <li>Dropping Option3 because of Majority. 1.407 (204/145) &lt;= 3</li>
+                <li>Dropping Option4 because of Majority. 1.268 (194/153) &lt;= 3</li>
+                <li>Option5 passes Majority.
+  1.194 (191/160) &gt;= 1</li>
+                <li>Dropping Option6 because of Majority. 1.065 (180/169) &lt;= 3</li>
+              </ul>
+<h3><a name="outcome" id="outcome">Outcome</a></h3>
+           <p class="center">
+             <a style="margin-left: auto; margin-right: auto;" href="vote_003_results.dot">
+               <img src="vote_003_results.png" alt="Graphical rendering of the results" width="700" height="73">
+               </a>
+           </p>
+             <p>
+               In the graph above, any pink colored nodes imply that
+               the option did not pass majority, the Blue is the
+               winner. The Octagon is used for the options that did
+               not beat the default.
+           </p>
+           <ul>
+<li>Option 1 "Reaffirm the Social Contract"</li>
+<li>Option 2 "Allow Lenny to release with proprietary firmware [3:1]"</li>
+<li>Option 3 "Allow Lenny to release with DFSG violations [3:1]"</li>
+<li>Option 4 "Empower the release team to decide about allowing DFSG violations [3:1]"</li>
+<li>Option 5 "Assume blobs comply with GPL unless proven otherwise"</li>
+<li>Option 6 "Exclude source requirements for firmware (defined) [3:1]"</li>
+<li>Option 7 "Further Discussion"</li>
+           </ul>
+            <p>
+               In the following table, tally[row x][col y] represents
+               the votes that option x received over option y. A
+               <a href="https://en.wikipedia.org/wiki/Schwartz_method">more
+                 detailed explanation of the beat matrix</a> may help in
+               understanding the table. For understanding the Condorcet method, the
+               <a href="https://en.wikipedia.org/wiki/Condorcet_method">Wikipedia
+                 entry</a> is fairly informative.
+           </p>
+           <table class="vote" summary="">
+             <caption class="center"><strong>The Beat Matrix</strong></caption>
+             <tr><th>&nbsp;</th><th colspan="7" class="center">Option</th></tr>
+              <tr>
+                   <th>&nbsp;</th>
+                   <th>    1 </th>
+                   <th>    2 </th>
+                   <th>    3 </th>
+                   <th>    4 </th>
+                   <th>    5 </th>
+                   <th>    6 </th>
+                   <th>    7 </th>
+              </tr>
+                 <tr>
+                   <th>Option 1 </th>
+                   <td>&nbsp;</td>
+                   <td>   46 </td>
+                   <td>   60 </td>
+                   <td>   72 </td>
+                   <td>   73 </td>
+                   <td>   89 </td>
+                   <td>  117 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 2 </th>
+                   <td>  281 </td>
+                   <td>&nbsp;</td>
+                   <td>  160 </td>
+                   <td>  160 </td>
+                   <td>  171 </td>
+                   <td>  177 </td>
+                   <td>  224 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 3 </th>
+                   <td>  255 </td>
+                   <td>   61 </td>
+                   <td>&nbsp;</td>
+                   <td>  125 </td>
+                   <td>  137 </td>
+                   <td>  151 </td>
+                   <td>  204 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 4 </th>
+                   <td>  253 </td>
+                   <td>  121 </td>
+                   <td>  146 </td>
+                   <td>&nbsp;</td>
+                   <td>  160 </td>
+                   <td>  166 </td>
+                   <td>  194 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 5 </th>
+                   <td>  234 </td>
+                   <td>  105 </td>
+                   <td>  128 </td>
+                   <td>  135 </td>
+                   <td>&nbsp;</td>
+                   <td>  136 </td>
+                   <td>  191 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 6 </th>
+                   <td>  220 </td>
+                   <td>  118 </td>
+                   <td>  134 </td>
+                   <td>  125 </td>
+                   <td>  134 </td>
+                   <td>&nbsp;</td>
+                   <td>  180 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 7 </th>
+                   <td>  226 </td>
+                   <td>  129 </td>
+                   <td>  145 </td>
+                   <td>  153 </td>
+                   <td>  160 </td>
+                   <td>  169 </td>
+                   <td>&nbsp;</td>
+                 </tr>
+               </table>
+              <p>
+Looking at row 2, column 1, Allow Lenny to release with proprietary firmware [3:1]<br>
+received 281 votes over Reaffirm the Social Contract<br>
+<br>
+Looking at row 1, column 2, Reaffirm the Social Contract<br>
+received 46 votes over Allow Lenny to release with proprietary firmware [3:1].<br>
+              <h3>Pair-wise defeats</h3>
+              <ul>
+                <li>Option 5 defeats Option 7 by ( 191 - 160) = 31 votes.</li>
+              </ul>
+              <h3>The Schwartz Set contains</h3>
+              <ul>
+                <li>Option 5 "Assume blobs comply with GPL unless proven otherwise"</li>
+              </ul>
+              <h3>The winners</h3>
+              <ul>
+                <li>Option 5 "Assume blobs comply with GPL unless proven otherwise"</li>
+              </ul>
+              <p>
+               Debian uses the Condorcet method for voting.
+               Simplistically, plain Condorcets method
+               can be stated like so : <br>
+               <q>Consider all possible two-way races between candidates.
+                  The Condorcet winner, if there is one, is the one
+                  candidate who can beat each other candidate in a two-way
+                  race with that candidate.</q>
+               The problem is that in complex elections, there may well
+               be a circular relationship in which A beats B, B beats C,
+               and C beats A. Most of the variations on Condorcet use
+               various means of resolving the tie. See
+               <a href="https://en.wikipedia.org/wiki/Cloneproof_Schwartz_Sequential_Dropping">Cloneproof Schwartz Sequential Dropping</a>
+               for details. Debian's variation is spelled out in the
+               <a href="../../devel/constitution">constitution</a>,
+               specifically, A.6.
+              </p>
+    <hr>
+      <address>
+        <a href="mailto:srivasta@debian.org">Manoj Srivastava</a>
+      </address>
+</div> <!-- end maincol -->
+<div class="clr"></div>
+</div> <!-- end content -->
+<div id="footer">
+<hr class="hidecss">
+<p>Back to the <a href="../../">Debian Project homepage</a>.</p>
+<hr>
+<!--UdmComment-->
+<div id="pageLang">
+<div id="langSelector">
+This page is also available in the following languages:
+<div id="langContainer">
+<select onchange="location = this.value;">
+<option value="" disabled selected>Select your language</option>
+ <option value="vote_003.de.html" title="German" lang="de">Deutsch</option>
+ <option value="vote_003.fr.html" title="French" lang="fr">fran&ccedil;ais</option>
+</select>
+</div>
+How to set <a href="../../intro/cn">the default document language</a>
+</div></div><!--/UdmComment-->
+<hr>
+<div id="footermap">
+<!--UdmComment-->
+<p><strong><a href="/">Home</a></strong></p>
+    <ul id="footermap-cola">
+		<li><a href="../../intro/about">About</a>
+		  <ul>
+		  <li><a href="../../social_contract">Social Contract</a></li>
+		  <li><a href="../../code_of_conduct">Code of Conduct</a></li>
+		  <li><a href="../../intro/free">Free Software</a></li>
+          <li><a href="../../legal">Legal Info</a></li>
+		  </ul>
+		</li>
+        <li><a href="../../intro/help">Help Debian</a></li>
+    </ul>
+	<ul id="footermap-colb">
+			<li><a href="../../distrib/">Getting Debian</a>
+			  <ul>
+			  <li><a href="../../distrib/netinst">Network install</a></li>
+			  <li><a href="../../CD/">CD/USB ISO images</a></li>
+            <li><a href="../../blends/">Pure Blends</a></li>
+			<li><a href="../../distrib/packages">Debian Packages</a></li>
+			<li><a href="../../devel/">Developers' Corner</a></li>
+			  </ul>
+			</li>
+	</ul>
+	<ul id="footermap-colc">
+		<li><a href="../../News/">News</a>
+		  <ul>
+		  <li><a href="../../News/weekly/">Project News</a></li>
+		  <li><a href="../../events/">Events</a></li>
+		  </ul>
+		</li>
+    <li><a href="../../doc/">Documentation</a>
+      <ul>
+      <li><a href="../../releases/">Release Info</a></li>
+      <li><a href="https://wiki.debian.org/">Debian Wiki</a></li>
+      </ul>
+    </li>
+   </ul>
+   <ul id="footermap-cold">
+    <li><a href="../../support">Support</a>
+	  <ul>
+			  <li><a href="../../international/">Debian International</a></li>
+			  <li><a href="../../security/">Security Information</a></li>
+			  <li><a href="../../Bugs/">Bug reports</a></li>
+			  <li><a href="../../MailingLists/">Mailing Lists</a></li>
+      </ul>
+    </li>
+</ul>
+<ul id="footermap-cole">
+  <li><a href="../../sitemap">Site map</a></li>
+  <li><a href="https://search.debian.org/">Search</a></li>
+  <li><a href="https://bits.debian.org">The Debian Blog</a></li>
+  <li><a href="https://micronews.debian.org">Debian Micronews</a></li>
+  <li><a href="https://planet.debian.org">Debian Planet</a></li>
+</ul>
+<!--/UdmComment-->
+</div> <!-- end footermap -->
+<div id="fineprint">
+<!--UdmComment-->
+  <p>See our <a href="../../contact">contact page</a> to get in touch. Web site source code is <a href="https://salsa.debian.org/webmaster-team/webwml">available</a>.</p>
+<p>
+Last Modified: Tue, Apr 29 17:19:40 UTC 2014
+&emsp;
+Last Built: Sun, Oct 18 03:31:48 UTC 2026
+  <br>
+  Copyright &copy; 2008-2014 <a href="https://www.spi-inc.org/">SPI</a> and others; See <a href="../../license" rel="copyright">license terms</a><br>
+  Debian is a registered <a href="../../trademark">trademark</a> of Software in the Public Interest, Inc.
+</p>
+<!--/UdmComment-->
+</div>
+</div> <!-- end footer -->
+</body>
+</html>

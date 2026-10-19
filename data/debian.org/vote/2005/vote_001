@@ -1,0 +1,541 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>    Debian Project Leader Elections 2005 </title>
+  <link rel="author" href="mailto:webmaster@debian.org">
+  <meta name="Generator" content="WML 2.32.0">
+  <meta name="Modified" content="2026-10-18 03:31:30">
+  <meta name="viewport" content="width=device-width">
+  <meta name="mobileoptimized" content="300">
+  <meta name="HandheldFriendly" content="true">
+<link href="../../debian.css" rel="stylesheet" type="text/css">
+  <link href="../../debian-en.css" rel="stylesheet" type="text/css" media="all">
+<link rel="search" type="application/opensearchdescription+xml" title="Debian website search" href="../../search.en.xml">
+</head>
+<body>
+<div id="header">
+  <div id="upperheader">
+    <div id="logo">
+    <a href="../../" title="Debian Home"><img src="../../Pics/openlogo-50.png" alt="Debian" width="50" height="61"></a>
+    </div> <!-- end logo -->
+    <div id="searchbox">
+      <form name="p" method="get" action="https://search.debian.org/cgi-bin/omega">
+      <p>
+<input type="hidden" name="DB" value="en">
+        <input name="P" value="" size="14">
+        <input type="submit" value="Search">
+      </p>
+      </form>
+    </div>   <!-- end sitetools -->
+  </div> <!-- end upperheader -->
+  <!--UdmComment-->
+  <div id="navbar">
+    <p class="hidecss"><a href="#content">Skip Quicknav</a></p>
+    <ul>
+      <!-- Link to Debian's own Social Media resources -->
+      <li><a href="https://bits.debian.org/" title="Bits from Debian">Blog</a></li>
+      <li><a href="https://micronews.debian.org" title="Micronews from Debian">Micronews</a></li>
+      <li><a href="https://planet.debian.org/" title="The Planet of Debian">Planet</a></li>
+      <li><a href="https://wiki.debian.org/" title="The Debian Wiki">Wiki</a></li>
+    </ul>
+  </div> <!-- end navbar -->
+<p id="breadcrumbs"><a href="./../">Debian Voting Information</a>
+ &#x2F; <a href="./">2005</a>
+ &#x2F;
+Debian Project Leader Elections 2005</p>
+</div> <!-- end header -->
+<!--/UdmComment-->
+<div id="content">
+<div id="second-nav">
+<!--UdmComment-->
+	<ul class="votemenu">
+	<li>Home
+	<ul>
+	 <li><a href="../../vote/">Home&nbsp;Vote&nbsp;Page</a></li>
+	</ul>
+	</li>
+	<li>How&nbsp;To
+	<ul>
+	<li><a href="../../vote/howto_proposal">Submit&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_proposal#amend">Amend&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_follow">Follow&nbsp;a&nbsp;Proposal</a></li>
+	<!-- <li><a href="howto_vote">&bull;&nbsp;Vote</a></li>
+		<li>*<a href="howto_result">Read&nbsp;a&nbsp;Result</a></li> -->
+	</ul>
+	</li>
+	<li>Decided<ul><li><a href="../../vote/2026/vote_002">General Resolution: LLM usage in Debian</a></li>
+<li><a href="../../vote/2026/vote_001">Debian Project Leader Elections 2026</a></li>
+<li><a href="../../vote/2025/vote_001">Debian Project Leader Elections 2025</a></li>
+<li><a href="../../vote/2024/vote_001">Debian Project Leader Elections 2024</a></li>
+<li><a href="../../vote/2023/vote_002">General Resolution: Statement about the EU Legislation "Cyber Resilience Act and Product Liability Directive"</a></li>
+<li><a href="../../vote/2023/vote_001">Debian Project Leader Elections 2023</a></li>
+<li><a href="../../vote/2022/vote_003">General Resolution: non-free firmware</a></li>
+<li><a href="../../vote/2022/vote_002">Debian Project Leader Elections 2022</a></li>
+<li><a href="../../vote/2022/vote_001">General Resolution: Voting secrecy</a></li>
+<li><a href="../../vote/2021/vote_003">General Resolution: Change the resolution process</a></li>
+<li><a href="../../vote/2021/vote_002">General Resolution: Statement regarding Richard Stallman's readmission to the FSF board</a></li>
+<li><a href="../../vote/2021/vote_001">Debian Project Leader Elections 2021</a></li>
+<li><a href="../../vote/2020/vote_001">Debian Project Leader Elections 2020</a></li>
+<li><a href="../../vote/2019/vote_002">General Resolution: Init systems and systemd</a></li>
+<li><a href="../../vote/2019/vote_001">Debian Project Leader Elections 2019</a></li>
+<li><a href="../../vote/2018/vote_001">Debian Project Leader Elections 2018</a></li>
+<li><a href="../../vote/2017/vote_001">Debian Project Leader Elections 2017</a></li>
+<li><a href="../../vote/2016/vote_004">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_003">General Resolution: Replace "Chairman" with "Chair" throughout the Debian Constitution</a></li>
+<li><a href="../../vote/2016/vote_002">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_001">Debian Project Leader Elections 2016</a></li>
+<li><a href="../../vote/2015/vote_003">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2015/vote_001">Debian Project Leader Elections 2015</a></li>
+<li><a href="../../vote/2014/vote_004">General Resolution: Limiting the term of the technical committee members</a></li>
+<li><a href="../../vote/2014/vote_003">General Resolution: init system coupling</a></li>
+<li><a href="../../vote/2014/vote_002">General Resolution: code of conduct</a></li>
+<li><a href="../../vote/2014/vote_001">Debian Project Leader Elections 2014</a></li>
+<li><a href="../../vote/2013/vote_001">Debian Project Leader Elections 2013</a></li>
+<li><a href="../../vote/2012/vote_002">General Resolution: Diversity statement</a></li>
+<li><a href="../../vote/2012/vote_001">Debian Project Leader Elections 2012</a></li>
+<li><a href="../../vote/2011/vote_001">Debian Project Leader Elections 2011</a></li>
+<li><a href="../../vote/2010/vote_002">General Resolution: Debian project members</a></li>
+<li><a href="../../vote/2010/vote_001">Debian Project Leader Elections 2010</a></li>
+<li><a href="../../vote/2009/vote_001">Debian Project Leader Elections 2009</a></li>
+<li><a href="../../vote/2008/vote_003">General Resolution: Lenny and resolving DFSG violations</a></li>
+<li><a href="../../vote/2008/vote_002">General Resolution: Project membership procedures</a></li>
+<li><a href="../../vote/2008/vote_001">Debian Project Leader Elections 2008</a></li>
+<li><a href="../../vote/2007/vote_004">Constitutional amendment: reduce the length of DPL election process</a></li>
+<li><a href="../../vote/2007/vote_003">General Resolution: Endorse the concept of Debian Maintainers</a></li>
+<li><a href="../../vote/2007/vote_002">General Resolution: Altering package upload rules</a></li>
+<li><a href="../../vote/2007/vote_001">Debian Project Leader Elections 2007</a></li>
+<li><a href="../../vote/2006/vote_007">General Resolution: Handling source-less firmware in the Linux kernel</a></li>
+<li><a href="../../vote/2006/vote_006">General Resolution: Re-affirm support to the Debian Project Leader</a></li>
+<li><a href="../../vote/2006/vote_005">General Resolution: Recall the project leader</a></li>
+<li><a href="../../vote/2006/vote_004">General Resolution: Position statement clarifying DFSG #2</a></li>
+<li><a href="../../vote/2006/vote_003">Constitutional Amendment General Resolution: Handling assets for the project</a></li>
+<li><a href="../../vote/2006/vote_002">Debian Project Leader Elections 2006</a></li>
+<li><a href="../../vote/2006/vote_001">General Resolution: Why the GNU Free Documentation License is not suitable for Debian main</a></li>
+<li><a href="../../vote/2005/vote_002">General Resolution: Declassification of debian-private list archives</a></li>
+<li><a href="../../vote/2005/vote_001">Debian Project Leader Elections 2005</a></li>
+<li><a href="../../vote/2004/vote_004">General Resolution: Sarge Release Schedule in view of GR 2004-003</a></li>
+<li><a href="../../vote/2004/vote_003">General Resolution: Editorial amendments to the social contract</a></li>
+<li><a href="../../vote/2004/vote_002">General Resolution: Status of the non-free section</a></li>
+<li><a href="../../vote/2004/vote_001">Debian Project Leader Elections 2004</a></li>
+<li><a href="../../vote/2003/vote_0003">Constitutional Amendment: Disambiguation of Section 4.1.5</a></li>
+<li><a href="../../vote/2003/vote_0002">Constitutional Amendment: Condorcet/Clone Proof SSD Voting Method </a></li>
+<li><a href="../../vote/2003/vote_0001">Debian Project Leader Elections 2003</a></li>
+<li><a href="../../vote/2002/vote_0001">Debian Project Leader Elections 2002</a></li>
+<li><a href="../../vote/2001/vote_0001">Leader Elections 2001</a></li>
+<li><a href="../../vote/2000/vote_0007">Leader Elections 2000</a></li>
+<li><a href="../../vote/1999/vote_0005">Swap Logos</a></li>
+<li><a href="../../vote/1999/vote_0004">New Logo</a></li>
+<li><a href="../../vote/1999/vote_0002">Logo License</a></li>
+<li><a href="../../vote/1999/vote_0001">Leader Elections 1999</a></li>
+<li><a href="../../vote/1999/vote_0000">Constitution</a></li>
+</ul></li><li>Withdrawn<ul><li><a href="../../vote/2025/vote_002">General Resolution: Interpretation of DFSG on Artificial Intelligence (AI) Models</a></li>
+<li><a href="../../vote/2024/vote_002">General Resolution: tag2upload</a></li>
+<li><a href="../../vote/2015/vote_002">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2009/vote_002">General Resolution: Sponsorship requirements for General Resolutions</a></li>
+<li><a href="../../vote/2004/vote_005">General Resolution: Force AMD64 architecture into Sarge</a></li>
+<li><a href="../../vote/2001/vote_0002">IRC as a Debian communication channel</a></li>
+</ul></li><li>Other<ul><li><a href="../../vote/2000/vote_0011">Superseded: Constitutional amendment: Smith/Condorcet vote tallying</a></li>
+<li><a href="../../vote/2000/vote_0010">Superseded: Constitutional amendment: alternate disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0009">Superseded: Constitutional amendment: disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0008">Superseded: Non-free Archive Removal</a></li>
+</ul></li>
+	</ul>
+	<!--/UdmComment-->
+</div> <!-- end second-nav -->
+<div id="maincol">
+<h1>Debian Project Leader Elections 2005</h1>
+<ul class="toc">
+  <li><a href="#timeline">Time Line</a></li>
+  <li><a href="#nominations">Nominations</a></li>
+  <li><a href="#debate">Debate</a></li>
+  <li><a href="#statistics">Data and Statistics</a></li>
+  <li><a href="#quorum">Quorum</a></li>
+  <li><a href="#majorityreq">Majority Requirement</a></li>
+  <li><a href="#outcome">Outcome</a></li>
+</ul>
+<h3><a name="timeline" id="timeline">Time Line</a></h3>
+            <table class="vote" summary="">
+                <tr>
+                  <th>Nomination period:</th>
+                  <td>February 7<sup>th</sup> 00:00:01 UTC, 2005</td>
+                  <td>February 28<sup>th</sup> 00:00:00 UTC, 2005</td>
+                </tr>
+                <tr>
+                  <th>Campaigning period:</th>
+                  <td>February 28<sup>th</sup> 00:00:01 UTC, 2005</td>
+                  <td>March 21<sup>st</sup> 00:00:00 UTC, 2005</td>
+                </tr>
+                <tr>
+                  <th>Voting period:</th>
+                  <td>March 21<sup>st</sup>, 00:00:01 UTC, 2005</td>
+                  <td>April 11<sup>th</sup>, 00:00:00 UTC, 2005</td>
+                </tr>
+            </table>
+            <p>Please note that the new term for the project leader shall start
+               on April 17<sup>th</sup>, 2005.</p>
+<h3><a name="nominations" id="nominations">Nominations</a></h3>
+            <ol>
+	              <li>Matthew Garrett [<a href="mailto:mjg59@debian.org">mjg59@debian.org</a>]
+			[<a href="platforms/mjg59">platform</a>]	</li>
+	              <li>Andreas Schuldei [<a href="mailto:andreas@debian.org">andreas@debian.org</a>]
+			[<a href="platforms/andreas">platform</a>] </li>
+	              <li>Angus Lees [<a href="mailto:gus@debian.org">gus@debian.org</a>]
+			[<a href="platforms/gus">platform</a>] </li>
+	              <li>Anthony Towns [<a href="mailto:ajt@debian.org">ajt@debian.org</a>]
+			[<a href="platforms/ajt">platform</a>]	</li>
+	              <li>Jonathan Walther [<a href="mailto:krooger@debian.org">krooger@debian.org</a>]
+			[<a href="platforms/krooger">platform</a>]	</li>
+	              <li>Branden Robinson [<a href="mailto:branden@debian.org">branden@debian.org</a>]
+			[<a href="platforms/branden">platform</a>]	</li>
+            </ol>
+             <p>The ballot, when ready, can be received through email by emailing
+                <a href="mailto:ballot@vote.debian.org">ballot@vote.debian.org</a>
+                with the subject leader2005. </p>
+<h3><a name="debate" id="debate">Debate</a></h3>
+            <p>
+              The debates this year were orchestrated by Helen
+              Faulkner and Martin Krafft. I would like to extend the
+              thanks of the project for their stellar work in
+              producing an exemplary debate, despite a record number of
+              candidates participating this year. A
+              <a href="Log-debian-dpl-debate">transcript</a>
+              of the debate is available for review
+            </p>
+	    <p>
+	      The debate was held on March 16<sup>th</sup>, 06:00:00
+	      UTC, 2005, on the IRC server <kbd>irc.debian.org</kbd>.
+	      There were two relevant channels, namely,
+	      <em>#debian-dpl-debate</em>, and
+	      <em>#debian-dpl-discuss</em>. The
+	      <em>#debian-dpl-debate</em> channel was moderated, but
+	      open to anybody who wished to view the proceedings, but
+	      only the candidates, the moderators, and those
+	      participating in the immediate discussion will be able
+	      to post messages. The <em>#debian-dpl-discuss</em>
+	      channel was unmoderated - the intention was for
+	      real-time, unmoderated discussion of the candidates'
+	      responses to the debate questions.
+	    </p>
+	    <p>
+	      Raw logs from the channels, in addition to the
+              <a href="Log-debian-dpl-debate">transcript</a>
+              mentioned above,
+              including the behind the scenes channels used to conduct the debate
+              courtesy of the moderators:
+	    </p>
+	    <ul>
+		<li><a href="Log-debian-dpl-debate.txt">#debian-dpl-debate</a></li>
+		<li><a href="Log-debian-dpl-discuss.txt">#debian-dpl-discuss</a></li>
+		<li><a href="Log-debian-dpl-moderator.txt">#debian-dpl-moderator</a></li>
+		<li><a href="Log-debian-dpl-replies.txt">#debian-dpl-replies</a></li>
+	    </ul>
+<h3><a name="statistics" id="statistics">Data and Statistics</a></h3>
+          <p>
+             This year, like always, some
+             <a href="leader2005_stats">statistics</a>
+	     shall be gathered about ballots received and acknowledgements sent
+	     periodically during the voting period. Additionally, the list of
+             <a href="leader2005_voters.txt">voters</a>
+             shall be recorded. Also, the
+             <a href="leader2005_tally.txt">tally
+             sheet</a> may also be viewed.
+             Please remember that the project leader
+             election has a secret ballot, so the tally sheet is
+             produced with the hash of the alias of the voter rather
+             than the name; the alias having been sent to the
+             corresponding voter when the acknowledgement of the
+             ballot was sent so that people may verify that their
+             votes are correct.
+         </p>
+<h3><a name="quorum" id="quorum">Quorum</a></h3>
+          <p>
+	With <a href="vote_001.quorum.log">965 developers</a>,
+	we have:
+            <pre>
+ Current Developer Count = 965
+ Q ( sqrt(#devel) / 2 ) = 15.5322245670091
+ K min(5, Q )           = 5
+ Quorum  (3 x Q )       = 46.5966737010272
+
+Option 1 Reached quorum: 112> 46.5966737010272
+Option 2 Reached quorum: 384> 46.5966737010272
+Option 3 Reached quorum: 376> 46.5966737010272
+Option 4 Reached quorum: 390> 46.5966737010272
+Option 5 Reached quorum: 261> 46.5966737010272
+Option 6 Reached quorum: 346> 46.5966737010272
+
+            </pre>
+<h3><a name="majorityreq" id="majorityreq">Majority Requirement</a></h3>
+	  <p> All candidates would need a simple majority to be eligible.
+             <pre>
+Dropping Option 1 because of Majority.  0.332 (112/337) <= 1
+Option 2 passes Majority.               5.120 (384/75)> 1
+Option 3 passes Majority.               3.514 (376/107)> 1
+Option 4 passes Majority.               3.861 (390/101)> 1
+Option 5 passes Majority.               1.418 (261/184)> 1
+Option 6 passes Majority.               2.883 (346/120)> 1
+	    </pre>
+<h3><a name="outcome" id="outcome">Outcome</a></h3>
+     	      <h3>The winner of the election is Branden Robinson</h3>
+           <p>
+     	      I would like to thank all the candidates for their
+     	      service to the project, for standing for the post of
+     	      project leader, and for offering the developers a strong
+     	      and viable group of candidates.
+           </p>
+           <p class="center">
+             <a href="vote_001_results.dot">
+               <img src="vote_001_results.png" alt="Graphical rendering of the results" width="534" height="626">
+               </a>
+           </p>
+           <p>
+               Total unique votes cast: 504, which is 52.22797% of all
+               possible votes.
+           </p>
+             <p>
+              In the graph above, any pink colored nodes imply that
+               the option did not pass majority, the Blue is the
+               winner. The Octagon is used for the options that did
+               not beat the default. In the following table, tally[row x][col y] represents
+               the votes that option x received over option y. A
+               <a href="https://en.wikipedia.org/wiki/Schwartz_method">more
+                 detailed explanation of the beat matrix</a> may help in
+               understanding the table. For understanding the Condorcet method, the
+               <a href="https://en.wikipedia.org/wiki/Condorcet_method">Wikipedia
+                 entry</a> is fairly informative.
+           </p>
+           <ul>
+             <li>Option 1 "Jonathan Walther"</li>
+             <li>Option 2 "Matthew Garrett"</li>
+             <li>Option 3 "Branden Robinson"</li>
+             <li>Option 4 "Anthony Towns"</li>
+             <li>Option 5 "Angus Lees"</li>
+             <li>Option 6 "Andreas Schuldei"</li>
+             <li>Option 7 "None of the Above"</li>
+           </ul>
+    	       <table class="vote" summary="">
+                 <caption class="center"><strong>The Beat Matrix</strong></caption>
+                  <tr>
+                    <th colspan="8" class="center">Option</th>
+	         </tr>
+   	         <tr>
+   	           <th>&nbsp;</th>
+   	           <th>1</th>
+   	           <th>2</th>
+   	           <th>3</th>
+   	           <th>4</th>
+   	           <th>5</th>
+   	           <th>6</th>
+   	           <th>7</th>
+   	         </tr>
+   	         <tr>
+   	           <th>Option 1</th>
+   	           <td>&nbsp;</td>
+   	           <td>18</td>
+   	           <td>33</td>
+   	           <td>18</td>
+   	           <td>52</td>
+   	           <td>39</td>
+   	           <td>112</td>
+    	         </tr>
+   	         <tr>
+   	           <th>Option 2</th>
+   	           <td>394</td>
+   	           <td>&nbsp;</td>
+   	           <td>220</td>
+   	           <td>221</td>
+   	           <td>350</td>
+   	           <td>249</td>
+   	           <td>384</td>
+   	         </tr>
+   	         <tr>
+   	           <th>Option 3</th>
+   	           <td>420</td>
+   	           <td>248</td>
+   	           <td>&nbsp;</td>
+   	           <td>245</td>
+   	           <td>352</td>
+   	           <td>244</td>
+   	           <td>376</td>
+   	         </tr>
+   	         <tr>
+   	           <th>Option 4</th>
+   	           <td>440</td>
+   	           <td>244</td>
+   	           <td>222</td>
+   	           <td>&nbsp;</td>
+   	           <td>375</td>
+   	           <td>264</td>
+   	           <td>390</td>
+   	         </tr>
+   	         <tr>
+   	           <th>Option 5</th>
+   	           <td>314</td>
+   	           <td>60</td>
+   	           <td>95</td>
+   	           <td>80</td>
+   	           <td>&nbsp;</td>
+   	           <td>99</td>
+   	           <td>261</td>
+   	         </tr>
+   	         <tr>
+   	           <th>Option 6</th>
+   	           <td>378</td>
+   	           <td>185</td>
+   	           <td>184</td>
+   	           <td>196</td>
+   	           <td>307</td>
+   	           <td>&nbsp;</td>
+   	           <td>346</td>
+   	         </tr>
+   	         <tr>
+   	           <th>Option 7</th>
+   	           <td>337</td>
+   	           <td>75</td>
+   	           <td>107</td>
+   	           <td>101</td>
+   	           <td>184</td>
+   	           <td>120</td>
+   	           <td>&nbsp;</td>
+   	         </tr>
+   	       </table>
+              <p>
+              <br>
+Looking at row 2, column 1, Matthew Garrett
+received 394 votes over Jonathan Walther<br>
+Looking at row 1, column 2, Jonathan Walther
+received 18 votes over Matthew Garrett.
+              </p>
+              <p>
+  Option 3 defeats Option 2 by ( 248 - 220) = 28 votes.<br>
+  Option 4 defeats Option 2 by ( 244 - 221) = 23 votes.<br>
+  Option 2 defeats Option 5 by ( 350 - 60) = 290 votes.<br>
+  Option 2 defeats Option 6 by ( 249 - 185) = 64 votes.<br>
+  Option 2 defeats Option 7 by ( 384 - 75) = 309 votes.<br>
+  Option 3 defeats Option 4 by ( 245 - 222) = 23 votes.<br>
+  Option 3 defeats Option 5 by ( 352 - 95) = 257 votes.<br>
+  Option 3 defeats Option 6 by ( 244 - 184) = 60 votes.<br>
+  Option 3 defeats Option 7 by ( 376 - 107) = 269 votes.<br>
+  Option 4 defeats Option 5 by ( 375 - 80) = 295 votes.<br>
+  Option 4 defeats Option 6 by ( 264 - 196) = 68 votes.<br>
+  Option 4 defeats Option 7 by ( 390 - 101) = 289 votes.<br>
+  Option 6 defeats Option 5 by ( 307 - 99) = 208 votes.<br>
+  Option 5 defeats Option 7 by ( 261 - 184) = 77 votes.<br>
+  Option 6 defeats Option 7 by ( 346 - 120) = 226 votes.
+              </p>
+              <p>
+               Debian uses the Condorcet method for project leader
+               elections. Simplistically, plain Condorcet's method
+               can be stated like so : <br>
+               <q>Consider all possible two-way races between candidates.
+                  The Condorcet winner, if there is one, is the one
+                  candidate who can beat each other candidate in a two-way
+                  race with that candidate.</q>
+                The problem is that in complex elections, there may well
+                be a circular relations ship in which A beats B, B beats C,
+                and C beats A. Most of the variations on Condorcet use
+                various means of resolving the tie. See
+                <a href="https://en.wikipedia.org/wiki/Cloneproof_Schwartz_Sequential_Dropping">Cloneproof Schwartz Sequential Dropping</a>
+                for details. Debian's variation is spelled out in the
+                <a href="../../devel/constitution">the constitution</a>,
+                specifically, § A.6.
+             </p>
+</div> <!-- end maincol -->
+<div class="clr"></div>
+</div> <!-- end content -->
+<div id="footer">
+<hr class="hidecss">
+<p>Back to the <a href="../../">Debian Project homepage</a>.</p>
+<hr>
+<!--UdmComment-->
+<div id="pageLang">
+<div id="langSelector">
+This page is also available in the following languages:
+<div id="langContainer">
+<select onchange="location = this.value;">
+<option value="" disabled selected>Select your language</option>
+ <option value="vote_001.da.html" title="Danish" lang="da">dansk</option>
+ <option value="vote_001.de.html" title="German" lang="de">Deutsch</option>
+ <option value="vote_001.fr.html" title="French" lang="fr">fran&ccedil;ais</option>
+ <option value="vote_001.pt.html" title="Portuguese" lang="pt">Portugu&ecirc;s</option>
+ <option value="vote_001.ja.html" title="Japanese" lang="ja">&#26085;&#26412;&#35486; (Nihongo)</option>
+</select>
+</div>
+How to set <a href="../../intro/cn">the default document language</a>
+</div></div><!--/UdmComment-->
+<hr>
+<div id="footermap">
+<!--UdmComment-->
+<p><strong><a href="/">Home</a></strong></p>
+    <ul id="footermap-cola">
+		<li><a href="../../intro/about">About</a>
+		  <ul>
+		  <li><a href="../../social_contract">Social Contract</a></li>
+		  <li><a href="../../code_of_conduct">Code of Conduct</a></li>
+		  <li><a href="../../intro/free">Free Software</a></li>
+          <li><a href="../../legal">Legal Info</a></li>
+		  </ul>
+		</li>
+        <li><a href="../../intro/help">Help Debian</a></li>
+    </ul>
+	<ul id="footermap-colb">
+			<li><a href="../../distrib/">Getting Debian</a>
+			  <ul>
+			  <li><a href="../../distrib/netinst">Network install</a></li>
+			  <li><a href="../../CD/">CD/USB ISO images</a></li>
+            <li><a href="../../blends/">Pure Blends</a></li>
+			<li><a href="../../distrib/packages">Debian Packages</a></li>
+			<li><a href="../../devel/">Developers' Corner</a></li>
+			  </ul>
+			</li>
+	</ul>
+	<ul id="footermap-colc">
+		<li><a href="../../News/">News</a>
+		  <ul>
+		  <li><a href="../../News/weekly/">Project News</a></li>
+		  <li><a href="../../events/">Events</a></li>
+		  </ul>
+		</li>
+    <li><a href="../../doc/">Documentation</a>
+      <ul>
+      <li><a href="../../releases/">Release Info</a></li>
+      <li><a href="https://wiki.debian.org/">Debian Wiki</a></li>
+      </ul>
+    </li>
+   </ul>
+   <ul id="footermap-cold">
+    <li><a href="../../support">Support</a>
+	  <ul>
+			  <li><a href="../../international/">Debian International</a></li>
+			  <li><a href="../../security/">Security Information</a></li>
+			  <li><a href="../../Bugs/">Bug reports</a></li>
+			  <li><a href="../../MailingLists/">Mailing Lists</a></li>
+      </ul>
+    </li>
+</ul>
+<ul id="footermap-cole">
+  <li><a href="../../sitemap">Site map</a></li>
+  <li><a href="https://search.debian.org/">Search</a></li>
+  <li><a href="https://bits.debian.org">The Debian Blog</a></li>
+  <li><a href="https://micronews.debian.org">Debian Micronews</a></li>
+  <li><a href="https://planet.debian.org">Debian Planet</a></li>
+</ul>
+<!--/UdmComment-->
+</div> <!-- end footermap -->
+<div id="fineprint">
+<!--UdmComment-->
+  <p>See our <a href="../../contact">contact page</a> to get in touch. Web site source code is <a href="https://salsa.debian.org/webmaster-team/webwml">available</a>.</p>
+<p>
+Last Modified: Sun, Sep 6 19:51:17 UTC 2020
+&emsp;
+Last Built: Sun, Oct 18 03:31:31 UTC 2026
+  <br>
+  Copyright &copy; 2005-2020 <a href="https://www.spi-inc.org/">SPI</a> and others; See <a href="../../license" rel="copyright">license terms</a><br>
+  Debian is a registered <a href="../../trademark">trademark</a> of Software in the Public Interest, Inc.
+</p>
+<!--/UdmComment-->
+</div>
+</div> <!-- end footer -->
+</body>
+</html>

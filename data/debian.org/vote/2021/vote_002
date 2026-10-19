@@ -1,0 +1,853 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>    General Resolution: Statement regarding Richard Stallman's readmission to the FSF board </title>
+  <link rel="author" href="mailto:webmaster@debian.org">
+  <meta name="Generator" content="WML 2.32.0">
+  <meta name="Modified" content="2026-10-18 03:32:32">
+  <meta name="viewport" content="width=device-width">
+  <meta name="mobileoptimized" content="300">
+  <meta name="HandheldFriendly" content="true">
+<link href="../../debian.css" rel="stylesheet" type="text/css">
+  <link href="../../debian-en.css" rel="stylesheet" type="text/css" media="all">
+<link rel="search" type="application/opensearchdescription+xml" title="Debian website search" href="../../search.en.xml">
+</head>
+<body>
+<div id="header">
+  <div id="upperheader">
+    <div id="logo">
+    <a href="../../" title="Debian Home"><img src="../../Pics/openlogo-50.png" alt="Debian" width="50" height="61"></a>
+    </div> <!-- end logo -->
+    <div id="searchbox">
+      <form name="p" method="get" action="https://search.debian.org/cgi-bin/omega">
+      <p>
+<input type="hidden" name="DB" value="en">
+        <input name="P" value="" size="14">
+        <input type="submit" value="Search">
+      </p>
+      </form>
+    </div>   <!-- end sitetools -->
+  </div> <!-- end upperheader -->
+  <!--UdmComment-->
+  <div id="navbar">
+    <p class="hidecss"><a href="#content">Skip Quicknav</a></p>
+    <ul>
+      <!-- Link to Debian's own Social Media resources -->
+      <li><a href="https://bits.debian.org/" title="Bits from Debian">Blog</a></li>
+      <li><a href="https://micronews.debian.org" title="Micronews from Debian">Micronews</a></li>
+      <li><a href="https://planet.debian.org/" title="The Planet of Debian">Planet</a></li>
+      <li><a href="https://wiki.debian.org/" title="The Debian Wiki">Wiki</a></li>
+    </ul>
+  </div> <!-- end navbar -->
+<p id="breadcrumbs"><a href="./../">Debian Voting Information</a>
+ &#x2F; <a href="./">2021</a>
+ &#x2F;
+General Resolution: Statement regarding Richard Stallman's readmission to the FSF board</p>
+</div> <!-- end header -->
+<!--/UdmComment-->
+<div id="content">
+<div id="second-nav">
+<!--UdmComment-->
+	<ul class="votemenu">
+	<li>Home
+	<ul>
+	 <li><a href="../../vote/">Home&nbsp;Vote&nbsp;Page</a></li>
+	</ul>
+	</li>
+	<li>How&nbsp;To
+	<ul>
+	<li><a href="../../vote/howto_proposal">Submit&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_proposal#amend">Amend&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_follow">Follow&nbsp;a&nbsp;Proposal</a></li>
+	<!-- <li><a href="howto_vote">&bull;&nbsp;Vote</a></li>
+		<li>*<a href="howto_result">Read&nbsp;a&nbsp;Result</a></li> -->
+	</ul>
+	</li>
+	<li>Decided<ul><li><a href="../../vote/2026/vote_002">General Resolution: LLM usage in Debian</a></li>
+<li><a href="../../vote/2026/vote_001">Debian Project Leader Elections 2026</a></li>
+<li><a href="../../vote/2025/vote_001">Debian Project Leader Elections 2025</a></li>
+<li><a href="../../vote/2024/vote_001">Debian Project Leader Elections 2024</a></li>
+<li><a href="../../vote/2023/vote_002">General Resolution: Statement about the EU Legislation "Cyber Resilience Act and Product Liability Directive"</a></li>
+<li><a href="../../vote/2023/vote_001">Debian Project Leader Elections 2023</a></li>
+<li><a href="../../vote/2022/vote_003">General Resolution: non-free firmware</a></li>
+<li><a href="../../vote/2022/vote_002">Debian Project Leader Elections 2022</a></li>
+<li><a href="../../vote/2022/vote_001">General Resolution: Voting secrecy</a></li>
+<li><a href="../../vote/2021/vote_003">General Resolution: Change the resolution process</a></li>
+<li><a href="../../vote/2021/vote_002">General Resolution: Statement regarding Richard Stallman's readmission to the FSF board</a></li>
+<li><a href="../../vote/2021/vote_001">Debian Project Leader Elections 2021</a></li>
+<li><a href="../../vote/2020/vote_001">Debian Project Leader Elections 2020</a></li>
+<li><a href="../../vote/2019/vote_002">General Resolution: Init systems and systemd</a></li>
+<li><a href="../../vote/2019/vote_001">Debian Project Leader Elections 2019</a></li>
+<li><a href="../../vote/2018/vote_001">Debian Project Leader Elections 2018</a></li>
+<li><a href="../../vote/2017/vote_001">Debian Project Leader Elections 2017</a></li>
+<li><a href="../../vote/2016/vote_004">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_003">General Resolution: Replace "Chairman" with "Chair" throughout the Debian Constitution</a></li>
+<li><a href="../../vote/2016/vote_002">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_001">Debian Project Leader Elections 2016</a></li>
+<li><a href="../../vote/2015/vote_003">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2015/vote_001">Debian Project Leader Elections 2015</a></li>
+<li><a href="../../vote/2014/vote_004">General Resolution: Limiting the term of the technical committee members</a></li>
+<li><a href="../../vote/2014/vote_003">General Resolution: init system coupling</a></li>
+<li><a href="../../vote/2014/vote_002">General Resolution: code of conduct</a></li>
+<li><a href="../../vote/2014/vote_001">Debian Project Leader Elections 2014</a></li>
+<li><a href="../../vote/2013/vote_001">Debian Project Leader Elections 2013</a></li>
+<li><a href="../../vote/2012/vote_002">General Resolution: Diversity statement</a></li>
+<li><a href="../../vote/2012/vote_001">Debian Project Leader Elections 2012</a></li>
+<li><a href="../../vote/2011/vote_001">Debian Project Leader Elections 2011</a></li>
+<li><a href="../../vote/2010/vote_002">General Resolution: Debian project members</a></li>
+<li><a href="../../vote/2010/vote_001">Debian Project Leader Elections 2010</a></li>
+<li><a href="../../vote/2009/vote_001">Debian Project Leader Elections 2009</a></li>
+<li><a href="../../vote/2008/vote_003">General Resolution: Lenny and resolving DFSG violations</a></li>
+<li><a href="../../vote/2008/vote_002">General Resolution: Project membership procedures</a></li>
+<li><a href="../../vote/2008/vote_001">Debian Project Leader Elections 2008</a></li>
+<li><a href="../../vote/2007/vote_004">Constitutional amendment: reduce the length of DPL election process</a></li>
+<li><a href="../../vote/2007/vote_003">General Resolution: Endorse the concept of Debian Maintainers</a></li>
+<li><a href="../../vote/2007/vote_002">General Resolution: Altering package upload rules</a></li>
+<li><a href="../../vote/2007/vote_001">Debian Project Leader Elections 2007</a></li>
+<li><a href="../../vote/2006/vote_007">General Resolution: Handling source-less firmware in the Linux kernel</a></li>
+<li><a href="../../vote/2006/vote_006">General Resolution: Re-affirm support to the Debian Project Leader</a></li>
+<li><a href="../../vote/2006/vote_005">General Resolution: Recall the project leader</a></li>
+<li><a href="../../vote/2006/vote_004">General Resolution: Position statement clarifying DFSG #2</a></li>
+<li><a href="../../vote/2006/vote_003">Constitutional Amendment General Resolution: Handling assets for the project</a></li>
+<li><a href="../../vote/2006/vote_002">Debian Project Leader Elections 2006</a></li>
+<li><a href="../../vote/2006/vote_001">General Resolution: Why the GNU Free Documentation License is not suitable for Debian main</a></li>
+<li><a href="../../vote/2005/vote_002">General Resolution: Declassification of debian-private list archives</a></li>
+<li><a href="../../vote/2005/vote_001">Debian Project Leader Elections 2005</a></li>
+<li><a href="../../vote/2004/vote_004">General Resolution: Sarge Release Schedule in view of GR 2004-003</a></li>
+<li><a href="../../vote/2004/vote_003">General Resolution: Editorial amendments to the social contract</a></li>
+<li><a href="../../vote/2004/vote_002">General Resolution: Status of the non-free section</a></li>
+<li><a href="../../vote/2004/vote_001">Debian Project Leader Elections 2004</a></li>
+<li><a href="../../vote/2003/vote_0003">Constitutional Amendment: Disambiguation of Section 4.1.5</a></li>
+<li><a href="../../vote/2003/vote_0002">Constitutional Amendment: Condorcet/Clone Proof SSD Voting Method </a></li>
+<li><a href="../../vote/2003/vote_0001">Debian Project Leader Elections 2003</a></li>
+<li><a href="../../vote/2002/vote_0001">Debian Project Leader Elections 2002</a></li>
+<li><a href="../../vote/2001/vote_0001">Leader Elections 2001</a></li>
+<li><a href="../../vote/2000/vote_0007">Leader Elections 2000</a></li>
+<li><a href="../../vote/1999/vote_0005">Swap Logos</a></li>
+<li><a href="../../vote/1999/vote_0004">New Logo</a></li>
+<li><a href="../../vote/1999/vote_0002">Logo License</a></li>
+<li><a href="../../vote/1999/vote_0001">Leader Elections 1999</a></li>
+<li><a href="../../vote/1999/vote_0000">Constitution</a></li>
+</ul></li><li>Withdrawn<ul><li><a href="../../vote/2025/vote_002">General Resolution: Interpretation of DFSG on Artificial Intelligence (AI) Models</a></li>
+<li><a href="../../vote/2024/vote_002">General Resolution: tag2upload</a></li>
+<li><a href="../../vote/2015/vote_002">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2009/vote_002">General Resolution: Sponsorship requirements for General Resolutions</a></li>
+<li><a href="../../vote/2004/vote_005">General Resolution: Force AMD64 architecture into Sarge</a></li>
+<li><a href="../../vote/2001/vote_0002">IRC as a Debian communication channel</a></li>
+</ul></li><li>Other<ul><li><a href="../../vote/2000/vote_0011">Superseded: Constitutional amendment: Smith/Condorcet vote tallying</a></li>
+<li><a href="../../vote/2000/vote_0010">Superseded: Constitutional amendment: alternate disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0009">Superseded: Constitutional amendment: disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0008">Superseded: Non-free Archive Removal</a></li>
+</ul></li>
+	</ul>
+	<!--/UdmComment-->
+</div> <!-- end second-nav -->
+<div id="maincol">
+    <h1>General Resolution: Statement regarding Richard Stallman's readmission to the FSF board</h1>
+<ul class="toc">
+  <li><a href="#timeline">Time Line</a></li>
+  <li><a href="#proposer">Proposer</a></li>
+  <li><a href="#seconds">Seconds</a></li>
+  <li><a href="#text">Text</a></li>
+  <li><a href="#proposerb">Proposal B Proposer</a></li>
+  <li><a href="#secondsb">Proposal B Seconds</a></li>
+  <li><a href="#textb">Proposal B</a></li>
+  <li><a href="#proposerc">Proposal C Proposer</a></li>
+  <li><a href="#secondsc">Proposal C Seconds</a></li>
+  <li><a href="#textc">Proposal C</a></li>
+  <li><a href="#proposerd">Proposal D Proposer</a></li>
+  <li><a href="#secondsd">Proposal D Seconds</a></li>
+  <li><a href="#textd">Proposal D</a></li>
+  <li><a href="#proposere">Proposal E Proposer</a></li>
+  <li><a href="#secondse">Proposal E Seconds</a></li>
+  <li><a href="#texte">Proposal E</a></li>
+  <li><a href="#proposerf">Proposal F Proposer</a></li>
+  <li><a href="#secondsf">Proposal F Seconds</a></li>
+  <li><a href="#textf">Proposal F</a></li>
+  <li><a href="#proposera">Proposal A Proposer</a></li>
+  <li><a href="#secondsa">Proposal A Seconds</a></li>
+  <li><a href="#texta">Proposal A</a></li>
+  <li><a href="#quorum">Quorum</a></li>
+  <li><a href="#statistics">Data and Statistics</a></li>
+  <li><a href="#majorityreq">Majority Requirement</a></li>
+  <li><a href="#outcome">Outcome</a></li>
+</ul>
+<h3><a name="timeline" id="timeline">Time Line</a></h3>
+    <table class="vote" summary="">
+      <tr>
+        <th>Proposal and amendment</th>
+        <td>2021-03-24</td>
+		<td></td>
+      </tr>
+      <tr>
+        <th>Discussion Period:</th>
+		<td>2021-03-24</td>
+		<td></td>
+      </tr>
+          <tr>
+            <th>Voting period:</th>
+            <td>Sunday 2021-04-04 00:00:00 UTC</td>
+            <td>Saturday 2021-04-17 23:59:59 UTC</td>
+    </table>
+    The Project Leader has varied minimum discussion period to [<a href='https://lists.debian.org/debian-vote/2021/03/msg00115.html'>1 week</a>]
+<h3><a name="proposer" id="proposer">Proposer</a></h3>
+    <p>Steve Langasek [<a href="mailto:vorlon@debian.org">vorlon@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2021/03/msg00083.html'>text of proposal</a>]
+	[<a href='https://lists.debian.org/debian-vote/2021/03/msg00095.html'>amendment</a>]
+    </p>
+<h3><a name="seconds" id="seconds">Seconds</a></h3>
+    <ol>
+	<li>Louis-Philippe Véronneau [<a href="mailto:pollo@debian.org">pollo@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00084.html'>mail</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00097.html'>confirm</a>] </li>
+	<li>Joerg Jaspert [<a href="mailto:joerg@debian.org">joerg@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00085.html'>mail</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00100.html'>confirm</a>] </li>
+	<li>Neil McGovern [<a href="mailto:neilm@debian.org">neilm@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00086.html'>mail</a>] </li>
+	<li>Steve McIntyre [<a href="mailto:93sam@debian.org">93sam@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00087.html'>mail</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00096.html'>confirm</a>] </li>
+	<li>Sam Hartman [<a href="mailto:hartmans@debian.org">hartmans@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00088.html'>mail</a>] </li>
+	<li>Nicolas Dandrimont [<a href="mailto:olasd@debian.org">olasd@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00091.html'>mail</a>] </li>
+	<li>Colin Tuckley [<a href="mailto:colint@debian.org">colint@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00092.html'>mail</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00098.html'>confirm</a>]</li>
+	<li>Paul R. Tagliamonte [<a href="mailto:paultag@debian.org">paultag@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00161.html'>mail</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00103.html'>confirm</a>]</li>
+    </ol>
+<h3><a name="text" id="text">Text</a></h3>
+	<h3>Choice 1: Call for the FSF board removal, as in rms-open-letter.github.io</h3>
+<p>The Debian Project co-signs the statement regarding Richard Stallman's
+readmission to the FSF board seen at
+<a href='https://github.com/rms-open-letter/rms-open-letter.github.io/blob/main/index.md'>https://github.com/rms-open-letter/rms-open-letter.github.io/blob/main/index.md</a>.
+The text of this statement is given below.</p>
+<p>Richard M. Stallman, frequently known as RMS, has been a dangerous force in
+the free software community for a long time. He has shown himself to be
+misogynist, ableist, and transphobic, among other serious accusations of
+impropriety. These sorts of beliefs have no place in the free software,
+digital rights, and tech communities. With his recent reinstatement to the
+Board of Directors of the Free Software Foundation, we call for the entire
+Board of the FSF to step down and for RMS to be removed from all leadership
+positions.</p>
+<p>We, the undersigned, believe in the necessity of digital autonomy and the
+powerful role user freedom plays in protecting our fundamental human rights.
+In order to realize the promise of everything software freedom makes
+possible, there must be radical change within the community. We believe in
+a present and a future where all technology empowers - not oppresses -
+people. We know that this is only possible in a world where technology is
+built to pay respect to our rights at its most foundational levels. While
+these ideas have been popularized in some form by Richard M. Stallman, he
+does not speak for us. We do not condone his actions and opinions. We do
+not acknowledge his leadership or the leadership of the Free Software
+Foundation as it stands today.
+<p>There has been enough tolerance of RMS’s repugnant ideas and behavior. We
+cannot continue to let one person ruin the meaning of our work. Our
+communities have no space for people like Richard M. Stallman, and we will
+not continue suffering his behavior, giving him a leadership role, or
+otherwise holding him and his hurtful and dangerous ideology as acceptable.
+<p>We are calling for the removal of the entire Board of the Free Software
+Foundation. These are people who have enabled and empowered RMS for years.
+They demonstrate this again by permitting him to rejoin the FSF Board. It
+is time for RMS to step back from the free software, tech ethics, digital
+rights, and tech communities, for he cannot provide the leadership we need.
+We are also calling for Richard M. Stallman to be removed from all
+leadership positions, including the GNU Project.
+<p>We urge those in a position to do so to stop supporting the Free Software
+Foundation. Refuse to contribute to projects related to the FSF and RMS.
+Do not speak at or attend FSF events, or events that welcome RMS and his
+brand of intolerance. We ask for contributors to free software projects to
+take a stand against bigotry and hate within their projects. While doing
+these things, tell these communities and the FSF why.
+<p><a href='https://rms-open-letter.github.io/appendix'>We have detailed several public incidents of RMS's behavior.</a>  Some of us
+have our own stories about RMS and our interactions with him, things that
+are not captured in email threads or on video. We hope you will read what
+has been shared and consider the harm that he has done to our community and
+others.</p>
+<h3><a name="proposerb" id="proposerb">Proposal B Proposer</a></h3>
+    <p>Sruthi Chandran [<a href="mailto:srud@debian.org">srud@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00246.html'>text of proposal</a>]
+    </p>
+<h3><a name="secondsb" id="secondsb">Proposal B Seconds</a></h3>
+    <ol>
+	<li>Jonas Smedegaard [<a href="mailto:js@debian.org">js@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00253.html'>mail</a>] </li>
+	<li>Sean Whitton [<a href="mailto:spwhitton@debian.org">spwhitton@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00261.html'>mail</a>] </li>
+	<li>Holger Levsen [<a href="mailto:holger@debian.org">holger@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00265.html'>mail</a>] </li>
+	<li>Richard Laager [<a href="mailto:rlaager@debian.org">rlaager@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00266.html'>mail</a>] </li>
+	<li>Mike Gabriel [<a href="mailto:sunweaver@debian.org">sunweaver@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00267.html'>mail</a>] </li>
+	<li>Steve McIntyre [<a href="mailto:93sam@debian.org">93sam@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00269.html'>mail</a>] </li>
+	<li>Philip Hands [<a href="mailto:philh@debian.org">philh@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00270.html'>mail</a>] </li>
+	<li>Gard Spreemann [<a href="mailto:gspr@debian.org">gspr@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00272.html'>mail</a>] </li>
+	<li>Gunnar Wolf [<a href="mailto:gwolf@debian.org">gwolf@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00283.html'>mail</a>] </li>
+	<li>Pierre-Elliott Bécue [<a href="mailto:peb@debian.org">peb@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00292.html'>mail</a>] </li>
+    </ol>
+<h3><a name="textb" id="textb">Proposal B</a></h3>
+	<h3>Choice 2: Call for Stallman's resignation from all FSF bodies</h3>
+<p>Under section 4.1.5 of the constitution, the Developers make the
+following statement:</p>
+<b>Debian’s statement on Richard Stallman rejoining the FSF board</b>
+<p>We at Debian are profoundly disappointed to hear of the re-election of
+Richard Stallman to a leadership position at the Free Software
+Foundation, after a series of serious accusations of misconduct led to
+his resignation as president and board member of the FSF in 2019.</p>
+<p>One crucial factor in making our community more inclusive is to
+recognise and reflect when other people are harmed by our
+own actions and consider this feedback in future actions. The way
+Richard Stallman announced his return to the board unfortunately lacks
+any acknowledgement of this kind of thought process. We are deeply
+disappointed that the FSF board elected him a board member again despite
+no discernible steps were taken
+by him to be accountable for, much less make amends for, his past
+actions or those who have been harmed by them. Finally, we are also
+disturbed by the secretive process of his re-election, and how it was
+belatedly conveyed [0] to FSF’s staff and supporters.</p>
+<p>We believe this step and how it was communicated sends wrong and hurtful
+message and harms the future of the Free Software movement. The goal of
+the software freedom movement is to empower all people to control
+technology and thereby create a better society for everyone. Free
+Software is meant to serve everyone regardless of their age, ability or
+disability, gender identity, sex, ethnicity, nationality, religion or
+sexual orientation. This requires an inclusive and diverse environment
+that welcomes all contributors equally. Debian realises that we
+ourselves and the Free Software movement still have to work hard to be
+in that place where everyone feels safe and respected to participate in
+it in order to fulfil the movement's mission.<p>
+<p>That is why, we call for his resignation from all FSF bodies. The FSF
+needs to seriously reflect on this decision as well as their
+decision-making process to prevent similar issues from happening again.
+Therefore, in the current situation we see ourselves unable to
+collaborate both with the FSF and any other organisation in which
+Richard Stallman has a leading position. Instead, we will continue to
+work with groups and individuals who foster diversity and equality in
+the Free Software movement in order to achieve our joint goal of
+empowering all users to control technology.</p>
+[0] <a href='https://status.fsf.org/notice/3796703'>https://status.fsf.org/notice/3796703</a>
+<br>
+Heavily based on:<br>
+[1] <a href='https://fsfe.org/news/2021/news-20210324-01.html'>https://fsfe.org/news/2021/news-20210324-01.html</a>
+<br>
+[2] <a href='https://www.eff.org/deeplinks/2021/03/statement-re-election-richard-stallman-fsf-board'>https://www.eff.org/deeplinks/2021/03/statement-re-election-richard-stallman-fsf-board</a>
+<h3><a name="proposerc" id="proposerc">Proposal C Proposer</a></h3>
+    <p>Santiago Ruano Rincón [<a href="mailto:santiago@debian.org">santiago@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00344.html'>text of proposal</a>]
+	[<a href='https://lists.debian.org/debian-vote/2021/03/msg00376.html'>amendment</a>]
+    </p>
+<h3><a name="secondsc" id="secondsc">Proposal C Seconds</a></h3>
+    <ol>
+	<li>Jonas Smedegaard [<a href="mailto:js@debian.org">js@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00345.html'>mail</a>] </li>
+	<li>Milan Kupcevic [<a href="mailto:milan@debian.org">milan@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00347.html'>mail</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00379.html'>confirm</a>]</li>
+	<li>Apollon Oikonomopoulos [<a href="mailto:apoikos@debian.org">apoikos@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00351.html'>mail</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00385.html'>confirm</a>] </li>
+	<li>Holger Levsen [<a href="mailto:holger@debian.org">holger@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00353.html'>mail</a>] </li>
+	<li>Zlatan Todoric [<a href="mailto:zlatan@debian.org">zlatan@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00363.html'>mail</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00377.html'>confirm</a>]</li>
+    </ol>
+<h3><a name="textc" id="textc">Proposal C</a></h3>
+	<h3>Choice 3: Discourage collaboration with the FSF while Stallman is in a leading position</h3>
+<p>Under section 4.1.5 of the constitution, the Developers make the following
+statement:</p>
+<p>Debian’s statement on Richard Stallman rejoining the FSF board</p>
+<p>We at Debian are profoundly disappointed to hear of the re-election of Richard
+Stallman to a leadership position at the Free Software Foundation, after a
+series of serious accusations of misconduct led to his resignation as
+president and board member of the FSF in 2019.</p>
+<p>One crucial factor in making our community more inclusive is to recognise and
+reflect when other people are harmed by our actions and consider this feedback
+in future actions. Unfortunately, the way Richard Stallman announced his
+return to the board lacks any acknowledgement of this kind of thought process.
+We are deeply disappointed that the FSF board elected him as a board member
+again, despite no discernible steps were taken by him to be accountable for,
+much less make amends for, his past actions or those who have been harmed by
+them. Finally, we are also disturbed by the secretive process of his
+re-election, and how it was belatedly conveyed [0] to FSF’s staff and
+supporters.</p>
+<p>We believe this step and how it was communicated sends a wrong and hurtful
+message and harms the future of the Free Software movement. The goal of the
+software freedom movement is to empower all people to control technology and
+thereby create a better society for everyone. Free Software is meant to serve
+everyone regardless of their age, ability or disability, gender identity, sex,
+ethnicity, nationality, religion or sexual orientation. This requires an
+inclusive and diverse environment that welcomes all contributors equally.
+Debian realises that we and the Free Software movement still have to work hard
+to be in that place where everyone feels safe and respected to participate in
+it in order to fulfil the movement's mission.</p>
+<p>Therefore, in the current situation, the Debian Project discourages
+collaborating both with the FSF and any other organisation in which
+Richard Stallman has a leading position. Instead, we will continue
+looking forward to work with groups and individuals who foster diversity
+and equality in the Free Software movement in order to achieve our joint
+goal of empowering all users to control technology.</p>
+<p>[0] <a href='https://status.fsf.org/notice/3796703'>https://status.fsf.org/notice/3796703</a></p>
+<h3><a name="proposerd" id="proposerd">Proposal D Proposer</a></h3>
+    <p>Jonathan Wiltshire [<a href="mailto:jmw@debian.org">jmw@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00391.html'>text of proposal</a>]
+    </p>
+<h3><a name="secondsd" id="secondsd">Proposal D Seconds</a></h3>
+    <ol>
+	<li>Nicolas Dandrimont [<a href="mailto:olasd@debian.org">olasd@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00393.html'>mail</a>] </li>
+	<li>Thadeu Lima de Souza Cascardo [<a href="mailto:cascardo@debian.org">cascardo@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00395.html'>mail</a>] </li>
+	<li>Pierre-Elliott Bécue [<a href="mailto:peb@debian.org">peb@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00396.html'>mail</a>] </li>
+	<li>Jonas Smedegaard [<a href="mailto:js@debian.org">js@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00401.html'>mail</a>] </li>
+	<li>Zlatan Todoric [<a href="mailto:zlatan@debian.org">zlatan@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00402.html'>mail</a>] </li>
+	<li>Paride Legovini [<a href="mailto:paride@debian.org">paride@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00404.html'>mail</a>] </li>
+	<li>Holger Levsen [<a href="mailto:holger@debian.org">holger@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00405.html'>mail</a>] </li>
+	<li>Micha Lenk [<a href="mailto:micha@debian.org">micha@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00406.html'>mail</a>] </li>
+	<li>Gard Spreemann [<a href="mailto:gspr@debian.org">gspr@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00408.html'>mail</a>] </li>
+	<li>Milan Kupcevic [<a href="mailto:milan@debian.org">milan@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00410.html'>mail</a>] </li>
+	<li>Richard Laager [<a href="mailto:rlaager@debian.org">rlaager@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00418.html'>mail</a>] </li>
+	<li>Sean Whitton [<a href="mailto:spwhitton@debian.org">spwhitton@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00422.html'>mail</a>] </li>
+	<li>Philipp Kern [<a href="mailto:pkern@debian.org">pkern@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/04/msg00066.html'>mail</a>] </li>
+    </ol>
+<h3><a name="textd" id="textd">Proposal D</a></h3>
+	<h3>Choice 4: Call on the FSF to further its governance processes</h3>
+<p>This is a position statement of the Debian Developers in accordance with
+our constitution, section 4.1.5.</p>
+<p>The Developers firmly believe that leaders in any prominent organisation
+are, and should be, held to the highest standards of accountability.</p>
+<p>We are disappointed that issues of transparency and accountability in the
+governance of the Free Software Foundation have led to unresolved and
+serious complaints of impropriety by its founder Richard Stallman over a
+number of years whilst in the position of president and as a member of the
+board. In particular, we are deeply concerned that the board saw fit to
+reinstate him without properly considering the effect of its actions on
+those complainants.</p>
+<p>The Developers acknowledge that people make mistakes but believe that where
+those people are in leadership positions, they must be held accountable for
+their mistakes. We believe that the most important part of making mistakes
+is learning from them and changing behaviour. We are most concerned that
+Richard and the board have not sufficiently acknowledged or learned from
+issues which have affected a large number of people and that Richard
+remains a significant influence on both the FSF board and the GNU project.</p>
+<p>We call upon the Free Software Foundation to further steps it has taken in
+March 2021 to overhaul governance of the organisation, and to work
+tirelessly to ensure its aim is fulfilled. We believe that only through
+properly accountable governance can members of an organisation ensure their
+voice is heard. The Free Software Foundation must do everything in its
+power to protect its staff and members, and the wider community, including
+a robust and transparent process for dealing with complaints.</p>
+<p>We urge Richard Stallman and the remaining members of the board which
+reinstated him, to consider their positions.</p>
+<p>The Developers are proud that contributors to free software come from all
+walks of life and that our diverse experience and opinions are a strength
+of software freedom. But we must never cease in our efforts to ensure that
+all contributors are treated with respect, and that they feel safe and
+secure in our communities - including when we meet in person.</p>
+<h3><a name="proposere" id="proposere">Proposal E Proposer</a></h3>
+    <p>Timo Weingärtner [<a href="mailto:tiwe@debian.org">tiwe@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00195.html'>text of proposal</a>]
+    </p>
+<h3><a name="secondse" id="secondse">Proposal E Seconds</a></h3>
+    <ol>
+	<li>Axel Beckert [<a href="mailto:abe@debian.org">abe@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00239.html'>mail</a>] </li>
+	<li>Lionel Élie Mamane [<a href="mailto:lmamane@debian.org">lmamane@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00338.html'>mail</a>] </li>
+	<li>Adam Borowski [<a href="mailto:kilobyte@debian.org">kilobyte@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00359.html'>mail</a>] </li>
+	<li>Dmitry Smirnov [<a href="mailto:onlyjob@debian.org">onlyjob@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/04/msg00008.html'>mail</a>] </li>
+	<li>Erik Schanze [<a href="mailto:eriks@debian.org">eriks@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/04/msg00009.html'>mail</a>] </li>
+    </ol>
+<h3><a name="texte" id="texte">Proposal E</a></h3>
+	<h3>Choice 5: Support Stallman's reinstatement, as in rms-support-letter.github.io</h3>
+<p>The Debian Project co-signs the statement regarding Richard Stallman's
+readmission to the FSF board seen at <a href='https://rms-support-letter.github.io/'>https://rms-support-letter.github.io/</a>.
+The text of this statement is given below.</p>
+<p>Richard M. Stallman, frequently known as RMS, has been a driving force in the
+free software movement for decades, with contributions including the GNU
+operating system and Emacs.</p>
+<p>Recently, there have been vile online attacks looking to remove him from the
+FSF board of directors for expressing his personal opinions. We have watched
+this happen before in an organized fashion with other prominent free software
+activists and programmers. We will not stand idly this time, when an icon of
+this community is attacked.</p>
+<p>FSF is an autonomous body that is capable of treating its members in a fair,
+unbiased fashion, and should not give in to external social pressures. We urge
+the FSF to consider the arguments against RMS objectively and to truly
+understand the meaning of his words and actions.</p>
+<p>Historically, RMS has been expressing his views in ways that upset many
+people. He is usually more focused on the philosophical underpinnings, and
+pursuing the objective truth and linguistic purism, while underemphasising
+people’s feelings on matters he’s commenting on. This makes his arguments
+vulnerable to misunderstanding and misrepresentation, something which we feel
+is happening in the open letter calling for his removal. His words need to be
+interpreted in this context and taking into account that more often than not,
+he is not looking to put things diplomatically.</p>
+<p>Regardless, Stallman’s opinions on the matters he is being persecuted over are
+not relevant to his ability to lead a community such as the FSF. Furthermore,
+he is entitled to his opinions just as much as anyone else. Members and
+supporters do not have to agree with his opinions, but should respect his
+right to freedom of thought and speech.</p>
+<h4>To the FSF:</h4>
+<p>Removing RMS will hurt FSF’s image and will deal a significant blow to the
+momentum of the free software movement. We urge you to consider your actions
+carefully, as what you will decide will have a serious impact on the future of
+the software industry.</p>
+<h4>To the ambush mob who is ganging up on Richard Stallman over reasonable
+arguments in debate and various opinions and beliefs voiced over decades as a
+public figure:</h4>
+<p>You have no part in choosing the leadership of any communities. Especially not
+via another mob attack which does not remotely resemble a fairly conducted
+debate as exemplified by better people such as Richard Stallman.</p>
+<h3><a name="proposerf" id="proposerf">Proposal F Proposer</a></h3>
+    <p>Craig Sanders [<a href="mailto:cas@debian.org">cas@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/04/msg00097.html'>text of proposal</a>]
+    </p>
+<h3><a name="secondsf" id="secondsf">Proposal F Seconds</a></h3>
+    <ol>
+	<li>Adrian Bunk [<a href="mailto:bunk@debian.org">bunk@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/04/msg00187.html'>mail</a>]</li>
+	<li>Norbert Preining [<a href="mailto:preining@debian.org">preining@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/04/msg00188.html'>mail</a>]</li>
+	<li>Jonas Smedegaard [<a href="mailto:js@debian.org">js@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/04/msg00189.html'>mail</a>]</li>
+	<li>Ying-Chun Liu [<a href="mailto:paulliu@debian.org">paulliu@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/04/msg00190.html'>mail</a>]</li>
+	<li>Barak A. Pearlmutter [<a href="mailto:bap@debian.org">bap@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/04/msg00191.html'>mail</a>]</li>
+	<li>Adam Borowski [<a href="mailto:kilobyte@debian.org">kilobyte@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/04/msg00196.html'>mail</a>]</li>
+	<li>Micha Lenk [<a href="mailto:micha@debian.org">micha@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/04/msg00200.html'>mail</a>]</li>
+	<li>Michael Biebl [<a href="mailto:biebl@debian.org">biebl@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/04/msg00209.html'>mail</a>]</li>
+    </ol>
+<h3><a name="textf" id="textf">Proposal F</a></h3>
+	<h3>Choice 6: Denounce the witch-hunt against RMS and the FSF</h3>
+<p>Debian refuses to participate in and denounces the witch-hunt against Richard
+Stallman, the Free Software Foundation, and the members of the board of the
+Free Software Foundation.</p>
+<h3><a name="proposera" id="proposera">Proposal A Proposer</a></h3>
+    <p>Timo Weingärtner [<a href="mailto:tiwe@debian.org">tiwe@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2021/03/msg00196.html'>text of proposal</a>]
+	[<a href='https://lists.debian.org/debian-vote/2021/03/msg00200.html'>amendment 1</a>]
+	[<a href='https://lists.debian.org/debian-vote/2021/03/msg00224.html'>amendment 2</a>]
+	[<a href='https://lists.debian.org/debian-vote/2021/03/msg00297.html'>amendment 3</a>]
+    </p>
+<h3><a name="secondsa" id="secondsa">Proposal A Seconds</a></h3>
+    <ol>
+	<li>Bart Martens [<a href="mailto:bartm@debian.org">bartm@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00201.html'>mail</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00322.html'>confirm</a>]</li>
+	<li>Jonas Smedegaard [<a href="mailto:js@debian.org">js@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00207.html'>mail</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00212.html'>confirm</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00232.html'>confirm</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00300.html'>confirm</a>] </li>
+	<li>Pierre-Elliott Bécue [<a href="mailto:peb@debian.org">peb@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00215.html'>mail</a>] </li>
+        <li>Daniel Lenharo [<a href="mailto:lenharo@debian.org">lenharo@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00219.html'>mail</a>] </li>
+	<li>Milan Kupcevic [<a href="mailto:milan@debian.org">milan@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00228.html'>mail</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00304.html'>confirm</a>]</li>
+	<li>Michael Biebl [<a href="mailto:biebl@debian.org">biebl@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00235.html'>mail</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00301.html'>confirm</a>]</li>
+	<li>Axel Beckert [<a href="mailto:abe@debian.org">abe@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00236.html'>mail</a>] </li>
+	<li>Gilles Filippini [<a href="mailto:pini@debian.org">pini@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00241.html'>mail</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00327.html'>confirm</a>] </li>
+	<li>Filippo Rusconi [<a href="mailto:lopippo@debian.org">lopippo@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00252.html'>mail</a>] </li>
+	<li>Shengjing Zhu [<a href="mailto:zhsj@debian.org">zhsj@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00260.html'>mail</a>] </li>
+	<li>Matteo F. Vescovi [<a href="mailto:mfv@debian.org">mfv@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00268.html'>mail</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00314.html'>confirm</a>] </li>
+	<li>Mathias Behrle [<a href="mailto:mbehrle@debian.org">mbehrle@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/03/msg00299.html'>mail</a>] </li>
+    </ol>
+<h3><a name="texta" id="texta">Proposal A</a></h3>
+	<h3>Choice 7: Debian will not issue a public statement on this issue</h3>
+<p>The Debian Project will not issue a public statement on whether Richard
+Stallman should be removed from leadership positions or not.</p>
+<p>Any individual (including Debian members) wishing to (co-)sign any of the open
+letters on this subject is invited to do this in a personal capacity.</p>
+<h3><a name="quorum" id="quorum">Quorum</a></h3>
+     <p>
+        With the current list of <a href="vote_002_quorum.log">voting
+          developers</a>, we have:
+     </p>
+    <pre>
+ Current Developer Count = 1018
+ Q ( sqrt(#devel) / 2 ) = 15.9530561335438
+ K min(5, Q )           = 5
+ Quorum  (3 x Q )       = 47.8591684006315
+    </pre>
+              <h3>Quorum</h3>
+              <ul>
+                <li>Option1 Reached quorum: 203 &gt; 47.8591684006315</li>
+                <li>Option2 Reached quorum: 222 &gt; 47.8591684006315</li>
+                <li>Option3 Reached quorum: 219 &gt; 47.8591684006315</li>
+                <li>Option4 Reached quorum: 221 &gt; 47.8591684006315</li>
+                <li>Option5 Reached quorum: 52 &gt; 47.8591684006315</li>
+                <li>Option6 Reached quorum: 84 &gt; 47.8591684006315</li>
+                <li>Option7 Reached quorum: 277 &gt; 47.8591684006315</li>
+              </ul>
+<h3><a name="statistics" id="statistics">Data and Statistics</a></h3>
+    <p>
+	For this GR, like always,
+               <a href="suppl_002_stats">statistics</a>
+             will be gathered about ballots received and
+             acknowledgements sent periodically during the voting
+             period.
+               Additionally, the list of <a
+             href="vote_002_voters.txt">voters</a> will be
+             recorded. Also, the <a href="vote_002_tally.txt">tally
+             sheet</a> will also be made available to be viewed.
+         </p>
+<h3><a name="majorityreq" id="majorityreq">Majority Requirement</a></h3>
+    <p>
+      The proposals need a simple majority
+    </p>
+              <h3>Majority</h3>
+              <ul>
+                <li>Option1 passes Majority.
+  1.091 (203/186) &gt; 1</li>
+                <li>Option2 passes Majority.
+  1.337 (222/166) &gt; 1</li>
+                <li>Option3 passes Majority.
+  1.266 (219/173) &gt; 1</li>
+                <li>Option4 passes Majority.
+  1.348 (221/164) &gt; 1</li>
+                <li>Dropping Option5 because of Majority. 0.159 (52/328) &lt;= 1</li>
+                <li>Dropping Option6 because of Majority. 0.279 (84/301) &lt;= 1</li>
+                <li>Option7 passes Majority.
+  2.234 (277/124) &gt; 1</li>
+              </ul>
+<h3><a name="outcome" id="outcome">Outcome</a></h3>
+           <p class="center">
+             <a style="margin-left: auto; margin-right: auto;" href="vote_002_results.dot">
+               <img src="vote_002_results.png" alt="Graphical rendering of the results" width="1420" height="772">
+               </a>
+           </p>
+             <p>
+               In the graph above, any pink colored nodes imply that
+               the option did not pass majority, the Blue is the
+               winner. The Octagon is used for the options that did
+               not beat the default.
+           </p>
+           <ul>
+<li>Option 1 "Call for the FSF board removal, as in rms-open-letter.github.io"</li>
+<li>Option 2 "Call for Stallman's resignation from all FSF bodies"</li>
+<li>Option 3 "Discourage collaboration with the FSF while Stallman is in a leading position"</li>
+<li>Option 4 "Call on the FSF to further its governance processes"</li>
+<li>Option 5 "Support Stallman's reinstatement, as in rms-support-letter.github.io"</li>
+<li>Option 6 "Denounce the witch-hunt against RMS and the FSF"</li>
+<li>Option 7 "Debian will not issue a public statement on this issue"</li>
+<li>Option 8 "Further Discussion"</li>
+           </ul>
+            <p>
+               In the following table, tally[row x][col y] represents
+               the votes that option x received over option y. A
+               <a href="https://en.wikipedia.org/wiki/Schwartz_method">more
+                 detailed explanation of the beat matrix</a> may help in
+               understanding the table. For understanding the Condorcet method, the
+               <a href="https://en.wikipedia.org/wiki/Condorcet_method">Wikipedia
+                 entry</a> is fairly informative.
+           </p>
+           <table class="vote" summary="">
+             <caption class="center"><strong>The Beat Matrix</strong></caption>
+	     <tr><th>&nbsp;</th><th colspan="8" class="center">Option</th></tr>
+              <tr>
+                   <th>&nbsp;</th>
+                   <th>    1 </th>
+                   <th>    2 </th>
+                   <th>    3 </th>
+                   <th>    4 </th>
+                   <th>    5 </th>
+                   <th>    6 </th>
+                   <th>    7 </th>
+                   <th>    8 </th>
+              </tr>
+                 <tr>
+                   <th>Option 1 </th>
+                   <td>&nbsp;</td>
+                   <td>  113 </td>
+                   <td>  139 </td>
+                   <td>  146 </td>
+                   <td>  218 </td>
+                   <td>  209 </td>
+                   <td>  178 </td>
+                   <td>  203 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 2 </th>
+                   <td>  137 </td>
+                   <td>&nbsp;</td>
+                   <td>  168 </td>
+                   <td>  165 </td>
+                   <td>  239 </td>
+                   <td>  227 </td>
+                   <td>  199 </td>
+                   <td>  222 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 3 </th>
+                   <td>  131 </td>
+                   <td>   90 </td>
+                   <td>&nbsp;</td>
+                   <td>  150 </td>
+                   <td>  246 </td>
+                   <td>  235 </td>
+                   <td>  199 </td>
+                   <td>  219 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 4 </th>
+                   <td>  156 </td>
+                   <td>  132 </td>
+                   <td>  140 </td>
+                   <td>&nbsp;</td>
+                   <td>  259 </td>
+                   <td>  245 </td>
+                   <td>  196 </td>
+                   <td>  221 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 5 </th>
+                   <td>   65 </td>
+                   <td>   57 </td>
+                   <td>   57 </td>
+                   <td>   45 </td>
+                   <td>&nbsp;</td>
+                   <td>   59 </td>
+                   <td>   19 </td>
+                   <td>   52 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 6 </th>
+                   <td>  103 </td>
+                   <td>   97 </td>
+                   <td>   92 </td>
+                   <td>   77 </td>
+                   <td>  114 </td>
+                   <td>&nbsp;</td>
+                   <td>   30 </td>
+                   <td>   84 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 7 </th>
+                   <td>  223 </td>
+                   <td>  207 </td>
+                   <td>  203 </td>
+                   <td>  197 </td>
+                   <td>  350 </td>
+                   <td>  339 </td>
+                   <td>&nbsp;</td>
+                   <td>  277 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 8 </th>
+                   <td>  186 </td>
+                   <td>  166 </td>
+                   <td>  173 </td>
+                   <td>  164 </td>
+                   <td>  328 </td>
+                   <td>  301 </td>
+                   <td>  124 </td>
+                   <td>&nbsp;</td>
+                 </tr>
+               </table>
+              <p>
+Looking at row 2, column 1, Call for Stallman's resignation from all FSF bodies<br>
+received 137 votes over Call for the FSF board removal, as in rms-open-letter.github.io<br>
+<br>
+Looking at row 1, column 2, Call for the FSF board removal, as in rms-open-letter.github.io<br>
+received 113 votes over Call for Stallman's resignation from all FSF bodies.<br>
+              <h3>Pair-wise defeats</h3>
+              <ul>
+                <li>Option 2 defeats Option 1 by ( 137 - 113) = 24 votes.</li>
+                <li>Option 1 defeats Option 3 by ( 139 - 131) = 8 votes.</li>
+                <li>Option 4 defeats Option 1 by ( 156 - 146) = 10 votes.</li>
+                <li>Option 7 defeats Option 1 by ( 223 - 178) = 45 votes.</li>
+                <li>Option 1 defeats Option 8 by ( 203 - 186) = 17 votes.</li>
+                <li>Option 2 defeats Option 3 by ( 168 - 90) = 78 votes.</li>
+                <li>Option 2 defeats Option 4 by ( 165 - 132) = 33 votes.</li>
+                <li>Option 7 defeats Option 2 by ( 207 - 199) = 8 votes.</li>
+                <li>Option 2 defeats Option 8 by ( 222 - 166) = 56 votes.</li>
+                <li>Option 3 defeats Option 4 by ( 150 - 140) = 10 votes.</li>
+                <li>Option 7 defeats Option 3 by ( 203 - 199) = 4 votes.</li>
+                <li>Option 3 defeats Option 8 by ( 219 - 173) = 46 votes.</li>
+                <li>Option 7 defeats Option 4 by ( 197 - 196) = 1 votes.</li>
+                <li>Option 4 defeats Option 8 by ( 221 - 164) = 57 votes.</li>
+                <li>Option 7 defeats Option 8 by ( 277 - 124) = 153 votes.</li>
+              </ul>
+              <h3>The Schwartz Set contains</h3>
+              <ul>
+                <li>Option 7 "Debian will not issue a public statement on this issue"</li>
+              </ul>
+              <h3>The winners</h3>
+              <ul>
+                <li>Option 7 "Debian will not issue a public statement on this issue"</li>
+              </ul>
+              <p>
+               Debian uses the Condorcet method for voting.
+               Simplistically, plain Condorcets method
+               can be stated like so : <br>
+               <q>Consider all possible two-way races between candidates.
+                  The Condorcet winner, if there is one, is the one
+                  candidate who can beat each other candidate in a two-way
+                  race with that candidate.</q>
+               The problem is that in complex elections, there may well
+               be a circular relationship in which A beats B, B beats C,
+               and C beats A. Most of the variations on Condorcet use
+               various means of resolving the tie. See
+               <a href="https://en.wikipedia.org/wiki/Cloneproof_Schwartz_Sequential_Dropping">Cloneproof Schwartz Sequential Dropping</a>
+               for details. Debian's variation is spelled out in the
+               <a href="../../devel/constitution">constitution</a>,
+               specifically, A.6.
+              </p>
+    <hr>
+      <address>
+        <a href="mailto:secretary@debian.org">Debian Project Secretary</a>
+      </address>
+</div> <!-- end maincol -->
+<div class="clr"></div>
+</div> <!-- end content -->
+<div id="footer">
+<hr class="hidecss">
+<p>Back to the <a href="../../">Debian Project homepage</a>.</p>
+<hr>
+<!--UdmComment-->
+<div id="pageLang">
+<div id="langSelector">
+This page is also available in the following languages:
+<div id="langContainer">
+<select onchange="location = this.value;">
+<option value="" disabled selected>Select your language</option>
+ <option value="vote_002.fr.html" title="French" lang="fr">fran&ccedil;ais</option>
+ <option value="vote_002.nl.html" title="Dutch" lang="nl">Nederlands</option>
+</select>
+</div>
+How to set <a href="../../intro/cn">the default document language</a>
+</div></div><!--/UdmComment-->
+<hr>
+<div id="footermap">
+<!--UdmComment-->
+<p><strong><a href="/">Home</a></strong></p>
+    <ul id="footermap-cola">
+		<li><a href="../../intro/about">About</a>
+		  <ul>
+		  <li><a href="../../social_contract">Social Contract</a></li>
+		  <li><a href="../../code_of_conduct">Code of Conduct</a></li>
+		  <li><a href="../../intro/free">Free Software</a></li>
+          <li><a href="../../legal">Legal Info</a></li>
+		  </ul>
+		</li>
+        <li><a href="../../intro/help">Help Debian</a></li>
+    </ul>
+	<ul id="footermap-colb">
+			<li><a href="../../distrib/">Getting Debian</a>
+			  <ul>
+			  <li><a href="../../distrib/netinst">Network install</a></li>
+			  <li><a href="../../CD/">CD/USB ISO images</a></li>
+            <li><a href="../../blends/">Pure Blends</a></li>
+			<li><a href="../../distrib/packages">Debian Packages</a></li>
+			<li><a href="../../devel/">Developers' Corner</a></li>
+			  </ul>
+			</li>
+	</ul>
+	<ul id="footermap-colc">
+		<li><a href="../../News/">News</a>
+		  <ul>
+		  <li><a href="../../News/weekly/">Project News</a></li>
+		  <li><a href="../../events/">Events</a></li>
+		  </ul>
+		</li>
+    <li><a href="../../doc/">Documentation</a>
+      <ul>
+      <li><a href="../../releases/">Release Info</a></li>
+      <li><a href="https://wiki.debian.org/">Debian Wiki</a></li>
+      </ul>
+    </li>
+   </ul>
+   <ul id="footermap-cold">
+    <li><a href="../../support">Support</a>
+	  <ul>
+			  <li><a href="../../international/">Debian International</a></li>
+			  <li><a href="../../security/">Security Information</a></li>
+			  <li><a href="../../Bugs/">Bug reports</a></li>
+			  <li><a href="../../MailingLists/">Mailing Lists</a></li>
+      </ul>
+    </li>
+</ul>
+<ul id="footermap-cole">
+  <li><a href="../../sitemap">Site map</a></li>
+  <li><a href="https://search.debian.org/">Search</a></li>
+  <li><a href="https://bits.debian.org">The Debian Blog</a></li>
+  <li><a href="https://micronews.debian.org">Debian Micronews</a></li>
+  <li><a href="https://planet.debian.org">Debian Planet</a></li>
+</ul>
+<!--/UdmComment-->
+</div> <!-- end footermap -->
+<div id="fineprint">
+<!--UdmComment-->
+  <p>See our <a href="../../contact">contact page</a> to get in touch. Web site source code is <a href="https://salsa.debian.org/webmaster-team/webwml">available</a>.</p>
+<p>
+Last Modified: Thu, Jan 23 23:49:26 UTC 2025
+&emsp;
+Last Built: Sun, Oct 18 03:32:32 UTC 2026
+  <br>
+  Copyright &copy; 2021-2025 <a href="https://www.spi-inc.org/">SPI</a> and others; See <a href="../../license" rel="copyright">license terms</a><br>
+  Debian is a registered <a href="../../trademark">trademark</a> of Software in the Public Interest, Inc.
+</p>
+<!--/UdmComment-->
+</div>
+</div> <!-- end footer -->
+</body>
+</html>

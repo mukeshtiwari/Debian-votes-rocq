@@ -1,0 +1,1186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>    General Resolution: Sarge Release Schedule in view of GR 2004-003 </title>
+  <link rel="author" href="mailto:webmaster@debian.org">
+  <meta name="Generator" content="WML 2.32.0">
+  <meta name="Modified" content="2026-10-18 03:31:27">
+  <meta name="viewport" content="width=device-width">
+  <meta name="mobileoptimized" content="300">
+  <meta name="HandheldFriendly" content="true">
+<link href="../../debian.css" rel="stylesheet" type="text/css">
+  <link href="../../debian-en.css" rel="stylesheet" type="text/css" media="all">
+<link rel="search" type="application/opensearchdescription+xml" title="Debian website search" href="../../search.en.xml">
+</head>
+<body>
+<div id="header">
+  <div id="upperheader">
+    <div id="logo">
+    <a href="../../" title="Debian Home"><img src="../../Pics/openlogo-50.png" alt="Debian" width="50" height="61"></a>
+    </div> <!-- end logo -->
+    <div id="searchbox">
+      <form name="p" method="get" action="https://search.debian.org/cgi-bin/omega">
+      <p>
+<input type="hidden" name="DB" value="en">
+        <input name="P" value="" size="14">
+        <input type="submit" value="Search">
+      </p>
+      </form>
+    </div>   <!-- end sitetools -->
+  </div> <!-- end upperheader -->
+  <!--UdmComment-->
+  <div id="navbar">
+    <p class="hidecss"><a href="#content">Skip Quicknav</a></p>
+    <ul>
+      <!-- Link to Debian's own Social Media resources -->
+      <li><a href="https://bits.debian.org/" title="Bits from Debian">Blog</a></li>
+      <li><a href="https://micronews.debian.org" title="Micronews from Debian">Micronews</a></li>
+      <li><a href="https://planet.debian.org/" title="The Planet of Debian">Planet</a></li>
+      <li><a href="https://wiki.debian.org/" title="The Debian Wiki">Wiki</a></li>
+    </ul>
+  </div> <!-- end navbar -->
+<p id="breadcrumbs"><a href="./../">Debian Voting Information</a>
+ &#x2F; <a href="./">2004</a>
+ &#x2F;
+General Resolution: Sarge Release Schedule in view of GR 2004-003</p>
+</div> <!-- end header -->
+<!--/UdmComment-->
+<div id="content">
+<div id="second-nav">
+<!--UdmComment-->
+	<ul class="votemenu">
+	<li>Home
+	<ul>
+	 <li><a href="../../vote/">Home&nbsp;Vote&nbsp;Page</a></li>
+	</ul>
+	</li>
+	<li>How&nbsp;To
+	<ul>
+	<li><a href="../../vote/howto_proposal">Submit&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_proposal#amend">Amend&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_follow">Follow&nbsp;a&nbsp;Proposal</a></li>
+	<!-- <li><a href="howto_vote">&bull;&nbsp;Vote</a></li>
+		<li>*<a href="howto_result">Read&nbsp;a&nbsp;Result</a></li> -->
+	</ul>
+	</li>
+	<li>Decided<ul><li><a href="../../vote/2026/vote_002">General Resolution: LLM usage in Debian</a></li>
+<li><a href="../../vote/2026/vote_001">Debian Project Leader Elections 2026</a></li>
+<li><a href="../../vote/2025/vote_001">Debian Project Leader Elections 2025</a></li>
+<li><a href="../../vote/2024/vote_001">Debian Project Leader Elections 2024</a></li>
+<li><a href="../../vote/2023/vote_002">General Resolution: Statement about the EU Legislation "Cyber Resilience Act and Product Liability Directive"</a></li>
+<li><a href="../../vote/2023/vote_001">Debian Project Leader Elections 2023</a></li>
+<li><a href="../../vote/2022/vote_003">General Resolution: non-free firmware</a></li>
+<li><a href="../../vote/2022/vote_002">Debian Project Leader Elections 2022</a></li>
+<li><a href="../../vote/2022/vote_001">General Resolution: Voting secrecy</a></li>
+<li><a href="../../vote/2021/vote_003">General Resolution: Change the resolution process</a></li>
+<li><a href="../../vote/2021/vote_002">General Resolution: Statement regarding Richard Stallman's readmission to the FSF board</a></li>
+<li><a href="../../vote/2021/vote_001">Debian Project Leader Elections 2021</a></li>
+<li><a href="../../vote/2020/vote_001">Debian Project Leader Elections 2020</a></li>
+<li><a href="../../vote/2019/vote_002">General Resolution: Init systems and systemd</a></li>
+<li><a href="../../vote/2019/vote_001">Debian Project Leader Elections 2019</a></li>
+<li><a href="../../vote/2018/vote_001">Debian Project Leader Elections 2018</a></li>
+<li><a href="../../vote/2017/vote_001">Debian Project Leader Elections 2017</a></li>
+<li><a href="../../vote/2016/vote_004">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_003">General Resolution: Replace "Chairman" with "Chair" throughout the Debian Constitution</a></li>
+<li><a href="../../vote/2016/vote_002">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_001">Debian Project Leader Elections 2016</a></li>
+<li><a href="../../vote/2015/vote_003">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2015/vote_001">Debian Project Leader Elections 2015</a></li>
+<li><a href="../../vote/2014/vote_004">General Resolution: Limiting the term of the technical committee members</a></li>
+<li><a href="../../vote/2014/vote_003">General Resolution: init system coupling</a></li>
+<li><a href="../../vote/2014/vote_002">General Resolution: code of conduct</a></li>
+<li><a href="../../vote/2014/vote_001">Debian Project Leader Elections 2014</a></li>
+<li><a href="../../vote/2013/vote_001">Debian Project Leader Elections 2013</a></li>
+<li><a href="../../vote/2012/vote_002">General Resolution: Diversity statement</a></li>
+<li><a href="../../vote/2012/vote_001">Debian Project Leader Elections 2012</a></li>
+<li><a href="../../vote/2011/vote_001">Debian Project Leader Elections 2011</a></li>
+<li><a href="../../vote/2010/vote_002">General Resolution: Debian project members</a></li>
+<li><a href="../../vote/2010/vote_001">Debian Project Leader Elections 2010</a></li>
+<li><a href="../../vote/2009/vote_001">Debian Project Leader Elections 2009</a></li>
+<li><a href="../../vote/2008/vote_003">General Resolution: Lenny and resolving DFSG violations</a></li>
+<li><a href="../../vote/2008/vote_002">General Resolution: Project membership procedures</a></li>
+<li><a href="../../vote/2008/vote_001">Debian Project Leader Elections 2008</a></li>
+<li><a href="../../vote/2007/vote_004">Constitutional amendment: reduce the length of DPL election process</a></li>
+<li><a href="../../vote/2007/vote_003">General Resolution: Endorse the concept of Debian Maintainers</a></li>
+<li><a href="../../vote/2007/vote_002">General Resolution: Altering package upload rules</a></li>
+<li><a href="../../vote/2007/vote_001">Debian Project Leader Elections 2007</a></li>
+<li><a href="../../vote/2006/vote_007">General Resolution: Handling source-less firmware in the Linux kernel</a></li>
+<li><a href="../../vote/2006/vote_006">General Resolution: Re-affirm support to the Debian Project Leader</a></li>
+<li><a href="../../vote/2006/vote_005">General Resolution: Recall the project leader</a></li>
+<li><a href="../../vote/2006/vote_004">General Resolution: Position statement clarifying DFSG #2</a></li>
+<li><a href="../../vote/2006/vote_003">Constitutional Amendment General Resolution: Handling assets for the project</a></li>
+<li><a href="../../vote/2006/vote_002">Debian Project Leader Elections 2006</a></li>
+<li><a href="../../vote/2006/vote_001">General Resolution: Why the GNU Free Documentation License is not suitable for Debian main</a></li>
+<li><a href="../../vote/2005/vote_002">General Resolution: Declassification of debian-private list archives</a></li>
+<li><a href="../../vote/2005/vote_001">Debian Project Leader Elections 2005</a></li>
+<li><a href="../../vote/2004/vote_004">General Resolution: Sarge Release Schedule in view of GR 2004-003</a></li>
+<li><a href="../../vote/2004/vote_003">General Resolution: Editorial amendments to the social contract</a></li>
+<li><a href="../../vote/2004/vote_002">General Resolution: Status of the non-free section</a></li>
+<li><a href="../../vote/2004/vote_001">Debian Project Leader Elections 2004</a></li>
+<li><a href="../../vote/2003/vote_0003">Constitutional Amendment: Disambiguation of Section 4.1.5</a></li>
+<li><a href="../../vote/2003/vote_0002">Constitutional Amendment: Condorcet/Clone Proof SSD Voting Method </a></li>
+<li><a href="../../vote/2003/vote_0001">Debian Project Leader Elections 2003</a></li>
+<li><a href="../../vote/2002/vote_0001">Debian Project Leader Elections 2002</a></li>
+<li><a href="../../vote/2001/vote_0001">Leader Elections 2001</a></li>
+<li><a href="../../vote/2000/vote_0007">Leader Elections 2000</a></li>
+<li><a href="../../vote/1999/vote_0005">Swap Logos</a></li>
+<li><a href="../../vote/1999/vote_0004">New Logo</a></li>
+<li><a href="../../vote/1999/vote_0002">Logo License</a></li>
+<li><a href="../../vote/1999/vote_0001">Leader Elections 1999</a></li>
+<li><a href="../../vote/1999/vote_0000">Constitution</a></li>
+</ul></li><li>Withdrawn<ul><li><a href="../../vote/2025/vote_002">General Resolution: Interpretation of DFSG on Artificial Intelligence (AI) Models</a></li>
+<li><a href="../../vote/2024/vote_002">General Resolution: tag2upload</a></li>
+<li><a href="../../vote/2015/vote_002">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2009/vote_002">General Resolution: Sponsorship requirements for General Resolutions</a></li>
+<li><a href="../../vote/2004/vote_005">General Resolution: Force AMD64 architecture into Sarge</a></li>
+<li><a href="../../vote/2001/vote_0002">IRC as a Debian communication channel</a></li>
+</ul></li><li>Other<ul><li><a href="../../vote/2000/vote_0011">Superseded: Constitutional amendment: Smith/Condorcet vote tallying</a></li>
+<li><a href="../../vote/2000/vote_0010">Superseded: Constitutional amendment: alternate disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0009">Superseded: Constitutional amendment: disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0008">Superseded: Non-free Archive Removal</a></li>
+</ul></li>
+	</ul>
+	<!--/UdmComment-->
+</div> <!-- end second-nav -->
+<div id="maincol">
+<h1>General Resolution: Sarge Release Schedule in view of GR 2004-003</h1>
+<ul class="toc">
+  <li><a href="#timeline">Time Line</a></li>
+  <li><a href="#proposera">Proposal A Proposer</a></li>
+  <li><a href="#secondsa">Proposal A Seconds</a></li>
+  <li><a href="#proposerb">Proposal B Proposer</a></li>
+  <li><a href="#secondsb">Proposal B Seconds</a></li>
+  <li><a href="#proposerc">Proposal C Proposer</a></li>
+  <li><a href="#secondsc">Proposal C Seconds</a></li>
+  <li><a href="#proposerd">Proposal D Proposer</a></li>
+  <li><a href="#secondsd">Proposal D Seconds</a></li>
+  <li><a href="#proposere">Proposal E Proposer</a></li>
+  <li><a href="#secondse">Proposal E Seconds</a></li>
+  <li><a href="#proposerf">Proposal F Proposer</a></li>
+  <li><a href="#secondsf">Proposal F Seconds</a></li>
+  <li><a href="#texta">Proposal A</a></li>
+  <li><a href="#textb">Proposal B</a></li>
+  <li><a href="#textc">Proposal C</a></li>
+  <li><a href="#textd">Proposal D</a></li>
+  <li><a href="#texte">Proposal E</a></li>
+  <li><a href="#textf">Proposal F</a></li>
+  <li><a href="#quorum">Quorum</a></li>
+  <li><a href="#statistics">Data and Statistics</a></li>
+  <li><a href="#majorityreq">Majority Requirement</a></li>
+  <li><a href="#outcome">Outcome</a></li>
+</ul>
+<h3><a name="timeline" id="timeline">Time Line</a></h3>
+            <table class="vote" summary="">
+                <tr>
+                  <th>Proposal and amendment</th>
+                  <td>Wednesday, April 28<sup>th</sup>, 2004</td>
+                  <td>Wednesday, May 26<sup>th</sup>, 2004</td>
+                </tr>
+                <tr>
+                  <th>Discussion Period:</th>
+                  <td>Wednesday, May 26<sup>th</sup>, 23:59:59 UTC, 2004</td>
+                  <td>Friday, June 18<sup>th</sup>, 23:59:59 UTC, 2004</td>
+                </tr>
+                <tr>
+                  <th>Voting Period</th>
+                  <td>Friday, June 18<sup>th</sup>, 23:59:59 UTC, 2004</td>
+                  <td>Friday, July 2<sup>nd</sup>, 23:59:59 UTC, 2004</td>
+                </tr>
+             </table>
+<h3><a name="proposera" id="proposera">Proposal A Proposer</a></h3>
+	  <p>Steve Langasek
+	    [<a href="mailto:vorlon@debian.org">vorlon@debian.org</a>]
+	  </p>
+<h3><a name="secondsa" id="secondsa">Proposal A Seconds</a></h3>
+	    <ol>
+	      <li>Joe Wreschnig
+		[<a href="mailto:piman@debian.org">piman@debian.org</a>]
+	      </li>
+	      <li>Stephen Frost
+		[<a href="mailto:sfrost@debian.org">sfrost@debian.org</a>]
+	      </li>
+	      <li>Scott Dier
+		[<a href="mailto:sdier@debian.org">sdier@debian.org</a>]
+	      </li>
+	      <li>Chad Walstrom
+		[<a href="mailto:chewie@debian.org">chewie@debian.org</a>]
+	      </li>
+	      <li>Pierre Machard
+		[<a href="mailto:pmachard@debian.org">pmachard@debian.org</a>]
+	      </li>
+	      <li>Cesar Mendoza
+		[<a href="mailto:mendoza@debian.org">mendoza@debian.org</a>]
+	      </li>
+	      <li> Javier Fern&agrave;ndez-Sanguino Pe&ntilde;a
+		[<a href="mailto:jfs@debian.org">jfs@debian.org</a>]
+	      </li>
+	      <li>Guido Trotter
+		[<a href="mailto:ultrotter@debian.org">ultrotter@debian.org</a>]
+	      </li>
+	      <li>Francesco P. Lovergine
+		[<a href="mailto:frankie@debian.org">frankie@debian.org</a>]
+	      </li>
+	      <li>Xavier Roche
+		[<a href="mailto:xavier@debian.org">xavier@debian.org</a>]
+	      </li>
+	      <li>Andre Luis Lopes
+		[<a href="mailto:andrelop@debian.org">andrelop@debian.org</a>]
+	      </li>
+	    </ol>
+<h3><a name="proposerb" id="proposerb">Proposal B Proposer</a></h3>
+	  <p>Duncan Findlay
+	    [<a href="mailto:duncf@debian.org">duncf@debian.org</a>]
+	  </p>
+<h3><a name="secondsb" id="secondsb">Proposal B Seconds</a></h3>
+	    <ol>
+	      <li>Xavier Roche
+		[<a href="mailto:xavier@debian.org">xavier@debian.org</a>]
+	      </li>
+	      <li>Daniel Burrows
+		[<a href="mailto:dburrows@debian.org">dburrows@debian.org</a>]
+	      </li>
+	      <li>Bas Zoetekouw
+		[<a href="mailto:bas@debian.org">bas@debian.org</a>]
+	      </li>
+	      <li>Remi Vanicat
+		[<a href="mailto:vanicat@debian.org">vanicat@debian.org</a>]
+	      </li>
+	      <li>Roland Stigge
+		[<a href="mailto:stigge@debian.org">stigge@debian.org</a>]
+	      </li>
+	      <li>Wouter Verhelst
+		[<a href="mailto:wouter@debian.org">wouter@debian.org</a>]
+	      </li>
+	    </ol>
+<h3><a name="proposerc" id="proposerc">Proposal C Proposer</a></h3>
+	  <p>Colin Watson
+	    [<a href="mailto:cjwatson@debian.org">cjwatson@debian.org</a>]
+	  </p>
+<h3><a name="secondsc" id="secondsc">Proposal C Seconds</a></h3>
+	    <ol>
+	      <li>Guido Trotter
+		[<a href="mailto:ultrotter@debian.org">ultrotter@debian.org</a>]
+	      </li>
+	      <li>Michael Banck
+		[<a href="mailto:mbanck@debian.org">mbanck@debian.org</a>]
+	      </li>
+	      <li>Philippe Troin
+		[<a href="mailto:phil@debian.org">phil@debian.org</a>]
+	      </li>
+	      <li>Osamu Aoki
+		[<a href="mailto:osamu@debian.org">osamu@debian.org</a>]
+	      </li>
+	      <li>Josip Rodin
+		[<a href="mailto:joy@debian.org">joy@debian.org</a>]
+	      </li>
+	      <li>Bas Zoetekouw
+		[<a href="mailto:bas@debian.org">bas@debian.org</a>]
+	      </li>
+	      <li>Frank K&uuml;ster
+		[<a href="mailto:frank@debian.org">frank@debian.org</a>]
+	      </li>
+	      <li>Henrique de Moraes Holschuh
+		[<a href="mailto:hmh@debian.org">hmh@debian.org</a>]
+	      </li>
+	    </ol>
+<h3><a name="proposerd" id="proposerd">Proposal D Proposer</a></h3>
+	  <p>Craig Sanders
+	    [<a href="mailto:cas@debian.org">cas@debian.org</a>]
+	  </p>
+<h3><a name="secondsd" id="secondsd">Proposal D Seconds</a></h3>
+	    <ol>
+	      <li>Xavier Roche
+		[<a href="mailto:xavier@debian.org">xavier@debian.org</a>]
+	      </li>
+	      <li>Raphaël Hertzog
+		[<a href="mailto:hertzog@debian.org">hertzog@debian.org</a>]
+	      </li>
+	      <li>Hamish Moffatt
+		[<a href="mailto:hamish@debian.org">hamish@debian.org</a>]
+	      </li>
+	      <li>Wouter Verhelst
+		[<a href="mailto:wouter@debian.org">wouter@debian.org</a>]
+	      </li>
+	      <li>Osamu Aoki
+		[<a href="mailto:osamu@debian.org">osamu@debian.org</a>]
+	      </li>
+	      <li>Davide G. M. Salvetti
+		[<a href="mailto:salve@debian.org">salve@debian.org</a>]
+	      </li>
+	      <li> Raul Miller
+		[<a href="mailto:moth@debian.org">moth@debian.org</a>]
+	      </li>
+	      <li>David N. Welton
+		[<a href="mailto:davidw@debian.org">davidw@debian.org</a>]
+	      </li>
+	      <li> Andreas Barth
+		[<a href="mailto:aba@debian.org">aba@debian.org</a>]
+	      </li>
+	      <li>Theodore Ts'o
+		[<a href="mailto:tytso@debian.org">tytso@debian.org</a>]
+	      </li>
+	    </ol>
+<h3><a name="proposere" id="proposere">Proposal E Proposer</a></h3>
+	  <p>Manoj Srivastava
+	    [<a href="mailto:srivasta@debian.org">srivasta@debian.org</a>]
+	  </p>
+<h3><a name="secondse" id="secondse">Proposal E Seconds</a></h3>
+	    <ol>
+	      <li> Andreas Barth
+		[<a href="mailto:aba@debian.org">aba@debian.org</a>]
+	      </li>
+	      <li> Martin Schulze
+		[<a href="mailto:joey@debian.org">joey@debian.org</a>]
+	      </li>
+	      <li>David B. Harris
+		[<a href="mailto:dbharris@debian.org">dbharris@debian.org</a>]
+	      </li>
+	      <li> Remi Vanicat
+		[<a href="mailto:vanicat@debian.org">vanicat@debian.org</a>]
+	      </li>
+	      <li> Andreas Metzler
+		[<a href="mailto:ametzler@debian.org">ametzler@debian.org</a>]
+	      </li>
+	      <li>Lukas Geyer
+		[<a href="mailto:lukas@debian.org">lukas@debian.org</a>]
+	      </li>
+	      <li>Gunnar Wolf
+		[<a href="mailto:gwolf@debian.org">gwolf@debian.org</a>]
+	      </li>
+	      <li>Kyle McMartin
+		[<a href="mailto:kyle@debian.org">kyle@debian.org</a>]
+	      </li>
+	      <li>Simon Law
+		[<a href="mailto:sfllaw@debian.org">sfllaw@debian.org</a>]
+	      </li>
+	      <li>Cesar Mendoza
+		[<a href="mailto:mendoza@debian.org">mendoza@debian.org</a>]
+	      </li>
+	      <li> Greg T. Norris
+		[<a href="mailto:adric@debian.org">adric@debian.org</a>]
+	      </li>
+	      <li>Raul Miller
+		[<a href="mailto:moth@debian.org">moth@debian.org</a>]
+	      </li>
+	      <li>Aaron M. Ucko
+		[<a href="mailto:ucko@debian.org">ucko@debian.org</a>]
+	      </li>
+	      <li> Joerg Wendland
+		[<a href="mailto:joergland@debian.org">joergland@debian.org</a>]
+	      </li>
+	      <li> Daniel Burrows
+		[<a href="mailto:dburrows@debian.org">dburrows@debian.org</a>]
+	      </li>
+	      <li>Thomas Bushnell, BSG
+		[<a href="mailto:tb@debian.org">tb@debian.org</a>]
+	      </li>
+	    </ol>
+<h3><a name="proposerf" id="proposerf">Proposal F Proposer</a></h3>
+	  <p>Andrew Suffield
+	    [<a href="mailto:asuffield@debian.org">asuffield@debian.org</a>]
+	  </p>
+<h3><a name="secondsf" id="secondsf">Proposal F Seconds</a></h3>
+	    <ol>
+	      <li> Graham Wilson
+		[<a href="mailto:graham@debian.org">graham@debian.org</a>]
+	      </li>
+	      <li> G&ouml;ran Weinholt
+		[<a href="mailto:weinholt@debian.org">weinholt@debian.org</a>]
+	      </li>
+	      <li> Guillem Jover
+		[<a href="mailto:guillem@debian.org">guillem@debian.org</a>]
+	      </li>
+	      <li> Robert Millan
+		[<a href="mailto:rmh@debian.org">rmh@debian.org</a>]
+	      </li>
+	      <li> Branden Robinson
+		[<a href="mailto:branden@debian.org">branden@debian.org</a>]
+	      </li>
+	    </ol>
+<h3><a name="texta" id="texta">Proposal A</a></h3>
+	  <p>
+	      Puts the recent changes made in the social contract in
+	      abeyance for a fixed time period. (Choice 1 on the ballot)
+	  </p>
+	  <p>
+	   The actual text of the GR is:<br><br>
+             <strong>The Debian Project,</strong>
+	    <p>
+                affirming its commitment to principles of freeness
+                for all works it distributes,
+	    </p>
+	    <p>
+                but recognizing that changing the Social Contract
+                today would have grave consequences for the upcoming
+                stable release, a fact which does not serve our
+                goals or the interests of our users,
+	    </p>
+	    <p>
+                hereby resolves:
+	    </p>
+	    <ol>
+	  	<li>
+		  that the <a href="social_contract_reform.3">amendments</a>
+                     to the <a href="../../social_contract">Social Contract</a>
+                     contained within the General Resolution
+                     <a href="vote_003">Editorial Amendments To The Social Contract</a>
+                     (<a href="vote_003">2004 vote 003</a>) be immediately rescinded;
+                  </li>
+	  	<li>
+                     that these <a href="social_contract_reform.3">amendments</a>, which have already been
+                     <a href="vote_003">ratified</a> by the Debian Project, will be
+                     reinstated effective as of September 1, 2004
+                     without further cause for deliberation.
+                  </li>
+	    </ol>
+              <h3>Rationale</h3>
+              <p>
+                 As a seconder of the <a href="vote_003">earlier
+                 GR</a>, I certainly do consider these <a
+                 href="social_contract_reform.3">amendments</a> to be
+                 editorial in nature, as they are consistent with my
+                 understanding of the <a
+                 href="../../social_contract.1.0">existing Social
+                 Contract</a> and I believe these clarifications are
+                 beneficial in the long term, because the ambiguities
+                 in the Social Contract led mostly to sterile
+                 arguments about whether the <a
+                 href="../../social_contract#DFSG">DFSG</a> <strong>should</strong>
+                 apply to works we distribute that are not programs.
+              </p>
+              <p>
+                 It's just the timing that sucks.
+              </p>
+              <p>
+                 In talking with the Release Manager, it is apparent
+		    to me that his understanding of the
+                  <a href="../../social_contract.1.0">previous wording</a>
+                 of the Social Contract, while different from mine, is
+                 internally consistent; and that attempting to
+                 persuade him that a different interpretation should
+                 have held would do nothing to move the release
+                 forward, as I cannot in good conscience argue that he
+                 should be less principled in the enforcement of the
+                 <a href="../../social_contract">Social Contract</a>
+                 than he has been to date. I am therefore putting
+                 forth this proposal because my *own* principles hold
+                 that releasing sarge this year with the same
+                 blemishes that have existed since the beginning is
+                 better than releasing a sarge next year that has no
+                 non-<a href="../../social_contract#DFSG">DFSG</a> content.
+              </p>
+              <p>
+                 A fixed four month period should (based on current
+                 projections) give us ample time to release sarge,
+                 while not allowing so much time that maintainers are
+                 left to think that resolving the status of
+                 non-program components of Debian vis à vis the DFSG
+                 is not an imminent concern.
+              </p>
+              <p>
+              <em>Since this modifies the Social Contract, this requires a 3:1
+                  majority to pass.</em></p>
+<h3><a name="textb" id="textb">Proposal B</a></h3>
+	  <p>
+	      Puts the recent changes made in the social contract in
+	      abeyance for the next release of Debian. (Choice 2 on the ballot)
+	  </p>
+	  <p>
+	   The actual text of the GR is:<br><br>
+ <strong>The Debian Project,</strong><br>
+	    <p>
+                affirming its commitment to principles of freeness
+                for all works it distributes,
+	    </p>
+	    <p>
+                but recognizing that changing the Social Contract
+                today would have grave consequences for the upcoming
+                stable release, a fact which does not serve our
+                goals or the interests of our users,
+	    </p>
+	    <p>
+                hereby resolves:
+	    </p>
+	    <ol>
+	  	<li>
+		  that the <a href="social_contract_reform.3">amendments</a>
+                     to the <a href="../../social_contract">Social Contract</a>
+                     contained within the General Resolution
+                     <a href="vote_003">Editorial Amendments To The Social Contract</a>
+                     (<a href="vote_003">2004 vote 003</a>) be immediately rescinded;
+                  </li>
+	  	<li>
+                     that these <a href="social_contract_reform.3">amendments</a>, which have already been
+                     <a href="vote_003">ratified</a> by the Debian Project, will be
+                     reinstated immediately after the release of
+                     the next stable version of Debian, without
+                     further cause for deliberation.
+                  </li>
+	    </ol>
+              <h3>Rationale</h3>
+              <p>
+                 While a four month period should be enough time to
+                 release sarge, without this amendment, we leave open
+                 the possibility that we do not release in time and
+                 must repeat this process again. I think it's best to
+                 declare explicitly how long this exception should
+                 remain in effect rather than assume that we have
+                 picked a big enough window. Although on the downside,
+                 it relieves some pressure to release sarge soon, but
+                 it also prevents us from rushing to release by
+                 September 1 which may result in an inferior product.
+              </p>
+              <p>
+                 I really hope that this amendment is not needed
+                 (i.e. we release by September 1 anyways), but I think
+                 we should allow for the worst, just in case.
+              </p>
+              <p>
+              <em>Since this modifies the Social Contract, this requires a 3:1
+                  majority to pass.</em></p>
+<h3><a name="textc" id="textc">Proposal C</a></h3>
+	  <p>
+	      Puts in an apology for the current release, code named
+	      sarge, for not following the social contract. (Choice 3
+	      on the ballot)
+	  </p>
+	  <p>
+	    The actual text of the GR is:<br><br>
+	    <strong>The Debian Project,</strong><br>
+	    <p>
+	      affirming its commitment to principles of freeness
+	      for all works it distributes,
+	    </p>
+	    <p>
+	      but recognizing that changing the Social Contract
+	      today would have grave consequences for the upcoming
+	      stable release, a fact which does not serve our
+	      goals or the interests of our users,
+	    </p>
+	    <p>
+	      hereby resolves:
+	    </p>
+	    <ol>
+	      <li>
+		that the following text be appended to the first
+		clause of the
+		<a href="../../social_contract">Social Contract</a>:
+		<p>
+		  We apologize that the current state of some of our
+		  documentation and kernel drivers with binary-only
+		  firmware does not live up to this part of our
+		  <a href="../../social_contract">Social Contract</a>.
+                    While Debian 3.1 (codenamed sarge)
+		  will not meet this standard in those areas, we
+		  promise to rectify this in the following release.
+		</p>
+		<p>
+		  The first clause of the Social Contract as
+		  amended will read as follows:
+		</p>
+		<blockquote>
+		  <h3>Debian will remain 100% free</h3>
+		  <p>
+		    We provide the guidelines that we use to determine if a work
+                      is "<em>free</em>" in the document entitled "<cite>The Debian Free
+                      Software Guidelines</cite>". We promise that the Debian system and
+                      all its components will be free according to these
+                      guidelines. We will support people who create or use both
+                      free and non-free works on Debian. We will never make the
+                      system require the use of a non-free component.
+		  </p>
+		  <p>
+ 		    We apologize that the current state of some of our
+		    documentation and kernel drivers with binary-only
+		    firmware does not live up to this part of our
+		    <a href="../../social_contract">Social Contract</a>.
+                      While Debian 3.1 (codenamed sarge)
+		    will not meet this standard in those areas, we
+		    promise to rectify this in the following release.
+		  </p>
+		</blockquote>
+	      </li>
+	      <li>
+                  that the paragraph added to the Social Contract by this Resolution
+                  shall be removed from the Social Contract upon the next full release
+                  of Debian after Debian 3.1 (codenamed sarge), without further cause
+                  for deliberation.
+	      </li>
+	    </ol>
+	    <h3>Rationale</h3>
+	    <p>
+	      I largely concur with Steve's rationale above. However,
+	      having amended the Social Contract already in a way that
+	      many of our developers feel best expresses their
+	      principles yet being quite some distance away from being
+	      able to meet those standards, I feel that the most
+	      honest approach is to note in the Social Contract itself
+	      that we apologize for not living up to those principles
+	      just yet. We can then get on with releasing something
+	      that's the best we can do in the time we need to satisfy
+	      those of our userbase who are frustrated with the age of
+	      the previous release, and start removing or rewriting
+	      whatever's necessary after that.
+	    </p>
+	    <p>
+	      As well as being, in my opinion, more honest, amending
+	      the Social Contract rather than resolving to ignore it
+	      means that the Release Manager will no longer be in the
+	      position of either having to violate the Social Contract
+	      or else having to postpone a full Debian release for an
+	      as yet indeterminate period of time. (This also applies
+	      to Steve's original proposal.)
+	    </p>
+	    <p>
+	      The Social Contract as amended here does not require the
+	      removal of non-free documentation or kernel drivers with
+	      binary-only firmware from sarge or its point releases;
+	      but it restores the full force of version 1.1 with
+	      effect from sarge+1. It does not excuse any other DFSG
+	      violations in sarge. I feel that we already have plenty
+	      of incentive to release sarge in a short timeframe, and
+	      that we're well on the way to doing so.
+	    </p>
+	    <p>
+              <em>Since this modifies the Social Contract, this requires a 3:1
+		majority to pass.</em></p>
+<h3><a name="textd" id="textd">Proposal D</a></h3>
+	  <p>
+	      Rescinds the previous GR, reverting to the version 1.0
+	      of the social contract. (Choice 4 on the ballot)
+	  </p>
+	    <p>
+                This amendment deletes everything but clause 1 of proposal A.
+	     The actual text of the GR is:<br><br>
+              <strong>The Debian Project,</strong><br>
+	      hereby resolves:
+	    </p>
+             <ol>
+                <li>
+		  that the <a href="social_contract_reform.3">amendments</a>
+                     to the <a href="../../social_contract">Social Contract</a>
+                     contained within the General Resolution
+                     <a href="vote_003">Editorial Amendments To The Social Contract</a>
+                     (<a href="vote_003">2004 vote 003</a>) be immediately rescinded.
+                </li>
+             </ol>
+	     <h3>Rationale</h3>
+             <ol>
+                <li>
+		People can make mistake and should be allowed to correct it.
+                </li>
+                <li>
+		This deserves to be an option on the ballot.
+                </li>
+                <li>
+		Full impact <a href="https://lists.debian.org/debian-vote/2004/04/msg00074.html">assessment</a> by Anthony Towns revealed the hidden issues.
+                </li>
+                <li>
+		We need to get the sarge out the door <a href="https://lists.debian.org/debian-vote/2004/05/msg00060.html">ASAP</a>.
+                </li>
+                <li>
+		All other proposed GRs to get the sarge out are better than the
+		situation created by GR (2004-003). But they still
+   		seem to put heavy limitations on the post-sarge
+   		releases. This proposal solves them for <a href="https://lists.debian.org/debian-vote/2004/05/msg00089.html">good</a>.
+                </li>
+                <li>
+		Title of GR (2004-003) was, at least, "misleading"
+   		although it may not have been intentionally deceptive.
+                </li>
+                <li>
+		Change of SC by GR (2004-003) was not clarification but a radical
+   		change which subverts the original intent of the old SC.
+                </li>
+                <li>
+		GR (2004-003) may have been incomplete.
+                </li>
+                <li>
+		Rescinding GR (2004-003) will enable useful
+                 <a href="https://lists.debian.org/debian-vote/2004/05/msg00015.html">data,
+   		font, documentation, and firmware</a> to be included in
+   		main. This will make Debian useful distribution.
+                </li>
+                <li>
+		Rescinding GR (2004-003) will clarify and affirm that the correct
+   		interpretation of the word "software" in old SC does not include
+   		things such as data, font, documentation, and firmware.
+                </li>
+                <li>
+		Historical <a href="https://lists.debian.org/debian-vote/2004/05/msg00015.html">document</a> has its own value and even good
+   		willed "editorial change" may not be even
+   		desirable. (Some of us will also support other
+   		proposals for the GR if they address our concern.)
+                </li>
+                <li>
+		Obscure arrangement for distribution required by the
+   		GR (2004-003) may marginalize Debian only for "Holier
+   		Than Stallman", i.e., the fringe fanatics. We do not
+   		want to be seen <a href="https://lists.debian.org/debian-vote/2004/04/msg00205.html">chasing the <em>cause</em> without thinking
+   		its <em>consequence</em> by doing this</a>.
+                </li>
+                <li>
+		No apologetic statement in SC.
+                </li>
+                <li>
+		We had enough discussion on this subject and some of us are sick of it.
+                </li>
+             </ol>
+	      <p>
+              <em>Since this modifies the Social Contract, this requires a 3:1
+                  majority to pass.</em></p>
+<h3><a name="texte" id="texte">Proposal E</a></h3>
+	  <p>
+	      Creates a foundation document to provide guidelines for
+	      handling changes in foundation documents. (Choice 5 on the ballot)
+	  </p>
+	  <p>
+	    The actual text of the GR is:<br><br>
+             <p>
+               I propose we adopt a foundation document that tries to
+               provide guidance and explanation for the transitions
+               required whenever a change occurs in a foundation
+               document like the social contract, and also provides
+               specific remedies to the current dilemma that we find
+               ourself in. This GR proposal is related to the GR
+               currently in discussion for deferring of the changes
+               made in GR 2004_003, and would be on the same ballot,
+               and is an alternative to the GR currently in
+               discussion.
+             </p>
+             <p>
+                I hereby propose that we amend the constitution to add
+                to the list of foundation documents the document
+                attached in this proposal, titled <cite>Transition
+                Guide</cite>. The context diff follows.
+             </p>
+           <hr>
+             <pre>
+   1. A Foundation Document is a document or statement regarded
+      as critical to the Project's mission and purposes.
+   2. The Foundation Documents are the works entitled Debian
+-     Social Contract and Debian Free Software Guidelines.
++     Social Contract, transition Guide and
++     Debian Free Software Guidelines.
+   3. A Foundation Document requires a 3:1 majority for its
+      supersession.  New Foundation Documents are issued and
+      existing ones withdrawn by amending the list of Foundation
+      Documents in this constitution.
+             </pre>
+           <hr>
+             <p>
+                 It is further resolved that the final paragraph of
+                 the <cite>Transition Guide</cite> with specific
+                 references to the forthcoming release (code named
+                 <q>Sarge</q>) shall be removed from the
+                 <cite>Transition Guide</cite> upon the next full
+                 release of Debian after Debian 3.1 (code named
+                 <q>Sarge</q>), without further cause for
+                 deliberation.
+              </p>
+              <p>
+                 It is resolved that the full text of the proposed
+                 foundation document be the following:
+              </p>
+           <div style="border: solid 2px; padding: 1ex; ">
+             <p class="center">
+			   Transition Guide<br><br>
+ A working guide to achieve the transition for changes in Foundation documents<br>
+	 containing explanations and Rationale, and defining<br>
+		  guidelines for future transitions<br>
+             </p>
+             <p>
+                The Social Contract represents the core commitments of
+                the Project. The Social Contract leaves its marks in
+                many ways; it is deeply intertwined with all parts of
+                the Project. Potentially, any change to the Social
+                Contract has major ramifications, and may require a
+                period of potentially deep changes to the roots of the
+                Project before it can come into compliance with the
+                changed Contract.
+             </p>
+             <p>
+                  Meeting our commitments as described in the Social
+                  Contract is an ongoing process. Whenever we change
+                  these commitments, we may need an interval of time
+                  before we can approach compliance. Unless we shut
+                  down the Project completely - abandoning users and
+                  our developers - the regular activities of the
+                  Project must continue while we work towards
+                  compliance.
+             </p>
+             <p>
+                  There is precedent for a gap between ratifying a
+                  change to the foundation documents of the Project
+                  and implementing dictates of that document; when the
+                  Project first accepted the Social Contract and the
+                  Debian Free Software Guidelines, there was an
+                  interval before we came into compliance with those
+                  then-new documents. Indeed, a minor version was
+                  released just days after the Debian Free Software
+                  Guidelines were accepted, and this release by no
+                  means complied with the new commitments.
+             </p>
+             <p>
+                  We also continued to support older non-complying
+                  releases, and did not make them unavailable to our
+                  users.
+             </p>
+             <p>
+                  The binding principle here is that we have to
+                  balance the needs of our users and the need to make
+                  Debian strictly free. As one developer has said:
+             </p>
+             <blockquote>
+               <p>
+                  In my opinion, the needs of the free software
+                  community take precedence in the context of adopting
+                  new packages, in the setting of release goals, in
+                  our choices about infrastructure and philosophy, and
+                  of course in the context of any development work we
+                  do.
+               </p>
+               <p>
+                  In my opinion, the needs of our users take
+                  precedence in the context of security fixes, in the
+                  context of support for packages and systems we've
+                  released, and in the context of the quality of our
+                  work.
+               </p>
+             </blockquote>
+              <p>
+                  We, the Debian Project, do so affirm this
+                  judgment. While we are working towards complying with
+                  a change in the goals or identity of the Project, or
+                  towards compliance with any change to a foundation
+                  document, the needs of our users will be catered
+                  to. This may mean that for a limited time, Debian
+                  will not be compliant with the new Social Contract.
+              </p>
+              <p>
+                   Whenever a change to our foundation documents takes
+                   place, the activities required to provide ongoing
+                   and proactive support for the Debian user community
+                   shall continue. This includes, but is not
+                   necessarily limited to, providing security updates
+                   for previously-released versions of Debian,
+                   providing point-release updates to
+                   previously-released versions of Debian, preparing
+                   for the next (compliant) release of Debian,
+                   actually releasing the current non-compliant
+                   version of Debian if such a release is imminent (as
+                   well as any further updates to that version of
+                   Debian), and providing all the Project's
+                   infrastructure such as bug-tracking and mailing
+                   lists.
+              </p>
+              <p>
+		In the specific case of General Resolution 2004_003,
+		since that release currently in preparation, code
+		named "Sarge", is very close to release, and the
+		previously released version is quite out of date, our
+		commitment to our users dictates that the "Sarge"
+		release should go on as planned - even while we are in
+		the process of reaching compliance with the new Social
+		Contract. This exemption for "Sarge" applies to
+		security releases and point releases as well.
+              </p>
+             </div>
+	    <h3>Rationale</h3>
+              <p>
+                   My intent was not just to find a way for us to
+                   allow to release Sarge, it was to create a
+                   guideline to help ease us through major changes in
+                   something like the Social contract, or the
+                   constitution. The fact that a generic transition
+                   guide may help us also release Sarge soon is a nice
+                   side effect.
+              </p>
+              <p>
+	        It has been suggested that transitioning ought to be
+	        handled in the original proposal itself, and yes, that
+	        is a good idea. But foresight is weak, compared to
+	        8/20 hind sight, and there may be unforeseen
+	        consequences of a proposed change that were not
+	        evident while drafting the proposal.
+              </p>
+              <p>
+      	        Nothing is perfect. I would much rather we also had a
+      	        process defined to pick up the pieces if the
+      	        before-the-fact transition plan blew up in our face;
+      	        this is way better than relying on perfect foresight
+      	        in transition plans.
+              </p>
+              <p>
+	       The other issue addressed in the proposal is one of
+	       choosing between two different requirements of the
+	       social contract; and how to balance these different
+	       requirements when some of these requirements are
+	       changed.
+              </p>
+	      <p>
+              <em>Since this modifies the Constitution, this requires a 3:1
+                  majority to pass.</em></p>
+<h3><a name="textf" id="textf">Proposal F</a></h3>
+	  <p>
+	      Reaffirms the current <a href="../../social_contract">Social Contract</a>,
+	      and not compromise on future releases.
+	  </p>
+	  <p>
+	   The actual text of the GR is:<br><br>
+	   This amendment replaces the full text of the proposal with:
+	    <p>
+ 	        The Debian Project resolves that it will not
+ 	        compromise on freedom, and will never knowingly issue
+ 	        another release (excluding point updates to stable
+ 	        releases) that contains anything in the <em>main</em>
+ 	        or <em>contrib</em> sections which is not free
+ 	        software according to the DFSG.
+	    </p>
+<h3><a name="quorum" id="quorum">Quorum</a></h3>
+	  <p>
+	With <a href="vote_004.quorum.log">909 developers</a>,
+	we have:
+             <pre>
+ Current Developer Count = 909
+ Q ( sqrt(#devel) / 2 ) = 15.0748134316813
+ K min(5, Q )           = 5
+ Quorum  (3 x Q )       = 45.224440295044
+
+Option 1 Reached quorum: 293> 45.224440295044
+Option 2 Reached quorum: 339> 45.224440295044
+Option 3 Reached quorum: 270> 45.224440295044
+Option 4 Reached quorum: 255> 45.224440295044
+Option 5 Reached quorum: 258> 45.224440295044
+Option 6 Reached quorum: 155> 45.224440295044
+           </pre>
+<h3><a name="statistics" id="statistics">Data and Statistics</a></h3>
+          <p>
+	  Some <a href="gr_sarge_stats">statistics</a>
+	  are being gathered about ballots and acknowledgements
+	  periodically during the voting period. Additionally, the
+   	  list of
+           <a href="gr_sarge_voters.txt">people</a>
+   	  who have voted is available. The
+           <a href="gr_sarge_tally.txt">tally
+             sheet</a> is also present (Note that while the vote is in
+             progress it is a dummy tally sheet).
+         </p>
+<h3><a name="majorityreq" id="majorityreq">Majority Requirement</a></h3>
+	  <p>
+                 All proposals, except F, require a 3:1 majority,
+                 since they modify either the Social contract, or the
+                 Debian Constitution, both foundation documents.
+                 Proposal F does not do so, and has a simple 1:1
+                 majority requirement.
+             <pre>
+Option 1 passes Majority.               3.756 (293/78)> 3
+Option 2 passes Majority.               7.533 (339/45)> 3
+Dropping Option 3 because of Majority.  2.903 (270/93) <= 3
+Dropping Option 4 because of Majority.  2.318 (255/110) <= 3
+Dropping Option 5 because of Majority.  2.434 (258/106) <= 3
+Dropping Option 6 because of Majority.  0.824 (155/188) <= 1
+              </pre>
+<h3><a name="outcome" id="outcome">Outcome</a></h3>
+              <p>The winner is: <strong>Option 2</strong> <q>Choice 2: Postpone changes until Sarge releases [needs 3:1]</q></p>
+           <p class="center">
+             <a style="margin-left: auto; margin-right: auto;" href="vote_004_results.dot">
+               <img src="vote_004_results.png" alt="Graphical rendering of the results" width="540" height="626">
+               </a>
+           </p>
+             <p>
+               In the graph above, the pink colored options did not
+               pass majority, the Blue is the winner. The Octagon is
+               used for the options that did not beat the default.
+               In the following table, tally[row x][col y] represents
+               the votes that option x received over option y. A
+               <a href="https://en.wikipedia.org/wiki/Schwartz_method">more
+                 detailed explanation of the beat matrix</a> may help in
+               understanding the table. For understanding the Condorcet method, the
+               <a href="https://en.wikipedia.org/wiki/Condorcet_method">Wikipedia
+                 entry</a> is fairly informative.
+           </p>
+	    <table class="vote matrix" summary="">
+	      <caption>The Beat Matrix</caption>
+	      <tbody>
+		<tr>
+		  <th>&nbsp;</th>
+		  <th>Option 1</th>
+		  <th>Option 2</th>
+		  <th>Option 3</th>
+		  <th>Option 4</th>
+		  <th>Option 5</th>
+		  <th>Option 6</th>
+		  <th>Option 7</th>
+		</tr>
+		<tr>
+		  <th>Option 1</th>
+		  <td>&nbsp;</td>
+		  <td>45</td>
+		  <td>187</td>
+		  <td>200</td>
+		  <td>213</td>
+		  <td>289</td>
+		  <td>293</td>
+		</tr>
+		<tr>
+		  <th>Option 2</th>
+		  <td>301</td>
+		  <td>&nbsp;</td>
+		  <td>271</td>
+		  <td>257</td>
+		  <td>273</td>
+		  <td>322</td>
+		  <td>339</td>
+		</tr>
+		<tr>
+		  <th>Option 3</th>
+		  <td>149</td>
+		  <td>77</td>
+		  <td>&nbsp;</td>
+		  <td>180</td>
+		  <td>186</td>
+		  <td>267</td>
+		  <td>270</td>
+		</tr>
+		<tr>
+		  <th>Option 4</th>
+		  <td>160</td>
+		  <td>122</td>
+		  <td>174</td>
+		  <td>&nbsp;</td>
+		  <td>181</td>
+		  <td>239</td>
+		  <td>255</td>
+		</tr>
+		<tr>
+		  <th>Option 5</th>
+		  <td>131</td>
+		  <td>86</td>
+		  <td>143</td>
+		  <td>179</td>
+		  <td>&nbsp;</td>
+		  <td>250</td>
+		  <td>258</td>
+		</tr>
+		<tr>
+		  <th>Option 6</th>
+		  <td>65</td>
+		  <td>55</td>
+		  <td>74</td>
+		  <td>116</td>
+		  <td>83</td>
+		  <td>&nbsp;</td>
+		  <td>155</td>
+		</tr>
+		<tr>
+		  <th>Option 7</th>
+		  <td>78</td>
+		  <td>45</td>
+		  <td>93</td>
+		  <td>110</td>
+		  <td>106</td>
+		  <td>188</td>
+		  <td>&nbsp;</td>
+		</tr>
+	      </tbody>
+	    </table>
+    <hr>
+    <address>
+      <a href="mailto:srivasta@debian.org">Manoj Srivastava</a>
+    </address>
+</div> <!-- end maincol -->
+<div class="clr"></div>
+</div> <!-- end content -->
+<div id="footer">
+<hr class="hidecss">
+<p>Back to the <a href="../../">Debian Project homepage</a>.</p>
+<hr>
+<!--UdmComment-->
+<div id="pageLang">
+<div id="langSelector">
+This page is also available in the following languages:
+<div id="langContainer">
+<select onchange="location = this.value;">
+<option value="" disabled selected>Select your language</option>
+ <option value="vote_004.fr.html" title="French" lang="fr">fran&ccedil;ais</option>
+</select>
+</div>
+How to set <a href="../../intro/cn">the default document language</a>
+</div></div><!--/UdmComment-->
+<hr>
+<div id="footermap">
+<!--UdmComment-->
+<p><strong><a href="/">Home</a></strong></p>
+    <ul id="footermap-cola">
+		<li><a href="../../intro/about">About</a>
+		  <ul>
+		  <li><a href="../../social_contract">Social Contract</a></li>
+		  <li><a href="../../code_of_conduct">Code of Conduct</a></li>
+		  <li><a href="../../intro/free">Free Software</a></li>
+          <li><a href="../../legal">Legal Info</a></li>
+		  </ul>
+		</li>
+        <li><a href="../../intro/help">Help Debian</a></li>
+    </ul>
+	<ul id="footermap-colb">
+			<li><a href="../../distrib/">Getting Debian</a>
+			  <ul>
+			  <li><a href="../../distrib/netinst">Network install</a></li>
+			  <li><a href="../../CD/">CD/USB ISO images</a></li>
+            <li><a href="../../blends/">Pure Blends</a></li>
+			<li><a href="../../distrib/packages">Debian Packages</a></li>
+			<li><a href="../../devel/">Developers' Corner</a></li>
+			  </ul>
+			</li>
+	</ul>
+	<ul id="footermap-colc">
+		<li><a href="../../News/">News</a>
+		  <ul>
+		  <li><a href="../../News/weekly/">Project News</a></li>
+		  <li><a href="../../events/">Events</a></li>
+		  </ul>
+		</li>
+    <li><a href="../../doc/">Documentation</a>
+      <ul>
+      <li><a href="../../releases/">Release Info</a></li>
+      <li><a href="https://wiki.debian.org/">Debian Wiki</a></li>
+      </ul>
+    </li>
+   </ul>
+   <ul id="footermap-cold">
+    <li><a href="../../support">Support</a>
+	  <ul>
+			  <li><a href="../../international/">Debian International</a></li>
+			  <li><a href="../../security/">Security Information</a></li>
+			  <li><a href="../../Bugs/">Bug reports</a></li>
+			  <li><a href="../../MailingLists/">Mailing Lists</a></li>
+      </ul>
+    </li>
+</ul>
+<ul id="footermap-cole">
+  <li><a href="../../sitemap">Site map</a></li>
+  <li><a href="https://search.debian.org/">Search</a></li>
+  <li><a href="https://bits.debian.org">The Debian Blog</a></li>
+  <li><a href="https://micronews.debian.org">Debian Micronews</a></li>
+  <li><a href="https://planet.debian.org">Debian Planet</a></li>
+</ul>
+<!--/UdmComment-->
+</div> <!-- end footermap -->
+<div id="fineprint">
+<!--UdmComment-->
+  <p>See our <a href="../../contact">contact page</a> to get in touch. Web site source code is <a href="https://salsa.debian.org/webmaster-team/webwml">available</a>.</p>
+<p>
+Last Modified: Wed, Oct 22 11:24:13 UTC 2025
+&emsp;
+Last Built: Sun, Oct 18 03:31:27 UTC 2026
+  <br>
+  Copyright &copy; 2004-2025 <a href="https://www.spi-inc.org/">SPI</a> and others; See <a href="../../license" rel="copyright">license terms</a><br>
+  Debian is a registered <a href="../../trademark">trademark</a> of Software in the Public Interest, Inc.
+</p>
+<!--/UdmComment-->
+</div>
+</div> <!-- end footer -->
+</body>
+</html>

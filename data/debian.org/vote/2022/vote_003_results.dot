@@ -1,0 +1,26 @@
+digraph Results {
+  ranksep=0.25;
+ "Only one installer, including non-free firmware\n2.90" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Only one installer, including non-free firmware\n2.90" -> "Allow presenting non-free installers alongside the free one\n6.00" [ label="62" ];
+ "Only one installer, including non-free firmware\n2.90" -> "None of the above" [ label="173" ];
+ "Recommend installer containing non-free firmware\n4.62" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Recommend installer containing non-free firmware\n4.62" -> "Only one installer, including non-free firmware\n2.90" [ label="12" ];
+ "Recommend installer containing non-free firmware\n4.62" -> "Allow presenting non-free installers alongside the free one\n6.00" [ label="136" ];
+ "Recommend installer containing non-free firmware\n4.62" -> "None of the above" [ label="228" ];
+ "Allow presenting non-free installers alongside the free one\n6.00" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Allow presenting non-free installers alongside the free one\n6.00" -> "None of the above" [ label="255" ];
+ "Installer with non-free software is not part of Debian\n0.69" [ style="filled" , color="pink", shape=octagon, fontname="Helvetica", fontsize=10  ];
+ "None of the above" -> "Installer with non-free software is not part of Debian\n0.69" [ label="62" ];
+ "Change SC for non-free firmware in installer, one installer\n4.59" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "Change SC for non-free firmware in installer, one installer\n4.59" -> "Only one installer, including non-free firmware\n2.90" [ label="157" ];
+ "Change SC for non-free firmware in installer, one installer\n4.59" -> "Recommend installer containing non-free firmware\n4.62" [ label="98" ];
+ "Change SC for non-free firmware in installer, one installer\n4.59" -> "Allow presenting non-free installers alongside the free one\n6.00" [ label="102" ];
+ "Change SC for non-free firmware in installer, one installer\n4.59" -> "Change SC for non-free firmware in installer, keep both installers\n7.40" [ label="6" ];
+ "Change SC for non-free firmware in installer, one installer\n4.59" -> "None of the above" [ label="226" ];
+ "Change SC for non-free firmware in installer, keep both installers\n7.40" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Change SC for non-free firmware in installer, keep both installers\n7.40" -> "Only one installer, including non-free firmware\n2.90" [ label="87" ];
+ "Change SC for non-free firmware in installer, keep both installers\n7.40" -> "Recommend installer containing non-free firmware\n4.62" [ label="178" ];
+ "Change SC for non-free firmware in installer, keep both installers\n7.40" -> "Allow presenting non-free installers alongside the free one\n6.00" [ label="182" ];
+ "Change SC for non-free firmware in installer, keep both installers\n7.40" -> "None of the above" [ label="269" ];
+ "None of the above" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

@@ -1,0 +1,18 @@
+digraph Results {
+  ranksep=0.25;
+ "Joerg Jaspert\n6.25" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Joerg Jaspert\n6.25" -> "Jonathan Carter\n8.73" [ label="3" ];
+ "Joerg Jaspert\n6.25" -> "None Of The Above" [ label="268" ];
+ "Jonathan Carter\n8.73" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Jonathan Carter\n8.73" -> "None Of The Above" [ label="286" ];
+ "Sam Hartman\n12.92" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "Sam Hartman\n12.92" -> "Joerg Jaspert\n6.25" [ label="89" ];
+ "Sam Hartman\n12.92" -> "Jonathan Carter\n8.73" [ label="97" ];
+ "Sam Hartman\n12.92" -> "Martin Michlmayr\n9.26" [ label="68" ];
+ "Sam Hartman\n12.92" -> "None Of The Above" [ label="310" ];
+ "Martin Michlmayr\n9.26" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Martin Michlmayr\n9.26" -> "Joerg Jaspert\n6.25" [ label="11" ];
+ "Martin Michlmayr\n9.26" -> "Jonathan Carter\n8.73" [ label="2" ];
+ "Martin Michlmayr\n9.26" -> "None Of The Above" [ label="289" ];
+ "None Of The Above" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

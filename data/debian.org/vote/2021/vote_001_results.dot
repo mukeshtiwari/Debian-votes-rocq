@@ -1,0 +1,9 @@
+digraph Results {
+  ranksep=0.25;
+ "Jonathan Carter\n14.03" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "Jonathan Carter\n14.03" -> "Sruthi Chandran\n4.21" [ label="210" ];
+ "Jonathan Carter\n14.03" -> "None Of The Above" [ label="391" ];
+ "Sruthi Chandran\n4.21" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Sruthi Chandran\n4.21" -> "None Of The Above" [ label="260" ];
+ "None Of The Above" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

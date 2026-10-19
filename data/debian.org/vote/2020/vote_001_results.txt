@@ -1,0 +1,59 @@
+Starting results calculation at Sun Apr 19 00:00:10 2020
+
+Option 1 "Jonathan Carter"
+Option 2 "Sruthi Chandran"
+Option 3 "Brian Gupta"
+Option 4 "None Of The Above"
+
+In the following table, tally[row x][col y] represents the votes that
+option x received over option y.
+
+                  Option
+              1     2     3     4 
+            ===   ===   ===   === 
+Option 1          258   281   301 
+Option 2     57         163   244 
+Option 3     40   114         194 
+Option 4     34    76   125       
+
+
+
+Looking at row 2, column 1, Sruthi Chandran
+received 57 votes over Jonathan Carter
+
+Looking at row 1, column 2, Jonathan Carter
+received 258 votes over Sruthi Chandran.
+
+Option 1 Reached quorum: 301 > 47.6943392867539
+Option 2 Reached quorum: 244 > 47.6943392867539
+Option 3 Reached quorum: 194 > 47.6943392867539
+
+
+Option 1 passes Majority.               8.853 (301/34) >= 1
+Option 2 passes Majority.               3.211 (244/76) >= 1
+Option 3 passes Majority.               1.552 (194/125) >= 1
+
+
+  Option 1 defeats Option 2 by ( 258 -   57) =  201 votes.
+  Option 1 defeats Option 3 by ( 281 -   40) =  241 votes.
+  Option 1 defeats Option 4 by ( 301 -   34) =  267 votes.
+  Option 2 defeats Option 3 by ( 163 -  114) =   49 votes.
+  Option 2 defeats Option 4 by ( 244 -   76) =  168 votes.
+  Option 3 defeats Option 4 by ( 194 -  125) =   69 votes.
+
+
+The Schwartz Set contains:
+	 Option 1 "Jonathan Carter"
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The winners are:
+	 Option 1 "Jonathan Carter"
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The total numbers of votes tallied = 339

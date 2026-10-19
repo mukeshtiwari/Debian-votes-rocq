@@ -1,0 +1,1217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>    General Resolution: LLM usage in Debian </title>
+  <link rel="author" href="mailto:webmaster@debian.org">
+  <meta name="Generator" content="WML 2.32.0">
+  <meta name="Modified" content="2026-10-18 03:32:51">
+  <meta name="viewport" content="width=device-width">
+  <meta name="mobileoptimized" content="300">
+  <meta name="HandheldFriendly" content="true">
+<link href="../../debian.css" rel="stylesheet" type="text/css">
+  <link href="../../debian-en.css" rel="stylesheet" type="text/css" media="all">
+<link rel="search" type="application/opensearchdescription+xml" title="Debian website search" href="../../search.en.xml">
+</head>
+<body>
+<div id="header">
+  <div id="upperheader">
+    <div id="logo">
+    <a href="../../" title="Debian Home"><img src="../../Pics/openlogo-50.png" alt="Debian" width="50" height="61"></a>
+    </div> <!-- end logo -->
+    <div id="searchbox">
+      <form name="p" method="get" action="https://search.debian.org/cgi-bin/omega">
+      <p>
+<input type="hidden" name="DB" value="en">
+        <input name="P" value="" size="14">
+        <input type="submit" value="Search">
+      </p>
+      </form>
+    </div>   <!-- end sitetools -->
+  </div> <!-- end upperheader -->
+  <!--UdmComment-->
+  <div id="navbar">
+    <p class="hidecss"><a href="#content">Skip Quicknav</a></p>
+    <ul>
+      <!-- Link to Debian's own Social Media resources -->
+      <li><a href="https://bits.debian.org/" title="Bits from Debian">Blog</a></li>
+      <li><a href="https://micronews.debian.org" title="Micronews from Debian">Micronews</a></li>
+      <li><a href="https://planet.debian.org/" title="The Planet of Debian">Planet</a></li>
+      <li><a href="https://wiki.debian.org/" title="The Debian Wiki">Wiki</a></li>
+    </ul>
+  </div> <!-- end navbar -->
+<p id="breadcrumbs"><a href="./../">Debian Voting Information</a>
+ &#x2F; <a href="./">2026</a>
+ &#x2F;
+General Resolution: LLM usage in Debian</p>
+</div> <!-- end header -->
+<!--/UdmComment-->
+<div id="content">
+<div id="second-nav">
+<!--UdmComment-->
+	<ul class="votemenu">
+	<li>Home
+	<ul>
+	 <li><a href="../../vote/">Home&nbsp;Vote&nbsp;Page</a></li>
+	</ul>
+	</li>
+	<li>How&nbsp;To
+	<ul>
+	<li><a href="../../vote/howto_proposal">Submit&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_proposal#amend">Amend&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_follow">Follow&nbsp;a&nbsp;Proposal</a></li>
+	<!-- <li><a href="howto_vote">&bull;&nbsp;Vote</a></li>
+		<li>*<a href="howto_result">Read&nbsp;a&nbsp;Result</a></li> -->
+	</ul>
+	</li>
+	<li>Decided<ul><li><a href="../../vote/2026/vote_002">General Resolution: LLM usage in Debian</a></li>
+<li><a href="../../vote/2026/vote_001">Debian Project Leader Elections 2026</a></li>
+<li><a href="../../vote/2025/vote_001">Debian Project Leader Elections 2025</a></li>
+<li><a href="../../vote/2024/vote_001">Debian Project Leader Elections 2024</a></li>
+<li><a href="../../vote/2023/vote_002">General Resolution: Statement about the EU Legislation "Cyber Resilience Act and Product Liability Directive"</a></li>
+<li><a href="../../vote/2023/vote_001">Debian Project Leader Elections 2023</a></li>
+<li><a href="../../vote/2022/vote_003">General Resolution: non-free firmware</a></li>
+<li><a href="../../vote/2022/vote_002">Debian Project Leader Elections 2022</a></li>
+<li><a href="../../vote/2022/vote_001">General Resolution: Voting secrecy</a></li>
+<li><a href="../../vote/2021/vote_003">General Resolution: Change the resolution process</a></li>
+<li><a href="../../vote/2021/vote_002">General Resolution: Statement regarding Richard Stallman's readmission to the FSF board</a></li>
+<li><a href="../../vote/2021/vote_001">Debian Project Leader Elections 2021</a></li>
+<li><a href="../../vote/2020/vote_001">Debian Project Leader Elections 2020</a></li>
+<li><a href="../../vote/2019/vote_002">General Resolution: Init systems and systemd</a></li>
+<li><a href="../../vote/2019/vote_001">Debian Project Leader Elections 2019</a></li>
+<li><a href="../../vote/2018/vote_001">Debian Project Leader Elections 2018</a></li>
+<li><a href="../../vote/2017/vote_001">Debian Project Leader Elections 2017</a></li>
+<li><a href="../../vote/2016/vote_004">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_003">General Resolution: Replace "Chairman" with "Chair" throughout the Debian Constitution</a></li>
+<li><a href="../../vote/2016/vote_002">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_001">Debian Project Leader Elections 2016</a></li>
+<li><a href="../../vote/2015/vote_003">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2015/vote_001">Debian Project Leader Elections 2015</a></li>
+<li><a href="../../vote/2014/vote_004">General Resolution: Limiting the term of the technical committee members</a></li>
+<li><a href="../../vote/2014/vote_003">General Resolution: init system coupling</a></li>
+<li><a href="../../vote/2014/vote_002">General Resolution: code of conduct</a></li>
+<li><a href="../../vote/2014/vote_001">Debian Project Leader Elections 2014</a></li>
+<li><a href="../../vote/2013/vote_001">Debian Project Leader Elections 2013</a></li>
+<li><a href="../../vote/2012/vote_002">General Resolution: Diversity statement</a></li>
+<li><a href="../../vote/2012/vote_001">Debian Project Leader Elections 2012</a></li>
+<li><a href="../../vote/2011/vote_001">Debian Project Leader Elections 2011</a></li>
+<li><a href="../../vote/2010/vote_002">General Resolution: Debian project members</a></li>
+<li><a href="../../vote/2010/vote_001">Debian Project Leader Elections 2010</a></li>
+<li><a href="../../vote/2009/vote_001">Debian Project Leader Elections 2009</a></li>
+<li><a href="../../vote/2008/vote_003">General Resolution: Lenny and resolving DFSG violations</a></li>
+<li><a href="../../vote/2008/vote_002">General Resolution: Project membership procedures</a></li>
+<li><a href="../../vote/2008/vote_001">Debian Project Leader Elections 2008</a></li>
+<li><a href="../../vote/2007/vote_004">Constitutional amendment: reduce the length of DPL election process</a></li>
+<li><a href="../../vote/2007/vote_003">General Resolution: Endorse the concept of Debian Maintainers</a></li>
+<li><a href="../../vote/2007/vote_002">General Resolution: Altering package upload rules</a></li>
+<li><a href="../../vote/2007/vote_001">Debian Project Leader Elections 2007</a></li>
+<li><a href="../../vote/2006/vote_007">General Resolution: Handling source-less firmware in the Linux kernel</a></li>
+<li><a href="../../vote/2006/vote_006">General Resolution: Re-affirm support to the Debian Project Leader</a></li>
+<li><a href="../../vote/2006/vote_005">General Resolution: Recall the project leader</a></li>
+<li><a href="../../vote/2006/vote_004">General Resolution: Position statement clarifying DFSG #2</a></li>
+<li><a href="../../vote/2006/vote_003">Constitutional Amendment General Resolution: Handling assets for the project</a></li>
+<li><a href="../../vote/2006/vote_002">Debian Project Leader Elections 2006</a></li>
+<li><a href="../../vote/2006/vote_001">General Resolution: Why the GNU Free Documentation License is not suitable for Debian main</a></li>
+<li><a href="../../vote/2005/vote_002">General Resolution: Declassification of debian-private list archives</a></li>
+<li><a href="../../vote/2005/vote_001">Debian Project Leader Elections 2005</a></li>
+<li><a href="../../vote/2004/vote_004">General Resolution: Sarge Release Schedule in view of GR 2004-003</a></li>
+<li><a href="../../vote/2004/vote_003">General Resolution: Editorial amendments to the social contract</a></li>
+<li><a href="../../vote/2004/vote_002">General Resolution: Status of the non-free section</a></li>
+<li><a href="../../vote/2004/vote_001">Debian Project Leader Elections 2004</a></li>
+<li><a href="../../vote/2003/vote_0003">Constitutional Amendment: Disambiguation of Section 4.1.5</a></li>
+<li><a href="../../vote/2003/vote_0002">Constitutional Amendment: Condorcet/Clone Proof SSD Voting Method </a></li>
+<li><a href="../../vote/2003/vote_0001">Debian Project Leader Elections 2003</a></li>
+<li><a href="../../vote/2002/vote_0001">Debian Project Leader Elections 2002</a></li>
+<li><a href="../../vote/2001/vote_0001">Leader Elections 2001</a></li>
+<li><a href="../../vote/2000/vote_0007">Leader Elections 2000</a></li>
+<li><a href="../../vote/1999/vote_0005">Swap Logos</a></li>
+<li><a href="../../vote/1999/vote_0004">New Logo</a></li>
+<li><a href="../../vote/1999/vote_0002">Logo License</a></li>
+<li><a href="../../vote/1999/vote_0001">Leader Elections 1999</a></li>
+<li><a href="../../vote/1999/vote_0000">Constitution</a></li>
+</ul></li><li>Withdrawn<ul><li><a href="../../vote/2025/vote_002">General Resolution: Interpretation of DFSG on Artificial Intelligence (AI) Models</a></li>
+<li><a href="../../vote/2024/vote_002">General Resolution: tag2upload</a></li>
+<li><a href="../../vote/2015/vote_002">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2009/vote_002">General Resolution: Sponsorship requirements for General Resolutions</a></li>
+<li><a href="../../vote/2004/vote_005">General Resolution: Force AMD64 architecture into Sarge</a></li>
+<li><a href="../../vote/2001/vote_0002">IRC as a Debian communication channel</a></li>
+</ul></li><li>Other<ul><li><a href="../../vote/2000/vote_0011">Superseded: Constitutional amendment: Smith/Condorcet vote tallying</a></li>
+<li><a href="../../vote/2000/vote_0010">Superseded: Constitutional amendment: alternate disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0009">Superseded: Constitutional amendment: disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0008">Superseded: Non-free Archive Removal</a></li>
+</ul></li>
+	</ul>
+	<!--/UdmComment-->
+</div> <!-- end second-nav -->
+<div id="maincol">
+    <h1>General Resolution: LLM usage in Debian</h1>
+<ul class="toc">
+  <li><a href="#timeline">Time Line</a></li>
+  <li><a href="#proposera">Proposal A Proposer</a></li>
+  <li><a href="#secondsa">Proposal A Seconds</a></li>
+  <li><a href="#texta">Proposal A</a></li>
+  <li><a href="#proposerb">Proposal B Proposer</a></li>
+  <li><a href="#secondsb">Proposal B Seconds</a></li>
+  <li><a href="#textb">Proposal B</a></li>
+  <li><a href="#proposerc">Proposal C Proposer</a></li>
+  <li><a href="#secondsc">Proposal C Seconds</a></li>
+  <li><a href="#textc">Proposal C</a></li>
+  <li><a href="#proposerd">Proposal D Proposer</a></li>
+  <li><a href="#secondsd">Proposal D Seconds</a></li>
+  <li><a href="#textd">Proposal D</a></li>
+  <li><a href="#proposere">Proposal E Proposer</a></li>
+  <li><a href="#secondse">Proposal E Seconds</a></li>
+  <li><a href="#texte">Proposal E</a></li>
+  <li><a href="#proposerf">Proposal F Proposer</a></li>
+  <li><a href="#secondsf">Proposal F Seconds</a></li>
+  <li><a href="#textf">Proposal F</a></li>
+  <li><a href="#proposerg">Proposal G Proposer</a></li>
+  <li><a href="#secondsg">Proposal G Seconds</a></li>
+  <li><a href="#textg">Proposal G</a></li>
+  <li><a href="#proposerh">Proposal H Proposer</a></li>
+  <li><a href="#secondsh">Proposal H Seconds</a></li>
+  <li><a href="#texth">Proposal H</a></li>
+  <li><a href="#quorum">Quorum</a></li>
+  <li><a href="#statistics">Data and Statistics</a></li>
+  <li><a href="#majorityreq">Majority Requirement</a></li>
+  <li><a href="#outcome">Outcome</a></li>
+</ul>
+<h3><a name="timeline" id="timeline">Time Line</a></h3>
+    <table class="vote" summary="">
+      <tr>
+        <th>Discussion Period:</th>
+	<td>2026-07-23</td>
+	<td>2026-08-13</td>
+      </tr>
+      <tr>
+	<th>Voting period:</th>
+	<td>Saturday 2026-08-15 00:00:00 UTC</td>
+	<td>Friday 2026-08-28 23:59:59 UTC</td>
+      </tr>
+    </table>
+    <p>
+    The discussion period has been extended [<a href='https://lists.debian.org/debian-vote/2026/08/msg00053.html'>mail</a>]
+    </p>
+<h3><a name="proposera" id="proposera">Proposal A Proposer</a></h3>
+    <p>Matthias Geiger [<a href="mailto:werdahias@debian.org">werdahias@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2026/07/msg00117.html'>text of proposal</a>]
+    </p>
+<h3><a name="secondsa" id="secondsa">Proposal A Seconds</a></h3>
+    <ol>
+	<li>Johannes Schauer Marin Rodrigues [<a href="mailto:josch@debian.org">josch@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00001.html'>mail</a>]</li>
+	<li>Antoine Le Gonidec [<a href="mailto:vv221@debian.org">vv221@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00002.html'>mail</a>]</li>
+	<li>Simon Richter [<a href="mailto:sjr@debian.org">sjr@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00005.html'>mail</a>]</li>
+	<li>David Bremner [<a href="mailto:bremner@debian.org">bremner@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00088.html'>mail</a>]</li>
+	<li>Pierre-Elliott Bécue [<a href="mailto:peb@debian.org">peb@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00092.html'>mail</a>]</li>
+	<li>Ian Jackson [<a href="mailto:iwj@debian.org">iwj@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00122.html'>mail</a>]</li>
+	<li>Amin Bandali [<a href="mailto:bandali@debian.org">bandali@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00135.html'>mail</a>]</li>
+	<li>Thorsten Glaser [<a href="mailto:tg@debian.org">tg@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00144.html'>mail</a>]</li>
+    </ol>
+<h3><a name="texta" id="texta">Proposal A</a></h3>
+<h3>Choice 1: No LLM contributions to Debian via Social Contract</h3>
+<h4>Preamble</h4>
+<p>
+This proposal aims to expressly forbid any contributions to Debian written with
+the use or assistance of large language models (LLMs) or other generative AI
+tools.
+</p>
+<p>The scope of this GR is (non-exhaustive):
+<ul>
+<li>Debian source packages</li>
+<li>Official Debian project software, such as lintian</li>
+<li>Debian web resources</li>
+<li>Documentation and translations added by Debian contributors</li>
+<li>Official communication from Debian</li>
+</ul>
+</p>
+<p>It does not include:
+<ul>
+<li>Upstream projects using LLMs for development</li>
+<li>AI-related software</li>
+<li>Upstream patches/security fixes etc.</li>
+</ul>
+</p>
+<h4>Rationale</h4>
+<p>Debian has a well-earned reputation for stability. This stability is crucial to
+Debian's position in the free software ecosystem. It is our belief that
+widespread LLM usage comes from the "move fast, and break things" attitude that,
+while common in many parts of this industry, is contrary to what makes Debian
+Debian, and is inappropriate for Debian contributors.</p>
+<p>In practical terms, LLM usage raises the following concerns:
+<h5>1. Copyright</h5>
+<p>
+LLM output has very unclear legal status: it may be possible to
+copyright on its own merits, or not; it may be affected by all of the licenses
+and copyrights in the training data, or not. Debian Policy and the DFSG require
+absolute clarity for licensing and copyright[1][2]. Software and other
+contributions written conventionally by humans with unclear copyright or license
+status are not allowed in Debian; LLM output should not have a special exception
+to this.
+</p>
+<h5>2. Quality</h5>
+<p>
+LLM output has many well-known problems with accuracy.[3][4][5] A
+LLM can never "know" if its output is correct since it merely produces
+syntactically likely combinations of the training data. In some environments
+this is good enough. In Debian, it is not. For instance, in packaging, each
+Debian source package is unique. Since packaging syntax and best practices have
+changed over time, a LLM-produced package will have a mixture of contents
+spanning the age of the archive, with watch files that do not work, overrides
+out of context, imaginary copyright, and will generally be unfit for upload. A
+seasoned Debian contributor with packaging expertise may find some limited
+usefulness here, but a new contributor cannot, and would not know how to fix it.
+These same quality and accuracy concerns apply clearly to all of the areas
+listed in the scope of this proposal above. If Debian were a closed organization
+comprising only domain experts who never leave, this might not be an issue;
+however,
+</p>
+<h5>3. Community</h5>
+<p>
+Debian is a project that is more than just code: it is a community
+built on shared interests in free software and solving technical problems.
+Debian intentionally grows this community through many means, and new
+contributors are always encouraged to join. Allowing LLM contributions breaks
+this. New contributors submitting LLM output for review places an unnecessary
+strain on the reviewer, which can lead to burnout. Furthermore, LLM-dependent
+new contributors do not actually learn and understand the details of Debian
+packaging or processes, so they cannot come to replace a former burned out DD.
+</p>
+<h5>4. Ethics</h5>
+<p>
+LLM companies directly hurt the free software community as whole by
+scraping the whole web for training data without any regard for license,
+copyright, or even established conventions such as robots.txt.[6] This has had a
+major negative impact on Debian's public web resources, effectively a large
+scale and perpetual Denial of Service attack on sites that many users rely on.
+As a consequence parts of our infrastructure were not reachable at all, and
+JS-based checks had to be enabled. Many other projects were similarly affected.
+Furthermore, LLM training consumes a staggering amount of resources[7], and the
+user verification systems that we have been forced to implement as protection
+waste resources as well. This is blatant disregard for the internet as a public
+resource, wastes system administrator time, and although individual LLM sessions
+do not directly use massive resources or DoS the public web, the fact that they
+can be used at all is a direct result of these unethical behaviours by the LLM
+companies.
+</p>
+<p>
+Debian has a Social Contract. [8] Our priorities are our users and free
+software. Debian is Stable. [9] Users and organizations choose Debian because it
+is reliable and secure.
+</p>
+<p>
+Debian is not here to generate as much code as possible requiring manual review
+by a shrinking number of human volunteers, or to package every piece of
+software, or to rush new features, but these are what LLMs are used for.
+</p>
+<p>
+In conclusion, allowing LLM contributions is contrary to the social contract and
+the common cause of creating a free operating system with a focus on quality and
+stability.
+</p>
+<h4>Proposal</h4>
+<p>
+In the interest of not eroding Debian's reputation or further damaging the
+community, LLM-assisted contributions should be prohibited from inclusion in
+Debian.</p>
+<p>Though our position is that LLM contributions are contrary to documents already
+ratified by Debian, in order to remove all doubt, we propose the following
+addition to the Social Contract:</p>
+<pre>
+6. Works Created through the use of Large Language Models (LLMs)
+
+We will not
+allow direct contributions to Debian written with the use or assistance of large
+language models (LLMs) or other generative AI tools. Direct contributions are
+defined as packaging, native Debian software like lintian, documentation and
+translations written by Debian contributors, and official Debian web resources,
+etc. Other categories such as upstream projects written with LLM assistance may
+be included at a later date. This ensures that Debian remains a stable, trusted,
+and reliable operating system, and protects the interests of the Debian
+volunteers who make it possible.
+</pre>
+<h4>Possible Issues</h4>
+<p>
+Other projects exploring similar decisions have elicited a common reply: "How
+will you enforce a ban on LLM contributions?" While enforcement could be a
+challenge, this is a statement of intent by the Debian community, and we trust
+this community to adhere to it in good faith.
+</p>
+<h4>Citations</h4>
+<p>
+[1]
+https://www.debian.org/doc/debian-policy/ch-archive.html#copyright-considerations<br>
+[2]
+https://www.debian.org/social_contract#guidelines<br>
+[3]
+https://web.archive.org/web/20240614004123/https://news.northeastern.edu/2023/11/10/ai-chatbot-hallucinations/<br>
+[4]
+https://web.archive.org/web/20250328154700/https://transformer-circuits.pub/2025/attribution-graphs/biology.html#dives-cot<br>
+[5]
+https://www.marketwatch.com/story/openais-sam-altman-tells-salesforces-marc-benioff-that-ai-hallucinations-are-more-feature-than-bug-1c035c52<br>
+[6]
+https://lwn.net/Articles/1008897/<br>
+[7]
+https://tech-insider.org/ai-data-center-power-crisis-2026/<br>
+[8]
+https://www.debian.org/social_contract<br>
+[9]
+https://www.debian.org/doc/manuals/debian-reference/pr01.en.html#_what_is_debian<br>
+</p>
+<h4>Disclaimers</h4>
+<p>
+<ul>
+<li>Citations are for background information only and do not reflect an
+  endorsement of specific websites.</li>
+<li>Some ideas and wording were derived from the sources below.</li>
+</ul>
+</p>
+<h4>Sources</h4>
+<p>
+GNOME discussion:
+https://discourse.gnome.org/t/loupe-no-longer-allows-generative-ai-contributions/27327<br>
+(CC0) Gentoo AI policy:
+https://wiki.gentoo.org/wiki/Project:Council/AI_policy<br>
+Codeberg AI policy:
+https://codeberg.org/Codeberg/org/pulls/1253#issuecomment-19820434<br>
+</p>
+<p>
+This document was written by Matthias Geiger <werdahias> and Jesse Rhodes <sney>
+with input from Sledge and josch, organically and without language model
+assistance.
+</p>
+<h3><a name="proposerb" id="proposerb">Proposal B Proposer</a></h3>
+    <p>Lucas Nussbaum [<a href="mailto:lucas@debian.org">lucas@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2026/07/msg00018.html'>text of proposal</a>]
+	[<a href='https://lists.debian.org/debian-vote/2026/07/msg00048.html'>text of amendment</a>]
+	[<a href='https://lists.debian.org/debian-vote/2026/07/msg00083.html'>text of amendment</a>]
+    </p>
+<h3><a name="secondsb" id="secondsb">Proposal B Seconds</a></h3>
+    <ol>
+	<li>Andrey Rahmatullin [<a href="mailto:wrar@debian.org">wrar@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00019.html'>mail</a>]</li>
+	<li>Christian Kastner [<a href="mailto:ckk@debian.org">ckk@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00028.html'>mail</a>]</li>
+	<li>Anton Gladky [<a href="mailto:gladk@debian.org">gladk@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00032.html'>mail</a>]</li>
+	<li>Stefano Zacchiroli [<a href="mailto:zack@debian.org">zack@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00040.html'>mail</a>]</li>
+	<li>Simon Quigley [<a href="mailto:tsimonq2@debian.org">tsimonq2@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00091.html'>mail</a>]</li>
+	<li>Soren Stoutner [<a href="mailto:soren@debian.org">soren@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00093.html'>mail</a>]</li>
+	<li>Julian Andres Klode [<a href="mailto:jak@debian.org">jak@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00104.html'>mail</a>]</li>
+	<li>Andreas Tille [<a href="mailto:tille@debian.org">tille@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00146.html'>mail</a>]</li>
+	<li>Philipp Kern <a href="mailto:pkern@debian.org">pkern@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00155.html'>mail</a>]</li>
+    </ol>
+<h3><a name="textb" id="textb">Proposal B</a></h3>
+<h3>Choice 2: Allow AI-Assisted Contributions with conditions</h3>
+<p>Using its power under Constitution section 4.1 (5), the project issues the
+following statement describing its current position on AI-assisted
+contributions. This statement describes the position of the project at the
+time it is adopted. That position may evolve as time passes without the need
+to resort to future general resolutions. The GR process remains available if
+the project needs a decision and cannot come to a consensus.</p>
+<p>The Debian project recognizes that AI-assisted contributions raise many
+concerns, e.g. about the technical quality and maintainability of such
+contributions, and their legal status. AI itself also raises additional
+concerns, about its impact on society at large, on the IT industry and on
+Free Software; about its environmental impact; and the aggressive or
+non-compliant practices of AI scrapers.</p>
+<p>Nevertheless, many Debian contributors find AI tools helpful when
+contributing to Debian, and ultimately for improving Debian.</p>
+<p>Given both the benefits and risks of AI assistance, and the controversial
+discussions within the community, the Debian project finds it necessary to
+clarify its position on AI-assisted contributions and establish clear
+guidelines.</p>
+<p>The Debian project allows AI-assisted contributions (partially or fully
+generated by an LLM), provided the following conditions are met:
+<ol>
+<li><b>Tooling Legal Compatibility:</b> Contributors should ensure that the terms and
+conditions of the generative AI tool do not impose contractual
+restrictions that conflict with the distribution, modification, or use of
+the output in the context of Debian.</li>
+<li><b>Licensing and Attribution:</b> If any pre-existing copyrighted materials
+(including pre-existing code licensed as free software) authored or owned
+by third parties are included in the AI tool’s output, prior to
+contributing such output to the project, the contributor should verify
+they have the right to submit it under the relevant open source license.</li>
+<li><b>Accountability:</b> Contributors assume full responsibility for their
+contributions, including vouching for the technical merit, security,
+license compliance, and utility of their submissions. The contributor
+remains solely accountable for the entirety of these contributions.
+Contributors should fully understand the proposed changes and be prepared
+to justify them.</li>
+<li><b>Disclosure:</b> When a significant portion of a contribution
+is generated or substantially assisted by a tool, contributors should
+disclose the use of the tool, making it clearly visible to the
+intended audience. This covers all forms of contribution, including code,
+mailing list posts, and bug discussions. The form of the disclosure is
+left to the contributor; one convenient option for commits is a Git
+trailer such as Generated-By: or Assisted-By:.</li>
+<li><b>Prior Discussion of Bulk or Automated Changes:</b> Similarly to the
+mass-bug filing process (Developers Reference section 7.1.1),
+contributors should discuss their intention before submitting bulk or
+autonomously generated contributions. Any such automated process should
+be overseen by a human who remains accountable for its behavior and
+output.</li>
+<li><b>Confidentiality and Privacy:</b> Contributors must not use generative AI
+tools that transmit data to untrusted providers with non-public or
+sensitive project information (such as embargoed security reports or
+private communication), as this may lead to the unintended disclosure of
+confidential data.</li>
+</ol>
+</p>
+<h3><a name="proposerc" id="proposerc">Proposal C Proposer</a></h3>
+	    <p>Ian Jackson [<a href="mailto:iwj@debian.org">iwj@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00118.html'>text of proposal</a>]
+	    	[<a href='https://lists.debian.org/debian-vote/2026/07/msg00220.html'>text of amendment</a>]</p>
+<h3><a name="secondsc" id="secondsc">Proposal C Seconds</a></h3>
+    <ol>
+	<li>Matthias Geiger [<a href="mailto:werdahias@debian.org">werdahias@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00119.html'>mail</a>]</li>
+	<li>Andrea Pappacoda [<a href="mailto:tachi@debian.org">tachi@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00130.html'>mail</a>]</li>
+	<li>Simon Richter [<a href="mailto:sjr@debian.org">sjr@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00132.html'>mail</a>]</li>
+	<li>Antoine Le Gonidec [<a href="mailto:vv221@debian.org">vv221@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00133.html'>mail</a>]</li>
+	<li>Amin Bandali [<a href="mailto:bandali@debian.org">bandali@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00135.html'>mail</a>]</li>
+	<li>Bill Blough [<a href="mailto:bblough@debian.org">bblough@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00141.html'>mail</a>]</li>
+	<li>Enrico Zini [<a href="mailto:enrico@debian.org">enrico@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00152.html'>mail</a>]</li>
+	<li>Sean Whitton [<a href="mailto:spwhitton@debian.org">spwhitton@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00159.html'>mail</a>]</li>
+	<li>Tiago Bortoletto Vaz [<a href="mailto:tiago@debian.org">tiago@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00247.html'>mail</a>]</li>
+    </ol>
+<h3><a name="textc" id="textc">Proposal C</a></h3>
+<h3>Choice 3: Reject LLMs as far as practical, update Code of Conduct</h3>
+<h4>Summary: Reject LLMs (generative "AI") as far as practical</h4>
+<h5>BACKGROUND</h5>
+<p>LLMs have many serious problems, including: undermining the mechanisms
+of free software community building; environmental damage;
+exploitation of authors; disruption to open web hosting by
+aggressive scraping; generation and promulgation of bullshit,
+polluting the information commons; hazards to users' mental health;
+economic bubbles and distortion of the computer hardware market;
+fraud; ownership by horrible people and companies; and so on.
+Ethical and safe use of this technology is almost impossible.</p>
+<p>Ideally, LLM output should not form any part of software that we rely
+on, nor should LLM output ever take the place of human-written prose.</p>
+<p>Unfortunately some of the wider software world, including many of our
+upstreams, take a different view. Therefore a complete ban on LLM
+output as part of Debian is currently impractical.</p>
+<h5>REQUESTS</h5>
+<p>1. We request that all contributors to Debian avoid the use of LLMs in
+   their Debian work.</p>
+<p>2. We request that all decisionmakers within Debian discourage LLM use
+   as much as practical. Practicality is a judgement call and we
+   recognise that it will involve uncomfortable compromises.</p>
+<p>3. We request that everyone, even outside Debian, should refrain from
+   using this technology. In particular, the Free Software and Open
+   Source communities should reject LLMs. We recognise that not
+   everyone will heed this call.</p>
+<h5>REQUIREMENTS (SUPPLEMENT TO THE CODES OF CONDUCT)</h5>
+<p>4. Within Debian, messages to humans (including for example bug
+   reports, mailing list messages, discussions on Salsa, and blog
+   posts on Planet Debian) must be drafted solely by humans without
+   LLM assistance.</p>
+<p>5. Moderators and disciplinary teams may make narrow and tailored
+   exceptions to rule 4, and decide on interpretation.</p>
+<p>6. Any use of LLMs for Debian work must be disclosed.</p>
+<p>7. Individual projects and maintainers may ban LLM contributions
+   completely. Such bans (including by upstream projects) must be
+   respected.</p>
+<p>8. Violations of these requirements should be treated as violations of
+   the relevant Code of Conduct and should result in swift and
+   proportionate disciplinary action.</p>
+<h3><a name="proposerd" id="proposerd">Proposal D Proposer</a></h3>
+	<p>
+		Pierre-Elliott Bécue [<a href="mailto:peb@debian.org">peb@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00089.html'>text of proposal</a>]
+	        [<a href='https://lists.debian.org/debian-vote/2026/08/msg00059.html'>text of minor change</a>]
+	</p>
+<h3><a name="secondsd" id="secondsd">Proposal D Seconds</a></h3>
+    <ol>
+	<li>Russ Allbery [<a href="mailto:rra@debian.org">rra@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00090.html'>mail</a>]</li>
+	<li>Johannes Schauer Marin Rodrigues [<a href="mailto:josch@debian.org">josch@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00129.html'>mail</a>]</li>
+	<li>Jonathan Carter [<a href="mailto:jcc@debian.org">jcc@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00143.html'>mail</a>]</li>
+	<li>Gunnar Wolf [<a href="mailto:gwolf@debian.org">gwolf@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00145.html'>mail</a>]</li>
+	<li>Tiago Bortoletto Vaz [<a href="mailto:tiago@debian.org">tiago@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00154.html'>mail</a>]</li>
+	<li>Jeremy Sowden [<a href="mailto:azazel@debian.org">azazel@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00156.html'>mail</a>]</li>
+	<li>Holger Levsen [<a href="mailto:holger@debian.org">holger@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00291.html'>mail</a>]</li>
+    </ol>
+<h3><a name="textd" id="textd">Proposal D</a></h3>
+<h3>Choice 4: Accept AI contributions for Debian specific work</h3>
+<p> Debian as a project does not endorse or recommend the use of generative
+AI assistants for software development, as it raises multiple concerns
+about ethics, legality, copyright, etc.</p>
+<p>Nevertheless, Debian acknowledges that these practices are already in
+use and here to stay. Rather than banning their use, which seems
+counter-productive and unenforceable, the project chooses to place
+responsibility on contributors and therefore defines the following
+guidelines. </p>
+<p><b>These apply exclusively to code and work done specifically for the
+Debian project (Debian websites, applications, resources, packages,
+etc.).</b> They do not apply to any upstream work. In what follows, "work"
+refers to the contributions done specifically for the Debian project.
+<ul>
+ <li> All code and work assisted by a generative AI agent or tool must
+   comply with the DFSG.</li>
+ <li> The submitter is solely responsible for the submitted work and:
+   <ul>
+   <li>they sufficiently evaluated and properly understand the work they
+     intend to submit, and are able to explain and defend it;</li>
+   <li>they put any potential Signed-off-by tag and OpenPGP signatures on the
+     contributions they send to the Debian infrastructure (package,
+     commit, mail, …) themselves;</li>
+   <li>any content uploaded that would end up in production on Debian
+     infrastructure (main git branch, package upload) has been submitted
+     by them explicitely.</li>
+   </ul>
+ <li>Work assisted by a generative AI agent or tool should be marked as
+   such in the adapted place (commit message, changelog, …). Some
+   lightweight generative tools, such as tab-completion in Copilot, may
+   be used without the contributor realising they rely on generative AI
+   models; we therefore trust submitters to assess when this rule
+   applies. When in doubt, add such marking;</li>
+ <li>No cloud-based AI shall be used when the data transmitted could
+   either be sensitive to the project (personal data, information under
+   embargo, …) or not public (debian-private discussions, …).</li>
+</ul>
+</p>
+<h3><a name="proposere" id="proposere">Proposal E Proposer</a></h3>
+	    <p>Marc Haber [<a href="mailto:zugschlus@debian.org">zugschlus@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00284.html'>text of proposal</a>]</p>
+<h3><a name="secondse" id="secondse">Proposal E Seconds</a></h3>
+    <ol>
+	<li>Soren Stoutner [<a href="mailto:soren@debian.org">soren@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00286.html'>mail</a>]</li>
+	<li>Christian Kastner [<a href="mailto:ckk@debian.org">ckk@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00287.html'>mail</a>]</li>
+	<li>Timo Röhling [<a href="mailto:roehling@debian.org">roehling@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00288.html'>mail</a>]</li>
+	<li>Clint Adams [<a href="mailto:clint@debian.org">clint@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00289.html'>mail</a>]</li>
+	<li>Matthias Urlichs [<a href="mailto:smurf@debian.org">smurf@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00300.html'>mail</a>]</li>
+	<li>Tobias Frost [<a href="mailto:tobi@debian.org">tobi@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00307.html'>mail</a>]</li>
+	<li>Anuradha Weeraman [<a href="mailto:anuradha@debian.org">anuradha@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00309.html'>mail</a>]</li>
+	<li>Lucas Nussbaum [<a href="mailto:lucas@debian.org">lucas@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00346.html'>mail</a>]</li>
+	<li>Bdale Garbee [<a href="mailto:bdale@debian.org">bdale@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00350.html'>mail</a>]</li>
+	<li>Helge Deller [<a href="mailto:deller@debian.org">deller@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00357.html'>mail</a>]</li>
+	<li>Hanno Wagner [<a href="mailto:wagner@debian.org">wagner@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00021.html'>mail</a>]</li>
+    </ol>
+<h3><a name="texte" id="texte">Proposal E</a></h3>
+<h3>Choice 5: Responsible Use of Generative AI</h3>
+<p>Using its power under Constitution section 4.1 (5), the project issues
+the following statement describing its current position on AI-assisted
+contributions. This statement describes the position of the project at
+the time it is adopted. That position may evolve as time passes without
+the need to resort to future general resolutions. The GR process remains
+available if the project needs a decision and cannot come to a
+consensus.</p>
+<p>Debian neither endorses nor prohibits the use of generative AI tools in
+the development, maintenance, or documentation of software, packaging,
+documentation, and other media published within the Debian Project. We
+recognize that such tools can substantially improve the productivity of
+contributors when used responsibly, allowing volunteers to spend more of
+their limited time on work that requires technical expertise, judgment,
+review, and collaboration.</p>
+<p>The Debian Project nevertheless expects that all contributions submitted
+to Debian, regardless of how and with which tools they were produced,
+satisfy the same standards of quality, correctness, maintainability, and
+legal compliance. The use of a generative AI tool does not diminish the
+contributor's responsibility for the work they submit. Contributors are
+expected to understand, review, test, and, where appropriate, modify
+AI-assisted output before incorporating it into Debian. Blindly
+accepting or uploading AI-generated material without appropriate human
+review is inconsistent with Debian's established development practices.
+We enourage our contributors to disclose whether a contribution was made
+with AI assitance, but do not require them to do so.</p>
+<p>Debian acknowledges that the legal status of material produced by
+generative AI systems remains the subject of ongoing discussion in many
+jurisdictions, including questions relating to copyright, authorship,
+licensing, and potential reproduction of training material. The Project
+does not seek to resolve these unsettled legal questions through this
+General Resolution, nor does it adopt a position on whether AI-generated
+output is, in whole or in part, copyrightable or derived from
+copyrighted works.</p>
+<p>Instead, Debian continues to rely on the judgment and responsibility of
+its individual contributors. Project members are expected to exercise
+appropriate care when using generative AI tools, to consider the
+provenance and licensing implications of material they contribute, and
+to avoid introducing content whose legal status they cannot reasonably
+justify. Existing Debian policies governing licensing, copyright,
+software freedom, and the acceptance of contributions continue to apply
+irrespective of the tools used to produce those contributions.</p>
+<p>Contributors are expected to exercise appropriate care when designing
+and implementing workflows that incorporate generative AI tools. In
+particular, they should ensure that confidential information, private
+communications, security-sensitive information (such as embargoed
+information about security bugs that is not yet public), cryptographic
+keys, credentials, and other non-public material relating to the Debian
+Project, its infrastructure, or its community are not disclosed to
+third-party AI services unless such disclosure has been explicitly
+authorized and is consistent with Debian's security and privacy
+requirements.</p>
+<p>The use of generative AI does not alter Debian's established
+expectations regarding large-scale or automated project actions.
+Contributors intending to perform actions with broad project impact,
+such as mass bug filing or patch submission, large-scale code
+modifications, or other automated changes or requests affecting many
+packages or contributors, should seek prior discussion and consensus
+through the appropriate project channels before proceeding. Any such
+automated process should be overseen by a human who remains accountable
+for its behavior and output.</p>
+<p>This resolution therefore affirms that generative AI is neither exempt
+from nor subject to special rules beyond the standards already expected
+of Debian contributors. The responsibility for every contribution rests
+with the contributor who submits it, who remains accountable for its
+technical quality, legal acceptability, and suitability for inclusion in
+Debian.</p>
+<h3><a name="proposerf" id="proposerf">Proposal F Proposer</a></h3>
+	    <p>Tobias Frost [<a href="mailto:tobi@debian.org">tobi@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00343.html'>text of proposal</a>]</p>
+<h3><a name="secondsf" id="secondsf">Proposal F Seconds</a></h3>
+    <ol>
+	<li>Timo Röhling [<a href="mailto:roehling@debian.org">roehling@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00344.html'>mail</a>]</li>
+	<li>Russ Allbery [<a href="mailto:rra@debian.org">rra@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00347.html'>mail</a>]</li>
+	<li>Étienne Mollier [<a href="mailto:emollier@debian.org">emollier@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00348.html'>mail</a>]</li>
+	<li>Lucas Nussbaum [<a href="mailto:lucas@debian.org">lucas@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/07/msg00408.html'>mail</a>]</li>
+	<li>Gunnar Wolf [<a href="mailto:gwolf@debian.org">gwolf@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00003.html'>mail</a>]</li>
+	<li>Jonathan Carter [<a href="mailto:jcc@debian.org">jcc@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00063.html'>mail</a>]</li>
+    </ol>
+<h3><a name="textf" id="textf">Proposal F</a></h3>
+<h3>Choice 6: A cautious approach to generative AI</h3>
+<p>Using its power under Constitution section 4.1(5), the Project issues
+the following statement describing its current position regarding the
+use of generative AI within Debian.</p>
+<p>Debian recognizes that generative AI raises significant ethical, legal,
+technical, and social concerns. These include questions relating to
+copyright and licensing, privacy, the provenance and quality of
+generated material, the health of Free Software communities, and the
+long-term consequences of widespread reliance on AI-generated content.</p>
+<p>Accordingly, Debian encourages contributors to avoid the use of
+generative AI where practical and to prefer human authorship,
+collaboration, and technical understanding over AI-generated output.</p>
+<p>At the same time, Debian has long relied on the judgment and
+responsibility of its contributors rather than prescribing individual
+workflows. Contributors remain responsible for everything they submit,
+irrespective of the tools used in preparing a contribution. Existing
+Debian standards regarding quality, correctness, licensing, and legal
+compliance continue to apply.</p>
+<p>Contributors using external generative AI services should exercise
+particular care not to disclose confidential information, embargoed
+security information, credentials, cryptographic keys, private
+communications, personal data, or other non-public Debian information.</p>
+<p>Nothing in this resolution should be understood as requiring
+contributors to use generative AI, nor as preventing contributors or
+maintainers from choosing not to use or accept AI-assisted
+contributions. Debian's existing collaborative processes remain the
+appropriate means for resolving such differences while allowing the
+project to continue making progress.</p>
+<p>While disclosure is not required, contributors are encouraged to
+voluntarily disclose the use of generative AI where appropriate,
+allowing others who prefer not to interact with AI-assisted content to
+make informed choices.</p>
+<p>Such disclosure should be regarded as a courtesy to fellow contributors
+rather than an indication that AI-assisted contributions are subject to
+different technical or procedural standards.</p>
+<p>The Debian project has always recognized the commitment and
+professionalism of its members. All contributions are under the
+responsibility of the Debian Contributor making it, no matter the
+technology they have behind. We trust all Debian Developers,
+Maintainers and Contributors will continue to uphold the high quality
+values that have distinguished our project from its onset.</p>
+<h3><a name="proposerg" id="proposerg">Proposal G Proposer</a></h3>
+	    <p>Gard Spreemann [<a href="mailto:gspr@debian.org">gspr@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00103.html'>text of proposal</a>]</p>
+<h3><a name="secondsg" id="secondsg">Proposal G Seconds</a></h3>
+    <ol>
+	<li>Holger Levsen [<a href="mailto:holger@debian.org">holger@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00106.html'>mail</a>]</li>
+	<li>Enrico Zini [<a href="mailto:enrico@debian.org">enrico@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00110.html'>mail</a>]</li>
+	<li>Russ Allbery [<a href="mailto:rra@debian.org">rra@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00117.html'>mail</a>]</li>
+	<li>Tiago Bortoletto Vaz [<a href="mailto:tiago@debian.org">tiago@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00126.html'>mail</a>]</li>
+	<li>Serafeim Zanikolas [<a href="mailto:sez@debian.org">sez@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00127.html'>mail</a>]</li>
+	<li>Antoine Le Gonidec [<a href="mailto:vv221@debian.org">vv221@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00129.html'>mail</a>]</li>
+	<li>Johannes Schauer Marin Rodrigues [<a href="mailto:josch@debian.org">josch@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00135.html'>mail</a>]</li>
+	<li>Steve McIntyre [<a href="mailto:93sam@debian.org">93sam@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00142.html'>mail</a>]</li>
+	<li>Sean Whitton [<a href="mailto:spwhitton@debian.org">spwhitton@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00144.html'>mail</a>]</li>
+    </ol>
+<h3><a name="textg" id="textg">Proposal G</a></h3>
+<h3>Choice 7: Debian is created by humans</h3>
+<h5>Preamble</h5>
+<p>This proposal aims to ensure that contributions directly to Debian are
+created by humans, while at the same time avoiding restrictions on the
+tools those humans may choose to use when contributing.</p>
+<p>The proposal deals with <b>direct</b> contributions to Debian, including, but
+not limited to:
+<ul>
+<li> Debian packaging
+<li> Submissions (messages, bug reports, patches, etc.) to the BTS, Salsa,
+  mailing lists and other Debian platforms
+<li> Debian project software
+<li> Debian infrastructure
+<li> Debian web resources
+<li> Documentation and translation added as part of contributing to Debian
+<li> Official communication from Debian
+</ul></p>
+<p>The proposal does not cover <b>indirect</b> contributions, i.e. those
+originating from upstream works.</p>
+<p>Generative AI is characterized by producing output of a nature that
+would ordinarily be produced and consumed by humans. The proposal seeks
+to restrict this output itself from entering Debian (except possibly
+indirectly, from upstream). It does not seek to restrict Debian
+contributors from consuming such output as part of contributing to
+Debian.</p>
+<h5>Rationale</h5>
+<p>Debian has a well-earned reputation for stability. This stability is
+crucial to its position in the free software ecosystem. It is our belief
+that a significant part of this stability comes from Debian contributors
+having mutual understanding, trust and respect for each others' work and
+precious time. Generative AI tends to come with practical, legal,
+ethical or ecological concerns that warrant care or extra work that
+often ends up being borne by people other than those wielding the AI. We
+believe that this asymmetry between contributors leveraging generative
+AI to produce material, and those humans who bear that extra care and
+work, will erode the project's mutual understanding, trust and respect.</p>
+<p>While Debian has a long-standing tradition of strict rules for what goes
+into the distribution, it does not typically dictate what tools people
+use when contributing to the project. With this principle in mind, the
+proposal does not affect the use of generative AI as an assisitive tool
+to explore, research, analyze, critique, etc., when contributing. The
+responsibilities that come with using the output of an AI in such a role
+is then not transferred onto the wider project in the same problematic
+way as when the output itself is the contribution.</p>
+<h5>Proposal</h5>
+<p>In order to safeguard the project's mutual understanding, trust and
+respect, we disallow the output of generative AI as direct contributions
+to Debian.</p>
+<p>Those who use such tools assistively in their work are reminded to
+ensure that the resulting contribution is in line with the DFSG and the
+Social Contract in general.</p>
+<p>In summary, humans create Debian.</p>
+<h5>Acknowledgements</h5>
+<p>This proposal is inspired by GCC's AI Policy [1] and rust-lang's LLM
+Usage Policy [2]. Its wording is influenced by another ballot
+option [3].</p>
+<p>[1] https://gcc.gnu.org/ai-policy.html<br>
+[2] https://forge.rust-lang.org/policies/llm-usage.html<br>
+[3] https://www.debian.org/vote/2026/vote_002#texta<br></p>
+<h3><a name="proposerh" id="proposerh">Proposal H Proposer</a></h3>
+	    <p>Holger Levsen [<a href="mailto:holger@debian.org">holger@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00162.html'>text of proposal</a>]
+	    [<a href='https://lists.debian.org/debian-vote/2026/08/msg00169.html'>text of corrections</a>]
+		</p>
+<h3><a name="secondsh" id="secondsh">Proposal H Seconds</a></h3>
+    <ol>
+	<li>Simon Richter [<a href="mailto:sjr@debian.org">sjr@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00165.html'>mail</a>]</li>
+	<li>Matthew Vernon [<a href="mailto:matthew@debian.org">matthew@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00167.html'>mail</a>]</li>
+	<li>Steve McIntyre [<a href="mailto:93sam@debian.org">93sam@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00172.html'>mail</a>]</li>
+	<li>Enrico Zini [<a href="mailto:enrico@debian.org">enrico@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00173.html'>mail</a>]</li>
+	<li>Antoine Le Gonidec [<a href="mailto:vv221@debian.org">vv221@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00174.html'>mail</a>]</li>
+	<li>Jonathan Carter [<a href="mailto:jcc@debian.org">jcc@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00175.html'>mail</a>]</li>
+	<li>Matthias Geiger [<a href="mailto:werdahias@debian.org">werdahias@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00176.html'>mail</a>]</li>
+	<li>Sruthi Chandran [<a href="mailto:srud@debian.org">srud@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00178.html'>mail</a>]</li>
+	<li>Santiago Ruano Rincón [<a href="mailto:santiago@debian.org">santiago@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00179.html'>mail</a>]</li>
+	<li>Mattia Rizzolo [<a href="mailto:mattia@debian.org">mattia@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00183.html'>mail</a>]</li>
+	<li>Vagrant Cascadian [<a href="mailto:vagrant@debian.org">vagrant@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00184.html'>mail</a>]</li>
+	<li>Bas Wijnen [<a href="mailto:wijnen@debian.org">wijnen@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00185.html'>mail</a>]</li>
+	<li>Michael Prokop [<a href="mailto:mika@debian.org">mika@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00186.html'>mail</a>]</li>
+	<li>Guilhem Moulin [<a href="mailto:guilhem@debian.org">guilhem@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00187.html'>mail</a>]</li>
+	<li>Ian Jackson [<a href="mailto:iwj@debian.org">iwj@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00195.html'>mail</a>]</li>
+	<li>Andreas Tille [<a href="mailto:tille@debian.org">tille@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00204.html'>mail</a>]</li>
+	<li>Didier Raboud [<a href="mailto:odyx@debian.org">odyx@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2026/08/msg00206.html'>mail</a>]</li>
+    </ol>
+<h3><a name="texth" id="texth">Proposal H</a></h3>
+<h3>Choice 8: Avoid the use of LLM: climate destruction is a deal breaker</h3>
+<h4>LLM usage accelerates the destruction of our ecosystem (planet earth)
+       and that is a deal-breaker</h4>
+<p>Using its power under Constitution section 4.1(5), the Project issues the
+following statement describing its current position regarding the use of LLM
+(Large Language Models) within Debian.</p>
+<p>We don't have a concern with the LLM _technology_ as such: it's just maths and
+enough training material, which outputs a very large set of numbers that we can
+use to infer new material from existing material. But we cannot talk about the
+LLM technology without talking about who is pushing for its usage, who is doing
+the training and how, what effect those have on our limited resources, and what
+are the economical and political motives of these.</p>
+<p>Foremost we don't understand how anyone can agree that global LLM usage
+accelerates the destruction of our ecosystem, planet earth, and not feel like
+that is a deal-breaker.</p>
+<p>Too often the only response we've seen to this point was that other activities
+are also bad (some even worse) for the climate. How is this even an argument?
+The planet is burning, we should try to stop that as much and as fast as we can!
+If others aren't stopping, isn't that even more reason to compensate for their
+irresponsible actions?</p>
+<p>And while we're on that point: All of our users live on this planet, so
+protecting this planet is a matter of life and death for all of us. In other
+words, caring about something as big as climate change during our Debian work is
+self evident.</p>
+<p>Debian recognizes that LLM *also* raise significant ethical, legal, technical,
+and social concerns. These include questions relating to copyright and
+licensing, privacy, the provenance and quality of generated material, the health
+of Free Software communities, and the long-term consequences of widespread
+reliance on LLM-generated content.</p>
+<p>That said, we would like to emphasize that we condemn LLM (resource) usage but
+not LLM users. Fight the game, but not the players.</p>
+<p>We also acknowledge that LLM usage can be hard if not impossible to detect and
+that Debian as a distribution cannot really impose LLM policies on other
+projects we package and distribute. Therefore this text is just a position
+statement. This said however, we appreciate the disclosure of LLM usage.</p>
+<p>Accordingly, Debian encourages contributors to avoid the use of LLM where
+practical and to prefer human authorship, collaboration, and technical
+understanding over LLM-generated output.</p>
+<p>At the same time, Debian has long relied on the judgment and responsibility of
+its contributors rather than prescribing individual workflows. Contributors
+remain responsible for everything they submit, irrespective of the tools used in
+preparing a contribution. Existing Debian standards regarding quality,
+correctness, licensing, and legal compliance continue to apply.</p>
+<p>The Debian project has always recognized the commitment and professionalism of
+its members. All contributions are under the responsibility of the Debian
+Contributor making it, no matter the technology they have behind. We trust all
+Debian Developers, Maintainers and Contributors will continue to uphold the high
+quality values that have distinguished our project from its onset.</p>
+<p>Please keep being excellent to each other and the only planet we have.</p>
+<h3><a name="quorum" id="quorum">Quorum</a></h3>
+     <p>
+        With the current list of <a href="vote_002_quorum.log">voting
+          developers</a>, we have:
+     </p>
+    <pre>
+ Current Developer Count = 1045
+ Q ( sqrt(#devel) / 2 ) = 16.1632298752446
+ K min(5, Q )           = 5
+ Quorum  (3 x Q )       = 48.4896896257338
+    </pre>
+              <h3>Quorum</h3>
+              <ul>
+                <li>Option 1 "Ban LLM contributions from Debian via Social Contract" reached quorum: 144 &gt;= 48.4896896257338</li>
+                <li>Option 2 "Allow AI-Assisted Contributions with conditions" reached quorum: 267 &gt;= 48.4896896257338</li>
+                <li>Option 3 "Reject LLMs as far as practical, update Code of Conduct" reached quorum: 176 &gt;= 48.4896896257338</li>
+                <li>Option 4 "Accept AI contributions for Debian specific work" reached quorum: 259 &gt;= 48.4896896257338</li>
+                <li>Option 5 "Responsible Use of Generative AI" reached quorum: 281 &gt;= 48.4896896257338</li>
+                <li>Option 6 "A cautious approach to generative AI" reached quorum: 276 &gt;= 48.4896896257338</li>
+                <li>Option 7 "Debian is created by humans" reached quorum: 213 &gt;= 48.4896896257338</li>
+                <li>Option 8 "Avoid the use of LLM: climate destruction is a deal breaker" reached quorum: 225 &gt;= 48.4896896257338</li>
+              </ul>
+<h3><a name="statistics" id="statistics">Data and Statistics</a></h3>
+    <p>
+	For this GR, like always,
+               <a href="suppl_002_stats">statistics</a>
+             will be gathered about ballots received and
+             acknowledgements sent periodically during the voting
+             period.
+               Additionally, the list of <a
+             href="vote_002_voters.txt">voters</a> will be
+             recorded. Also, the <a href="vote_002_tally.txt">tally
+             sheet</a> will also be made available to be viewed.
+         </p>
+<h3><a name="majorityreq" id="majorityreq">Majority Requirement</a></h3>
+    <p>
+      Proposal A needs a 3:1 majority, the other proposals need a simple majority.
+    </p>
+              <h3>Majority</h3>
+              <ul>
+                <li>Dropping option 1 because of majority. 0.560 (144/257) &lt; 3</li>
+                <li>Option 2 passes majority.
+  1.921 (267/139) &gt; 1</li>
+                <li>Dropping option 3 because of majority. 0.765 (176/230) &lt; 1</li>
+                <li>Option 4 passes majority.
+  1.774 (259/146) &gt; 1</li>
+                <li>Option 5 passes majority.
+  2.230 (281/126) &gt; 1</li>
+                <li>Option 6 passes majority.
+  2.075 (276/133) &gt; 1</li>
+                <li>Option 7 passes majority.
+  1.109 (213/192) &gt; 1</li>
+                <li>Option 8 passes majority.
+  1.278 (225/176) &gt; 1</li>
+              </ul>
+<h3><a name="outcome" id="outcome">Outcome</a></h3>
+           <p class="center">
+             <a style="margin-left: auto; margin-right: auto;" href="vote_002_results.dot">
+               <img src="vote_002_results.png" alt="Graphical rendering of the results" width="1287" height="873">
+               </a>
+           </p>
+             <p>
+               In the graph above, any pink colored nodes imply that
+               the option did not pass majority, the Blue is the
+               winner. The Octagon is used for the options that did
+               not beat the default.
+           </p>
+           <ul>
+<li>Option 1 "Ban LLM contributions from Debian via Social Contract"</li>
+<li>Option 2 "Allow AI-Assisted Contributions with conditions"</li>
+<li>Option 3 "Reject LLMs as far as practical, update Code of Conduct"</li>
+<li>Option 4 "Accept AI contributions for Debian specific work"</li>
+<li>Option 5 "Responsible Use of Generative AI"</li>
+<li>Option 6 "A cautious approach to generative AI"</li>
+<li>Option 7 "Debian is created by humans"</li>
+<li>Option 8 "Avoid the use of LLM: climate destruction is a deal breaker"</li>
+<li>Option 9 "None of the above"</li>
+           </ul>
+            <p>
+               In the following table, tally[row x][col y] represents
+               the votes that option x received over option y. A
+               <a href="http://en.wikipedia.org/wiki/Schwartz_method">more
+                 detailed explanation of the beat matrix</a> may help in
+               understanding the table. For understanding the Condorcet method, the
+               <a href="http://en.wikipedia.org/wiki/Condorcet_method">Wikipedia
+                 entry</a> is fairly informative.
+           </p>
+           <table class="vote" summary="">
+             <caption class="center"><strong>The Beat Matrix</strong></caption>
+	     <tr><th>&nbsp;</th><th colspan="9" class="center">Option</th></tr>
+              <tr>
+                   <th>&nbsp;</th>
+                   <th>    1 </th>
+                   <th>    2 </th>
+                   <th>    3 </th>
+                   <th>    4 </th>
+                   <th>    5 </th>
+                   <th>    6 </th>
+                   <th>    7 </th>
+                   <th>    8 </th>
+                   <th>    9 </th>
+              </tr>
+                 <tr>
+                   <th>Option 1 </th>
+                   <td>&nbsp;</td>
+                   <td>  111 </td>
+                   <td>   88 </td>
+                   <td>  118 </td>
+                   <td>  115 </td>
+                   <td>  108 </td>
+                   <td>   95 </td>
+                   <td>   92 </td>
+                   <td>  144 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 2 </th>
+                   <td>  273 </td>
+                   <td>&nbsp;</td>
+                   <td>  257 </td>
+                   <td>  181 </td>
+                   <td>  148 </td>
+                   <td>  178 </td>
+                   <td>  238 </td>
+                   <td>  229 </td>
+                   <td>  267 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 3 </th>
+                   <td>  213 </td>
+                   <td>  125 </td>
+                   <td>&nbsp;</td>
+                   <td>  133 </td>
+                   <td>  127 </td>
+                   <td>  118 </td>
+                   <td>  132 </td>
+                   <td>  124 </td>
+                   <td>  176 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 4 </th>
+                   <td>  274 </td>
+                   <td>  136 </td>
+                   <td>  259 </td>
+                   <td>&nbsp;</td>
+                   <td>  115 </td>
+                   <td>  164 </td>
+                   <td>  238 </td>
+                   <td>  228 </td>
+                   <td>  259 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 5 </th>
+                   <td>  287 </td>
+                   <td>  203 </td>
+                   <td>  272 </td>
+                   <td>  232 </td>
+                   <td>&nbsp;</td>
+                   <td>  210 </td>
+                   <td>  251 </td>
+                   <td>  244 </td>
+                   <td>  281 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 6 </th>
+                   <td>  277 </td>
+                   <td>  173 </td>
+                   <td>  260 </td>
+                   <td>  189 </td>
+                   <td>  130 </td>
+                   <td>&nbsp;</td>
+                   <td>  236 </td>
+                   <td>  225 </td>
+                   <td>  276 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 7 </th>
+                   <td>  230 </td>
+                   <td>  149 </td>
+                   <td>  193 </td>
+                   <td>  150 </td>
+                   <td>  139 </td>
+                   <td>  133 </td>
+                   <td>&nbsp;</td>
+                   <td>  148 </td>
+                   <td>  213 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 8 </th>
+                   <td>  232 </td>
+                   <td>  162 </td>
+                   <td>  203 </td>
+                   <td>  164 </td>
+                   <td>  154 </td>
+                   <td>  155 </td>
+                   <td>  179 </td>
+                   <td>&nbsp;</td>
+                   <td>  225 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 9 </th>
+                   <td>  257 </td>
+                   <td>  139 </td>
+                   <td>  230 </td>
+                   <td>  146 </td>
+                   <td>  126 </td>
+                   <td>  133 </td>
+                   <td>  192 </td>
+                   <td>  176 </td>
+                   <td>&nbsp;</td>
+                 </tr>
+               </table>
+              <p>
+Looking at row 2, column 1, Allow AI-Assisted Contributions with conditions<br>
+received 273 votes over Ban LLM contributions from Debian via Social Contract<br>
+<br>
+Looking at row 1, column 2, Ban LLM contributions from Debian via Social Contract<br>
+received 111 votes over Allow AI-Assisted Contributions with conditions.<br>
+              <h3>Pair-wise defeats</h3>
+              <ul>
+                <li>Option 2 defeats option 4 by ( 181 - 136) = 45 votes.</li>
+                <li>Option 5 defeats Option 2 by ( 203 - 148) = 55 votes.</li>
+                <li>Option 2 defeats option 6 by ( 178 - 173) = 5 votes.</li>
+                <li>Option 2 defeats option 7 by ( 238 - 149) = 89 votes.</li>
+                <li>Option 2 defeats option 8 by ( 229 - 162) = 67 votes.</li>
+                <li>Option 2 defeats option 9 by ( 267 - 139) = 128 votes.</li>
+                <li>Option 5 defeats Option 4 by ( 232 - 115) = 117 votes.</li>
+                <li>Option 6 defeats Option 4 by ( 189 - 164) = 25 votes.</li>
+                <li>Option 4 defeats option 7 by ( 238 - 150) = 88 votes.</li>
+                <li>Option 4 defeats option 8 by ( 228 - 164) = 64 votes.</li>
+                <li>Option 4 defeats option 9 by ( 259 - 146) = 113 votes.</li>
+                <li>Option 5 defeats option 6 by ( 210 - 130) = 80 votes.</li>
+                <li>Option 5 defeats option 7 by ( 251 - 139) = 112 votes.</li>
+                <li>Option 5 defeats option 8 by ( 244 - 154) = 90 votes.</li>
+                <li>Option 5 defeats option 9 by ( 281 - 126) = 155 votes.</li>
+                <li>Option 6 defeats option 7 by ( 236 - 133) = 103 votes.</li>
+                <li>Option 6 defeats option 8 by ( 225 - 155) = 70 votes.</li>
+                <li>Option 6 defeats option 9 by ( 276 - 133) = 143 votes.</li>
+                <li>Option 8 defeats Option 7 by ( 179 - 148) = 31 votes.</li>
+                <li>Option 7 defeats option 9 by ( 213 - 192) = 21 votes.</li>
+                <li>Option 8 defeats option 9 by ( 225 - 176) = 49 votes.</li>
+              </ul>
+              <h3>The Schwartz Set contains</h3>
+              <ul>
+                <li>Option 5 "Responsible Use of Generative AI"</li>
+              </ul>
+              <h3>The winners</h3>
+              <ul>
+                <li>Option 5 "Responsible Use of Generative AI"</li>
+              </ul>
+              <p>
+               Debian uses the Condorcet method for voting.
+               Simplistically, plain Condorcets method
+               can be stated like so : <br>
+               <q>Consider all possible two-way races between candidates.
+                  The Condorcet winner, if there is one, is the one
+                  candidate who can beat each other candidate in a two-way
+                  race with that candidate.</q>
+               The problem is that in complex elections, there may well
+               be a circular relationship in which A beats B, B beats C,
+               and C beats A. Most of the variations on Condorcet use
+               various means of resolving the tie. See
+               <a href="http://en.wikipedia.org/wiki/Cloneproof_Schwartz_Sequential_Dropping">Cloneproof Schwartz Sequential Dropping</a>
+               for details. Debian's variation is spelled out in the
+               <a href="../../devel/constitution">constitution</a>,
+               specifically, A.5.
+              </p>
+    <hr>
+      <address>
+        <a href="mailto:secretary@debian.org">Debian Project Secretary</a>
+      </address>
+</div> <!-- end maincol -->
+<div class="clr"></div>
+</div> <!-- end content -->
+<div id="footer">
+<hr class="hidecss">
+<p>Back to the <a href="../../">Debian Project homepage</a>.</p>
+<hr>
+<!--UdmComment-->
+<div id="pageLang">
+<div id="langSelector">
+This page is also available in the following languages:
+<div id="langContainer">
+<select onchange="location = this.value;">
+<option value="" disabled selected>Select your language</option>
+ <option value="vote_002.fr.html" title="French" lang="fr">fran&ccedil;ais</option>
+ <option value="vote_002.nl.html" title="Dutch" lang="nl">Nederlands</option>
+</select>
+</div>
+How to set <a href="../../intro/cn">the default document language</a>
+</div></div><!--/UdmComment-->
+<hr>
+<div id="footermap">
+<!--UdmComment-->
+<p><strong><a href="/">Home</a></strong></p>
+    <ul id="footermap-cola">
+		<li><a href="../../intro/about">About</a>
+		  <ul>
+		  <li><a href="../../social_contract">Social Contract</a></li>
+		  <li><a href="../../code_of_conduct">Code of Conduct</a></li>
+		  <li><a href="../../intro/free">Free Software</a></li>
+          <li><a href="../../legal">Legal Info</a></li>
+		  </ul>
+		</li>
+        <li><a href="../../intro/help">Help Debian</a></li>
+    </ul>
+	<ul id="footermap-colb">
+			<li><a href="../../distrib/">Getting Debian</a>
+			  <ul>
+			  <li><a href="../../distrib/netinst">Network install</a></li>
+			  <li><a href="../../CD/">CD/USB ISO images</a></li>
+            <li><a href="../../blends/">Pure Blends</a></li>
+			<li><a href="../../distrib/packages">Debian Packages</a></li>
+			<li><a href="../../devel/">Developers' Corner</a></li>
+			  </ul>
+			</li>
+	</ul>
+	<ul id="footermap-colc">
+		<li><a href="../../News/">News</a>
+		  <ul>
+		  <li><a href="../../News/weekly/">Project News</a></li>
+		  <li><a href="../../events/">Events</a></li>
+		  </ul>
+		</li>
+    <li><a href="../../doc/">Documentation</a>
+      <ul>
+      <li><a href="../../releases/">Release Info</a></li>
+      <li><a href="https://wiki.debian.org/">Debian Wiki</a></li>
+      </ul>
+    </li>
+   </ul>
+   <ul id="footermap-cold">
+    <li><a href="../../support">Support</a>
+	  <ul>
+			  <li><a href="../../international/">Debian International</a></li>
+			  <li><a href="../../security/">Security Information</a></li>
+			  <li><a href="../../Bugs/">Bug reports</a></li>
+			  <li><a href="../../MailingLists/">Mailing Lists</a></li>
+      </ul>
+    </li>
+</ul>
+<ul id="footermap-cole">
+  <li><a href="../../sitemap">Site map</a></li>
+  <li><a href="https://search.debian.org/">Search</a></li>
+  <li><a href="https://bits.debian.org">The Debian Blog</a></li>
+  <li><a href="https://micronews.debian.org">Debian Micronews</a></li>
+  <li><a href="https://planet.debian.org">Debian Planet</a></li>
+</ul>
+<!--/UdmComment-->
+</div> <!-- end footermap -->
+<div id="fineprint">
+<!--UdmComment-->
+  <p>See our <a href="../../contact">contact page</a> to get in touch. Web site source code is <a href="https://salsa.debian.org/webmaster-team/webwml">available</a>.</p>
+<p>
+Last Modified: Sat, Oct 17 23:48:15 UTC 2026
+&emsp;
+Last Built: Sun, Oct 18 03:32:51 UTC 2026
+  <br>
+  Copyright &copy; 2026 <a href="https://www.spi-inc.org/">SPI</a> and others; See <a href="../../license" rel="copyright">license terms</a><br>
+  Debian is a registered <a href="../../trademark">trademark</a> of Software in the Public Interest, Inc.
+</p>
+<!--/UdmComment-->
+</div>
+</div> <!-- end footer -->
+</body>
+</html>

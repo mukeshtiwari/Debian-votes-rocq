@@ -1,0 +1,11 @@
+digraph Results {
+  ranksep=0.25;
+ "Hide identities of Developers casting a particular vote\n1.59" [ style="filled" , color="pink", shape=octagon, fontname="Helvetica", fontsize=10  ];
+ "None of the above" -> "Hide identities of Developers casting a particular vote\n1.59" [ label="-55" ];
+ "Hide identities of Developers casting a particular vote and allow verification\n3.03" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "Hide identities of Developers casting a particular vote and allow verification\n3.03" -> "Reaffirm public voting\n2.40" [ label="35" ];
+ "Hide identities of Developers casting a particular vote and allow verification\n3.03" -> "None of the above" [ label="124" ];
+ "Reaffirm public voting\n2.40" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Reaffirm public voting\n2.40" -> "None of the above" [ label="95" ];
+ "None of the above" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

@@ -1,0 +1,6 @@
+digraph Results {
+  ranksep=0.25;
+ "Sruthi Chandran\n5.78" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "Sruthi Chandran\n5.78" -> "None of the above" [ label="239" ];
+ "None of the above" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

@@ -1,0 +1,874 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>    General Resolution: Change the resolution process </title>
+  <link rel="author" href="mailto:webmaster@debian.org">
+  <meta name="Generator" content="WML 2.32.0">
+  <meta name="Modified" content="2026-10-18 03:32:33">
+  <meta name="viewport" content="width=device-width">
+  <meta name="mobileoptimized" content="300">
+  <meta name="HandheldFriendly" content="true">
+<link href="../../debian.css" rel="stylesheet" type="text/css">
+  <link href="../../debian-en.css" rel="stylesheet" type="text/css" media="all">
+<link rel="search" type="application/opensearchdescription+xml" title="Debian website search" href="../../search.en.xml">
+</head>
+<body>
+<div id="header">
+  <div id="upperheader">
+    <div id="logo">
+    <a href="../../" title="Debian Home"><img src="../../Pics/openlogo-50.png" alt="Debian" width="50" height="61"></a>
+    </div> <!-- end logo -->
+    <div id="searchbox">
+      <form name="p" method="get" action="https://search.debian.org/cgi-bin/omega">
+      <p>
+<input type="hidden" name="DB" value="en">
+        <input name="P" value="" size="14">
+        <input type="submit" value="Search">
+      </p>
+      </form>
+    </div>   <!-- end sitetools -->
+  </div> <!-- end upperheader -->
+  <!--UdmComment-->
+  <div id="navbar">
+    <p class="hidecss"><a href="#content">Skip Quicknav</a></p>
+    <ul>
+      <!-- Link to Debian's own Social Media resources -->
+      <li><a href="https://bits.debian.org/" title="Bits from Debian">Blog</a></li>
+      <li><a href="https://micronews.debian.org" title="Micronews from Debian">Micronews</a></li>
+      <li><a href="https://planet.debian.org/" title="The Planet of Debian">Planet</a></li>
+      <li><a href="https://wiki.debian.org/" title="The Debian Wiki">Wiki</a></li>
+    </ul>
+  </div> <!-- end navbar -->
+<p id="breadcrumbs"><a href="./../">Debian Voting Information</a>
+ &#x2F; <a href="./">2021</a>
+ &#x2F;
+General Resolution: Change the resolution process</p>
+</div> <!-- end header -->
+<!--/UdmComment-->
+<div id="content">
+<div id="second-nav">
+<!--UdmComment-->
+	<ul class="votemenu">
+	<li>Home
+	<ul>
+	 <li><a href="../../vote/">Home&nbsp;Vote&nbsp;Page</a></li>
+	</ul>
+	</li>
+	<li>How&nbsp;To
+	<ul>
+	<li><a href="../../vote/howto_proposal">Submit&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_proposal#amend">Amend&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_follow">Follow&nbsp;a&nbsp;Proposal</a></li>
+	<!-- <li><a href="howto_vote">&bull;&nbsp;Vote</a></li>
+		<li>*<a href="howto_result">Read&nbsp;a&nbsp;Result</a></li> -->
+	</ul>
+	</li>
+	<li>Decided<ul><li><a href="../../vote/2026/vote_002">General Resolution: LLM usage in Debian</a></li>
+<li><a href="../../vote/2026/vote_001">Debian Project Leader Elections 2026</a></li>
+<li><a href="../../vote/2025/vote_001">Debian Project Leader Elections 2025</a></li>
+<li><a href="../../vote/2024/vote_001">Debian Project Leader Elections 2024</a></li>
+<li><a href="../../vote/2023/vote_002">General Resolution: Statement about the EU Legislation "Cyber Resilience Act and Product Liability Directive"</a></li>
+<li><a href="../../vote/2023/vote_001">Debian Project Leader Elections 2023</a></li>
+<li><a href="../../vote/2022/vote_003">General Resolution: non-free firmware</a></li>
+<li><a href="../../vote/2022/vote_002">Debian Project Leader Elections 2022</a></li>
+<li><a href="../../vote/2022/vote_001">General Resolution: Voting secrecy</a></li>
+<li><a href="../../vote/2021/vote_003">General Resolution: Change the resolution process</a></li>
+<li><a href="../../vote/2021/vote_002">General Resolution: Statement regarding Richard Stallman's readmission to the FSF board</a></li>
+<li><a href="../../vote/2021/vote_001">Debian Project Leader Elections 2021</a></li>
+<li><a href="../../vote/2020/vote_001">Debian Project Leader Elections 2020</a></li>
+<li><a href="../../vote/2019/vote_002">General Resolution: Init systems and systemd</a></li>
+<li><a href="../../vote/2019/vote_001">Debian Project Leader Elections 2019</a></li>
+<li><a href="../../vote/2018/vote_001">Debian Project Leader Elections 2018</a></li>
+<li><a href="../../vote/2017/vote_001">Debian Project Leader Elections 2017</a></li>
+<li><a href="../../vote/2016/vote_004">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_003">General Resolution: Replace "Chairman" with "Chair" throughout the Debian Constitution</a></li>
+<li><a href="../../vote/2016/vote_002">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_001">Debian Project Leader Elections 2016</a></li>
+<li><a href="../../vote/2015/vote_003">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2015/vote_001">Debian Project Leader Elections 2015</a></li>
+<li><a href="../../vote/2014/vote_004">General Resolution: Limiting the term of the technical committee members</a></li>
+<li><a href="../../vote/2014/vote_003">General Resolution: init system coupling</a></li>
+<li><a href="../../vote/2014/vote_002">General Resolution: code of conduct</a></li>
+<li><a href="../../vote/2014/vote_001">Debian Project Leader Elections 2014</a></li>
+<li><a href="../../vote/2013/vote_001">Debian Project Leader Elections 2013</a></li>
+<li><a href="../../vote/2012/vote_002">General Resolution: Diversity statement</a></li>
+<li><a href="../../vote/2012/vote_001">Debian Project Leader Elections 2012</a></li>
+<li><a href="../../vote/2011/vote_001">Debian Project Leader Elections 2011</a></li>
+<li><a href="../../vote/2010/vote_002">General Resolution: Debian project members</a></li>
+<li><a href="../../vote/2010/vote_001">Debian Project Leader Elections 2010</a></li>
+<li><a href="../../vote/2009/vote_001">Debian Project Leader Elections 2009</a></li>
+<li><a href="../../vote/2008/vote_003">General Resolution: Lenny and resolving DFSG violations</a></li>
+<li><a href="../../vote/2008/vote_002">General Resolution: Project membership procedures</a></li>
+<li><a href="../../vote/2008/vote_001">Debian Project Leader Elections 2008</a></li>
+<li><a href="../../vote/2007/vote_004">Constitutional amendment: reduce the length of DPL election process</a></li>
+<li><a href="../../vote/2007/vote_003">General Resolution: Endorse the concept of Debian Maintainers</a></li>
+<li><a href="../../vote/2007/vote_002">General Resolution: Altering package upload rules</a></li>
+<li><a href="../../vote/2007/vote_001">Debian Project Leader Elections 2007</a></li>
+<li><a href="../../vote/2006/vote_007">General Resolution: Handling source-less firmware in the Linux kernel</a></li>
+<li><a href="../../vote/2006/vote_006">General Resolution: Re-affirm support to the Debian Project Leader</a></li>
+<li><a href="../../vote/2006/vote_005">General Resolution: Recall the project leader</a></li>
+<li><a href="../../vote/2006/vote_004">General Resolution: Position statement clarifying DFSG #2</a></li>
+<li><a href="../../vote/2006/vote_003">Constitutional Amendment General Resolution: Handling assets for the project</a></li>
+<li><a href="../../vote/2006/vote_002">Debian Project Leader Elections 2006</a></li>
+<li><a href="../../vote/2006/vote_001">General Resolution: Why the GNU Free Documentation License is not suitable for Debian main</a></li>
+<li><a href="../../vote/2005/vote_002">General Resolution: Declassification of debian-private list archives</a></li>
+<li><a href="../../vote/2005/vote_001">Debian Project Leader Elections 2005</a></li>
+<li><a href="../../vote/2004/vote_004">General Resolution: Sarge Release Schedule in view of GR 2004-003</a></li>
+<li><a href="../../vote/2004/vote_003">General Resolution: Editorial amendments to the social contract</a></li>
+<li><a href="../../vote/2004/vote_002">General Resolution: Status of the non-free section</a></li>
+<li><a href="../../vote/2004/vote_001">Debian Project Leader Elections 2004</a></li>
+<li><a href="../../vote/2003/vote_0003">Constitutional Amendment: Disambiguation of Section 4.1.5</a></li>
+<li><a href="../../vote/2003/vote_0002">Constitutional Amendment: Condorcet/Clone Proof SSD Voting Method </a></li>
+<li><a href="../../vote/2003/vote_0001">Debian Project Leader Elections 2003</a></li>
+<li><a href="../../vote/2002/vote_0001">Debian Project Leader Elections 2002</a></li>
+<li><a href="../../vote/2001/vote_0001">Leader Elections 2001</a></li>
+<li><a href="../../vote/2000/vote_0007">Leader Elections 2000</a></li>
+<li><a href="../../vote/1999/vote_0005">Swap Logos</a></li>
+<li><a href="../../vote/1999/vote_0004">New Logo</a></li>
+<li><a href="../../vote/1999/vote_0002">Logo License</a></li>
+<li><a href="../../vote/1999/vote_0001">Leader Elections 1999</a></li>
+<li><a href="../../vote/1999/vote_0000">Constitution</a></li>
+</ul></li><li>Withdrawn<ul><li><a href="../../vote/2025/vote_002">General Resolution: Interpretation of DFSG on Artificial Intelligence (AI) Models</a></li>
+<li><a href="../../vote/2024/vote_002">General Resolution: tag2upload</a></li>
+<li><a href="../../vote/2015/vote_002">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2009/vote_002">General Resolution: Sponsorship requirements for General Resolutions</a></li>
+<li><a href="../../vote/2004/vote_005">General Resolution: Force AMD64 architecture into Sarge</a></li>
+<li><a href="../../vote/2001/vote_0002">IRC as a Debian communication channel</a></li>
+</ul></li><li>Other<ul><li><a href="../../vote/2000/vote_0011">Superseded: Constitutional amendment: Smith/Condorcet vote tallying</a></li>
+<li><a href="../../vote/2000/vote_0010">Superseded: Constitutional amendment: alternate disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0009">Superseded: Constitutional amendment: disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0008">Superseded: Non-free Archive Removal</a></li>
+</ul></li>
+	</ul>
+	<!--/UdmComment-->
+</div> <!-- end second-nav -->
+<div id="maincol">
+    <h1>General Resolution: Change the resolution process</h1>
+<ul class="toc">
+  <li><a href="#timeline">Time Line</a></li>
+  <li><a href="#proposer">Proposer</a></li>
+  <li><a href="#seconds">Seconds</a></li>
+  <li><a href="#text">Text</a></li>
+  <li><a href="#proposerb">Proposal B Proposer</a></li>
+  <li><a href="#secondsb">Proposal B Seconds</a></li>
+  <li><a href="#textb">Proposal B</a></li>
+  <li><a href="#quorum">Quorum</a></li>
+  <li><a href="#statistics">Data and Statistics</a></li>
+  <li><a href="#majorityreq">Majority Requirement</a></li>
+  <li><a href="#outcome">Outcome</a></li>
+</ul>
+<h3><a name="timeline" id="timeline">Time Line</a></h3>
+    <table class="vote" summary="">
+      <tr>
+        <th>Proposal and amendment</th>
+        <td>2021-11-20</td>
+		<td></td>
+      </tr>
+      <tr>
+        <th>Discussion Period:</th>
+		<td>2021-12-16</td>
+		<td></td>
+      </tr>
+          <tr>
+            <th>Voting period:</th>
+            <td>Saturday 2022-01-15 00:00:00 UTC</td>
+            <td>Friday 2022-01-28 23:59:59 UTC</td>
+    </table>
+<h3><a name="proposer" id="proposer">Proposer</a></h3>
+    <p>Russ Allbery [<a href="mailto:rra@debian.org">rra@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2021/11/msg00107.html'>text of proposal</a>]
+	[<a href='https://lists.debian.org/debian-vote/2021/11/msg00145.html'>amendment</a>]
+	[<a href='https://lists.debian.org/debian-vote/2021/12/msg00017.html'>amendment</a>]
+    </p>
+<h3><a name="seconds" id="seconds">Seconds</a></h3>
+    <ol>
+	<li>Timo Röhling [<a href="mailto:roehling@debian.org">roehling@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/11/msg00108.html'>mail</a>] </li>
+	<li>Philip Hands [<a href="mailto:philh@debian.org">philh@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/11/msg00109.html'>mail</a>] </li>
+	<li>Sam Hartman [<a href="mailto:hartmans@debian.org">hartmans@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/11/msg00111.html'>mail</a>] </li>
+	<li>Pierre-Elliott Bécue [<a href="mailto:peb@debian.org">peb@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/11/msg00112.html'>mail</a>] </li>
+	<li>Holger Levsen [<a href="mailto:holger@debian.org">holger@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/11/msg00115.html'>mail</a>] </li>
+	<li>Gunnar Wolf [<a href="mailto:gwolf@debian.org">gwolf@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/11/msg00154.html'>mail</a>] </li>
+	<li>Sean Whitton [<a href="mailto:spwhitton@debian.org">spwhitton@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/11/msg00165.html'>mail</a>] </li>
+    </ol>
+<h3><a name="text" id="text">Text</a></h3>
+	<h3>Choice 1: Amend resolution process, set maximum discussion period</h3>
+<pre>
+Rationale
+=========
+
+We have uncovered several problems with the current constitutional
+mechanism for preparing a Technical Committee resolution or General
+Resolution for vote:
+
+* The timing of calling for a vote is discretionary and could be used
+  strategically to cut off discussion while others were preparing
+  additional ballot options.
+* The original proposer of a GR has special control over the timing of the
+  vote, which could be used strategically to the disadvantage of other
+  ballot options.
+* The description of the process for adding and managing additional ballot
+  options is difficult to understand.
+* The current default choice of "further discussion" for a General
+  Resolution has implications beyond rejecting the other options that may,
+  contrary to its intent, discourage people Developers ranking it above
+  options they wish to reject.
+
+The actual or potential implications of these problems caused conflict in
+the Technical Committee systemd vote and in GRs 2019-002 and 2021-002,
+which made it harder for the project to reach a fair and widely-respected
+result.
+
+This constitutional change attempts to address those issues by
+
+* separating the Technical Committee process from the General Resolution
+  process since they have different needs;
+* requiring (passive) consensus among TC members that a resolution is
+  ready to proceed to a vote;
+* setting a maximum discussion period for a TC resolution and then
+  triggering a vote;
+* setting a maximum discussion period for a GR so that the timing of the
+  vote is predictable;
+* extending the GR discussion period automatically if the ballot changes;
+* modifying the GR process to treat all ballot options equally, with a
+  clearer process for addition, withdrawal, and amendment;
+* changing the default option for a GR to "none of the above"; and
+* clarifying the discretion extended to the Project Secretary.
+
+It also corrects a technical flaw that left the outcome of the vote for
+Technical Committee Chair undefined in the event of a tie, and clarifies
+responsibilities should the Technical Committee put forward a General
+Resolution under §4.2.1.
+
+Effect of the General Resolution
+================================
+
+The Debian Developers, by way of General Resolution, amend the Debian
+constitution under §4.1.2 as follows.  This General Resolution
+requires a 3:1 majority.
+
+Section 4.2.1
+-------------
+
+Replace "amendment" with "ballot option."
+
+Section 4.2.4
+-------------
+
+Strike the sentence "The minimum discussion period is 2 weeks, but may be
+varied by up to 1 week by the Project Leader."  (A modified version of
+this provision is added to §A below.)  Add to the end of this paragraph:
+
+    The default option is "None of the above."
+
+Section 4.2.5
+-------------
+
+Replace "amendments" with "ballot options."
+
+Section 5.1.5
+-------------
+
+Replace in its entirety with:
+
+    Propose General Resolutions and ballot options for General
+    Resolutions.  When proposed by the Project Leader, sponsors for the
+    General Resolution or ballot option are not required; see §4.2.1.
+
+Section 5.2.7
+-------------
+
+Replace "section §A.6" with "§A.5".
+
+Section 6.1.7
+-------------
+
+Replace "section §A.6" with "§A.5".
+
+Add to the end of this section:
+
+    There is no casting vote. If there are multiple options with no
+    defeats in the Schwartz set at the end of §A.5.8, the winner will
+    be randomly chosen from those options, via a mechanism chosen by the
+    Project Secretary.
+
+Section 6.3
+-----------
+
+Replace 6.3.1 in its entirety with:
+
+    1. Resolution process.
+
+       The Technical Committee uses the following process to prepare a
+       resolution for vote:
+
+       1. Any member of the Technical Committee may propose a resolution.
+          This creates an initial two-option ballot, the other option
+          being the default option of "None of the above". The proposer
+          of the resolution becomes the proposer of the ballot option.
+
+       2. Any member of the Technical Committee may propose additional
+          ballot options or modify or withdraw a ballot option they
+          proposed.
+
+       3. If all ballot options except the default option are withdrawn,
+          the process is canceled.
+
+       4. Any member of the Technical Committee may call for a vote on the
+          ballot as it currently stands. This vote begins immediately, but
+          if any other member of the Technical Committee objects to
+          calling for a vote before the vote completes, the vote is
+          canceled and has no effect.
+
+       5. Two weeks after the original proposal the ballot is closed to
+          any changes and voting starts automatically. This vote cannot be
+          canceled.
+
+       6. If a vote is canceled under §6.3.1.4 later than 13 days after
+          the initial proposed resolution, the vote specified in §6.3.1.5
+          instead starts 24 hours after the time of cancellation. During
+          that 24 hour period, no one may call for a vote, but Technical
+          Committee members may make ballot changes under §6.3.1.2.
+
+Add a new paragraph to the start of 6.3.2 following "Details regarding
+voting":
+
+       Votes are decided by the vote counting mechanism described in
+       §A.5. The voting period lasts for one week or until the outcome is
+       no longer in doubt assuming no members change their votes,
+       whichever is shorter. Members may change their votes until the
+       voting period ends. There is a quorum of two. The Chair has a
+       casting vote. The default option is "None of the above".
+
+Strike "The Chair has a casting vote." from the existing text and make the
+remaining text a separate, second paragraph.
+
+In 6.3.3, replace "amendments" with "ballot options."
+
+Add, at the end of 6.3, the following new section:
+
+    7. Proposing a general resolution.
+
+       When the Technical Committee proposes a general resolution or a
+       ballot option in a general resolution to the project under §4.2.1,
+       it may delegate (via resolution or other means agreed on by the
+       Technical Committee) the authority to withdraw, amend, or make
+       minor changes to the ballot option to one of its members. If it
+       does not do so, these decisions must be made by resolution of the
+       Technical Committee.
+
+Section A
+---------
+
+Replace §A.0 through §A.5 in their entirety with:
+
+    A.0. Proposal
+
+    1. The formal procedure begins when a draft resolution is proposed and
+       sponsored, as specified in §4.2.1.
+
+    2. This draft resolution becomes a ballot option in an initial
+       two-option ballot, the other option being the default option, and
+       the proposer of the draft resolution becomes the proposer of that
+       ballot option.
+
+    A.1. Discussion and amendment
+
+    1. The discussion period starts when a draft resolution is proposed
+       and sponsored. The minimum discussion period is 2 weeks. The
+       maximum discussion period is 3 weeks.
+
+    2. A new ballot option may be proposed and sponsored according to the
+       requirements for a new resolution.
+
+    3. The proposer of a ballot option may amend that option provided that
+       none of the sponsors of that ballot option at the time the
+       amendment is proposed disagree with that change within 24 hours. If
+       any of them do disagree, the ballot option is left unchanged.
+
+    4. The addition of a ballot option or the change via an amendment of a
+       ballot option changes the end of the discussion period to be one
+       week from when that action was done, unless that would make the
+       total discussion period shorter than the minimum discussion period
+       or longer than the maximum discussion period. In the latter case,
+       the length of the discussion period is instead set to the maximum
+       discussion period.
+
+    5. The proposer of a ballot option may make minor changes to that
+       option (for example, typographical fixes, corrections of
+       inconsistencies, or other changes which do not alter the meaning),
+       providing no Developer objects within 24 hours. In this case the
+       length of the discussion period is not changed. If a Developer does
+       object, the change must instead be made via amendment under §A.1.3.
+
+    6. The Project Leader may, at any point in the process, increase or
+       decrease the minimum and maximum discussion period by up to 1 week
+       from their original values in §A.1.1, except that they may not do
+       so in a way that causes the discussion period to end within 48
+       hours of when this change is made. The length of the discussion
+       period is then recalculated as if the new minimum and maximum
+       lengths had been in place during all previous ballot changes under
+       §A.1.1 and §A.1.4.
+
+    7. The default option has no proposer or sponsors, and cannot be
+       amended or withdrawn.
+
+    A.2. Withdrawing ballot options
+
+    1. The proposer of a ballot option may withdraw. If they do, new
+       proposers may come forward to keep the ballot option alive, in
+       which case the first person to do so becomes the new proposer and
+       any others become sponsors if they aren't sponsors already. Any new
+       proposer or sponsors must meet the requirements for proposing or
+       sponsoring a new resolution.
+
+    2. A sponsor of a ballot option may withdraw.
+
+    3. If the withdrawal of the proposer and/or sponsors means that a
+       ballot option has no proposer or not enough sponsors to meet the
+       requirements for a new resolution, and 24 hours pass without this
+       being remedied by another proposer and/or sponsors stepping
+       forward, it is removed from the draft ballot.  This does not change
+       the length of the discussion period.
+
+    4. If all ballot options except the default option are withdrawn, the
+       resolution is canceled and will not be voted on.
+
+    A.3. Calling for a vote
+
+    1. After the discussion period has ended, the Project Secretary will
+       publish the ballot and call for a vote. The Project Secretary may
+       do this immediately following the end of the discussion period and
+       must do so within seven days of the end of the discussion period.
+
+    2. The Project Secretary determines the order of ballot options and
+       their summaries used for the ballot. The Project Secretary may ask
+       the ballot option proposers to draft those summaries, and may
+       revise them for clarity at their discretion.
+
+    3. Minor changes to ballot options under §A.1.5 may only be made if at
+       least 24 hours remain in the discussion period, or if the Project
+       Secretary agrees the change does not alter the meaning of the
+       ballot option and (if it would do so) warrants delaying the
+       vote. The Project Secretary will allow 24 hours for objections
+       after any such change before issuing the call for a vote.
+
+    4. No new ballot options may be proposed, no ballot options may be
+       amended, and no proposers or sponsors may withdraw if less than 24
+       hours remain in the discussion period, unless this action
+       successfully extends the discussion period under §A.1.4 by at least
+       24 additional hours.
+
+    5. Actions to preserve the existing ballot may be taken within the
+       last 24 hours of the discussion period, namely a sponsor objecting
+       to an amendment under §A.1.3, a Developer objecting to a minor
+       change under §A.1.5, stepping forward as the proposer for an
+       existing ballot option whose original proposer has withdrawn it
+       under §A.2.1, or sponsoring an existing ballot option that has
+       fewer than the required number of sponsors because of the
+       withdrawal of a sponsor under §A.2.2.
+
+    6. The Project Secretary may make an exception to §A.3.4 and accept
+       changes to the ballot after they are no longer allowed, provided
+       that this is done at least 24 hours prior to the issuance of a call
+       for a vote. All other requirements for making a change to the
+       ballot must still be met. This is expected to be rare and should
+       only be done if the Project Secretary believes it would be harmful
+       to the best interests of the project for the change to not be made.
+
+    A.4. Voting procedure
+
+    1. Options which do not have an explicit supermajority requirement
+       have a 1:1 majority requirement. The default option does not have
+       any supermajority requirements.
+
+    2. The votes are counted according to the rules in §A.5.
+
+    3. In cases of doubt the Project Secretary shall decide on matters of
+       procedure.
+
+Rename §A.6 to §A.5.
+
+Replace the paragraph at the end of §A.6 (now §A.5) with:
+
+    When the vote counting mechanism of the Standard Resolution Procedure
+    is to be used, the text which refers to it must specify who has a
+    casting vote, the quorum, the default option, and any supermajority
+    requirement.  The default option must not have any supermajority
+    requirements.
+</pre>
+<h3><a name="proposerb" id="proposerb">Proposal B Proposer</a></h3>
+    <p>Wouter Verhelst [<a href="mailto:wouter@debian.org">wouter@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/11/msg00118.html'>text of proposal</a>]
+	[<a href='https://lists.debian.org/debian-vote/2021/11/msg00124.html'>amendment</a>]
+	[<a href='https://lists.debian.org/debian-vote/2021/11/msg00140.html'>amendment</a>]
+	[<a href='https://lists.debian.org/debian-vote/2021/12/msg00009.html'>amendment</a>]
+    </p>
+<h3><a name="secondsb" id="secondsb">Proposal B Seconds</a></h3>
+    <ol>
+        <li>Holger Levsen [<a href="mailto:holger@debian.org">holger@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/11/msg00119.html'>mail</a>] </li>
+        <li>Pierre-Elliott Bécue [<a href="mailto:peb@debian.org">peb@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/11/msg00120.html'>mail</a>] </li>
+        <li>Mathias Behrle [<a href="mailto:mbehrle@debian.org">mbehrle@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/11/msg00125.html'>mail</a>] </li>
+        <li>Kyle Robbertze [<a href="mailto:paddatrapper@debian.org">paddatrapper@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/11/msg00150.html'>mail</a>] </li>
+        <li>Mattia Rizzolo [<a href="mailto:mattia@debian.org">mattia@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/11/msg00161.html'>mail</a>] </li>
+        <li>Louis-Philippe Véronneau [<a href="mailto:pollo@debian.org">pollo@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2021/11/msg00162.html'>mail</a>] </li>
+    </ol>
+<h3><a name="textb" id="textb">Proposal B</a></h3>
+        <h3>Choice 2: Amend resolution process, allow extension of discussion period</h3>
+<pre>
+Rationale
+=========
+
+Much of the rationale of Russ' proposal still applies, and indeed this
+amendment builds on it. However, the way the timing works is different,
+on purpose.
+
+Our voting system, which neither proposal modifies, as a condorcet
+voting mechanism, does not suffer directly from too many options on the
+ballot. While it is desirable to make sure the number of options on the
+ballot is not extremely high for reasons of practicality and voter
+fatigue, it is nonetheless of crucial importance that all the *relevant*
+options are represented on the ballot, so that the vote outcome is not
+questioned for the mere fact that a particular option was not
+represented on the ballot. Making this possible requires that there is
+sufficient time to discuss all relevant opinions.
+
+Russ' proposal introduces a hard limit of 3 weeks to any and all ballot
+processes, assuming that that will almost always be enough, and relying
+on withdrawing and restarting the voting process in extreme cases where
+it turns out more time is needed; in Russ' proposal, doing so would
+increase the discussion time by another two weeks at least (or one if
+the DPL reduces the discussion time).
+
+In controversial votes, I believe it is least likely for all ballot
+proposers to be willing to use this escape hatch of withdrawing the vote
+and restarting the process; and at the same time, controversial votes
+are the most likely to need a lot of discussion to build a correct
+ballot, which implies they would be most likely to need some extra time
+-- though not necessarily two more weeks -- for the ballot to be
+complete.
+
+At the same time, I am not insensitive to arguments of predictability,
+diminishing returns, and process abuse which seem to be the main
+arguments in favour of a hard time limit at three weeks.
+
+For this reason, my proposal does not introduce a hard limit, and
+*always* makes it theoretically possible to increase the discussion
+time, but does so in a way that extending the discussion time becomes
+harder and harder as time goes on. I believe it is better for the
+constitution to allow a group of people to have a short amount of extra
+time so they can finish their proposed ballot option, than to require
+the full discussion period to be restarted through the withdrawal and
+restart escape hatch. At the same time, this escape hatch is not
+removed, although I expect it to be less likely to be used.
+
+The proposed mechanism sets the initial discussion time to 1 week, but
+allows it to be extended reasonably easily to 2 or 3 weeks, makes it
+somewhat harder to reach 4 weeks, and makes it highly unlikely (but
+still possible) to go beyond that.
+
+Text of the GR
+==============
+
+The Debian Developers, by way of General Resolution, amend the Debian
+constitution under point 4.1.2 as follows. This General Resolution
+requires a 3:1 majority.
+
+Sections 4 through 7
+--------------------
+
+Copy from Russ' proposal, replacing cross-references to §A.5 by §A.6,
+where relevant.
+
+Section A
+---------
+
+Replace section A as per Russ' proposal, with the following changes:
+
+A.1.1. Replace the sentence "The minimum discussion period is 2 weeks."
+       by "The initial discussion period is 1 week." Strike the sentence
+       "The maximum discussion period is 3 weeks".
+
+A.1.4. Strike in its entirety
+
+A.1.5. Rename to A.1.4, and strike the sentence "In this case the length
+       of the discussion period is not changed".
+
+A.1.6. Strike in its entirety
+
+A.1.7. Rename to A.1.5.
+
+After A.2, insert:
+
+A.3. Extending the discussion time.
+
+1. When less than 48 hours remain in the discussion time, any Developer
+   may propose an extension to the discussion time, subject to the
+   limitations of §A.3.3. These extensions may be sponsored according to
+   the same rules that apply to new ballot options.
+
+2. As soon as a time extension has received the required number of
+   sponsors, these sponsorships are locked in and cannot be withdrawn,
+   and the time extension is active.
+
+3. When a time extension has received the required number of sponsors,
+   its proposers and sponsors may no longer propose or sponsor any
+   further time extension for the same ballot, and any further sponsors
+   for the same extension proposal will be ignored for the purpose of
+   this paragraph. In case of doubt, the Project Secretary decides how
+   the order of sponsorships is determined.
+
+4. The first two successful time extensions will extend the discussion
+   time by one week; any further time extensions will extend the
+   discussion time by 72 hours.
+
+5. Once the discussion time is longer than 4 weeks, any Developer may
+   object to further time extensions. Developers who have previously
+   proposed or sponsored a time extension may object as well. If the
+   number of objections outnumber the proposer and their sponsors,
+   including sponsors who will be ignored as per §A.3.3, the time
+   extension will not be active and the discussion time does not change.
+
+6. Once the discussion time expires, any pending time extension
+   proposals that have not yet received their required number of
+   sponsors are null and void, and no further time extensions may be
+   proposed.
+
+A.3. Rename to A.4.
+
+A.3.6 (now A.4.6): replace 'A.3.4' by 'A.4.4'.
+
+A.4. Rename to A.5.
+
+A.4.2 (now A.5.2): replace '§A.5' by '§A.6'.
+
+A.5. Rename (back) to A.6.
+</pre>
+<h3><a name="quorum" id="quorum">Quorum</a></h3>
+     <p>
+        With the current list of <a href="vote_003_quorum.log">voting
+          developers</a>, we have:
+     </p>
+    <pre>
+ Current Developer Count = 1021
+ Q ( sqrt(#devel) / 2 ) = 15.9765453086705
+ K min(5, Q )           = 5
+ Quorum  (3 x Q )       = 47.9296359260114
+    </pre>
+              <h3>Quorum</h3>
+              <ul>
+                <li>Option1 Reached quorum: 180 &gt; 47.9296359260114</li>
+                <li>Option2 Reached quorum: 188 &gt; 47.9296359260114</li>
+              </ul>
+<h3><a name="statistics" id="statistics">Data and Statistics</a></h3>
+    <p>
+	For this GR, like always,
+               <a href="suppl_003_stats">statistics</a>
+             will be gathered about ballots received and
+             acknowledgements sent periodically during the voting
+             period.
+               Additionally, the list of <a
+             href="vote_003_voters.txt">voters</a> will be
+             recorded. Also, the <a href="vote_003_tally.txt">tally
+             sheet</a> will also be made available to be viewed.
+         </p>
+<h3><a name="majorityreq" id="majorityreq">Majority Requirement</a></h3>
+    <p>
+      The proposals need a 3:1 supermajority
+    </p>
+              <h3>Majority</h3>
+              <ul>
+                <li>Option1 passes Majority.
+  7.500 (180/24) &gt;= 3</li>
+                <li>Option2 passes Majority.
+ 11.059 (188/17) &gt;= 3</li>
+              </ul>
+<h3><a name="outcome" id="outcome">Outcome</a></h3>
+           <p class="center">
+             <a style="margin-left: auto; margin-right: auto;" href="vote_003_results.dot">
+               <img src="vote_003_results.png" alt="Graphical rendering of the results" width="892" height="260">
+               </a>
+           </p>
+             <p>
+               In the graph above, any pink colored nodes imply that
+               the option did not pass majority, the Blue is the
+               winner. The Octagon is used for the options that did
+               not beat the default.
+           </p>
+           <ul>
+<li>Option 1 "Amend resolution process, set maximum discussion period"</li>
+<li>Option 2 "Amend resolution process, allow extension of discussion period"</li>
+<li>Option 3 "Further Discussion"</li>
+           </ul>
+            <p>
+               In the following table, tally[row x][col y] represents
+               the votes that option x received over option y. A
+               <a href="https://en.wikipedia.org/wiki/Schwartz_method">more
+                 detailed explanation of the beat matrix</a> may help in
+               understanding the table. For understanding the Condorcet method, the
+               <a href="https://en.wikipedia.org/wiki/Condorcet_method">Wikipedia
+                 entry</a> is fairly informative.
+           </p>
+           <table class="vote" summary="">
+             <caption class="center"><strong>The Beat Matrix</strong></caption>
+	     <tr><th>&nbsp;</th><th colspan="3" class="center">Option</th></tr>
+              <tr>
+                   <th>&nbsp;</th>
+                   <th>    1 </th>
+                   <th>    2 </th>
+                   <th>    3 </th>
+              </tr>
+                 <tr>
+                   <th>Option 1 </th>
+                   <td>&nbsp;</td>
+                   <td>  107 </td>
+                   <td>  180 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 2 </th>
+                   <td>   82 </td>
+                   <td>&nbsp;</td>
+                   <td>  188 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 3 </th>
+                   <td>   24 </td>
+                   <td>   17 </td>
+                   <td>&nbsp;</td>
+                 </tr>
+               </table>
+              <p>
+Looking at row 2, column 1, Amend resolution process, allow extension of discussion period<br>
+received 82 votes over Amend resolution process, set maximum discussion period<br>
+<br>
+Looking at row 1, column 2, Amend resolution process, set maximum discussion period<br>
+received 107 votes over Amend resolution process, allow extension of discussion period.<br>
+              <h3>Pair-wise defeats</h3>
+              <ul>
+                <li>Option 1 defeats Option 2 by ( 107 - 82) = 25 votes.</li>
+                <li>Option 1 defeats Option 3 by ( 180 - 24) = 156 votes.</li>
+                <li>Option 2 defeats Option 3 by ( 188 - 17) = 171 votes.</li>
+              </ul>
+              <h3>The Schwartz Set contains</h3>
+              <ul>
+                <li>Option 1 "Amend resolution process, set maximum discussion period"</li>
+              </ul>
+              <h3>The winners</h3>
+              <ul>
+                <li>Option 1 "Amend resolution process, set maximum discussion period"</li>
+              </ul>
+              <p>
+               Debian uses the Condorcet method for voting.
+               Simplistically, plain Condorcets method
+               can be stated like so : <br>
+               <q>Consider all possible two-way races between candidates.
+                  The Condorcet winner, if there is one, is the one
+                  candidate who can beat each other candidate in a two-way
+                  race with that candidate.</q>
+               The problem is that in complex elections, there may well
+               be a circular relationship in which A beats B, B beats C,
+               and C beats A. Most of the variations on Condorcet use
+               various means of resolving the tie. See
+               <a href="https://en.wikipedia.org/wiki/Cloneproof_Schwartz_Sequential_Dropping">Cloneproof Schwartz Sequential Dropping</a>
+               for details. Debian's variation is spelled out in the
+               <a href="../../devel/constitution">constitution</a>,
+               specifically, A.6.
+              </p>
+    <hr>
+      <address>
+        <a href="mailto:secretary@debian.org">Debian Project Secretary</a>
+      </address>
+</div> <!-- end maincol -->
+<div class="clr"></div>
+</div> <!-- end content -->
+<div id="footer">
+<hr class="hidecss">
+<p>Back to the <a href="../../">Debian Project homepage</a>.</p>
+<hr>
+<!--UdmComment-->
+<div id="pageLang">
+<div id="langSelector">
+This page is also available in the following languages:
+<div id="langContainer">
+<select onchange="location = this.value;">
+<option value="" disabled selected>Select your language</option>
+ <option value="vote_003.fr.html" title="French" lang="fr">fran&ccedil;ais</option>
+ <option value="vote_003.nl.html" title="Dutch" lang="nl">Nederlands</option>
+</select>
+</div>
+How to set <a href="../../intro/cn">the default document language</a>
+</div></div><!--/UdmComment-->
+<hr>
+<div id="footermap">
+<!--UdmComment-->
+<p><strong><a href="/">Home</a></strong></p>
+    <ul id="footermap-cola">
+		<li><a href="../../intro/about">About</a>
+		  <ul>
+		  <li><a href="../../social_contract">Social Contract</a></li>
+		  <li><a href="../../code_of_conduct">Code of Conduct</a></li>
+		  <li><a href="../../intro/free">Free Software</a></li>
+          <li><a href="../../legal">Legal Info</a></li>
+		  </ul>
+		</li>
+        <li><a href="../../intro/help">Help Debian</a></li>
+    </ul>
+	<ul id="footermap-colb">
+			<li><a href="../../distrib/">Getting Debian</a>
+			  <ul>
+			  <li><a href="../../distrib/netinst">Network install</a></li>
+			  <li><a href="../../CD/">CD/USB ISO images</a></li>
+            <li><a href="../../blends/">Pure Blends</a></li>
+			<li><a href="../../distrib/packages">Debian Packages</a></li>
+			<li><a href="../../devel/">Developers' Corner</a></li>
+			  </ul>
+			</li>
+	</ul>
+	<ul id="footermap-colc">
+		<li><a href="../../News/">News</a>
+		  <ul>
+		  <li><a href="../../News/weekly/">Project News</a></li>
+		  <li><a href="../../events/">Events</a></li>
+		  </ul>
+		</li>
+    <li><a href="../../doc/">Documentation</a>
+      <ul>
+      <li><a href="../../releases/">Release Info</a></li>
+      <li><a href="https://wiki.debian.org/">Debian Wiki</a></li>
+      </ul>
+    </li>
+   </ul>
+   <ul id="footermap-cold">
+    <li><a href="../../support">Support</a>
+	  <ul>
+			  <li><a href="../../international/">Debian International</a></li>
+			  <li><a href="../../security/">Security Information</a></li>
+			  <li><a href="../../Bugs/">Bug reports</a></li>
+			  <li><a href="../../MailingLists/">Mailing Lists</a></li>
+      </ul>
+    </li>
+</ul>
+<ul id="footermap-cole">
+  <li><a href="../../sitemap">Site map</a></li>
+  <li><a href="https://search.debian.org/">Search</a></li>
+  <li><a href="https://bits.debian.org">The Debian Blog</a></li>
+  <li><a href="https://micronews.debian.org">Debian Micronews</a></li>
+  <li><a href="https://planet.debian.org">Debian Planet</a></li>
+</ul>
+<!--/UdmComment-->
+</div> <!-- end footermap -->
+<div id="fineprint">
+<!--UdmComment-->
+  <p>See our <a href="../../contact">contact page</a> to get in touch. Web site source code is <a href="https://salsa.debian.org/webmaster-team/webwml">available</a>.</p>
+<p>
+Last Modified: Mon, Jan 27 16:27:40 UTC 2025
+&emsp;
+Last Built: Sun, Oct 18 03:32:33 UTC 2026
+  <br>
+  Copyright &copy; 2021-2025 <a href="https://www.spi-inc.org/">SPI</a> and others; See <a href="../../license" rel="copyright">license terms</a><br>
+  Debian is a registered <a href="../../trademark">trademark</a> of Software in the Public Interest, Inc.
+</p>
+<!--/UdmComment-->
+</div>
+</div> <!-- end footer -->
+</body>
+</html>

@@ -1,0 +1,52 @@
+Starting results calculation at Sun Apr 18 00:00:43 2021
+
+Option 1 "Jonathan Carter"
+Option 2 "Sruthi Chandran"
+Option 3 "None Of The Above"
+
+In the following table, tally[row x][col y] represents the votes that
+option x received over option y.
+
+                  Option
+              1     2     3 
+            ===   ===   === 
+Option 1          312   421 
+Option 2    102         341 
+Option 3     30    81       
+
+
+
+Looking at row 2, column 1, Sruthi Chandran
+received 102 votes over Jonathan Carter
+
+Looking at row 1, column 2, Jonathan Carter
+received 312 votes over Sruthi Chandran.
+
+Option 1 Reached quorum: 421 > 47.8591684006315
+Option 2 Reached quorum: 341 > 47.8591684006315
+
+
+Option 1 passes Majority.              14.033 (421/30) > 1
+Option 2 passes Majority.               4.210 (341/81) > 1
+
+
+  Option 1 defeats Option 2 by ( 312 -  102) =  210 votes.
+  Option 1 defeats Option 3 by ( 421 -   30) =  391 votes.
+  Option 2 defeats Option 3 by ( 341 -   81) =  260 votes.
+
+
+The Schwartz Set contains:
+	 Option 1 "Jonathan Carter"
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The winners are:
+	 Option 1 "Jonathan Carter"
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The total numbers of votes tallied = 455

@@ -1,0 +1,222 @@
+
+		       Tally Sheet for the votes cast. 
+ 
+   The format is:
+       "V: vote 	Login	Name"
+ The vote block represents the ranking given to each of the 
+ candidates by the voter. 
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+     Option 1---->: Amend resolution process, set maximum discussion period
+   /  Option 2--->: Amend resolution process, allow extension of discussion period
+   |/  Option 3-->: Further Discussion
+   ||/
+V: 213	            abe	Axel Beckert
+V: 123	       achernya	Alexander Chernyakhovsky
+V: 123	           adsb	Adam Barratt
+V: 1-2	          alexm	Alex Muntada
+V: 123	       amacater	Andrew Martin Adrian Cater
+V: 123	        anarcat	Antoine Beaupré
+V: 21-	           anbe	Andreas Beckmann
+V: 123	           andi	Andreas Mundt
+V: 123	       angdraug	Dmitry Borodaenko
+V: 112	         ansgar	Ansgar
+V: -1-	            apo	Markus Koschany
+V: 312	             az	Alexander Zangerl
+V: 1--	       azekulic	Alen Zekulic
+V: 123	     babelouest	Nicolas Mora
+V: 321	       ballombe	Bill Allombert
+V: 231	            bas	Bas Zoetekouw
+V: 123	         bbaren	Benjamin Barenblat
+V: -1-	        bblough	William Blough
+V: 213	         bdrung	Benjamin Drung
+V: 12-	           benh	Ben Hutchings
+V: 213	        bigeasy	Sebastian Siewior
+V: 123	          bluca	Luca Boccassi
+V: 12-	         boutil	Cédric Boutillier
+V: 123	        bremner	David Bremner
+V: 123	        broonie	Mark Brown
+V: 312	           bunk	Adrian Bunk
+V: 123	           bzed	Bernd Zeimetz
+V: 312	       calculus	Jerome Benoit
+V: 123	         carnil	Salvatore Bonaccorso
+V: 112	          cavok	Domenico Andreoli
+V: 111	       cespedes	Juan Cespedes
+V: 123	      chronitis	Gordon Ball
+V: 213	       cjwatson	Colin Watson
+V: 213	          cklin	Chuan-kai Lin
+V: 223	          clint	Clint Adams
+V: 123	         csmall	Craig Small
+V: 213	          cwryu	Changwoo Ryu
+V: 21-	         czchen	ChangZhuo Chen
+V: 123	         daniel	Daniel Baumann
+V: 123	          dannf	Dann Frazier
+V: 213	      debalance	Philipp Huebner
+V: 123	       deltaone	Patrick Franz
+V: 123	      dktrkranz	Luca Falavigna
+V: 12-	         dlange	Daniel Lange
+V: 132	            dmn	Damyan Ivanov
+V: 213	            dod	Dominique Dumont
+V: 132	        dogsleg	Lev Lamberov
+V: 123	            don	Don Armstrong
+V: 112	        donkult	David Kalnischkies
+V: 123	      dtorrance	Douglas Torrance
+V: 123	       ehashman	Elana Hashman
+V: 213	         elbrus	Paul Gevers
+V: 113	       emollier	Étienne Mollier
+V: 123	         enrico	Enrico Zini
+V: 123	           eric	Eric Dorland
+V: 213	          fabbe	Fabian Fagerholm
+V: 213	            faw	Felipe van de Wiel
+V: 123	          felix	Félix Sipma
+V: 123	        filippo	Filippo Giunchedi
+V: 12-	        florian	Florian Ernst
+V: 12-	        fpeters	Frederic Peters
+V: 112	       francois	Francois Marier
+V: 123	        gabriel	Gabriel F. T. Gomes
+V: 123	        gaudenz	Gaudenz Steinlin
+V: 213	       georgesk	Georges Khaznadar
+V: --1	        giovani	Giovani Ferreira
+V: 123	       glaubitz	John Paul Adrian Glaubitz
+V: -12	        godisch	Martin Godisch
+V: 123	         gregoa	Gregor Herrmann
+V: 123	           gspr	Gard Spreemann
+V: 123	        guilhem	Guilhem Moulin
+V: 312	        guillem	Guillem Jover
+V: 112	           guus	Guus Sliepen
+V: 21-	          gwolf	Gunnar Wolf
+V: 122	       hartmans	Sam Hartman
+V: 213	          hefee	Sandro Knauß
+V: 213	        helmutg	Helmut Grohne
+V: 123	        hertzog	Raphaël Hertzog
+V: 213	     hlieberman	Harlan Lieberman-Berg
+V: 123	         holger	Holger Levsen
+V: 112	     hvhaugwitz	Hannes von Haugwitz
+V: 123	      intrigeri	Intrigeri
+V: -12	          ivodd	Ivo De Decker
+V: 21-	          jandd	Jan Dittberner
+V: --1	         jaqque	John Robinson
+V: 123	        jbfavre	Jean Favre
+V: 112	            jcc	Jonathan Carter
+V: 213	           jcfp	Jeroen Ploemen
+V: 21-	            jdg	Julian Gilbey
+V: 213	          jello	Joseph Nahmias
+V: 213	         jlines	John Lines
+V: 112	            jmw	Jonathan Wiltshire
+V: 123	          joerg	Joerg Jaspert
+V: 123	        joostvb	Joost van Baal
+V: 11-	          jordi	Jordi Mallach
+V: 312	        joussen	Mario Joussen
+V: 213	      jpmengual	Jean-Philippe MENGUAL
+V: --1	       jredrejo	José L. Redrejo Rodríguez
+V: 113	       jspricke	Jochen Sprickerhof
+V: 213	      jvalleroy	James Valleroy
+V: 132	         kartik	Kartik Mistry
+V: 213	           knok	Takatsugu Nokubi
+V: 123	          kobla	Ondřej Kobližek
+V: 21-	         koster	Kanru Chen
+V: 21-	          krala	Antonin Kral
+V: 213	        kreckel	Richard Kreckel
+V: 21-	     kritzefitz	Sven Bartscher
+V: 123	          laney	Iain Lane
+V: 123	        larjona	Laura Arjona Reina
+V: 123	       lavamind	Jerome Charaoui
+V: 123	       lawrencc	Christopher Lawrence
+V: 21-	        ldrolez	Ludovic Drolez
+V: 321	        lechner	Felix Lechner
+V: 123	        legoktm	Kunal Mehta
+V: 132	        lenharo	Daniel Souza
+V: 213	            leo	Carsten Leonhardt
+V: 312	        lopippo	Filippo Rusconi
+V: 123	          lucab	Luca Bruno
+V: 123	        lyknode	Baptiste Beauplat
+V: 312	        madduck	Martin Krafft
+V: 123	        matthew	Matthew Vernon
+V: 132	         mattia	Mattia Rizzolo
+V: 213	           maxy	Maximiliano Curia
+V: 312	        mbehrle	Mathias Behrle
+V: 123	          mbuck	Martin Buck
+V: 123	           mejo	Jonas Meurer
+V: 123	         merker	Karsten Merker
+V: 213	       mgilbert	Michael Gilbert
+V: 12-	          micha	Micha Lenk
+V: 312	          milan	Milan Kupcevic
+V: -12	          mones	Ricardo Mones Lastra
+V: 21-	          mpitt	Martin Pitt
+V: 123	           myon	Christoph Berg
+V: 123	          neilm	Neil McGovern
+V: 123	          nickm	Nick Morrott
+V: 123	          noahm	Noah Meyerhans
+V: 123	        noodles	Jonathan McDowell
+V: 123	          ntyni	Niko Tyni
+V: 213	          ohura	Makoto OHURA
+V: 123	          olasd	Nicolas Dandrimont
+V: 13-	           olek	Olek Wojnar
+V: 213	          osamu	Osamu Aoki
+V: 132	           otto	Otto Kekäläinen
+V: 21-	   paddatrapper	Kyle Robbertze
+V: 12-	         paride	Paride Legovini
+V: 123	            peb	Pierre-Elliott Bécue
+V: 123	            pgt	Pierre Gruet
+V: 123	          philh	Philip Hands
+V: 12-	           pini	Gilles Filippini
+V: 213	            pjb	Phil Brooke
+V: 123	          pkern	Philipp Kern
+V: 123	         plessy	Charles Plessy
+V: 123	      pmatthaei	Patrick Matthäi
+V: 213	         pmhahn	Philipp Hahn
+V: 123	          pollo	Louis-Philippe Véronneau
+V: 123	            rak	Ryan Kavanagh
+V: 213	            ras	Russell Stuart
+V: 213	        rbalint	Balint Reczey
+V: 213	            rcw	Robert Woodcock
+V: 113	            reg	Gregory Colpart
+V: 123	        reichel	Joachim Reichel
+V: 123	        rlaager	Richard Laager
+V: 1-2	       roehling	Timo Röhling
+V: 21-	       rousseau	Ludovic Rousseau
+V: 123	            rra	Russ Allbery
+V: 12-	            seb	Sebastien Delafond
+V: 123	      sebastien	Sébastien Villemot
+V: 312	        serpent	Tomasz Rybak
+V: 213	             sf	Stefan Fritsch
+V: 21-	          skitt	Stephen Kitt
+V: 123	            smr	Steven Robbins
+V: 213	          smurf	Matthias Urlichs
+V: 123	      spwhitton	Sean Whitton
+V: 132	      sramacher	Sebastian Ramacher
+V: 213	           srud	Sruthi Chandran
+V: 21-	       stappers	Geert Stappers
+V: 123	       stefanor	Stefano Rivera
+V: 11-	 stephanlachnit	Stephan Lachnit
+V: 312	        stevenc	Steven Chamberlain
+V: 123	         stuart	Stuart Prescott
+V: 213	          sur5r	Jakob Haufe
+V: 123	         taffit	David Prévot
+V: 213	         takaki	Takaki Taniguchi
+V: 132	            tbm	Martin Michlmayr
+V: 12-	       terceiro	Antonio Terceiro
+V: 213	             tg	Thorsten Glaser
+V: 123	          tiago	Tiago Bortoletto Vaz
+V: 123	         tianon	Tianon Gravi
+V: 213	           tiwe	Timo Weingärtner
+V: 312	       tjhukkan	Teemu Hukkanen
+V: 123	       tmancill	Tony Mancill
+V: 312	          troyh	Troy Heber
+V: 123	       tvincent	Thomas Vincent
+V: 21-	           ucko	Aaron Ucko
+V: 213	       ukleinek	Uwe Kleine-König
+V: -12	          urbec	Judit Foglszinger
+V: 12-	        vagrant	Vagrant Cascadian
+V: 123	          viiru	Arto Jantunen
+V: 213	           vivi	Vincent Prat
+V: 12-	         vvidic	Valentin Vidic
+V: 213	         wagner	Hanno Wagner
+V: 312	         wouter	Wouter Verhelst
+V: 213	           wrar	Andrey Rahmatullin
+V: 112	            xam	Max Vozeler
+V: -1-	           yadd	Xavier Guimard
+V: 123	           zack	Stefano Zacchiroli
+V: 132	           zhsj	Shengjing Zhu
+V: 213	           zigo	Thomas Goirand

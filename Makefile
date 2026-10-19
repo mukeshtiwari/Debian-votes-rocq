@@ -1,0 +1,15 @@
+# Rocq 9.0.1 / OCaml 5.2.1
+OCAMLOPT = ocamlfind ocamlopt -package str -linkpkg
+all: Makefile.coq
+	$(MAKE) -f Makefile.coq
+	$(OCAMLOPT) devote.mli devote.ml tally.ml devote_main.ml -o devote_main
+	$(OCAMLOPT) devote.mli devote.ml tally.ml recount.ml -o recount
+	$(OCAMLOPT) devote.mli devote.ml tally.ml random_cycles.ml -o random_cycles
+Makefile.coq: _CoqProject
+	rocq makefile -f _CoqProject -o Makefile.coq
+recount: all
+	./recount
+clean:
+	-$(MAKE) -f Makefile.coq clean
+	rm -f Makefile.coq Makefile.coq.conf devote_main recount random_cycles devote.ml devote.mli *.cm* *.o
+.PHONY: all clean recount

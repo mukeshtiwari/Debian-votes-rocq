@@ -1,0 +1,52 @@
+Starting results calculation at Sat Jan 29 00:00:15 2022
+
+Option 1 "Amend resolution process, set maximum discussion period"
+Option 2 "Amend resolution process, allow extension of discussion period"
+Option 3 "Further Discussion"
+
+In the following table, tally[row x][col y] represents the votes that
+option x received over option y.
+
+                  Option
+              1     2     3 
+            ===   ===   === 
+Option 1          107   180 
+Option 2     82         188 
+Option 3     24    17       
+
+
+
+Looking at row 2, column 1, Amend resolution process, allow extension of discussion period
+received 82 votes over Amend resolution process, set maximum discussion period
+
+Looking at row 1, column 2, Amend resolution process, set maximum discussion period
+received 107 votes over Amend resolution process, allow extension of discussion period.
+
+Option 1 Reached quorum: 180 > 47.9296359260114
+Option 2 Reached quorum: 188 > 47.9296359260114
+
+
+Option 1 passes Majority.               7.500 (180/24) >= 3
+Option 2 passes Majority.              11.059 (188/17) >= 3
+
+
+  Option 1 defeats Option 2 by ( 107 -   82) =   25 votes.
+  Option 1 defeats Option 3 by ( 180 -   24) =  156 votes.
+  Option 2 defeats Option 3 by ( 188 -   17) =  171 votes.
+
+
+The Schwartz Set contains:
+	 Option 1 "Amend resolution process, set maximum discussion period"
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The winners are:
+	 Option 1 "Amend resolution process, set maximum discussion period"
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The total numbers of votes tallied = 208

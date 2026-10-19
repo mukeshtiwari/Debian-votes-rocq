@@ -1,0 +1,67 @@
+Starting results calculation at Sun Apr 20 00:04:18 2025
+
+Option 1 "Gianfranco Costamagna"
+Option 2 "Julian Andres Klode"
+Option 3 "Andreas Tille"
+Option 4 "Sruthi Chandran"
+Option 5 "None of the above"
+
+In the following table, tally[row x][col y] represents the votes that
+option x received over option y.
+
+                  Option
+              1     2     3     4     5 
+            ===   ===   ===   ===   === 
+Option 1          110    66   179   273 
+Option 2    181          78   211   264 
+Option 3    282   261         278   318 
+Option 4    127    95    66         225 
+Option 5     70    81    39   112       
+
+
+
+Looking at row 2, column 1, Julian Andres Klode
+received 181 votes over Gianfranco Costamagna
+
+Looking at row 1, column 2, Gianfranco Costamagna
+received 110 votes over Julian Andres Klode.
+
+Option 1 Reached quorum: 273 > 48.1404196076436
+Option 2 Reached quorum: 264 > 48.1404196076436
+Option 3 Reached quorum: 318 > 48.1404196076436
+Option 4 Reached quorum: 225 > 48.1404196076436
+
+
+Option 1 passes Majority.               3.900 (273/70) > 1
+Option 2 passes Majority.               3.259 (264/81) > 1
+Option 3 passes Majority.               8.154 (318/39) > 1
+Option 4 passes Majority.               2.009 (225/112) > 1
+
+
+  Option 2 defeats Option 1 by ( 181 -  110) =   71 votes.
+  Option 3 defeats Option 1 by ( 282 -   66) =  216 votes.
+  Option 1 defeats Option 4 by ( 179 -  127) =   52 votes.
+  Option 1 defeats Option 5 by ( 273 -   70) =  203 votes.
+  Option 3 defeats Option 2 by ( 261 -   78) =  183 votes.
+  Option 2 defeats Option 4 by ( 211 -   95) =  116 votes.
+  Option 2 defeats Option 5 by ( 264 -   81) =  183 votes.
+  Option 3 defeats Option 4 by ( 278 -   66) =  212 votes.
+  Option 3 defeats Option 5 by ( 318 -   39) =  279 votes.
+  Option 4 defeats Option 5 by ( 225 -  112) =  113 votes.
+
+
+The Schwartz Set contains:
+	 Option 3 "Andreas Tille"
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The winners are:
+	 Option 3 "Andreas Tille"
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The total numbers of votes tallied = 362

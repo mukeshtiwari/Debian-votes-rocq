@@ -1,0 +1,29 @@
+digraph Results {
+  ranksep=0.25;
+ "Call for the FSF board removal, as in rms-open-letter.github.io\n1.09" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Call for the FSF board removal, as in rms-open-letter.github.io\n1.09" -> "Discourage collaboration with the FSF while Stallman is in a leading position\n1.27" [ label="8" ];
+ "Call for the FSF board removal, as in rms-open-letter.github.io\n1.09" -> "Further Discussion" [ label="17" ];
+ "Call for Stallman's resignation from all FSF bodies\n1.34" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Call for Stallman's resignation from all FSF bodies\n1.34" -> "Call for the FSF board removal, as in rms-open-letter.github.io\n1.09" [ label="24" ];
+ "Call for Stallman's resignation from all FSF bodies\n1.34" -> "Discourage collaboration with the FSF while Stallman is in a leading position\n1.27" [ label="78" ];
+ "Call for Stallman's resignation from all FSF bodies\n1.34" -> "Call on the FSF to further its governance processes\n1.35" [ label="33" ];
+ "Call for Stallman's resignation from all FSF bodies\n1.34" -> "Further Discussion" [ label="56" ];
+ "Discourage collaboration with the FSF while Stallman is in a leading position\n1.27" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Discourage collaboration with the FSF while Stallman is in a leading position\n1.27" -> "Call on the FSF to further its governance processes\n1.35" [ label="10" ];
+ "Discourage collaboration with the FSF while Stallman is in a leading position\n1.27" -> "Further Discussion" [ label="46" ];
+ "Call on the FSF to further its governance processes\n1.35" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Call on the FSF to further its governance processes\n1.35" -> "Call for the FSF board removal, as in rms-open-letter.github.io\n1.09" [ label="10" ];
+ "Call on the FSF to further its governance processes\n1.35" -> "Further Discussion" [ label="57" ];
+ "Support Stallman's reinstatement, as in rms-support-letter.github.io\n0.16" [ style="filled" , color="pink", shape=octagon, fontname="Helvetica", fontsize=10  ];
+ "Further Discussion" -> "Support Stallman's reinstatement, as in rms-support-letter.github.io\n0.16" [ label="276" ];
+ "Denounce the witch-hunt against RMS and the FSF\n0.28" -> "Support Stallman's reinstatement, as in rms-support-letter.github.io\n0.16" [ label="55",  style="dotted", color="pink" ];
+ "Denounce the witch-hunt against RMS and the FSF\n0.28" [ style="filled" , color="pink", shape=octagon, fontname="Helvetica", fontsize=10  ];
+ "Further Discussion" -> "Denounce the witch-hunt against RMS and the FSF\n0.28" [ label="217" ];
+ "Debian will not issue a public statement on this issue\n2.23" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "Debian will not issue a public statement on this issue\n2.23" -> "Call for the FSF board removal, as in rms-open-letter.github.io\n1.09" [ label="45" ];
+ "Debian will not issue a public statement on this issue\n2.23" -> "Call for Stallman's resignation from all FSF bodies\n1.34" [ label="8" ];
+ "Debian will not issue a public statement on this issue\n2.23" -> "Discourage collaboration with the FSF while Stallman is in a leading position\n1.27" [ label="4" ];
+ "Debian will not issue a public statement on this issue\n2.23" -> "Call on the FSF to further its governance processes\n1.35" [ label="1" ];
+ "Debian will not issue a public statement on this issue\n2.23" -> "Further Discussion" [ label="153" ];
+ "Further Discussion" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

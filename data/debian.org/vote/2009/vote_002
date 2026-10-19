@@ -1,0 +1,378 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>    General Resolution: Sponsorship requirements for General Resolutions </title>
+  <link rel="author" href="mailto:webmaster@debian.org">
+  <meta name="Generator" content="WML 2.32.0">
+  <meta name="Modified" content="2026-10-18 03:31:51">
+  <meta name="viewport" content="width=device-width">
+  <meta name="mobileoptimized" content="300">
+  <meta name="HandheldFriendly" content="true">
+<link href="../../debian.css" rel="stylesheet" type="text/css">
+  <link href="../../debian-en.css" rel="stylesheet" type="text/css" media="all">
+<link rel="search" type="application/opensearchdescription+xml" title="Debian website search" href="../../search.en.xml">
+</head>
+<body>
+<div id="header">
+  <div id="upperheader">
+    <div id="logo">
+    <a href="../../" title="Debian Home"><img src="../../Pics/openlogo-50.png" alt="Debian" width="50" height="61"></a>
+    </div> <!-- end logo -->
+    <div id="searchbox">
+      <form name="p" method="get" action="https://search.debian.org/cgi-bin/omega">
+      <p>
+<input type="hidden" name="DB" value="en">
+        <input name="P" value="" size="14">
+        <input type="submit" value="Search">
+      </p>
+      </form>
+    </div>   <!-- end sitetools -->
+  </div> <!-- end upperheader -->
+  <!--UdmComment-->
+  <div id="navbar">
+    <p class="hidecss"><a href="#content">Skip Quicknav</a></p>
+    <ul>
+      <!-- Link to Debian's own Social Media resources -->
+      <li><a href="https://bits.debian.org/" title="Bits from Debian">Blog</a></li>
+      <li><a href="https://micronews.debian.org" title="Micronews from Debian">Micronews</a></li>
+      <li><a href="https://planet.debian.org/" title="The Planet of Debian">Planet</a></li>
+      <li><a href="https://wiki.debian.org/" title="The Debian Wiki">Wiki</a></li>
+    </ul>
+  </div> <!-- end navbar -->
+<p id="breadcrumbs"><a href="./../">Debian Voting Information</a>
+ &#x2F; <a href="./">2009</a>
+ &#x2F;
+General Resolution: Sponsorship requirements for General Resolutions</p>
+</div> <!-- end header -->
+<!--/UdmComment-->
+<div id="content">
+<div id="second-nav">
+<!--UdmComment-->
+	<ul class="votemenu">
+	<li>Home
+	<ul>
+	 <li><a href="../../vote/">Home&nbsp;Vote&nbsp;Page</a></li>
+	</ul>
+	</li>
+	<li>How&nbsp;To
+	<ul>
+	<li><a href="../../vote/howto_proposal">Submit&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_proposal#amend">Amend&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_follow">Follow&nbsp;a&nbsp;Proposal</a></li>
+	<!-- <li><a href="howto_vote">&bull;&nbsp;Vote</a></li>
+		<li>*<a href="howto_result">Read&nbsp;a&nbsp;Result</a></li> -->
+	</ul>
+	</li>
+	<li>Decided<ul><li><a href="../../vote/2026/vote_002">General Resolution: LLM usage in Debian</a></li>
+<li><a href="../../vote/2026/vote_001">Debian Project Leader Elections 2026</a></li>
+<li><a href="../../vote/2025/vote_001">Debian Project Leader Elections 2025</a></li>
+<li><a href="../../vote/2024/vote_001">Debian Project Leader Elections 2024</a></li>
+<li><a href="../../vote/2023/vote_002">General Resolution: Statement about the EU Legislation "Cyber Resilience Act and Product Liability Directive"</a></li>
+<li><a href="../../vote/2023/vote_001">Debian Project Leader Elections 2023</a></li>
+<li><a href="../../vote/2022/vote_003">General Resolution: non-free firmware</a></li>
+<li><a href="../../vote/2022/vote_002">Debian Project Leader Elections 2022</a></li>
+<li><a href="../../vote/2022/vote_001">General Resolution: Voting secrecy</a></li>
+<li><a href="../../vote/2021/vote_003">General Resolution: Change the resolution process</a></li>
+<li><a href="../../vote/2021/vote_002">General Resolution: Statement regarding Richard Stallman's readmission to the FSF board</a></li>
+<li><a href="../../vote/2021/vote_001">Debian Project Leader Elections 2021</a></li>
+<li><a href="../../vote/2020/vote_001">Debian Project Leader Elections 2020</a></li>
+<li><a href="../../vote/2019/vote_002">General Resolution: Init systems and systemd</a></li>
+<li><a href="../../vote/2019/vote_001">Debian Project Leader Elections 2019</a></li>
+<li><a href="../../vote/2018/vote_001">Debian Project Leader Elections 2018</a></li>
+<li><a href="../../vote/2017/vote_001">Debian Project Leader Elections 2017</a></li>
+<li><a href="../../vote/2016/vote_004">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_003">General Resolution: Replace "Chairman" with "Chair" throughout the Debian Constitution</a></li>
+<li><a href="../../vote/2016/vote_002">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_001">Debian Project Leader Elections 2016</a></li>
+<li><a href="../../vote/2015/vote_003">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2015/vote_001">Debian Project Leader Elections 2015</a></li>
+<li><a href="../../vote/2014/vote_004">General Resolution: Limiting the term of the technical committee members</a></li>
+<li><a href="../../vote/2014/vote_003">General Resolution: init system coupling</a></li>
+<li><a href="../../vote/2014/vote_002">General Resolution: code of conduct</a></li>
+<li><a href="../../vote/2014/vote_001">Debian Project Leader Elections 2014</a></li>
+<li><a href="../../vote/2013/vote_001">Debian Project Leader Elections 2013</a></li>
+<li><a href="../../vote/2012/vote_002">General Resolution: Diversity statement</a></li>
+<li><a href="../../vote/2012/vote_001">Debian Project Leader Elections 2012</a></li>
+<li><a href="../../vote/2011/vote_001">Debian Project Leader Elections 2011</a></li>
+<li><a href="../../vote/2010/vote_002">General Resolution: Debian project members</a></li>
+<li><a href="../../vote/2010/vote_001">Debian Project Leader Elections 2010</a></li>
+<li><a href="../../vote/2009/vote_001">Debian Project Leader Elections 2009</a></li>
+<li><a href="../../vote/2008/vote_003">General Resolution: Lenny and resolving DFSG violations</a></li>
+<li><a href="../../vote/2008/vote_002">General Resolution: Project membership procedures</a></li>
+<li><a href="../../vote/2008/vote_001">Debian Project Leader Elections 2008</a></li>
+<li><a href="../../vote/2007/vote_004">Constitutional amendment: reduce the length of DPL election process</a></li>
+<li><a href="../../vote/2007/vote_003">General Resolution: Endorse the concept of Debian Maintainers</a></li>
+<li><a href="../../vote/2007/vote_002">General Resolution: Altering package upload rules</a></li>
+<li><a href="../../vote/2007/vote_001">Debian Project Leader Elections 2007</a></li>
+<li><a href="../../vote/2006/vote_007">General Resolution: Handling source-less firmware in the Linux kernel</a></li>
+<li><a href="../../vote/2006/vote_006">General Resolution: Re-affirm support to the Debian Project Leader</a></li>
+<li><a href="../../vote/2006/vote_005">General Resolution: Recall the project leader</a></li>
+<li><a href="../../vote/2006/vote_004">General Resolution: Position statement clarifying DFSG #2</a></li>
+<li><a href="../../vote/2006/vote_003">Constitutional Amendment General Resolution: Handling assets for the project</a></li>
+<li><a href="../../vote/2006/vote_002">Debian Project Leader Elections 2006</a></li>
+<li><a href="../../vote/2006/vote_001">General Resolution: Why the GNU Free Documentation License is not suitable for Debian main</a></li>
+<li><a href="../../vote/2005/vote_002">General Resolution: Declassification of debian-private list archives</a></li>
+<li><a href="../../vote/2005/vote_001">Debian Project Leader Elections 2005</a></li>
+<li><a href="../../vote/2004/vote_004">General Resolution: Sarge Release Schedule in view of GR 2004-003</a></li>
+<li><a href="../../vote/2004/vote_003">General Resolution: Editorial amendments to the social contract</a></li>
+<li><a href="../../vote/2004/vote_002">General Resolution: Status of the non-free section</a></li>
+<li><a href="../../vote/2004/vote_001">Debian Project Leader Elections 2004</a></li>
+<li><a href="../../vote/2003/vote_0003">Constitutional Amendment: Disambiguation of Section 4.1.5</a></li>
+<li><a href="../../vote/2003/vote_0002">Constitutional Amendment: Condorcet/Clone Proof SSD Voting Method </a></li>
+<li><a href="../../vote/2003/vote_0001">Debian Project Leader Elections 2003</a></li>
+<li><a href="../../vote/2002/vote_0001">Debian Project Leader Elections 2002</a></li>
+<li><a href="../../vote/2001/vote_0001">Leader Elections 2001</a></li>
+<li><a href="../../vote/2000/vote_0007">Leader Elections 2000</a></li>
+<li><a href="../../vote/1999/vote_0005">Swap Logos</a></li>
+<li><a href="../../vote/1999/vote_0004">New Logo</a></li>
+<li><a href="../../vote/1999/vote_0002">Logo License</a></li>
+<li><a href="../../vote/1999/vote_0001">Leader Elections 1999</a></li>
+<li><a href="../../vote/1999/vote_0000">Constitution</a></li>
+</ul></li><li>Withdrawn<ul><li><a href="../../vote/2025/vote_002">General Resolution: Interpretation of DFSG on Artificial Intelligence (AI) Models</a></li>
+<li><a href="../../vote/2024/vote_002">General Resolution: tag2upload</a></li>
+<li><a href="../../vote/2015/vote_002">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2009/vote_002">General Resolution: Sponsorship requirements for General Resolutions</a></li>
+<li><a href="../../vote/2004/vote_005">General Resolution: Force AMD64 architecture into Sarge</a></li>
+<li><a href="../../vote/2001/vote_0002">IRC as a Debian communication channel</a></li>
+</ul></li><li>Other<ul><li><a href="../../vote/2000/vote_0011">Superseded: Constitutional amendment: Smith/Condorcet vote tallying</a></li>
+<li><a href="../../vote/2000/vote_0010">Superseded: Constitutional amendment: alternate disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0009">Superseded: Constitutional amendment: disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0008">Superseded: Non-free Archive Removal</a></li>
+</ul></li>
+	</ul>
+	<!--/UdmComment-->
+</div> <!-- end second-nav -->
+<div id="maincol">
+    <h1>General Resolution: Sponsorship requirements for General Resolutions</h1>
+<ul class="toc">
+  <li><a href="#timeline">Time Line</a></li>
+  <li><a href="#proposer">Proposer</a></li>
+  <li><a href="#seconds">Seconds</a></li>
+  <li><a href="#text">Text</a></li>
+  <li><a href="#amendmentproposera">Amendment Proposer A</a></li>
+  <li><a href="#amendmentsecondsa">Amendment Seconds A</a></li>
+  <li><a href="#amendmenttexta">Amendment Text A</a></li>
+  <li><a href="#amendmentproposerb">Amendment Proposer B</a></li>
+  <li><a href="#amendmentsecondsb">Amendment Seconds B</a></li>
+  <li><a href="#amendmenttextb">Amendment Text B</a></li>
+</ul>
+<h3><a name="timeline" id="timeline">Time Line</a></h3>
+    <table class="vote" summary="">
+      <tr>
+        <th>Proposal and amendment</th>
+        <td>Saturday, 21st March, 2009</td>
+		<td>Wednesday, 25nd March, 2009</td>
+      </tr>
+      <tr>
+        <th>Discussion Period:</th>
+		<td>Wednesday, 25nd March, 2009</td>
+		<td>Wednesday, 8th April, 2009</td>
+      </tr>
+    </table>
+	<p>
+	This vote has been
+	<a href='https://lists.debian.org/debian-devel-announce/2009/04/msg00011.html'>withdrawn</a>
+	</p>
+<h3><a name="proposer" id="proposer">Proposer</a></h3>
+    <p>Joerg Jaspert [<a href="mailto:joerg@debian.org">joerg@debian.org</a>]
+      [<a href='https://lists.debian.org/debian-vote/2009/03/msg00093.html'>text of proposal</a>]
+	<br>
+	Discussion originally started with
+	[<a href='https://lists.debian.org/debian-vote/2008/12/msg00503.html'>this
+message.</a>]
+    </p>
+<h3><a name="seconds" id="seconds">Seconds</a></h3>
+    <ol>
+      <li>Russ Allbery [<a href="mailto:rra@debian.org">rra@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00112.html'>mail</a>] </li>
+      <li>Mark Hymers [<a href="mailto:mhy@debian.org">mhy@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00126.html'>mail</a>] </li>
+      <li>Kartik Mistry [<a href="mailto:kartik@debian.org">kartik@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00131.html'>mail</a>] </li>
+      <li>Andreas Metzler [<a href="mailto:ametzler@debian.org">ametzler@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00142.html'>mail</a>] </li>
+      <li>Neil Williams [<a href="mailto:codehelp@debian.org">codehelp@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00151.html'>mail</a>] </li>
+      <li>Bernd Zeimetz [<a href="mailto:bzed@debian.org">bzed@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00162.html'>mail</a>] </li>
+      <li>Gustavo Noronha [<a href="mailto:kov@debian.org">kov@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00169.html'>mail</a>] </li>
+      <li>Stephen Gran [<a href="mailto:sgran@debian.org">sgran@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00181.html'>mail</a>] </li>
+      <li>Steve McIntyre [<a href="mailto:93sam@debian.org">93sam@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00201.html'>mail</a>] </li>
+    </ol>
+<h3><a name="text" id="text">Text</a></h3>
+	<blockquote>
+	<h3>Choice 1: Change seconders to 2Q [3:1]</h3>
+	<p>General Resolutions are an important framework within the Debian Project. Yet, in a project the size of Debian, the current requirements to initiate one are too small.
+	<p>Therefore the Debian project resolves that
+	<ol style="list-style-type:lower-alpha">
+	<li> The constitution gets changed to not require K developers to sponsor a resolution, but floor(2Q). [see &sect;4.2(1)]</li>
+	<li> Delaying a decision of a Delegate or the DPL [&sect;4.2(2.2)], as well as resolutions against a shortening of discussion/voting period or to overwrite a TC decision [&sect;4.2(2.3)] requires floor(Q) developers to sponsor the resolution.</li>
+	<li> the definition of K gets erased from the constitution. [&sect;4.2(7)]</li>
+	</ol>
+	<p> (Numbers in brackets are references to sections in the constitution).
+	</blockquote>
+	<hr>
+<h3><a name="amendmentproposera" id="amendmentproposera">Amendment Proposer A</a></h3>
+	<p>Joerg Jaspert [<a href="mailto:joerg@debian.org">joerg@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00094.html'>text of proposal</a>]
+	</p>
+<h3><a name="amendmentsecondsa" id="amendmentsecondsa">Amendment Seconds A</a></h3>
+      <ol>
+      <li>Matthew Johnson [<a href="mailto:mjj29@debian.org">mjj29@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00095.html'>mail</a>] </li>
+      <li>Bernd Zeimetz [<a href="mailto:bzed@debian.org">bzed@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00100.html'>mail</a>] </li>
+      <li>Patrick Schoenfeld [<a href="mailto:schoenfeld@debian.org">schoenfeld@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00104.html'>mail</a>] </li>
+      <li>Alexander Reichle-Schmehl [<a href="mailto:tolimar@debian.org">tolimar@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00107.html'>mail</a>] </li>
+      <li>Mart&iacute;n Ferrari [<a href="mailto:tincho@debian.org">tincho@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00128.html'>mail</a>] </li>
+      <li>Steve McIntyre [<a href="mailto:93sam@debian.org">93sam@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00202.html'>mail</a>] </li>
+      <li>Colin Tuckley [<a href="mailto:colint@debian.org">colint@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00219.html'>mail</a>] </li>
+      <li>Russ Allbery [<a href="mailto:rra@debian.org">rra@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00268.html'>mail</a>] </li>
+      <li>Peter Palfrader [<a href="mailto:weasel@debian.org">weasel@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00288.html'>mail</a>] </li>
+      </ol>
+<h3><a name="amendmenttexta" id="amendmenttexta">Amendment Text A</a></h3>
+        <blockquote>
+        <h3>Choice 2: Change seconders to Q [3:1]</h3>
+	<p>General Resolutions are an important framework within the Debian
+	Project. Yet, in a project the size of Debian, the current requirements
+	to initiate one are too small.
+	<p>Therefore the Debian project resolves that
+	<ol style="list-style-type:lower-alpha">
+	<li> The constitution gets changed to not require K developers to sponsor
+	a resolution, but floor(Q). [see &sect;4.2(1)]</li>
+	<li>Delaying a decision of a Delegate or the DPL [&sect;4.2(2.2)],
+	as well as resolutions against a shortening of discussion/voting
+	period or to overwrite a TC decision [&sect;4.2(2.3)] requires floor(Q)
+	developers to sponsor the resolution.</li>
+	<li> the definition of K gets erased from the constitution. [&sect;4.2(7)]</li>
+	</ol>
+	<p>(Numbers in brackets are references to sections in the constitution).</p>
+        </blockquote>
+	<hr>
+<h3><a name="amendmentproposerb" id="amendmentproposerb">Amendment Proposer B</a></h3>
+	<p>Lucas Nussbaum [<a href="mailto:lucas@debian.org">lucas@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2009/03/msg00227.html'>text original proposal</a>]
+	[<a href='https://lists.debian.org/debian-vote/2009/03/msg00231.html'>text corrected proposal</a>]
+	</p>
+<h3><a name="amendmentsecondsb" id="amendmentsecondsb">Amendment Seconds B</a></h3>
+      <ol>
+      <li>Frans Pop [<a href="mailto:fjp@debian.org">fjp@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00230.html'>mail</a>] </li>
+      <li>Rapha&euml;l Hertzog [<a href="mailto:hertzog@debian.org">hertzog@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00242.html'>mail</a>] </li>
+      <li>Julien Blache [<a href="mailto:jblache@debian.org">jblache@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00243.html'>mail</a>] </li>
+      <li>Wouter Verhelst [<a href="mailto:wouter@debian.org">wouter@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00253.html'>mail</a>] </li>
+      <li>Matthew Vernon [<a href="mailto:matthew@debian.org">matthew@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00261.html'>mail</a>] </li>
+      <li>Anthony Towns [<a href="mailto:ajt@debian.org">ajt@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00265.html'>mail</a>] </li>
+      <li>Ian Jackson [<a href="mailto:awj@debian.org">awj@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00266.html'>mail</a>] </li>
+      <li>Bill Allombert [<a href="mailto:ballombe@debian.org">ballombe@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00270.html'>mail</a>] </li>
+      <li>Anibal Monsalve Salazar [<a href="mailto:anibal@debian.org">anibal@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00271.html'>mail</a>] </li>
+      <li>Charles Plessy [<a href="mailto:plessy@debian.org">plessy@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00275.html'>mail</a>] </li>
+      <li>Steve Langasek [<a href="mailto:vorlon@debian.org">vorlon@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00281.html'>mail</a>] </li>
+      <li>Robert Millan [<a href="mailto:rmh@debian.org">rmh@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2009/03/msg00299.html'>mail</a>] </li>
+      </ol>
+<h3><a name="amendmenttextb" id="amendmenttextb">Amendment Text B</a></h3>
+        <blockquote>
+        <h3>Choice 3: Keep seconders as is [1:1]</h3>
+	<p> General Resolutions are an important framework within the Debian
+	Project. While over the years, some problems have arisen during the
+	discussion and/or voting of some resolutions, there is no evidence that
+	changing the number of sponsors (seconds) for GR proposals or amendments
+	will help solve those problems. Instead, by making it harder to propose
+	general resolutions or amendments, it might make it harder to improve
+	imperfect resolutions, or to add valuable options to a ballot.
+	<p> Therefore the Debian project reaffirms the current requirements for the
+	sponsoring (seconding) of GR proposals or amendments, and for overruling
+	of delegates.
+        </blockquote>
+	<hr>
+    <hr>
+      <address>
+        <a href="mailto:secretary@debian.org">Debian Project Secretary</a>
+      </address>
+</div> <!-- end maincol -->
+<div class="clr"></div>
+</div> <!-- end content -->
+<div id="footer">
+<hr class="hidecss">
+<p>Back to the <a href="../../">Debian Project homepage</a>.</p>
+<hr>
+<!--UdmComment-->
+<div id="pageLang">
+<div id="langSelector">
+This page is also available in the following languages:
+<div id="langContainer">
+<select onchange="location = this.value;">
+<option value="" disabled selected>Select your language</option>
+ <option value="vote_002.de.html" title="German" lang="de">Deutsch</option>
+ <option value="vote_002.fr.html" title="French" lang="fr">fran&ccedil;ais</option>
+ <option value="vote_002.ja.html" title="Japanese" lang="ja">&#26085;&#26412;&#35486; (Nihongo)</option>
+</select>
+</div>
+How to set <a href="../../intro/cn">the default document language</a>
+</div></div><!--/UdmComment-->
+<hr>
+<div id="footermap">
+<!--UdmComment-->
+<p><strong><a href="/">Home</a></strong></p>
+    <ul id="footermap-cola">
+		<li><a href="../../intro/about">About</a>
+		  <ul>
+		  <li><a href="../../social_contract">Social Contract</a></li>
+		  <li><a href="../../code_of_conduct">Code of Conduct</a></li>
+		  <li><a href="../../intro/free">Free Software</a></li>
+          <li><a href="../../legal">Legal Info</a></li>
+		  </ul>
+		</li>
+        <li><a href="../../intro/help">Help Debian</a></li>
+    </ul>
+	<ul id="footermap-colb">
+			<li><a href="../../distrib/">Getting Debian</a>
+			  <ul>
+			  <li><a href="../../distrib/netinst">Network install</a></li>
+			  <li><a href="../../CD/">CD/USB ISO images</a></li>
+            <li><a href="../../blends/">Pure Blends</a></li>
+			<li><a href="../../distrib/packages">Debian Packages</a></li>
+			<li><a href="../../devel/">Developers' Corner</a></li>
+			  </ul>
+			</li>
+	</ul>
+	<ul id="footermap-colc">
+		<li><a href="../../News/">News</a>
+		  <ul>
+		  <li><a href="../../News/weekly/">Project News</a></li>
+		  <li><a href="../../events/">Events</a></li>
+		  </ul>
+		</li>
+    <li><a href="../../doc/">Documentation</a>
+      <ul>
+      <li><a href="../../releases/">Release Info</a></li>
+      <li><a href="https://wiki.debian.org/">Debian Wiki</a></li>
+      </ul>
+    </li>
+   </ul>
+   <ul id="footermap-cold">
+    <li><a href="../../support">Support</a>
+	  <ul>
+			  <li><a href="../../international/">Debian International</a></li>
+			  <li><a href="../../security/">Security Information</a></li>
+			  <li><a href="../../Bugs/">Bug reports</a></li>
+			  <li><a href="../../MailingLists/">Mailing Lists</a></li>
+      </ul>
+    </li>
+</ul>
+<ul id="footermap-cole">
+  <li><a href="../../sitemap">Site map</a></li>
+  <li><a href="https://search.debian.org/">Search</a></li>
+  <li><a href="https://bits.debian.org">The Debian Blog</a></li>
+  <li><a href="https://micronews.debian.org">Debian Micronews</a></li>
+  <li><a href="https://planet.debian.org">Debian Planet</a></li>
+</ul>
+<!--/UdmComment-->
+</div> <!-- end footermap -->
+<div id="fineprint">
+<!--UdmComment-->
+  <p>See our <a href="../../contact">contact page</a> to get in touch. Web site source code is <a href="https://salsa.debian.org/webmaster-team/webwml">available</a>.</p>
+<p>
+Last Modified: Tue, Apr 29 17:19:40 UTC 2014
+&emsp;
+Last Built: Sun, Oct 18 03:31:51 UTC 2026
+  <br>
+  Copyright &copy; 2009-2014 <a href="https://www.spi-inc.org/">SPI</a> and others; See <a href="../../license" rel="copyright">license terms</a><br>
+  Debian is a registered <a href="../../trademark">trademark</a> of Software in the Public Interest, Inc.
+</p>
+<!--/UdmComment-->
+</div>
+</div> <!-- end footer -->
+</body>
+</html>

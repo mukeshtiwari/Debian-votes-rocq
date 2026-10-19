@@ -1,0 +1,9 @@
+digraph Results {
+  ranksep=0.25;
+ "Andreas Tille\n4.58" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "Andreas Tille\n4.58" -> "Sruthi Chandran\n4.24" [ label="66" ];
+ "Andreas Tille\n4.58" -> "None of the above" [ label="229" ];
+ "Sruthi Chandran\n4.24" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Sruthi Chandran\n4.24" -> "None of the above" [ label="214" ];
+ "None of the above" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

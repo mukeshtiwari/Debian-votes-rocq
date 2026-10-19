@@ -1,0 +1,33 @@
+digraph Results {
+  ranksep=0.25;
+ "F: Focus on systemd\n2.79" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "F: Focus on systemd\n2.79" -> "A: Support for multiple init systems is Important\n1.36" [ label="87" ];
+ "F: Focus on systemd\n2.79" -> "D: Support non-systemd systems, without blocking progress\n2.46" [ label="31" ];
+ "F: Focus on systemd\n2.79" -> "H: Support portability, without blocking progress\n2.19" [ label="40" ];
+ "F: Focus on systemd\n2.79" -> "G: Support portability and multiple implementations\n1.29" [ label="75" ];
+ "F: Focus on systemd\n2.79" -> "Further Discussion" [ label="197" ];
+ "B: Systemd but we support exploring alternatives\n2.69" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "B: Systemd but we support exploring alternatives\n2.69" -> "F: Focus on systemd\n2.79" [ label="22" ];
+ "B: Systemd but we support exploring alternatives\n2.69" -> "A: Support for multiple init systems is Important\n1.36" [ label="112" ];
+ "B: Systemd but we support exploring alternatives\n2.69" -> "D: Support non-systemd systems, without blocking progress\n2.46" [ label="34" ];
+ "B: Systemd but we support exploring alternatives\n2.69" -> "H: Support portability, without blocking progress\n2.19" [ label="48" ];
+ "B: Systemd but we support exploring alternatives\n2.69" -> "G: Support portability and multiple implementations\n1.29" [ label="95" ];
+ "B: Systemd but we support exploring alternatives\n2.69" -> "Further Discussion" [ label="188" ];
+ "A: Support for multiple init systems is Important\n1.36" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "A: Support for multiple init systems is Important\n1.36" -> "Further Discussion" [ label="59" ];
+ "D: Support non-systemd systems, without blocking progress\n2.46" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "D: Support non-systemd systems, without blocking progress\n2.46" -> "A: Support for multiple init systems is Important\n1.36" [ label="122" ];
+ "D: Support non-systemd systems, without blocking progress\n2.46" -> "G: Support portability and multiple implementations\n1.29" [ label="168" ];
+ "D: Support non-systemd systems, without blocking progress\n2.46" -> "Further Discussion" [ label="167" ];
+ "H: Support portability, without blocking progress\n2.19" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "H: Support portability, without blocking progress\n2.19" -> "A: Support for multiple init systems is Important\n1.36" [ label="102" ];
+ "H: Support portability, without blocking progress\n2.19" -> "D: Support non-systemd systems, without blocking progress\n2.46" [ label="26" ];
+ "H: Support portability, without blocking progress\n2.19" -> "G: Support portability and multiple implementations\n1.29" [ label="155" ];
+ "H: Support portability, without blocking progress\n2.19" -> "Further Discussion" [ label="147" ];
+ "E: Support for multiple init systems is Required\n0.81" [ style="filled" , color="pink", shape=octagon, fontname="Helvetica", fontsize=10  ];
+ "Further Discussion" -> "E: Support for multiple init systems is Required\n0.81" [ label="41" ];
+ "G: Support portability and multiple implementations\n1.29" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "G: Support portability and multiple implementations\n1.29" -> "A: Support for multiple init systems is Important\n1.36" [ label="11" ];
+ "G: Support portability and multiple implementations\n1.29" -> "Further Discussion" [ label="48" ];
+ "Further Discussion" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

@@ -1,0 +1,36 @@
+digraph Results {
+  ranksep=0.25;
+ "Ban LLM contributions from Debian via Social Contract\n0.56" [ style="filled" , color="pink", shape=octagon, fontname="Helvetica", fontsize=10  ];
+ "None of the above" -> "Ban LLM contributions from Debian via Social Contract\n0.56" [ label="113" ];
+ "Reject LLMs as far as practical, update Code of Conduct\n0.77" -> "Ban LLM contributions from Debian via Social Contract\n0.56" [ label="125",  style="dotted", color="pink" ];
+ "Allow AI-Assisted Contributions with conditions\n1.92" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Allow AI-Assisted Contributions with conditions\n1.92" -> "Accept AI contributions for Debian specific work\n1.77" [ label="45" ];
+ "Allow AI-Assisted Contributions with conditions\n1.92" -> "A cautious approach to generative AI\n2.08" [ label="5" ];
+ "Allow AI-Assisted Contributions with conditions\n1.92" -> "Debian is created by humans\n1.11" [ label="89" ];
+ "Allow AI-Assisted Contributions with conditions\n1.92" -> "Avoid the use of LLM: climate destruction is a deal breaker\n1.28" [ label="67" ];
+ "Allow AI-Assisted Contributions with conditions\n1.92" -> "None of the above" [ label="128" ];
+ "Reject LLMs as far as practical, update Code of Conduct\n0.77" [ style="filled" , color="pink", shape=octagon, fontname="Helvetica", fontsize=10  ];
+ "None of the above" -> "Reject LLMs as far as practical, update Code of Conduct\n0.77" [ label="54" ];
+ "Accept AI contributions for Debian specific work\n1.77" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Accept AI contributions for Debian specific work\n1.77" -> "Debian is created by humans\n1.11" [ label="88" ];
+ "Accept AI contributions for Debian specific work\n1.77" -> "Avoid the use of LLM: climate destruction is a deal breaker\n1.28" [ label="64" ];
+ "Accept AI contributions for Debian specific work\n1.77" -> "None of the above" [ label="113" ];
+ "Responsible Use of Generative AI\n2.23" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "Responsible Use of Generative AI\n2.23" -> "Allow AI-Assisted Contributions with conditions\n1.92" [ label="55" ];
+ "Responsible Use of Generative AI\n2.23" -> "Accept AI contributions for Debian specific work\n1.77" [ label="117" ];
+ "Responsible Use of Generative AI\n2.23" -> "A cautious approach to generative AI\n2.08" [ label="80" ];
+ "Responsible Use of Generative AI\n2.23" -> "Debian is created by humans\n1.11" [ label="112" ];
+ "Responsible Use of Generative AI\n2.23" -> "Avoid the use of LLM: climate destruction is a deal breaker\n1.28" [ label="90" ];
+ "Responsible Use of Generative AI\n2.23" -> "None of the above" [ label="155" ];
+ "A cautious approach to generative AI\n2.08" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "A cautious approach to generative AI\n2.08" -> "Accept AI contributions for Debian specific work\n1.77" [ label="25" ];
+ "A cautious approach to generative AI\n2.08" -> "Debian is created by humans\n1.11" [ label="103" ];
+ "A cautious approach to generative AI\n2.08" -> "Avoid the use of LLM: climate destruction is a deal breaker\n1.28" [ label="70" ];
+ "A cautious approach to generative AI\n2.08" -> "None of the above" [ label="143" ];
+ "Debian is created by humans\n1.11" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Debian is created by humans\n1.11" -> "None of the above" [ label="21" ];
+ "Avoid the use of LLM: climate destruction is a deal breaker\n1.28" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Avoid the use of LLM: climate destruction is a deal breaker\n1.28" -> "Debian is created by humans\n1.11" [ label="31" ];
+ "Avoid the use of LLM: climate destruction is a deal breaker\n1.28" -> "None of the above" [ label="49" ];
+ "None of the above" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

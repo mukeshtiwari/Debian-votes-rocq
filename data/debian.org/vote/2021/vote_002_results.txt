@@ -1,0 +1,84 @@
+Starting results calculation at Sun Apr 18 00:00:41 2021
+
+Option 1 "Call for the FSF board removal, as in rms-open-letter.github.io"
+Option 2 "Call for Stallman's resignation from all FSF bodies"
+Option 3 "Discourage collaboration with the FSF while Stallman is in a leading position"
+Option 4 "Call on the FSF to further its governance processes"
+Option 5 "Support Stallman's reinstatement, as in rms-support-letter.github.io"
+Option 6 "Denounce the witch-hunt against RMS and the FSF"
+Option 7 "Debian will not issue a public statement on this issue"
+Option 8 "Further Discussion"
+
+In the following table, tally[row x][col y] represents the votes that
+option x received over option y.
+
+                  Option
+              1     2     3     4     5     6     7     8 
+            ===   ===   ===   ===   ===   ===   ===   === 
+Option 1          113   139   146   218   209   178   203 
+Option 2    137         168   165   239   227   199   222 
+Option 3    131    90         150   246   235   199   219 
+Option 4    156   132   140         259   245   196   221 
+Option 5     65    57    57    45          59    19    52 
+Option 6    103    97    92    77   114          30    84 
+Option 7    223   207   203   197   350   339         277 
+Option 8    186   166   173   164   328   301   124       
+
+
+
+Looking at row 2, column 1, Call for Stallman's resignation from all FSF bodies
+received 137 votes over Call for the FSF board removal, as in rms-open-letter.github.io
+
+Looking at row 1, column 2, Call for the FSF board removal, as in rms-open-letter.github.io
+received 113 votes over Call for Stallman's resignation from all FSF bodies.
+
+Option 1 Reached quorum: 203 > 47.8591684006315
+Option 2 Reached quorum: 222 > 47.8591684006315
+Option 3 Reached quorum: 219 > 47.8591684006315
+Option 4 Reached quorum: 221 > 47.8591684006315
+Option 5 Reached quorum: 52 > 47.8591684006315
+Option 6 Reached quorum: 84 > 47.8591684006315
+Option 7 Reached quorum: 277 > 47.8591684006315
+
+
+Option 1 passes Majority.               1.091 (203/186) > 1
+Option 2 passes Majority.               1.337 (222/166) > 1
+Option 3 passes Majority.               1.266 (219/173) > 1
+Option 4 passes Majority.               1.348 (221/164) > 1
+Dropping Option 5 because of Majority. (0.1585365853658536585365853658536585365854)  0.159 (52/328) <= 1
+Dropping Option 6 because of Majority. (0.2790697674418604651162790697674418604651)  0.279 (84/301) <= 1
+Option 7 passes Majority.               2.234 (277/124) > 1
+
+
+  Option 2 defeats Option 1 by ( 137 -  113) =   24 votes.
+  Option 1 defeats Option 3 by ( 139 -  131) =    8 votes.
+  Option 4 defeats Option 1 by ( 156 -  146) =   10 votes.
+  Option 7 defeats Option 1 by ( 223 -  178) =   45 votes.
+  Option 1 defeats Option 8 by ( 203 -  186) =   17 votes.
+  Option 2 defeats Option 3 by ( 168 -   90) =   78 votes.
+  Option 2 defeats Option 4 by ( 165 -  132) =   33 votes.
+  Option 7 defeats Option 2 by ( 207 -  199) =    8 votes.
+  Option 2 defeats Option 8 by ( 222 -  166) =   56 votes.
+  Option 3 defeats Option 4 by ( 150 -  140) =   10 votes.
+  Option 7 defeats Option 3 by ( 203 -  199) =    4 votes.
+  Option 3 defeats Option 8 by ( 219 -  173) =   46 votes.
+  Option 7 defeats Option 4 by ( 197 -  196) =    1 votes.
+  Option 4 defeats Option 8 by ( 221 -  164) =   57 votes.
+  Option 7 defeats Option 8 by ( 277 -  124) =  153 votes.
+
+
+The Schwartz Set contains:
+	 Option 7 "Debian will not issue a public statement on this issue"
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The winners are:
+	 Option 7 "Debian will not issue a public statement on this issue"
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The total numbers of votes tallied = 420

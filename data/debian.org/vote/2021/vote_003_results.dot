@@ -1,0 +1,9 @@
+digraph Results {
+  ranksep=0.25;
+ "Amend resolution process, set maximum discussion period\n7.50" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "Amend resolution process, set maximum discussion period\n7.50" -> "Amend resolution process, allow extension of discussion period\n11.06" [ label="25" ];
+ "Amend resolution process, set maximum discussion period\n7.50" -> "Further Discussion" [ label="156" ];
+ "Amend resolution process, allow extension of discussion period\n11.06" [ style="filled" , fontname="Helvetica", fontsize=10  ];
+ "Amend resolution process, allow extension of discussion period\n11.06" -> "Further Discussion" [ label="171" ];
+ "Further Discussion" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

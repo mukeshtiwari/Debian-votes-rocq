@@ -1,0 +1,6 @@
+digraph Results {
+  ranksep=0.25;
+ "Jonathan Carter\n17.27" [ style="filled" , color="powderblue", shape=egg, fontcolor="NavyBlue", fontname="Helvetica", fontsize=10  ];
+ "Jonathan Carter\n17.27" -> "None of the above" [ label="244" ];
+ "None of the above" [ style="filled" , shape=diamond, fontcolor="Red", fontname="Helvetica", fontsize=10  ];
+}

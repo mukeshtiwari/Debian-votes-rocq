@@ -1,0 +1,94 @@
+Starting results calculation at Sat Aug 29 00:02:54 2026
+
+Option 1 "Ban LLM contributions from Debian via Social Contract"
+Option 2 "Allow AI-Assisted Contributions with conditions"
+Option 3 "Reject LLMs as far as practical, update Code of Conduct"
+Option 4 "Accept AI contributions for Debian specific work"
+Option 5 "Responsible Use of Generative AI"
+Option 6 "A cautious approach to generative AI"
+Option 7 "Debian is created by humans"
+Option 8 "Avoid the use of LLM: climate destruction is a deal breaker"
+Option 9 "None of the above"
+
+In the following table, tally[row x][col y] represents the votes that
+option x received over option y.
+
+                  Option
+              1     2     3     4     5     6     7     8     9 
+            ===   ===   ===   ===   ===   ===   ===   ===   === 
+Option 1          111    88   118   115   108    95    92   144 
+Option 2    273         257   181   148   178   238   229   267 
+Option 3    213   125         133   127   118   132   124   176 
+Option 4    274   136   259         115   164   238   228   259 
+Option 5    287   203   272   232         210   251   244   281 
+Option 6    277   173   260   189   130         236   225   276 
+Option 7    230   149   193   150   139   133         148   213 
+Option 8    232   162   203   164   154   155   179         225 
+Option 9    257   139   230   146   126   133   192   176       
+
+
+
+Looking at row 2, column 1, Allow AI-Assisted Contributions with conditions
+received 273 votes over Ban LLM contributions from Debian via Social Contract
+
+Looking at row 1, column 2, Ban LLM contributions from Debian via Social Contract
+received 111 votes over Allow AI-Assisted Contributions with conditions.
+
+Option 1 "Ban LLM contributions from Debian via Social Contract" reached quorum: 144 >= 48.4896896257338
+Option 2 "Allow AI-Assisted Contributions with conditions" reached quorum: 267 >= 48.4896896257338
+Option 3 "Reject LLMs as far as practical, update Code of Conduct" reached quorum: 176 >= 48.4896896257338
+Option 4 "Accept AI contributions for Debian specific work" reached quorum: 259 >= 48.4896896257338
+Option 5 "Responsible Use of Generative AI" reached quorum: 281 >= 48.4896896257338
+Option 6 "A cautious approach to generative AI" reached quorum: 276 >= 48.4896896257338
+Option 7 "Debian is created by humans" reached quorum: 213 >= 48.4896896257338
+Option 8 "Avoid the use of LLM: climate destruction is a deal breaker" reached quorum: 225 >= 48.4896896257338
+
+
+Dropping option 1 because of majority.  0.560 (144/257) < 3
+Option 2 passes majority.               1.921 (267/139) > 1
+Dropping option 3 because of majority.  0.765 (176/230) < 1
+Option 4 passes majority.               1.774 (259/146) > 1
+Option 5 passes majority.               2.230 (281/126) > 1
+Option 6 passes majority.               2.075 (276/133) > 1
+Option 7 passes majority.               1.109 (213/192) > 1
+Option 8 passes majority.               1.278 (225/176) > 1
+
+
+  Option 2 defeats option 4 by ( 181 -  136) =   45 votes.
+  Option 5 defeats Option 2 by ( 203 -  148) =   55 votes.
+  Option 2 defeats option 6 by ( 178 -  173) =    5 votes.
+  Option 2 defeats option 7 by ( 238 -  149) =   89 votes.
+  Option 2 defeats option 8 by ( 229 -  162) =   67 votes.
+  Option 2 defeats option 9 by ( 267 -  139) =  128 votes.
+  Option 5 defeats Option 4 by ( 232 -  115) =  117 votes.
+  Option 6 defeats Option 4 by ( 189 -  164) =   25 votes.
+  Option 4 defeats option 7 by ( 238 -  150) =   88 votes.
+  Option 4 defeats option 8 by ( 228 -  164) =   64 votes.
+  Option 4 defeats option 9 by ( 259 -  146) =  113 votes.
+  Option 5 defeats option 6 by ( 210 -  130) =   80 votes.
+  Option 5 defeats option 7 by ( 251 -  139) =  112 votes.
+  Option 5 defeats option 8 by ( 244 -  154) =   90 votes.
+  Option 5 defeats option 9 by ( 281 -  126) =  155 votes.
+  Option 6 defeats option 7 by ( 236 -  133) =  103 votes.
+  Option 6 defeats option 8 by ( 225 -  155) =   70 votes.
+  Option 6 defeats option 9 by ( 276 -  133) =  143 votes.
+  Option 8 defeats Option 7 by ( 179 -  148) =   31 votes.
+  Option 7 defeats option 9 by ( 213 -  192) =   21 votes.
+  Option 8 defeats option 9 by ( 225 -  176) =   49 votes.
+
+
+The Schwartz Set contains:
+	 Option 5 "Responsible Use of Generative AI"
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The winners are:
+	 Option 5 "Responsible Use of Generative AI"
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The total numbers of votes tallied = 425

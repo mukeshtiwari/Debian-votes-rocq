@@ -1,0 +1,1089 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>    General Resolution: Init systems and systemd </title>
+  <link rel="author" href="mailto:webmaster@debian.org">
+  <meta name="Generator" content="WML 2.32.0">
+  <meta name="Modified" content="2026-10-18 03:32:26">
+  <meta name="viewport" content="width=device-width">
+  <meta name="mobileoptimized" content="300">
+  <meta name="HandheldFriendly" content="true">
+<link href="../../debian.css" rel="stylesheet" type="text/css">
+  <link href="../../debian-en.css" rel="stylesheet" type="text/css" media="all">
+<link rel="search" type="application/opensearchdescription+xml" title="Debian website search" href="../../search.en.xml">
+</head>
+<body>
+<div id="header">
+  <div id="upperheader">
+    <div id="logo">
+    <a href="../../" title="Debian Home"><img src="../../Pics/openlogo-50.png" alt="Debian" width="50" height="61"></a>
+    </div> <!-- end logo -->
+    <div id="searchbox">
+      <form name="p" method="get" action="https://search.debian.org/cgi-bin/omega">
+      <p>
+<input type="hidden" name="DB" value="en">
+        <input name="P" value="" size="14">
+        <input type="submit" value="Search">
+      </p>
+      </form>
+    </div>   <!-- end sitetools -->
+  </div> <!-- end upperheader -->
+  <!--UdmComment-->
+  <div id="navbar">
+    <p class="hidecss"><a href="#content">Skip Quicknav</a></p>
+    <ul>
+      <!-- Link to Debian's own Social Media resources -->
+      <li><a href="https://bits.debian.org/" title="Bits from Debian">Blog</a></li>
+      <li><a href="https://micronews.debian.org" title="Micronews from Debian">Micronews</a></li>
+      <li><a href="https://planet.debian.org/" title="The Planet of Debian">Planet</a></li>
+      <li><a href="https://wiki.debian.org/" title="The Debian Wiki">Wiki</a></li>
+    </ul>
+  </div> <!-- end navbar -->
+<p id="breadcrumbs"><a href="./../">Debian Voting Information</a>
+ &#x2F; <a href="./">2019</a>
+ &#x2F;
+General Resolution: Init systems and systemd</p>
+</div> <!-- end header -->
+<!--/UdmComment-->
+<div id="content">
+<div id="second-nav">
+<!--UdmComment-->
+	<ul class="votemenu">
+	<li>Home
+	<ul>
+	 <li><a href="../../vote/">Home&nbsp;Vote&nbsp;Page</a></li>
+	</ul>
+	</li>
+	<li>How&nbsp;To
+	<ul>
+	<li><a href="../../vote/howto_proposal">Submit&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_proposal#amend">Amend&nbsp;a&nbsp;Proposal</a></li>
+	<li><a href="../../vote/howto_follow">Follow&nbsp;a&nbsp;Proposal</a></li>
+	<!-- <li><a href="howto_vote">&bull;&nbsp;Vote</a></li>
+		<li>*<a href="howto_result">Read&nbsp;a&nbsp;Result</a></li> -->
+	</ul>
+	</li>
+	<li>Decided<ul><li><a href="../../vote/2026/vote_002">General Resolution: LLM usage in Debian</a></li>
+<li><a href="../../vote/2026/vote_001">Debian Project Leader Elections 2026</a></li>
+<li><a href="../../vote/2025/vote_001">Debian Project Leader Elections 2025</a></li>
+<li><a href="../../vote/2024/vote_001">Debian Project Leader Elections 2024</a></li>
+<li><a href="../../vote/2023/vote_002">General Resolution: Statement about the EU Legislation "Cyber Resilience Act and Product Liability Directive"</a></li>
+<li><a href="../../vote/2023/vote_001">Debian Project Leader Elections 2023</a></li>
+<li><a href="../../vote/2022/vote_003">General Resolution: non-free firmware</a></li>
+<li><a href="../../vote/2022/vote_002">Debian Project Leader Elections 2022</a></li>
+<li><a href="../../vote/2022/vote_001">General Resolution: Voting secrecy</a></li>
+<li><a href="../../vote/2021/vote_003">General Resolution: Change the resolution process</a></li>
+<li><a href="../../vote/2021/vote_002">General Resolution: Statement regarding Richard Stallman's readmission to the FSF board</a></li>
+<li><a href="../../vote/2021/vote_001">Debian Project Leader Elections 2021</a></li>
+<li><a href="../../vote/2020/vote_001">Debian Project Leader Elections 2020</a></li>
+<li><a href="../../vote/2019/vote_002">General Resolution: Init systems and systemd</a></li>
+<li><a href="../../vote/2019/vote_001">Debian Project Leader Elections 2019</a></li>
+<li><a href="../../vote/2018/vote_001">Debian Project Leader Elections 2018</a></li>
+<li><a href="../../vote/2017/vote_001">Debian Project Leader Elections 2017</a></li>
+<li><a href="../../vote/2016/vote_004">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_003">General Resolution: Replace "Chairman" with "Chair" throughout the Debian Constitution</a></li>
+<li><a href="../../vote/2016/vote_002">General Resolution: Declassifying debian-private</a></li>
+<li><a href="../../vote/2016/vote_001">Debian Project Leader Elections 2016</a></li>
+<li><a href="../../vote/2015/vote_003">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2015/vote_001">Debian Project Leader Elections 2015</a></li>
+<li><a href="../../vote/2014/vote_004">General Resolution: Limiting the term of the technical committee members</a></li>
+<li><a href="../../vote/2014/vote_003">General Resolution: init system coupling</a></li>
+<li><a href="../../vote/2014/vote_002">General Resolution: code of conduct</a></li>
+<li><a href="../../vote/2014/vote_001">Debian Project Leader Elections 2014</a></li>
+<li><a href="../../vote/2013/vote_001">Debian Project Leader Elections 2013</a></li>
+<li><a href="../../vote/2012/vote_002">General Resolution: Diversity statement</a></li>
+<li><a href="../../vote/2012/vote_001">Debian Project Leader Elections 2012</a></li>
+<li><a href="../../vote/2011/vote_001">Debian Project Leader Elections 2011</a></li>
+<li><a href="../../vote/2010/vote_002">General Resolution: Debian project members</a></li>
+<li><a href="../../vote/2010/vote_001">Debian Project Leader Elections 2010</a></li>
+<li><a href="../../vote/2009/vote_001">Debian Project Leader Elections 2009</a></li>
+<li><a href="../../vote/2008/vote_003">General Resolution: Lenny and resolving DFSG violations</a></li>
+<li><a href="../../vote/2008/vote_002">General Resolution: Project membership procedures</a></li>
+<li><a href="../../vote/2008/vote_001">Debian Project Leader Elections 2008</a></li>
+<li><a href="../../vote/2007/vote_004">Constitutional amendment: reduce the length of DPL election process</a></li>
+<li><a href="../../vote/2007/vote_003">General Resolution: Endorse the concept of Debian Maintainers</a></li>
+<li><a href="../../vote/2007/vote_002">General Resolution: Altering package upload rules</a></li>
+<li><a href="../../vote/2007/vote_001">Debian Project Leader Elections 2007</a></li>
+<li><a href="../../vote/2006/vote_007">General Resolution: Handling source-less firmware in the Linux kernel</a></li>
+<li><a href="../../vote/2006/vote_006">General Resolution: Re-affirm support to the Debian Project Leader</a></li>
+<li><a href="../../vote/2006/vote_005">General Resolution: Recall the project leader</a></li>
+<li><a href="../../vote/2006/vote_004">General Resolution: Position statement clarifying DFSG #2</a></li>
+<li><a href="../../vote/2006/vote_003">Constitutional Amendment General Resolution: Handling assets for the project</a></li>
+<li><a href="../../vote/2006/vote_002">Debian Project Leader Elections 2006</a></li>
+<li><a href="../../vote/2006/vote_001">General Resolution: Why the GNU Free Documentation License is not suitable for Debian main</a></li>
+<li><a href="../../vote/2005/vote_002">General Resolution: Declassification of debian-private list archives</a></li>
+<li><a href="../../vote/2005/vote_001">Debian Project Leader Elections 2005</a></li>
+<li><a href="../../vote/2004/vote_004">General Resolution: Sarge Release Schedule in view of GR 2004-003</a></li>
+<li><a href="../../vote/2004/vote_003">General Resolution: Editorial amendments to the social contract</a></li>
+<li><a href="../../vote/2004/vote_002">General Resolution: Status of the non-free section</a></li>
+<li><a href="../../vote/2004/vote_001">Debian Project Leader Elections 2004</a></li>
+<li><a href="../../vote/2003/vote_0003">Constitutional Amendment: Disambiguation of Section 4.1.5</a></li>
+<li><a href="../../vote/2003/vote_0002">Constitutional Amendment: Condorcet/Clone Proof SSD Voting Method </a></li>
+<li><a href="../../vote/2003/vote_0001">Debian Project Leader Elections 2003</a></li>
+<li><a href="../../vote/2002/vote_0001">Debian Project Leader Elections 2002</a></li>
+<li><a href="../../vote/2001/vote_0001">Leader Elections 2001</a></li>
+<li><a href="../../vote/2000/vote_0007">Leader Elections 2000</a></li>
+<li><a href="../../vote/1999/vote_0005">Swap Logos</a></li>
+<li><a href="../../vote/1999/vote_0004">New Logo</a></li>
+<li><a href="../../vote/1999/vote_0002">Logo License</a></li>
+<li><a href="../../vote/1999/vote_0001">Leader Elections 1999</a></li>
+<li><a href="../../vote/1999/vote_0000">Constitution</a></li>
+</ul></li><li>Withdrawn<ul><li><a href="../../vote/2025/vote_002">General Resolution: Interpretation of DFSG on Artificial Intelligence (AI) Models</a></li>
+<li><a href="../../vote/2024/vote_002">General Resolution: tag2upload</a></li>
+<li><a href="../../vote/2015/vote_002">General Resolution: Update Standard Resolution Procedure</a></li>
+<li><a href="../../vote/2009/vote_002">General Resolution: Sponsorship requirements for General Resolutions</a></li>
+<li><a href="../../vote/2004/vote_005">General Resolution: Force AMD64 architecture into Sarge</a></li>
+<li><a href="../../vote/2001/vote_0002">IRC as a Debian communication channel</a></li>
+</ul></li><li>Other<ul><li><a href="../../vote/2000/vote_0011">Superseded: Constitutional amendment: Smith/Condorcet vote tallying</a></li>
+<li><a href="../../vote/2000/vote_0010">Superseded: Constitutional amendment: alternate disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0009">Superseded: Constitutional amendment: disambiguation of 4.1.5</a></li>
+<li><a href="../../vote/2000/vote_0008">Superseded: Non-free Archive Removal</a></li>
+</ul></li>
+	</ul>
+	<!--/UdmComment-->
+</div> <!-- end second-nav -->
+<div id="maincol">
+    <h1>General Resolution: Init systems and systemd</h1>
+<ul class="toc">
+  <li><a href="#timeline">Time Line</a></li>
+  <li><a href="#proposerf">Proposal F Proposer</a></li>
+  <li><a href="#secondsf">Proposal F Seconds</a></li>
+  <li><a href="#textf">Proposal F</a></li>
+  <li><a href="#proposerb">Proposal B Proposer</a></li>
+  <li><a href="#secondsb">Proposal B Seconds</a></li>
+  <li><a href="#textb">Proposal B</a></li>
+  <li><a href="#proposera">Proposal A Proposer</a></li>
+  <li><a href="#secondsa">Proposal A Seconds</a></li>
+  <li><a href="#texta">Proposal A</a></li>
+  <li><a href="#proposerd">Proposal D Proposer</a></li>
+  <li><a href="#secondsd">Proposal D Seconds</a></li>
+  <li><a href="#textd">Proposal D</a></li>
+  <li><a href="#proposerh">Proposal H Proposer</a></li>
+  <li><a href="#secondsh">Proposal H Seconds</a></li>
+  <li><a href="#texth">Proposal H</a></li>
+  <li><a href="#proposere">Proposal E Proposer</a></li>
+  <li><a href="#secondse">Proposal E Seconds</a></li>
+  <li><a href="#texte">Proposal E</a></li>
+  <li><a href="#proposerg">Proposal G Proposer</a></li>
+  <li><a href="#secondsg">Proposal G Seconds</a></li>
+  <li><a href="#textg">Proposal G</a></li>
+  <li><a href="#proposerc">Proposal C Proposer</a></li>
+  <li><a href="#secondsc">Proposal C Seconds</a></li>
+  <li><a href="#textc">Proposal C</a></li>
+  <li><a href="#quorum">Quorum</a></li>
+  <li><a href="#statistics">Data and Statistics</a></li>
+  <li><a href="#majorityreq">Majority Requirement</a></li>
+  <li><a href="#outcome">Outcome</a></li>
+</ul>
+<h3><a name="timeline" id="timeline">Time Line</a></h3>
+    <table class="vote" summary="">
+      <tr>
+        <th>Proposal and amendment</th>
+        <td>2019-11-16</td>
+		<td></td>
+      </tr>
+      <tr>
+        <th>Discussion Period:</th>
+		<td>2019-11-22</td>
+		<td></td>
+      </tr>
+      <tr>
+        <th>Voting Period:</th>
+            <td>Saturday 2019-12-07 00:00:00 UTC</td>
+            <td>Friday 2019-12-27 23:59:59 UTC</td>
+      </tr>
+    </table>
+    The Project Leader has varied discussion period so that the minimum
+discussion period ends on November 30. [<a
+href='https://lists.debian.org/debian-vote/2019/11/msg00189.html'>mail</a>]
+<h3><a name="proposerf" id="proposerf">Proposal F Proposer</a></h3>
+    <p>Martin Michlmayr [<a href="mailto:tbm@debian.org">tbm@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00330.html'>text of proposal</a>]
+    </p>
+<h3><a name="secondsf" id="secondsf">Proposal F Seconds</a></h3>
+    <ol>
+        <li>Michael Biebl [<a href="mailto:biebl@debian.org">biebl@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00331.html'>mail</a>] </li>
+        <li>Ansgar Burchardt [<a href="mailto:ansgar@debian.org">ansgar@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00332.html'>mail</a>] </li>
+        <li>Julien Cristau [<a href="mailto:jcristau@debian.org">jcristau@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00333.html'>mail</a>] </li>
+        <li>Enrico Zini [<a href="mailto:enrico@debian.org">enrico@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00334.html'>mail</a>] </li>
+        <li>Matthias Klumpp [<a href="mailto:mak@debian.org">mak@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00335.html'>mail</a>] </li>
+        <li>Ana Beatriz Guerrero López [<a href="mailto:ana@debian.org">ana@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00337.html'>mail</a>] </li>
+        <li>Russ Allbery [<a href="mailto:rra@debian.org">rra@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00338.html'>mail</a>] </li>
+        <li>Intrigeri [<a href="mailto:intrigeri@debian.org">intrigeri@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00341.html'>mail</a>] </li>
+        <li>Luca Filipozzi [<a href="mailto:lfilipoz@debian.org">lfilipoz@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00343.html'>mail</a>] </li>
+        <li>Moritz Mühlenhoff [<a href="mailto:jmm@debian.org">jmm@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00346.html'>mail</a>] </li>
+        <li>Paul Tagliamonte [<a href="mailto:paultag@debian.org">paultag@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00347.html'>mail</a>] </li>
+        <li>Jordi Mallach [<a href="mailto:jordi@debian.org">jordi@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00348.html'>mail</a>] </li>
+        <li>Philipp Kern [<a href="mailto:pkern@debian.org">pkern@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00350.html'>mail</a>] </li>
+        <li>Holger Levsen [<a href="mailto:holger@debian.org">holger@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00351.html'>mail</a>] </li>
+        <li>Jeremy Bicha [<a href="mailto:jbicha@debian.org">jbicha@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/12/msg00000.html'>mail</a>] </li>
+    </ol>
+<h3><a name="textf" id="textf">Proposal F</a></h3>
+	<h3>Choice 1: F: Focus on systemd</h3>
+<p>This resolution is a position statement under section 4.1 (5) of the
+Debian constitution:</p>
+<p>Cross-distribution standards and cooperation are important factors in
+the choice of core Debian technologies. It is important to recognize
+that the Linux ecosystem has widely adopted systemd and that the level
+of integration of systemd technologies in Linux systems will increase
+with time.</p>
+<p>Debian is proud to support and integrate many different technologies.
+With everything we do, the costs and benefits need to be considered,
+both for users and in terms of the effects on our development community.
+An init system is not an isolated component, but is deeply integrated in
+the core layer of the system and affects many packages. We believe that
+the benefits of supporting multiple init systems do not outweigh the
+costs.</p>
+<p>Debian can continue to provide and explore other init systems, but
+systemd is the only officially supported init system. Wishlist bug
+reports with patches can be submitted, which package maintainers should
+review like other bug reports with patches. As with systemd, work
+should be done upstream and in cooperation with other Linux and FOSS
+distributions where possible. The priority is on standardization
+without the reliance on complicated compatibility layers.</p>
+<p>Integrating systemd more deeply into Debian will lead to a more
+integrated and tested system, improve standardization of Linux systems,
+and bring many new technologies to our users. Packages can rely upon,
+and are encouraged to make full use of, functionality provided by
+systemd. Solutions based on systemd technologies will allow for more
+cross-distribution cooperation. The project will work on proposals and
+coordinate transitions from Debian-specific solutions where appropriate.</p>
+<h3><a name="proposerb" id="proposerb">Proposal B Proposer</a></h3>
+    <p>Sam Hartman [<a href="mailto:hartmans@debian.org">hartmans@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00117.html'>text of proposal</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00293.html'>amendment</a>]
+    </p>
+<h3><a name="secondsb" id="secondsb">Proposal B Seconds</a></h3>
+	This amendment has been submitted by the current Project Leader, and thus does not require seconding
+<h3><a name="textb" id="textb">Proposal B</a></h3>
+	<h3>Choice 2: B: Systemd but we support exploring alternatives</h3>
+<p>Using its power under Constitution section 4.1 (5), the project issues
+the following statement describing our current position on Init
+systems, multiple init systems, and the use of systemd facilities. This
+statement describes the position of the project at the time it is
+adopted. That position may evolve as time passes without the need to
+resort to future general resolutions. The GR process remains
+available if the project needs a decision and cannot come to a
+consensus.
+</p>
+<p>The Debian project recognizes that systemd service units are the
+preferred configuration for describing how to start a daemon/service.
+However, Debian remains an environment where developers and users can
+explore and develop alternate init systems and alternatives to systemd
+features. Those interested in exploring such alternatives need to
+provide the necessary development and packaging resources to do that
+work. Technologies such as elogind that facilitate exploring
+alternatives while running software that depends on some systemd
+interfaces remain important to Debian. It is important that the
+project support the efforts of developers working on such technologies
+where there is overlap between these technologies and the rest of the
+project, for example by reviewing patches and participating in
+discussions in a timely manner.
+</p>
+<p>Packages should include service units or init scripts to start daemons
+and services. Packages may use any systemd facility at the
+package maintainer's discretion, provided that this is consistent with
+other Policy requirements and the normal expectation that packages
+shouldn't depend on experimental or unsupported (in Debian) features
+of other packages. Packages may include support for alternate init
+systems besides systemd and may include alternatives for any
+systemd-specific interfaces they use. Maintainers use their normal
+procedures for deciding which patches to include.
+</p>
+<p>Debian is committed to working with derivatives that make different
+choices about init systems. As with all our interactions with
+downstreams, the relevant maintainers will work with the downstreams to
+figure out which changes it makes sense to fold into Debian and which
+changes remain purely in the derivative.
+</p>
+<h3><a name="proposera" id="proposera">Proposal A Proposer</a></h3>
+    <p>Sam Hartman [<a href="mailto:hartmans@debian.org">hartmans@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00257.html'>text of proposal</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00258.html'>amendment</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00260.html'>amendment</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00293.html'>amendment</a>]
+    </p>
+<h3><a name="secondsa" id="secondsa">Proposal A Seconds</a></h3>
+	This amendment has been submitted by the current Project Leader, and thus does not require seconding
+<h3><a name="texta" id="texta">Proposal A</a></h3>
+	<h3>Choice 3: A: Support for multiple init systems is Important</h3>
+<p>The project issues the following statement describing our current
+position on Init systems, multiple init systems, and the use of
+systemd facilities. This statement describes the position of the
+project at the time it is adopted. That position may evolve as time
+passes without the need to resort to future general resolutions. The
+GR process remains available if the project needs a decision and
+cannot come to a consensus.
+</p>
+<p>Being able to run Debian systems with init systems other than systemd
+continues to be something that the project values. Every package
+should work with pid1 != systemd, unless it was designed by upstream
+to work exclusively with systemd and no support for running without
+systemd is available. It is an important bug (although not a serious
+one) when packages should work without systemd but they do not.
+According to the NMU guidelines, developers may perform non-maintainer
+uploads to fix these bugs.
+</p>
+<p>Software is not to be considered to be designed by upstream to work
+exclusively with systemd merely because upstream does not provide,
+and/or will not accept, an init script.
+</p>
+<p>Modification of Policy to adopt systemd facilities instead of
+existing approaches is discouraged unless an equivalent implementation
+of that facility is available for other init systems.
+</p>
+<h3><a name="proposerd" id="proposerd">Proposal D Proposer</a></h3>
+    <p>Ian Jackson [<a href="mailto:iwj@debian.org">iwj@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00163.html'>text of proposal</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00206.html'>text of amended</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00283.html'>text of amended</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00306.html'>text of amended</a>]
+    </p>
+<h3><a name="secondsd" id="secondsd">Proposal D Seconds</a></h3>
+    <ol>
+        <li>Russ Allbery [<a href="mailto:rra@debian.org">rra@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00128.html'>mail</a>] </li>
+        <li>Sean Whitton [<a href="mailto:spwhitton@debian.org">spwhitton@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00133.html'>mail</a>] </li>
+        <li>Simon Richter [<a href="mailto:sjr@debian.org">sjr@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00138.html'>mail</a>] </li>
+        <li>Kyle Robbertze [<a href="mailto:paddatrapper@debian.org">paddatrapper@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00140.html'>mail</a>] </li>
+        <li>Dmitry Bogatov [<a href="mailto:kaction@debian.org">kaction@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00156.html'>mail</a>] </li>
+        <li>Jonathan McDowell [<a href="mailto:noodles@debian.org">noodles@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00168.html'>mail</a>] </li>
+        <li>Matthew Vernon [<a href="mailto:matthew@debian.org">matthew@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00174.html'>mail</a>] </li>
+        <li>James Clarke [<a href="mailto:jrtc27@debian.org">jrtc27@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00205.html'>mail</a>] </li>
+        <li>Thomas Goirand [<a href="mailto:zigo@debian.org">zigo@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00247.html'>mail</a>] </li>
+        <li>Jonathan Dowland [<a href="mailto:jmtd@debian.org">jmtd@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00289.html'>mail</a>] </li>
+    </ol>
+<h3><a name="textd" id="textd">Proposal D</a></h3>
+	<h3>Choice 4: D: Support non-systemd systems, without blocking progress</h3>
+<h4>PRINCIPLES</h4>
+<p>1. We wish to continue to support multiple init systems for the
+foreseeable future. And we want to improve our systemd support.
+</p>
+<p>2. It is primarily for the communities in each software ecosystem to
+maintain and develop their respective software - but with the
+active support of other maintainers and gatekeepers where needed.
+</p>
+<h4>SYSTEMD DEPENDENCIES</h4>
+<p>3. Ideally, packages should be fully functional with all init
+systems. This means (for example) that daemons should ship
+traditional init scripts, or use other mechanisms to ensure that
+they are started without systemd. It also means that desktop
+software should be installable, and ideally fully functional,
+without systemd.
+</p>
+<p>4. So failing to support non-systemd systems, where no such support is
+available, is a bug. But it is <b>not</b> a release-critical bug.
+Whether the requirement for systemd is recorded as a formal bug in
+the Debian bug system, when no patches are available, is up to the
+maintainer.
+</p>
+<p>5. When a package has reduced functionality without systemd, this
+should not generally be documented as a (direct or indirect)
+Depends or Recommends on systemd-sysv. This is because with such
+dependencies, installing such a package can attempt to switch the
+init system, which is not what the user wanted. For example, a
+daemon with only a systemd unit file script should still be
+installable on a non-systemd system, since it could be started
+manually.
+</p>
+<p>One consequence of this is that on non-systemd systems it may be
+possible to install software which will not work, or not work
+properly, because of an undeclared dependency on systemd. This is
+unfortunate but trying to switch the user's init system is worse.
+We hope that better technical approaches can be developed to
+address this.
+</p>
+<p>6. We recognise that some maintainers find init scripts a burden and
+we hope that the community is able to find ways to make it easier
+to add support for non-default init systems. Discussions about the
+design of such systems should be friendly and cooperative, and if
+suitable arrangements are developed they should be supported in the
+usual ways within Debian.
+</p>
+<h4>CONTRIBUTIONS OF NON-SYSTEMD SUPPORT WILL BE ACCEPTED</h4>
+<p>7. Failing to support non-systemd systems when such support is
+available, or offered in the form of patches (or packages),
+<b>should</b> be treated as a release critical bug. For example: init
+scripts <b>must not</b> be deleted merely because a systemd unit is
+provided instead; patches which contribute support for other init
+systems (with no substantial effect on systemd installations)
+should be filed as bugs with severity &ldquo;serious&rdquo;.
+</p>
+<p>This is intended to provide a lightweight but effective path to
+ensuring that reasonable support can be provided to Debian users,
+even where the maintainer's priorities lie elsewhere. (Invoking
+the Technical Committee about individual patches is not sensible.)
+</p>
+<p>If the patches are themselves RC-buggy (in the opinion of,
+initially, the maintainer, and ultimately the Release Team) then of
+course the bug report should be downgraded or closed.
+</p>
+<p>8. Maintainers of systemd components, or other gatekeepers (including
+other maintainers and the release team) sometimes have to evaluate
+technical contributions intended to support non-systemd users. The
+acceptability to users of non-default init systems, of quality
+risks of such contributions, is a matter for the maintainers of
+non-default init systems and the surrounding community. But such
+contributions should not impose nontrivial risks on users of the
+default configuration (systemd with Recommends installed).
+</p>
+<h4>NON-INIT-RELATED DECLARATIVE SYSTEMD FACILITIES</h4>
+<p>9. systemd provides a variety of facilities besides daemon startup.
+For example, creating system users or temporary directories.
+Current Debian approaches are often based on debhelper scripts.
+</p>
+<p>
+In general more declarative approaches are better. Where
+<ul>
+  <li>systemd provides such facility
+  <li>a specification of the facility (or suitable subset) exists
+  <li>the facility is better than the other approaches available
+    in Debian, for example by being more declarative
+  <li>it is reasonable to expect developers of non-systemd
+    systems including non-Linux systems to implement it
+  <li>including consideration of the amount of work involved
+ </ul>
+the facility should be documented in Debian Policy (by textual
+incorporation, not by reference to an external document). The
+transition should be smooth for all users. The non-systemd
+community should be given at least 6 months, preferably at least 12
+months, to develop their implementation. (The same goes for any
+future enhancements.)
+<p>
+If policy consensus cannot be reached on such a facility, the
+Technical Committee should decide based on the project's wishes as
+expressed in this GR.
+</p>
+<h4>BEING EXCELLENT TO EACH OTHER</h4>
+<p>10. In general, maintainers of competing software, including
+maintainers of the various competing init systems, should be
+accommodating to each others' needs. This includes the needs and
+convenience of users of reasonable non-default configurations.
+</p>
+<p>11. Negative general comments about software and their communities,
+including both about systemd itself and about non-systemd init
+systems, are strongly discouraged. Neither messages expressing
+general dislike of systemd, nor predictions of the demise of
+non-systemd systems, are appropriate for Debian communication fora;
+likewise references to bugs which are not relevant to the topic at
+hand.
+</p>
+<p>Communications on Debian fora on these matters should all be
+encouraging and pleasant, even when discussing technical problems.
+We ask that communication fora owners strictly enforce this.
+</p>
+<p>12. We respectfully ask all Debian contributors including maintainers,
+Policy Editors, the Release Team, the Technical Committee, and the
+Project Leader, to pursue these goals and principles in their work,
+and embed them into documents etc. as appropriate.
+(This resolution is a position statement under s4.1(5).)
+</p>
+<h3><a name="proposerh" id="proposerh">Proposal H Proposer</a></h3>
+        <p>Ian Jackson [<a href="mailto:iwj@debian.org">iwj@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/12/msg00142.html'>text of proposal</a>]
+    </p>
+<h3><a name="secondsh" id="secondsh">Proposal H Seconds</a></h3>
+    <ol>
+        <li>Jonas Smedegaard [<a href="mailto:js@debian.org">js@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/12/msg00129.html'>mail</a>] </li>
+        <li>Holger Levsen [<a href="mailto:holger@debian.org">holger@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/12/msg00131.html'>mail</a>] </li>
+        <li>Michael Lustfield [<a href="mailto:mtecknology@debian.org">mtecknology@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/12/msg00132.html'>mail</a>] </li>
+        <li>Guilhem Moulin [<a href="mailto:guilhem@debian.org">guilhem@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/12/msg00134.html'>mail</a>] </li>
+        <li>Matthew Vernon [<a href="mailto:matthew@debian.org">matthew@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/12/msg00137.html'>mail</a>] </li>
+        <li>Kyle Robbertze [<a href="mailto:paddatrapper@debian.org">paddatrapper@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/12/msg00139.html'>mail</a>] </li>
+        <li>gregor herrmann [<a href="mailto:gregoa@debian.org">gregoa@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/12/msg00156.html'>mail</a>] </li>
+        <li>Sean Whitton [<a href="mailto:spwhitton@debian.org">spwhitton@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/12/msg00163.html'>mail</a>] </li>
+    </ol>
+<h3><a name="texth" id="texth">Proposal H</a></h3>
+	<h3>Choice 5: H: Support portability, without blocking progress</h3>
+<h4>PRINCIPLES</h4>
+<p>1. The Debian project reaffirms its commitment to be the glue that binds
+and integrates different software that provides similar or equivalent
+functionality, with their various users, be them humans or other software,
+which is one of the core defining traits of a distribution.</p>
+<p>2. We consider portability to different hardware platforms and software
+stacks an important aspect of the work we do as a distribution, which
+makes software architecturally better, more robust and more future-proof.</p>
+<p>3. We acknowledge that different upstream projects have different views on
+software development, use cases, portability and technology in general.
+And that users of these projects weight tradeoffs differently, and have
+at the same time different and valid requirements and/or needs fulfilled
+by these diverse views.</p>
+<p>4. Following our historic tradition, we will welcome the integration of
+these diverse technologies which might sometimes have conflicting
+world-views, to allow them to coexist in harmony within our distribution,
+by reconciling these conflicts via technical means, as long as there
+are people willing to put in the effort.</p>
+<p>5. This enables us to keep serving a wide range of usages of our distribution
+(some of which might be even unforeseen by us). From servers, to desktops
+or deeply embedded; from general purpose to very specifically tailored
+usages. Be those projects hardware related or software based, libraries,
+daemons, entire desktop environments, or other parts of the software
+stack.</p>
+<h4>SYSTEMD DEPENDENCIES</h4>
+<p>6. Ideally, packages should be fully functional with all init
+systems. This means (for example) that daemons should ship
+traditional init scripts, or use other mechanisms to ensure that
+they are started without systemd. It also means that desktop
+software should be installable, and ideally fully functional,
+without systemd.
+</p>
+<p>7. So failing to support non-systemd systems, where no such support is
+available, is a bug. But it is <b>not</b> a release-critical bug.
+Whether the requirement for systemd is recorded as a formal bug in
+the Debian bug system, when no patches are available, is up to the
+maintainer.
+</p>
+<p>8. When a package has reduced functionality without systemd, this
+should not generally be documented as a (direct or indirect)
+Depends or Recommends on systemd-sysv. This is because with such
+dependencies, installing such a package can attempt to switch the
+init system, which is not what the user wanted. For example, a
+daemon with only a systemd unit file script should still be
+installable on a non-systemd system, since it could be started
+manually.
+</p>
+<p>One consequence of this is that on non-systemd systems it may be
+possible to install software which will not work, or not work
+properly, because of an undeclared dependency on systemd. This is
+unfortunate but trying to switch the user's init system is worse.
+We hope that better technical approaches can be developed to
+address this.
+</p>
+<p>9. We recognise that some maintainers find init scripts a burden and
+we hope that the community is able to find ways to make it easier
+to add support for non-default init systems. Discussions about the
+design of such systems should be friendly and cooperative, and if
+suitable arrangements are developed they should be supported in the
+usual ways within Debian.
+</p>
+<h4>CONTRIBUTIONS OF NON-SYSTEMD SUPPORT WILL BE ACCEPTED</h4>
+<p>10. Failing to support non-systemd systems when such support is
+available, or offered in the form of patches (or packages),
+<b>should</b> be treated as a release critical bug. For example: init
+scripts <b>must not</b> be deleted merely because a systemd unit is
+provided instead; patches which contribute support for other init
+systems (with no substantial effect on systemd installations)
+should be filed as bugs with severity &ldquo;serious&rdquo;.
+</p>
+<p>This is intended to provide a lightweight but effective path to
+ensuring that reasonable support can be provided to Debian users,
+even where the maintainer's priorities lie elsewhere. (Invoking
+the Technical Committee about individual patches is not sensible.)
+</p>
+<p>If the patches are themselves RC-buggy (in the opinion of,
+initially, the maintainer, and ultimately the Release Team) then of
+course the bug report should be downgraded or closed.
+</p>
+<p>11. Maintainers of systemd components, or other gatekeepers (including
+other maintainers and the release team) sometimes have to evaluate
+technical contributions intended to support non-systemd users. The
+acceptability to users of non-default init systems, of quality
+risks of such contributions, is a matter for the maintainers of
+non-default init systems and the surrounding community. But such
+contributions should not impose nontrivial risks on users of the
+default configuration (systemd with Recommends installed).
+</p>
+<h4>NON-INIT-RELATED DECLARATIVE SYSTEMD FACILITIES</h4>
+<p>12. systemd provides a variety of facilities besides daemon startup.
+For example, creating system users or temporary directories.
+Current Debian approaches are often based on debhelper scripts.
+</p>
+<p>
+In general more declarative approaches are better. Where
+<ul>
+  <li>systemd provides such facility
+  <li>a specification of the facility (or suitable subset) exists
+  <li>the facility is better than the other approaches available
+    in Debian, for example by being more declarative
+  <li>it is reasonable to expect developers of non-systemd
+    systems including non-Linux systems to implement it
+  <li>including consideration of the amount of work involved
+ </ul>
+the facility should be documented in Debian Policy (by textual
+incorporation, not by reference to an external document). The
+transition should be smooth for all users. The non-systemd
+community should be given at least 6 months, preferably at least 12
+months, to develop their implementation. (The same goes for any
+future enhancements.)
+<p>
+If policy consensus cannot be reached on such a facility, the
+Technical Committee should decide based on the project's wishes as
+expressed in this GR.
+</p>
+<h4>BEING EXCELLENT TO EACH OTHER</h4>
+<p>13. In general, maintainers of competing software, including
+maintainers of the various competing init systems, should be
+accommodating to each others' needs. This includes the needs and
+convenience of users of reasonable non-default configurations.
+</p>
+<p>14. Negative general comments about software and their communities,
+including both about systemd itself and about non-systemd init
+systems, are strongly discouraged. Neither messages expressing
+general dislike of systemd, nor predictions of the demise of
+non-systemd systems, are appropriate for Debian communication fora;
+likewise references to bugs which are not relevant to the topic at
+hand.
+</p>
+<p>Communications on Debian fora on these matters should all be
+encouraging and pleasant, even when discussing technical problems.
+We ask that communication fora owners strictly enforce this.
+</p>
+<p>15. We respectfully ask all Debian contributors including maintainers,
+Policy Editors, the Release Team, the Technical Committee, and the
+Project Leader, to pursue these goals and principles in their work,
+and embed them into documents etc. as appropriate.
+(This resolution is a position statement under s4.1(5).)
+</p>
+<h3><a name="proposere" id="proposere">Proposal E Proposer</a></h3>
+    <p>Dmitry Bogatov [<a href="mailto:kaction@debian.org">kaction@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00202.html'>text of latest proposal</a>]
+    </p>
+<h3><a name="secondse" id="secondse">Proposal E Seconds</a></h3>
+    <ol>
+        <li>Ian Jackson [<a href="mailto:iwj@debian.org">iwj@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00193.html'>mail</a>] </li>
+        <li>Matthew Vernon [<a href="mailto:matthew@debian.org">matthew@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00194.html'>mail</a>] </li>
+        <li>Jonathan Carter [<a href="mailto:jcc@debian.org">jcc@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00195.html'>mail</a>] </li>
+        <li>Kyle Robbertze [<a href="mailto:paddatrapper@debian.org">paddatrapper@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00196.html'>mail</a>] </li>
+        <li>Axel Beckert [<a href="mailto:abe@debian.org">abe@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00197.html'>mail</a>] </li>
+        <li>Brian Gupta [<a href="mailto:bgupta@debian.org">bgupta@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00234.html'>mail</a>] </li>
+        <li>Simon Richter [<a href="mailto:sjr@debian.org">sjr@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00238.html'>mail</a>] </li>
+    </ol>
+<h3><a name="texte" id="texte">Proposal E</a></h3>
+	<h3>Choice 6: E: Support for multiple init systems is Required</h3>
+<p>Being able to run Debian systems with init systems other than systemd
+continues to be of value to the project. Every package MUST work with
+pid1 != systemd, unless it was designed by upstream to work exclusively
+with systemd and no support for running without systemd is available.
+</p>
+<p>Software is not to be considered to be designed by upstream to work
+exclusively with systemd merely because upstream does not provide,
+and/or will not accept, an init script.
+</p>
+<h3><a name="proposerg" id="proposerg">Proposal G Proposer</a></h3>
+    <p> Guillem Jover [<a href="mailto:guillem@debian.org">guillem@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/12/msg00176.html'>text of proposal</a>]
+    </p>
+<h3><a name="secondsg" id="secondsg">Proposal G Seconds</a></h3>
+    <ol>
+        <li>Simon Richter [<a href="mailto:sjr@debian.org">sjr@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00362.html'>mail</a>] </li>
+        <li>gregor herrmann [<a href="mailto:gregoa@debian.org">gregoa@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00363.html'>mail</a>] </li>
+        <li>Jonas Smedegaard [<a href="mailto:js@debian.org">js@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00364.html'>mail</a>] </li>
+        <li>Guilhem Moulin [<a href="mailto:guilhem@debian.org">guilhem@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00365.html'>mail</a>] </li>
+        <li>Ricardo Mones [<a href="mailto:mones@debian.org">mones@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00366.html'>mail</a>] </li>
+        <li>Mathias Behrle [<a href="mailto:mbehrle@debian.org">mbehrle@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00367.html'>mail</a>] </li>
+        <li>Steve Kostecke [<a href="mailto:steve@debian.org">steve@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00368.html'>mail</a>] </li>
+        <li>Alberto Gonzalez Iniesta [<a href="mailto:agi@debian.org">agi@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00375.html'>mail</a>] </li>
+        <li>Kyle Robbertze [<a href="mailto:paddatrapper@debian.org">paddatrapper@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/12/msg00179.html'>mail</a>] </li>
+        <li>Adam Borowski [<a href="mailto:kilobyte@debian.org">kilobyte@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/12/msg00180.html'>mail</a>] </li>
+        <li>Donald Scott Kitterman [<a href="mailto:kitterman@debian.org">kitterman@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/12/msg00181.html'>mail</a>] </li>
+    </ol>
+<h3><a name="textg" id="textg">Proposal G</a></h3>
+	<h3>Choice 7: G: Support portability and multiple implementations</h3>
+<h4>Principles</h4>
+<p>The Debian project reaffirms its commitment to be the glue that binds
+and integrates different software that provides similar or equivalent
+functionality, with their various users, be them humans or other software,
+which is one of the core defining traits of a distribution.</p>
+<p>We consider portability to different hardware platforms and software
+stacks an important aspect of the work we do as a distribution, which
+makes software architecturally better, more robust and more future-proof.</p>
+<p>We acknowledge that different upstream projects have different views on
+software development, use cases, portability and technology in general.
+And that users of these projects weight trade-offs differently, and have
+at the same time different and valid requirements and/or needs fulfilled
+by these diverse views.</p>
+<p>Following our historic tradition, we will welcome the integration of
+these diverse technologies which might sometimes have conflicting
+world-views, to allow them to coexist in harmony within our distribution,
+by reconciling these conflicts via technical means, as long as there
+are people willing to put in the effort.</p>
+<p>This enables us to keep serving a wide range of usages of our distribution
+(some of which might be even unforeseen by us). From servers, to desktops
+or deeply embedded; from general purpose to very specifically tailored
+usages. Be those projects hardware related or software based, libraries,
+daemons, entire desktop environments, or other parts of the software
+stack.</p>
+<h4>Guidance</h4>
+<p>In the same way Debian maintainers are somewhat constrained by the
+decisions and direction emerging from their respective upstreams,
+the Debian distribution is also somewhat constrained by its volunteer
+based nature, which has as another of its core defining traits, not
+willing to impose work obligations to its members, while at the same
+time being limited by its members bounded interests, motivation, energy
+and time.</p>
+<p>Because of these previous constraints, trying to provide guidance in
+a very detailed way to apply the aforementioned principles, is never
+going to be satisfactory, as it will end up being inexorably a rigid
+and non-exhaustive list of directives that cannot possibly ever cover
+most scenarios, which can perpetuate possible current tensions.</p>
+<p>These will always keep involving case by case trade-offs between what
+changes or requests upstreams might or might not accept, or the upkeep
+on the imposed deltas or implementations the Debian members might need
+to carry on. Which can never be quantified and listed in a generic and
+universal way.</p>
+<p>We will also keep in mind that what might be considered important for
+someone, might at the same time be considered niche or an uninteresting
+diversion of time for someone else, but that we might end up being on
+either side of the fence when sending or receiving these requests.</p>
+<p>We will be guided, as we have been in many other Debian contexts in the
+past, by taking all the above into account, and discussing and evaluating
+each situation, and respecting and valuing that we all have different
+interests and motivations. That is in our general interest to try to
+work things out with others, to compromise, to reach solutions or find
+alternatives that might be satisfactory enough for the various parties
+involved, to create an environment where we will collectively try to
+reciprocate. And in the end and in most cases it's perhaps a matter of
+just being willing to try.</p>
+<h3><a name="proposerc" id="proposerc">Proposal C Proposer</a></h3>
+    <p>Sam Hartman [<a href="mailto:hartmans@debian.org">hartmans@debian.org</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00117.html'>text of proposal</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00293.html'>amendment</a>]
+	[<a href='https://lists.debian.org/debian-vote/2019/11/msg00381.html'>withdrawal</a>]
+    </p>
+<h3><a name="secondsc" id="secondsc">Proposal C Seconds</a></h3>
+	This amendment has been submitted by the current Project Leader, and thus does not require seconding
+    <ol>
+        <li>Ansgar Burchardt [<a href="mailto:ansgar@debian.org">ansgar@debian.org</a>] [<a href='https://lists.debian.org/debian-vote/2019/11/msg00253.html'>mail</a>] </li>
+    </ol>
+<h3><a name="textc" id="textc">Proposal C</a></h3>
+	<h3>Focus on systemd for init system and other facilities (withdrawn)</h3>
+<h3><a name="quorum" id="quorum">Quorum</a></h3>
+     <p>
+        With the current list of <a href="vote_002_quorum.log">voting
+          developers</a>, we have:
+     </p>
+    <pre>
+ Current Developer Count = 1011
+ Q ( sqrt(#devel) / 2 ) = 15.8981130955846
+ K min(5, Q )           = 5
+ Quorum  (3 x Q )       = 47.6943392867539
+    </pre>
+              <h3>Quorum</h3>
+              <ul>
+                <li>Option1 Reached quorum: 307 &gt; 47.6943392867539</li>
+                <li>Option2 Reached quorum: 299 &gt; 47.6943392867539</li>
+                <li>Option3 Reached quorum: 225 &gt; 47.6943392867539</li>
+                <li>Option4 Reached quorum: 281 &gt; 47.6943392867539</li>
+                <li>Option5 Reached quorum: 271 &gt; 47.6943392867539</li>
+                <li>Option6 Reached quorum: 173 &gt; 47.6943392867539</li>
+                <li>Option7 Reached quorum: 216 &gt; 47.6943392867539</li>
+              </ul>
+<h3><a name="statistics" id="statistics">Data and Statistics</a></h3>
+    <p>
+	For this GR, like always,
+               <a href="suppl_002_stats">statistics</a>
+             will be gathered about ballots received and
+             acknowledgements sent periodically during the voting
+             period.
+               Additionally, the list of <a
+             href="vote_002_voters.txt">voters</a> will be
+             recorded. Also, the <a href="vote_002_tally.txt">tally
+             sheet</a> will also be made available to be viewed.
+         </p>
+<h3><a name="majorityreq" id="majorityreq">Majority Requirement</a></h3>
+    <p>
+      The proposals need a simple majority
+    </p>
+              <h3>Majority</h3>
+              <ul>
+                <li>Option1 passes Majority.
+  2.791 (307/110) &gt;= 1</li>
+                <li>Option2 passes Majority.
+  2.694 (299/111) &gt;= 1</li>
+                <li>Option3 passes Majority.
+  1.355 (225/166) &gt;= 1</li>
+                <li>Option4 passes Majority.
+  2.465 (281/114) &gt;= 1</li>
+                <li>Option5 passes Majority.
+  2.185 (271/124) &gt;= 1</li>
+                <li>Dropping Option6 because of Majority. 0.808 (173/214) &lt;= 1</li>
+                <li>Option7 passes Majority.
+  1.286 (216/168) &gt;= 1</li>
+              </ul>
+<h3><a name="outcome" id="outcome">Outcome</a></h3>
+           <p class="center">
+             <a style="margin-left: auto; margin-right: auto;" href="vote_002_results.dot">
+               <img src="vote_002_results.png" alt="Graphical rendering of the results" width="1427" height="767">
+               </a>
+           </p>
+             <p>
+               In the graph above, any pink colored nodes imply that
+               the option did not pass majority, the Blue is the
+               winner. The Octagon is used for the options that did
+               not beat the default.
+           </p>
+           <ul>
+<li>Option 1 "F: Focus on systemd"</li>
+<li>Option 2 "B: Systemd but we support exploring alternatives"</li>
+<li>Option 3 "A: Support for multiple init systems is Important"</li>
+<li>Option 4 "D: Support non-systemd systems, without blocking progress"</li>
+<li>Option 5 "H: Support portability, without blocking progress"</li>
+<li>Option 6 "E: Support for multiple init systems is Required"</li>
+<li>Option 7 "G: Support portability and multiple implementations"</li>
+<li>Option 8 "Further Discussion"</li>
+           </ul>
+            <p>
+               In the following table, tally[row x][col y] represents
+               the votes that option x received over option y. A
+               <a href="https://en.wikipedia.org/wiki/Schwartz_method">more
+                 detailed explanation of the beat matrix</a> may help in
+               understanding the table. For understanding the Condorcet method, the
+               <a href="https://en.wikipedia.org/wiki/Condorcet_method">Wikipedia
+                 entry</a> is fairly informative.
+           </p>
+           <table class="vote" summary="">
+             <caption class="center"><strong>The Beat Matrix</strong></caption>
+	     <tr><th>&nbsp;</th><th colspan="8" class="center">Option</th></tr>
+              <tr>
+                   <th>&nbsp;</th>
+                   <th>    1 </th>
+                   <th>    2 </th>
+                   <th>    3 </th>
+                   <th>    4 </th>
+                   <th>    5 </th>
+                   <th>    6 </th>
+                   <th>    7 </th>
+                   <th>    8 </th>
+              </tr>
+                 <tr>
+                   <th>Option 1 </th>
+                   <td>&nbsp;</td>
+                   <td>  185 </td>
+                   <td>  246 </td>
+                   <td>  223 </td>
+                   <td>  227 </td>
+                   <td>  278 </td>
+                   <td>  243 </td>
+                   <td>  307 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 2 </th>
+                   <td>  207 </td>
+                   <td>&nbsp;</td>
+                   <td>  243 </td>
+                   <td>  211 </td>
+                   <td>  216 </td>
+                   <td>  286 </td>
+                   <td>  240 </td>
+                   <td>  299 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 3 </th>
+                   <td>  159 </td>
+                   <td>  131 </td>
+                   <td>&nbsp;</td>
+                   <td>  113 </td>
+                   <td>  120 </td>
+                   <td>  250 </td>
+                   <td>  165 </td>
+                   <td>  225 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 4 </th>
+                   <td>  192 </td>
+                   <td>  177 </td>
+                   <td>  235 </td>
+                   <td>&nbsp;</td>
+                   <td>  137 </td>
+                   <td>  309 </td>
+                   <td>  261 </td>
+                   <td>  281 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 5 </th>
+                   <td>  187 </td>
+                   <td>  168 </td>
+                   <td>  222 </td>
+                   <td>  163 </td>
+                   <td>&nbsp;</td>
+                   <td>  301 </td>
+                   <td>  246 </td>
+                   <td>  271 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 6 </th>
+                   <td>  116 </td>
+                   <td>  104 </td>
+                   <td>   88 </td>
+                   <td>   53 </td>
+                   <td>   51 </td>
+                   <td>&nbsp;</td>
+                   <td>  121 </td>
+                   <td>  173 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 7 </th>
+                   <td>  168 </td>
+                   <td>  145 </td>
+                   <td>  176 </td>
+                   <td>   93 </td>
+                   <td>   91 </td>
+                   <td>  207 </td>
+                   <td>&nbsp;</td>
+                   <td>  216 </td>
+                 </tr>
+                 <tr>
+                   <th>Option 8 </th>
+                   <td>  110 </td>
+                   <td>  111 </td>
+                   <td>  166 </td>
+                   <td>  114 </td>
+                   <td>  124 </td>
+                   <td>  214 </td>
+                   <td>  168 </td>
+                   <td>&nbsp;</td>
+                 </tr>
+               </table>
+              <p>
+Looking at row 2, column 1, B: Systemd but we support exploring alternatives<br>
+received 207 votes over F: Focus on systemd<br>
+<br>
+Looking at row 1, column 2, F: Focus on systemd<br>
+received 185 votes over B: Systemd but we support exploring alternatives.<br>
+              <h3>Pair-wise defeats</h3>
+              <ul>
+                <li>Option 2 defeats Option 1 by ( 207 - 185) = 22 votes.</li>
+                <li>Option 1 defeats Option 3 by ( 246 - 159) = 87 votes.</li>
+                <li>Option 1 defeats Option 4 by ( 223 - 192) = 31 votes.</li>
+                <li>Option 1 defeats Option 5 by ( 227 - 187) = 40 votes.</li>
+                <li>Option 1 defeats Option 7 by ( 243 - 168) = 75 votes.</li>
+                <li>Option 1 defeats Option 8 by ( 307 - 110) = 197 votes.</li>
+                <li>Option 2 defeats Option 3 by ( 243 - 131) = 112 votes.</li>
+                <li>Option 2 defeats Option 4 by ( 211 - 177) = 34 votes.</li>
+                <li>Option 2 defeats Option 5 by ( 216 - 168) = 48 votes.</li>
+                <li>Option 2 defeats Option 7 by ( 240 - 145) = 95 votes.</li>
+                <li>Option 2 defeats Option 8 by ( 299 - 111) = 188 votes.</li>
+                <li>Option 4 defeats Option 3 by ( 235 - 113) = 122 votes.</li>
+                <li>Option 5 defeats Option 3 by ( 222 - 120) = 102 votes.</li>
+                <li>Option 7 defeats Option 3 by ( 176 - 165) = 11 votes.</li>
+                <li>Option 3 defeats Option 8 by ( 225 - 166) = 59 votes.</li>
+                <li>Option 5 defeats Option 4 by ( 163 - 137) = 26 votes.</li>
+                <li>Option 4 defeats Option 7 by ( 261 - 93) = 168 votes.</li>
+                <li>Option 4 defeats Option 8 by ( 281 - 114) = 167 votes.</li>
+                <li>Option 5 defeats Option 7 by ( 246 - 91) = 155 votes.</li>
+                <li>Option 5 defeats Option 8 by ( 271 - 124) = 147 votes.</li>
+                <li>Option 7 defeats Option 8 by ( 216 - 168) = 48 votes.</li>
+              </ul>
+              <h3>The Schwartz Set contains</h3>
+              <ul>
+                <li>Option 2 "B: Systemd but we support exploring alternatives"</li>
+              </ul>
+              <h3>The winners</h3>
+              <ul>
+                <li>Option 2 "B: Systemd but we support exploring alternatives"</li>
+              </ul>
+              <p>
+               Debian uses the Condorcet method for voting.
+               Simplistically, plain Condorcets method
+               can be stated like so : <br>
+               <q>Consider all possible two-way races between candidates.
+                  The Condorcet winner, if there is one, is the one
+                  candidate who can beat each other candidate in a two-way
+                  race with that candidate.</q>
+               The problem is that in complex elections, there may well
+               be a circular relationship in which A beats B, B beats C,
+               and C beats A. Most of the variations on Condorcet use
+               various means of resolving the tie. See
+               <a href="https://en.wikipedia.org/wiki/Cloneproof_Schwartz_Sequential_Dropping">Cloneproof Schwartz Sequential Dropping</a>
+               for details. Debian's variation is spelled out in the
+               <a href="../../devel/constitution">constitution</a>,
+               specifically, A.6.
+              </p>
+    <hr>
+      <address>
+        <a href="mailto:secretary@debian.org">Debian Project Secretary</a>
+      </address>
+</div> <!-- end maincol -->
+<div class="clr"></div>
+</div> <!-- end content -->
+<div id="footer">
+<hr class="hidecss">
+<p>Back to the <a href="../../">Debian Project homepage</a>.</p>
+<hr>
+<!--UdmComment-->
+<div id="pageLang">
+<div id="langSelector">
+This page is also available in the following languages:
+<div id="langContainer">
+<select onchange="location = this.value;">
+<option value="" disabled selected>Select your language</option>
+ <option value="vote_002.es.html" title="Spanish" lang="es">espa&ntilde;ol</option>
+ <option value="vote_002.fr.html" title="French" lang="fr">fran&ccedil;ais</option>
+</select>
+</div>
+How to set <a href="../../intro/cn">the default document language</a>
+</div></div><!--/UdmComment-->
+<hr>
+<div id="footermap">
+<!--UdmComment-->
+<p><strong><a href="/">Home</a></strong></p>
+    <ul id="footermap-cola">
+		<li><a href="../../intro/about">About</a>
+		  <ul>
+		  <li><a href="../../social_contract">Social Contract</a></li>
+		  <li><a href="../../code_of_conduct">Code of Conduct</a></li>
+		  <li><a href="../../intro/free">Free Software</a></li>
+          <li><a href="../../legal">Legal Info</a></li>
+		  </ul>
+		</li>
+        <li><a href="../../intro/help">Help Debian</a></li>
+    </ul>
+	<ul id="footermap-colb">
+			<li><a href="../../distrib/">Getting Debian</a>
+			  <ul>
+			  <li><a href="../../distrib/netinst">Network install</a></li>
+			  <li><a href="../../CD/">CD/USB ISO images</a></li>
+            <li><a href="../../blends/">Pure Blends</a></li>
+			<li><a href="../../distrib/packages">Debian Packages</a></li>
+			<li><a href="../../devel/">Developers' Corner</a></li>
+			  </ul>
+			</li>
+	</ul>
+	<ul id="footermap-colc">
+		<li><a href="../../News/">News</a>
+		  <ul>
+		  <li><a href="../../News/weekly/">Project News</a></li>
+		  <li><a href="../../events/">Events</a></li>
+		  </ul>
+		</li>
+    <li><a href="../../doc/">Documentation</a>
+      <ul>
+      <li><a href="../../releases/">Release Info</a></li>
+      <li><a href="https://wiki.debian.org/">Debian Wiki</a></li>
+      </ul>
+    </li>
+   </ul>
+   <ul id="footermap-cold">
+    <li><a href="../../support">Support</a>
+	  <ul>
+			  <li><a href="../../international/">Debian International</a></li>
+			  <li><a href="../../security/">Security Information</a></li>
+			  <li><a href="../../Bugs/">Bug reports</a></li>
+			  <li><a href="../../MailingLists/">Mailing Lists</a></li>
+      </ul>
+    </li>
+</ul>
+<ul id="footermap-cole">
+  <li><a href="../../sitemap">Site map</a></li>
+  <li><a href="https://search.debian.org/">Search</a></li>
+  <li><a href="https://bits.debian.org">The Debian Blog</a></li>
+  <li><a href="https://micronews.debian.org">Debian Micronews</a></li>
+  <li><a href="https://planet.debian.org">Debian Planet</a></li>
+</ul>
+<!--/UdmComment-->
+</div> <!-- end footermap -->
+<div id="fineprint">
+<!--UdmComment-->
+  <p>See our <a href="../../contact">contact page</a> to get in touch. Web site source code is <a href="https://salsa.debian.org/webmaster-team/webwml">available</a>.</p>
+<p>
+Last Modified: Wed, Jan 15 09:03:04 UTC 2020
+&emsp;
+Last Built: Sun, Oct 18 03:32:26 UTC 2026
+  <br>
+  Copyright &copy; 2019-2020 <a href="https://www.spi-inc.org/">SPI</a> and others; See <a href="../../license" rel="copyright">license terms</a><br>
+  Debian is a registered <a href="../../trademark">trademark</a> of Software in the Public Interest, Inc.
+</p>
+<!--/UdmComment-->
+</div>
+</div> <!-- end footer -->
+</body>
+</html>
