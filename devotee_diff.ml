@@ -1,6 +1,6 @@
 (* Differential test: the verified counter against devotee, the program Debian
    uses to count its votes. devotee's counting routine is run unmodified by
-   devotee/run_devotee.pl (fetch it first with scripts/fetch_devotee.sh).
+   devotee/run_devotee.pl (on the copy in devotee/upstream).
 
    Usage:
      devotee_diff real <batch>            the batch written by
@@ -73,9 +73,9 @@ let devotee profs =
   let cmd = Printf.sprintf "perl %s %s %s > %s"
       (Filename.quote (Filename.concat root "devotee/run_devotee.pl"))
       (Filename.quote (match Sys.getenv_opt "DVT_RSLT" with
-                       | Some f -> f | None -> Filename.concat root "devotee/src/dvt-rslt"))
+                       | Some f -> f | None -> Filename.concat root "devotee/upstream/dvt-rslt"))
       (Filename.quote batch) (Filename.quote out) in
-  if Sys.command cmd <> 0 then failwith "run_devotee.pl failed (run scripts/fetch_devotee.sh?)";
+  if Sys.command cmd <> 0 then failwith "run_devotee.pl failed";
   let tbl = Hashtbl.create 1024 in
   let ic = open_in out in
   (* devotee numbers options in base 36: 1..9, A, B, ... *)

@@ -110,11 +110,13 @@ number of developers than the page states (984, 882, 949 against 972, 1001,
 
 ## Differential test of devotee
 
-    sh scripts/fetch_devotee.sh     # devotee at a pinned commit, into devotee/src
     sh devotee/run_variants.sh      # about five minutes; writes devotee/results.txt
 
-`devotee/run_devotee.pl` runs devotee's counting routine (`winner` in
-`dvt-rslt`) unmodified on batches of profiles; `devotee_diff` compares it with
+`devotee/upstream/` holds an unmodified copy of devotee's counting script
+`dvt-rslt` and its module `Devotee.pm` (GPL-2, commit f5b727c of
+https://salsa.debian.org/debian/devotee; `sh scripts/fetch_devotee.sh`
+checks the copy against upstream). `devotee/run_devotee.pl` runs devotee's
+counting routine (`winner` in `dvt-rslt`) unmodified on batches of profiles; `devotee_diff` compares it with
 the verified counter, and with the Schulze beatpath winners as a third opinion.
 On the 54 real votes devotee and the counter agree. On random profiles they do
 not, because of three defects in devotee, each removed by one patch in
@@ -171,6 +173,6 @@ still establish the correct winners.
 | `random_cycles.ml` | random cross-check against the beatpath method |
 | `devotee_diff.ml`, `devotee/` | differential test of devotee |
 | `certify.ml`, `certificates/` | certificates |
-| `scripts/` | download the vote pages and devotee |
+| `scripts/` | download the vote pages; check `devotee/upstream` against upstream |
 | `recount_summary.json`, `recount_table.md`, `devotee/results.txt` | results |
 | `test/` | small hand-made tally sheets |

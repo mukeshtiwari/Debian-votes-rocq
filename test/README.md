@@ -17,7 +17,7 @@ The batch file is read by both programs, which print one line per case in
 the same format:
 
     ./devote_main --batch test/devotee_cases.batch
-    perl devotee/run_devotee.pl devotee/src/dvt-rslt test/devotee_cases.batch   # after sh scripts/fetch_devotee.sh
+    perl devotee/run_devotee.pl devotee/upstream/dvt-rslt test/devotee_cases.batch
 
 The verified counter prints
 

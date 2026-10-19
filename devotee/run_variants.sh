@@ -1,7 +1,7 @@
 #!/bin/sh
 # The differential test of the paper: devotee, unmodified and with each of
 # the patches in devotee/patches applied, against the verified counter.
-# Needs `make` and `sh scripts/fetch_devotee.sh` first. Writes
+# Needs `make` first. Writes
 # devotee/results.txt (about five minutes on a laptop; runs in parallel).
 #
 #   fix-closure.patch   recompute transitive defeats in every round of step 7
@@ -17,7 +17,7 @@ trap 'rm -rf "$tmp"' EXIT
 variant() {   # variant <name> <patch>...
   name=$1; shift
   mkdir -p "$tmp/$name"
-  cp devotee/src/dvt-rslt "$tmp/$name/dvt-rslt"
+  cp devotee/upstream/dvt-rslt "$tmp/$name/dvt-rslt"
   for p in "$@"; do patch -s "$tmp/$name/dvt-rslt" < "devotee/patches/$p"; done
 }
 variant unmodified
@@ -42,7 +42,7 @@ done
 wait
 
 {
-  echo "devotee $(git -C devotee/src log -1 --format='%h %ad' --date=short); N=$N SEED=$SEED"
+  echo "devotee f5b727c 2023-12-27 (devotee/upstream); N=$N SEED=$SEED"
   for f in "$tmp"/out.*; do
     b=$(basename "$f"); b=${b#out.}
     echo; echo "######## devotee ${b%.*}, mode ${b##*.}"
