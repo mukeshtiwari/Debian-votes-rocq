@@ -662,36 +662,383 @@ Section Debian.
   Qed.
 
   (* ----------------------------------------------------------------------- *)
+  (*  Steps 5-8 on sets (A.5.5 - A.5.8)                                       *)
+  (* ----------------------------------------------------------------------- *)
+
+  (* The text speaks of sets of options and of defeats. Here the options under
+     consideration are a predicate R, the current defeats a predicate D and
+     the winners a predicate W: there are no lists, no enumeration of the
+     options, no fuel and no order. This is the specification a reader checks
+     against the Constitution; cssd_spec above is the bridge to the program. *)
+
+  Inductive TD (D : defeat -> Prop) : cand -> cand -> Prop :=
+  | td_direct a c : D (a, c) -> TD D a c
+  | td_via a b c : D (a, b) -> TD D b c -> TD D a c.
+
+  Definition Schwartz (R : cand -> Prop) (D : defeat -> Prop) (a : cand) : Prop :=
+    R a /\ forall b, R b -> TD D a b \/ ~ TD D b a.
+
+  Definition Inner (R : cand -> Prop) (D : defeat -> Prop) (p : defeat) : Prop :=
+    D p /\ Schwartz R D (fst p) /\ Schwartz R D (snd p).
+
+  Definition Weakest (R : cand -> Prop) (D : defeat -> Prop) (p : defeat) : Prop :=
+    Inner R D p /\ forall q, Inner R D q -> weaker q p = false.
+
+  Inductive SSD (R : cand -> Prop) : (defeat -> Prop) -> (cand -> Prop) -> Prop :=
+  | ssd_done D W :
+      (forall p, ~ Inner R D p) ->
+      (forall a, W a <-> Schwartz R D a) ->
+      SSD R D W
+  | ssd_step D D' W :
+      (exists p, Inner R D p) ->
+      (forall p, D' p <-> D p /\ ~ Weakest R D p) ->
+      SSD R D' W ->
+      SSD R D W.
+
+  Lemma TD_ext (D D' : defeat -> Prop) a b :
+    (forall p, D p <-> D' p) -> TD D a b -> TD D' a b.
+  Proof.
+    intros HD H. induction H as [a c H | a b c H _ IH].
+    - apply td_direct, HD, H.
+    - apply td_via with b; [apply HD, H | exact IH].
+  Qed.
+
+  Lemma Schwartz_ext (R R' : cand -> Prop) (D D' : defeat -> Prop) a :
+    (forall x, R x <-> R' x) -> (forall p, D p <-> D' p) ->
+    Schwartz R D a -> Schwartz R' D' a.
+  Proof.
+    intros HR HD [Ha H]. split; [apply HR, Ha | ].
+    intros b Hb. destruct (H b (proj2 (HR b) Hb)) as [H1 | H1].
+    - left. apply TD_ext with D; auto.
+    - right. intros H2. apply H1. apply TD_ext with D'; [intros p; split; apply HD | exact H2].
+  Qed.
+
+  Lemma Inner_ext (R R' : cand -> Prop) (D D' : defeat -> Prop) p :
+    (forall x, R x <-> R' x) -> (forall p, D p <-> D' p) -> Inner R D p -> Inner R' D' p.
+  Proof.
+    intros HR HD [H1 [H2 H3]]. split; [apply HD, H1 | split; apply Schwartz_ext with R D; auto].
+  Qed.
+
+  Lemma Weakest_ext (R R' : cand -> Prop) (D D' : defeat -> Prop) p :
+    (forall x, R x <-> R' x) -> (forall p, D p <-> D' p) -> Weakest R D p -> Weakest R' D' p.
+  Proof.
+    intros HR HD [H1 H2]. split; [apply Inner_ext with R D; auto | ].
+    intros q Hq. apply H2. apply Inner_ext with R' D'; [intros x; split; apply HR | intros r; split; apply HD | exact Hq].
+  Qed.
+
+  (* the specification determines the winners, up to equivalence of the sets *)
+  Theorem SSD_functional (R R' : cand -> Prop) D W :
+    (forall x, R x <-> R' x) -> SSD R D W ->
+    forall D' W', (forall p, D p <-> D' p) -> SSD R' D' W' -> forall a, W a <-> W' a.
+  Proof.
+    intros HR H. induction H as [D W Hn HW | D D1 W [p Hp] HD1 H IH];
+      intros D' W' HD H'; destruct H' as [D'0 W'0 Hn' HW' | D'0 D'1 W'0 [p' Hp'] HD'1 H'].
+    - intros a. rewrite HW, HW'. split; apply Schwartz_ext; auto; intros; symmetry; auto.
+    - exfalso. apply (Hn p'). apply Inner_ext with R' D'0; [intros; symmetry; auto | intros; symmetry; auto | exact Hp'].
+    - exfalso. apply (Hn' p). apply Inner_ext with R D; auto.
+    - apply IH with D'1; auto. intros q. rewrite HD1, HD'1. split; intros [H1 H2]; split.
+      + apply HD, H1.
+      + intros H3. apply H2. apply Weakest_ext with R' D'0; [intros; symmetry; auto | intros; symmetry; auto | exact H3].
+      + apply HD, H1.
+      + intros H3. apply H2. apply Weakest_ext with R D; auto.
+  Qed.
+
+  Lemma SSD_ext (R R' : cand -> Prop) D W :
+    (forall x, R x <-> R' x) -> SSD R D W ->
+    forall D' W', (forall p, D p <-> D' p) -> (forall a, W a <-> W' a) -> SSD R' D' W'.
+  Proof.
+    intros HR H. induction H as [D W Hn HW | D D1 W [p Hp] HD1 H IH]; intros D' W' HD HW'.
+    - apply ssd_done.
+      + intros p Hp. apply (Hn p). apply Inner_ext with R' D'; [intros; symmetry; auto | intros; symmetry; auto | exact Hp].
+      + intros a. rewrite <- HW', HW. split; apply Schwartz_ext; auto; intros; symmetry; auto.
+    - apply ssd_step with D1.
+      + exists p. apply Inner_ext with R D; auto.
+      + intros q. rewrite HD1. split; intros [H1 H2]; split.
+        * apply HD, H1.
+        * intros H3. apply H2. apply Weakest_ext with R' D'; [intros; symmetry; auto | intros; symmetry; auto | exact H3].
+        * apply HD, H1.
+        * intros H3. apply H2. apply Weakest_ext with R D; auto.
+      + apply IH; [intros; reflexivity | exact HW'].
+  Qed.
+
+  (* -- the list-based relation cssd_spec is an instance ------------------- *)
+
+  Lemma TDef_TD defs a b : TDef defs a b <-> TD (fun p => In p defs) a b.
+  Proof.
+    split; intros H; induction H; [apply td_direct | eapply td_via | apply tdef_direct | eapply tdef_via]; eauto.
+  Qed.
+
+  Lemma schwartz_Schwartz rem defs a :
+    In a (schwartz rem defs) <-> Schwartz (fun x => In x rem) (fun p => In p defs) a.
+  Proof.
+    rewrite schwartz_in. unfold Schwartz. split; intros [Ha H]; split; auto; intros b Hb;
+      destruct (H b Hb) as [H1 | H1]; [left | right | left | right]; rewrite ?TDef_TD in *; auto;
+      intros H2; apply H1; rewrite ?TDef_TD in *; auto.
+  Qed.
+
+  Lemma inner_Inner rem defs p :
+    In p (inner rem defs) <-> Inner (fun x => In x rem) (fun p => In p defs) p.
+  Proof using cand_all cand_fin dec_cand Vm.
+    unfold inner, Inner. rewrite filter_In, andb_true_iff, !inb_true, !schwartz_Schwartz. reflexivity.
+  Qed.
+
+  Lemma weakest_in l p : In p (weakest l) <-> In p l /\ forall q, In q l -> weaker q p = false.
+  Proof.
+    unfold weakest. rewrite filter_In, forallb_forall. split; intros [H1 H2]; split; auto;
+      intros q Hq; specialize (H2 q Hq); [apply negb_true_iff | apply negb_true_iff in H2]; auto.
+  Qed.
+
+  Lemma weakest_Weakest rem defs p :
+    In p (weakest (inner rem defs)) <-> Weakest (fun x => In x rem) (fun p => In p defs) p.
+  Proof.
+    rewrite weakest_in, inner_Inner. unfold Weakest. split; intros [H1 H2]; split; auto;
+      intros q Hq; apply H2, inner_Inner, Hq.
+  Qed.
+
+  Lemma remove_all_in l defs p : In p (remove_all l defs) <-> In p defs /\ ~ In p l.
+  Proof.
+    unfold remove_all. rewrite filter_In, negb_true_iff. split; intros [H1 H2]; split; auto.
+    - intros H. assert (existsb (deq p) l = true) by (apply existsb_exists; exists p; split; auto; apply deq_true; auto).
+      congruence.
+    - destruct (existsb (deq p) l) eqn:E; auto. exfalso. apply existsb_exists in E.
+      destruct E as [q [Hq E]]. apply deq_true in E. subst. auto.
+  Qed.
+
+  Lemma drop_weakest_in rem defs p :
+    In p (drop_weakest rem defs) <->
+    In p defs /\ ~ Weakest (fun x => In x rem) (fun p => In p defs) p.
+  Proof. unfold drop_weakest. rewrite remove_all_in, weakest_Weakest. tauto. Qed.
+
+  Lemma inner_nil rem defs :
+    inner rem defs = [] <-> forall p, ~ Inner (fun x => In x rem) (fun p => In p defs) p.
+  Proof using cand_all cand_fin dec_cand Vm.
+    split.
+    - intros H p Hp. apply inner_Inner in Hp. rewrite H in Hp. inversion Hp.
+    - intros H. destruct (inner rem defs) as [| p l] eqn:E; [reflexivity | ]. exfalso. apply (H p).
+      apply inner_Inner. rewrite E. left. reflexivity.
+  Qed.
+
+  Theorem cssd_SSD rem defs W :
+    cssd_spec rem defs W -> SSD (fun x => In x rem) (fun p => In p defs) (fun w => In w W).
+  Proof.
+    intros H. induction H as [defs Hi | defs W Hi H IH].
+    - apply ssd_done; [apply inner_nil, Hi | intros a; apply schwartz_Schwartz].
+    - apply ssd_step with (fun p => In p (drop_weakest rem defs)); auto.
+      + destruct (inner rem defs) as [| p l] eqn:E; [congruence | ].
+        exists p. apply inner_Inner. rewrite E. left. auto.
+      + intros p. apply drop_weakest_in.
+  Qed.
+
+  (* hence cssd_spec only depends on which options and defeats are present *)
+  Corollary cssd_spec_same rem rem' defs defs' W W' :
+    (forall x, In x rem <-> In x rem') -> (forall p, In p defs <-> In p defs') ->
+    cssd_spec rem defs W -> cssd_spec rem' defs' W' -> forall a, In a W <-> In a W'.
+  Proof.
+    intros HR HD H H'. apply (SSD_functional _ _ _ _ HR (cssd_SSD _ _ _ H) _ _ HD (cssd_SSD _ _ _ H')).
+  Qed.
+
+  (* ----------------------------------------------------------------------- *)
+  (*  The winners lie in the initial Schwartz set                            *)
+  (* ----------------------------------------------------------------------- *)
+
+  (* the defeats are among the options under consideration *)
+  Definition defs_within (rem : list cand) (defs : list defeat) : Prop :=
+    forall a b, In (a, b) defs -> In a rem /\ In b rem.
+
+  Lemma TDef_mono defs defs' a b :
+    (forall p, In p defs' -> In p defs) -> TDef defs' a b -> TDef defs a b.
+  Proof.
+    intros Hs H. induction H; [apply tdef_direct | eapply tdef_via]; eauto.
+  Qed.
+
+  (* no defeat enters the Schwartz set from outside *)
+  Lemma schwartz_closed rem defs u v :
+    defs_within rem defs -> In v (schwartz rem defs) -> In (u, v) defs -> In u (schwartz rem defs).
+  Proof.
+    intros Hw Hv Huv. apply schwartz_in in Hv. destruct Hv as [Hvr Hv].
+    apply schwartz_in. split; [apply (Hw u v Huv) | ]. intros b Hb.
+    destruct (tdef defs u b) eqn:E; [left; apply tdef_iff; auto | right].
+    intros Hbu. destruct (Hv b Hb) as [Hvb | Hnbv].
+    - assert (TDef defs u b) by (apply tdef_via with v; auto). apply tdef_iff in H. congruence.
+    - apply Hnbv. apply TDef_snoc with u; auto.
+  Qed.
+
+  Lemma TDef_into_schwartz rem defs x s :
+    defs_within rem defs -> TDef defs x s -> In s (schwartz rem defs) -> In x (schwartz rem defs).
+  Proof.
+    intros Hw H. induction H as [x s H | x b s H _ IH]; intros Hs.
+    - apply schwartz_closed with s; auto.
+    - apply schwartz_closed with b; auto.
+  Qed.
+
+  (* every option outside the Schwartz set is transitively defeated from it *)
+  Lemma outside_schwartz rem defs x :
+    In x rem -> ~ In x (schwartz rem defs) ->
+    exists s, In s (schwartz rem defs) /\ TDef defs s x.
+  Proof.
+    intros Hx Hnx.
+    (* some b defeats x transitively without being defeated back *)
+    assert (Hb : exists b, In b rem /\ TDef defs b x).
+    { destruct (forallb (fun b => tdef defs x b || negb (tdef defs b x)) rem) eqn:E.
+      - exfalso. apply Hnx. unfold schwartz. apply filter_In. auto.
+      - assert (Hex : exists b, In b rem /\ (tdef defs x b || negb (tdef defs b x)) = false).
+        { clear Hx Hnx. induction rem as [| y ys IH]; [discriminate | ]. simpl in E.
+          destruct (tdef defs x y || negb (tdef defs y x)) eqn:Ey; simpl in E.
+          - destruct (IH E) as [b [Hb Hb']]. exists b. split; [right |]; auto.
+          - exists y. split; [left |]; auto. }
+        destruct Hex as [b [Hb Hb']]. exists b. split; auto.
+        apply orb_false_iff in Hb'. destruct Hb' as [_ Hb']. apply negb_false_iff in Hb'.
+        apply tdef_iff. auto. }
+    destruct Hb as [b0 [Hb0 Hb0x]].
+    (* take, among the options transitively defeating x, one that transitively
+       defeats the most options; it is in the Schwartz set *)
+    set (C := filter (fun b => tdef defs b x) rem).
+    assert (HC : In b0 C) by (apply filter_In; split; auto; apply tdef_iff; auto).
+    destruct C as [| c cs] eqn:EC; [inversion HC | ].
+    set (f := fun a => size (dominated defs a)).
+    set (a := argmax f c cs).
+    assert (Ha : In a (c :: cs)) by apply argmax_in.
+    assert (Hmax : forall z, In z (c :: cs) -> f z <= f a) by apply argmax_ge.
+    rewrite <- EC in Ha, Hmax. unfold C in Ha, Hmax. apply filter_In in Ha. destruct Ha as [Har Hax].
+    apply tdef_iff in Hax. exists a. split; auto.
+    apply schwartz_in. split; auto. intros b Hb.
+    destruct (tdef defs a b) eqn:Hab; [left; apply tdef_iff; auto | right].
+    intros Hba.
+    assert (Hsub : forall c, In c (dominated defs a) -> In c (dominated defs b)).
+    { intros c0 Hc. apply dominated_in in Hc. apply dominated_in.
+      destruct Hc as [-> | Hc]; right; [auto | apply TDef_trans with a; auto]. }
+    assert (Hb_in : In b (dominated defs b)) by (apply dominated_in; left; auto).
+    assert (Hb_nin : ~ In b (dominated defs a)).
+    { intros H. apply dominated_in in H. destruct H as [-> | H].
+      - apply tdef_iff in Hba. rewrite Hba in Hab. discriminate.
+      - apply tdef_iff in H. rewrite H in Hab. discriminate. }
+    pose proof (size_lt _ _ b Hsub Hb_in Hb_nin) as Hlt.
+    assert (HbC : In b (filter (fun b => tdef defs b x) rem)).
+    { apply filter_In. split; auto. apply tdef_iff. apply TDef_trans with a; auto. }
+    specialize (Hmax b HbC). unfold f in Hmax. lia.
+  Qed.
+
+  Lemma drop_weakest_sub rem defs p : In p (drop_weakest rem defs) -> In p defs.
+  Proof. apply remove_all_sub. Qed.
+
+  (* a defeat that does not lie inside the Schwartz set survives a round *)
+  Lemma drop_weakest_keeps rem defs a b :
+    In (a, b) defs -> ~ In b (schwartz rem defs) -> In (a, b) (drop_weakest rem defs).
+  Proof.
+    intros H Hb. unfold drop_weakest. apply remove_all_in. split; auto.
+    intros Hw. apply weakest_sub in Hw. unfold inner in Hw. apply filter_In in Hw.
+    destruct Hw as [_ Hw]. apply andb_true_iff in Hw. destruct Hw as [_ Hw].
+    apply inb_true in Hw. contradiction.
+  Qed.
+
+  Lemma TDef_outside rem defs b x :
+    defs_within rem defs -> ~ In b (schwartz rem defs) -> TDef defs b x ->
+    TDef (drop_weakest rem defs) b x.
+  Proof.
+    intros Hw Hb H. induction H as [b x H | b y x H Hyx IH].
+    - apply tdef_direct. apply drop_weakest_keeps; auto.
+      intros Hx. apply Hb. apply schwartz_closed with x; auto.
+    - assert (Hy : ~ In y (schwartz rem defs)) by (intros Hy; apply Hb; apply schwartz_closed with y; auto).
+      apply tdef_via with y; [apply drop_weakest_keeps | apply IH]; auto.
+  Qed.
+
+  Lemma TDef_exit rem defs s x :
+    defs_within rem defs -> In s (schwartz rem defs) -> ~ In x (schwartz rem defs) ->
+    TDef defs s x -> exists s', In s' (schwartz rem defs) /\ TDef (drop_weakest rem defs) s' x.
+  Proof.
+    intros Hw Hs Hx H. induction H as [s x H | s y x H Hyx IH].
+    - exists s. split; auto. apply tdef_direct, drop_weakest_keeps; auto.
+    - destruct (inb y (schwartz rem defs)) eqn:Ey.
+      + apply inb_true in Ey. apply IH; auto.
+      + assert (Hy : ~ In y (schwartz rem defs)) by (intros Hy; apply inb_true in Hy; congruence).
+        exists s. split; auto. apply tdef_via with y; [apply drop_weakest_keeps | apply TDef_outside]; auto.
+  Qed.
+
+  (* a round of step 7 never enlarges the Schwartz set *)
+  Lemma schwartz_drop_sub rem defs x :
+    defs_within rem defs ->
+    In x (schwartz rem (drop_weakest rem defs)) -> In x (schwartz rem defs).
+  Proof.
+    intros Hw Hx. destruct (inb x (schwartz rem defs)) eqn:E; [apply inb_true; auto | exfalso].
+    assert (Hnx : ~ In x (schwartz rem defs)) by (intros H; apply inb_true in H; congruence).
+    apply schwartz_in in Hx. destruct Hx as [Hxr Hx].
+    destruct (outside_schwartz rem defs x Hxr Hnx) as [s [Hs Hsx]].
+    destruct (TDef_exit rem defs s x Hw Hs Hnx Hsx) as [s' [Hs' Hs'x]].
+    assert (Hs'r : In s' rem) by (apply schwartz_in in Hs'; tauto).
+    destruct (Hx s' Hs'r) as [Hxs' | Hn]; [ | contradiction].
+    apply Hnx. apply TDef_into_schwartz with s'; auto.
+    apply TDef_mono with (drop_weakest rem defs); auto. apply drop_weakest_sub.
+  Qed.
+
+  Theorem cssd_winners_in_schwartz rem defs W :
+    defs_within rem defs -> cssd_spec rem defs W ->
+    forall w, In w W -> In w (schwartz rem defs).
+  Proof.
+    intros Hw H. induction H as [defs Hi | defs W Hi H IH]; intros w Hin; auto.
+    apply schwartz_drop_sub; auto. apply IH; auto.
+    intros a b Hab. apply Hw. apply drop_weakest_sub with rem. auto.
+  Qed.
+
+  (* any transitive defeat starts with a direct defeat *)
+  Lemma TDef_first defs a c : TDef defs a c -> exists y, In (a, y) defs.
+  Proof. intros H. destruct H as [a c H | a b c H _]; eauto. Qed.
+
+  (* ----------------------------------------------------------------------- *)
   (*  Rules of a particular vote: quorum and majority ratios (A.5.2, A.5.3)  *)
   (*  (placed last so that no earlier lemma depends on them)                 *)
   (* ----------------------------------------------------------------------- *)
 
 
-  (* The quorum R is a (possibly non-integral) number; we represent it as a
-     fraction quorum_num / quorum_den. Debian computes Q = sqrt(#developers)/2
-     and uses R = 3Q for general resolutions. The majority ratio of an option
-     is S for a supermajority of S:1, and 1 otherwise. *)
+  (* The quorum R is a non-negative real: Debian computes Q = sqrt(n)/2 from
+     the number n of developers and uses R = 3Q, which is irrational unless n
+     is a perfect square. Since V(A,D) >= R iff V(A,D)^2 >= R^2, we store R^2
+     exactly, as the fraction quorum_num / quorum_den (9n/4 for Debian).
+
+     The majority ratio of an option is S for a supermajority of S:1, and 1
+     otherwise. The majority rule itself changed with version 1.6 of the
+     Constitution (13 December 2015): before, A passed if V(A,D) > N V(D,A);
+     since, if V(A,D) >= N V(D,A) and V(A,D) > V(D,A). strict_majority selects
+     the earlier rule. *)
   Record rules := {
-    quorum_num : nat;
+    quorum_num : nat;           (* R^2 = quorum_num / quorum_den *)
     quorum_den : nat;
-    ratio : cand -> nat
+    ratio : cand -> nat;
+    strict_majority : bool      (* the rule of versions 1.0 to 1.5 *)
   }.
 
   Variable rl : rules.
-  Hypothesis quorum_den_pos : quorum_den rl > 0.
 
-  (* A.5.2 *)
+  (* A.5.2, on the square of the quorum *)
   Definition passes_quorum (x : cand) : bool :=
-    ceq x default || (quorum_num rl <=? quorum_den rl * Vm x default).
+    ceq x default || (quorum_num rl <=? quorum_den rl * (Vm x default * Vm x default)).
 
-  (* A.5.3 *)
+  (* A.5.3, in the version given by strict_majority *)
   Definition passes_majority (x : cand) : bool :=
     ceq x default ||
-    ((ratio rl x * Vm default x <=? Vm x default) && (Vm default x <? Vm x default)).
+    (if strict_majority rl then ratio rl x * Vm default x <? Vm x default
+     else (ratio rl x * Vm default x <=? Vm x default) && (Vm default x <? Vm x default)).
 
   (* the options that survive steps 2 and 3 *)
   Definition remaining : list cand :=
     filter (fun x => passes_quorum x && passes_majority x) cand_all.
+
+  (* Steps 2 and 3 as propositions, transcribing the text *)
+  Definition Quorum (x : cand) : Prop :=
+    x = default \/ quorum_num rl <= quorum_den rl * (Vm x default * Vm x default).
+
+  Definition Majority (x : cand) : Prop :=
+    x = default \/
+    (if strict_majority rl then ratio rl x * Vm default x < Vm x default
+     else ratio rl x * Vm default x <= Vm x default /\ Vm default x < Vm x default).
+
+  Lemma remaining_in x : In x remaining <-> Quorum x /\ Majority x.
+  Proof.
+    unfold remaining, Quorum, Majority, passes_quorum, passes_majority.
+    rewrite filter_In, andb_true_iff, !orb_true_iff, ceq_true.
+    destruct (strict_majority rl); rewrite ?andb_true_iff, ?Nat.leb_le, ?Nat.ltb_lt;
+      split; [intros [_ H]; exact H | intros H; split; [apply cand_fin | exact H]
+             | intros [_ H]; exact H | intros H; split; [apply cand_fin | exact H]].
+  Qed.
 
   Lemma default_remaining : In default remaining.
   Proof.
@@ -812,4 +1159,343 @@ Section Procedure.
       specialize (Hbeats x Hx Hne). lia.
   Qed.
 
+  (* ----------------------------------------------------------------------- *)
+  (*  The whole of Appendix A.5 as a specification on sets                  *)
+  (* ----------------------------------------------------------------------- *)
+
+  (* the options that survive steps 2 and 3, and the defeats of step 4 *)
+  Definition Remaining Vm (x : cand) : Prop :=
+    Quorum cand default Vm rl x /\ Majority cand default Vm rl x.
+
+  Definition Defeats0 Vm (p : defeat cand) : Prop :=
+    Remaining Vm (fst p) /\ Remaining Vm (snd p) /\ Vm (snd p) (fst p) < Vm (fst p) (snd p).
+
+  (* W is the set of winners of a vote with pairwise matrix Vm, as defined by
+     Appendix A.5: no list, enumeration of the options, or fuel appears *)
+  Definition debian_outcome Vm (W : cand -> Prop) : Prop :=
+    SSD cand Vm (Remaining Vm) (Defeats0 Vm) W.
+
+  (* the counter computes an outcome ... *)
+  Theorem count_correct Vm : debian_outcome Vm (fun w => In w (rep_winners (count Vm))).
+  Proof.
+    unfold debian_outcome.
+    pose proof (cssd_SSD cand cand_all cand_fin dec_cand Vm _ _ _ (count_spec Vm)) as H.
+    unfold count in H |- *. simpl in H |- *.
+    apply (SSD_ext cand Vm _ _ _ _ (fun x => remaining_in cand cand_all cand_fin dec_cand default Vm rl x) H).
+    - intros [a b]. cbn beta. etransitivity; [apply initial_defeats_in | ].
+      unfold Defeats0, Remaining. simpl. rewrite !remaining_in; auto. reflexivity.
+    - intros a. reflexivity.
+  Qed.
+
+  (* ... and there is only one *)
+  Theorem debian_outcome_unique Vm W W' :
+    debian_outcome Vm W -> debian_outcome Vm W' -> forall a, W a <-> W' a.
+  Proof.
+    intros H H'. apply (SSD_functional cand Vm _ _ _ _ (fun x => iff_refl _) H _ _ (fun p => iff_refl _) H').
+  Qed.
+
+  Corollary count_complete Vm W :
+    debian_outcome Vm W -> forall a, W a <-> In a (rep_winners (count Vm)).
+  Proof. intros H. apply (debian_outcome_unique Vm); [exact H | apply count_correct]. Qed.
+
+  (* ----------------------------------------------------------------------- *)
+  (*  Further properties                                                     *)
+  (* ----------------------------------------------------------------------- *)
+
+  (* sequential dropping only ever elects options of the initial Schwartz set *)
+  Theorem count_winners_in_schwartz Vm w :
+    In w (rep_winners (count Vm)) ->
+    In w (schwartz cand cand_all dec_cand (rep_remaining (count Vm)) (rep_defeats (count Vm))).
+  Proof.
+    intros H. apply (cssd_winners_in_schwartz cand cand_all cand_fin dec_cand Vm _ _ (rep_winners (count Vm)));
+      [ | apply count_spec | exact H].
+    intros a b Hab. unfold count in Hab |- *. simpl in Hab |- *. apply initial_defeats_in in Hab. tauto.
+  Qed.
+
+  (* a Condorcet loser among the remaining options never wins, unless it is
+     the only remaining option *)
+  Theorem count_condorcet_loser Vm l :
+    In l (rep_remaining (count Vm)) ->
+    (exists b, In b (rep_remaining (count Vm)) /\ b <> l) ->
+    (forall b, In b (rep_remaining (count Vm)) -> b <> l -> Vm l b < Vm b l) ->
+    ~ In l (rep_winners (count Vm)).
+  Proof.
+    intros Hl [b [Hb Hbl]] Hlose Hw.
+    apply count_winners_in_schwartz in Hw. apply schwartz_in in Hw; auto. destruct Hw as [_ Hw].
+    destruct (Hw b Hb) as [Hlb | Hnbl].
+    - destruct (TDef_first cand _ _ _ Hlb) as [y Hy].
+      unfold count in Hy, Hl, Hlose, Hb. simpl in Hy, Hl, Hlose, Hb.
+      apply initial_defeats_in in Hy. destruct Hy as [_ [Hy Hlt]].
+      destruct (dec_cand y l) as [-> | Hyl]; [lia | ]. specialize (Hlose y Hy Hyl). lia.
+    - apply Hnbl. apply tdef_direct. unfold count in Hb, Hl, Hlose |- *. simpl in Hb, Hl, Hlose |- *.
+      apply initial_defeats_in. repeat split; auto.
+  Qed.
+
 End Procedure.
+
+(* the winners do not depend on the order in which the options are listed *)
+Theorem count_order_independent (cand : Type) (l1 l2 : list cand)
+  (fin1 : forall c, In c l1) (fin2 : forall c, In c l2)
+  (dec_cand : forall x y : cand, {x = y} + {x <> y}) default rl Vm a :
+  In a (rep_winners cand (count cand l1 dec_cand default rl Vm)) <->
+  In a (rep_winners cand (count cand l2 dec_cand default rl Vm)).
+Proof.
+  pose proof (count_correct cand l1 fin1 dec_cand default rl Vm) as H1.
+  pose proof (count_correct cand l2 fin2 dec_cand default rl Vm) as H2.
+  exact (debian_outcome_unique cand default rl Vm _ _ H1 H2 a).
+Qed.
+
+(* ========================================================================= *)
+(*  Certificates                                                            *)
+(* ========================================================================= *)
+
+(* A certificate lets anyone confirm a published outcome with a small checker
+   that never computes a transitive closure. For every round of step 7 it
+   names the Schwartz set S and gives, as witnesses,
+     - for each remaining option x outside S, a path of defeats from S to x;
+     - for each member y of S, a root r and paths of defeats r..y and y..r.
+   The checker verifies these paths, that no defeat enters S from outside, and
+   that every defeat inside S joins two members with the same root. It then
+   performs the round itself (dropping the weakest defeats inside S) and moves
+   to the next round. An accepted certificate determines the outcome of A.5:
+   check_certificate_sound. Certificates are produced by an untrusted program. *)
+
+Section Certificate.
+
+  Variable cand : Type.
+  Variable cand_all : list cand.
+  Hypothesis cand_fin : forall c, In c cand_all.
+  Hypothesis dec_cand : forall x y : cand, {x = y} + {x <> y}.
+  Variable default : cand.
+  Variable rl : rules cand.
+  Variable Vm : cand -> cand -> nat.
+
+  Definition dinb (p : defeat cand) (l : list (defeat cand)) : bool := existsb (deq cand dec_cand p) l.
+
+  Lemma dinb_true p l : dinb p l = true <-> In p l.
+  Proof.
+    unfold dinb. rewrite existsb_exists. split.
+    - intros [q [Hq E]]. apply deq_true in E. subst. auto.
+    - intros H. exists p. split; auto. apply deq_true. auto.
+  Qed.
+
+  Fixpoint lookup {B : Type} (x : cand) (l : list (cand * B)) : option B :=
+    match l with
+    | [] => None
+    | (y, b) :: l' => if ceq cand dec_cand x y then Some b else lookup x l'
+    end.
+
+  (* a path x0 x1 ... xk of options in which each defeats the next *)
+  Fixpoint path_ok (defs : list (defeat cand)) (l : list cand) : bool :=
+    match l with
+    | x :: (y :: _) as rest => dinb (x, y) defs && path_ok defs rest
+    | _ => true
+    end.
+
+  (* a path from a to b *)
+  Definition path_from_to (defs : list (defeat cand)) (l : list cand) (a b : cand) : bool :=
+    match l with
+    | [] => false
+    | x :: _ => ceq cand dec_cand x a && ceq cand dec_cand (last l x) b && path_ok defs l
+    end.
+
+  Lemma last_cons_default {A : Type} (l : list A) (x d : A) : l <> [] -> last l x = last l d.
+  Proof.
+    induction l as [| y [| z l'] IH]; intros H; [congruence | reflexivity | ].
+    simpl. simpl in IH. apply IH. discriminate.
+  Qed.
+
+  Lemma path_ok_reach defs x l :
+    path_ok defs (x :: l) = true -> l = [] \/ TDef cand defs x (last l x).
+  Proof.
+    revert x. induction l as [| y l' IH]; intros x H; [left; auto | right].
+    simpl in H. apply andb_true_iff in H. destruct H as [Hxy H].
+    apply dinb_true in Hxy. destruct l' as [| z l''].
+    - simpl. apply tdef_direct. auto.
+    - destruct (IH y H) as [Hn | Hy]; [discriminate | ].
+      apply tdef_via with y; auto.
+      change (last (y :: z :: l'') x) with (last (z :: l'') x).
+      rewrite (last_cons_default (z :: l'') x y); auto. discriminate.
+  Qed.
+
+  (* a path from a to b shows that a = b or a transitively defeats b *)
+  Lemma path_from_to_reach defs l a b :
+    path_from_to defs l a b = true -> a = b \/ TDef cand defs a b.
+  Proof.
+    unfold path_from_to. destruct l as [| x l]; [discriminate | ].
+    rewrite !andb_true_iff, !(ceq_true cand dec_cand). intros [[-> Hb] Hp].
+    destruct (path_ok_reach defs a l Hp) as [-> | H].
+    - left. simpl in Hb. auto.
+    - right. replace b with (last l a); auto. rewrite <- Hb.
+      destruct l; reflexivity.
+  Qed.
+
+  Record scert := {
+    sc_set : list cand;                                     (* S *)
+    sc_out : list (cand * list cand);                       (* x outside S: path from S to x *)
+    sc_in  : list (cand * (cand * (list cand * list cand))) (* y in S: root r, paths r..y, y..r *)
+  }.
+
+  Definition root (c : scert) (y : cand) : option cand :=
+    option_map fst (lookup y (sc_in c)).
+
+  Definition same_root (c : scert) (u v : cand) : bool :=
+    match root c u, root c v with
+    | Some r1, Some r2 => ceq cand dec_cand r1 r2
+    | _, _ => false
+    end.
+
+  Definition check_scert (rem : list cand) (defs : list (defeat cand)) (c : scert) : bool :=
+    let S := sc_set c in
+    forallb (fun s => inb cand dec_cand s rem) S &&
+    forallb (fun p => negb (inb cand dec_cand (snd p) S) || inb cand dec_cand (fst p) S) defs &&
+    forallb (fun x => inb cand dec_cand x S ||
+               match lookup x (sc_out c) with
+               | Some (s :: l) => inb cand dec_cand s S && path_from_to defs (s :: l) s x
+               | _ => false
+               end) rem &&
+    forallb (fun y => match lookup y (sc_in c) with
+                      | Some (r, (p1, p2)) => path_from_to defs p1 r y && path_from_to defs p2 y r
+                      | None => false
+                      end) S &&
+    forallb (fun p => negb (inb cand dec_cand (fst p) S && inb cand dec_cand (snd p) S) || same_root c (fst p) (snd p)) defs.
+
+  Lemma lookup_some {B : Type} x (l : list (cand * B)) b : lookup x l = Some b -> In (x, b) l.
+  Proof.
+    induction l as [| [y b'] l IH]; simpl; [discriminate | ].
+    destruct (ceq cand dec_cand x y) eqn:E; intros H; [inversion H; subst; apply (ceq_true cand dec_cand) in E; subst; left; auto | right; auto].
+  Qed.
+
+  Lemma TDef_into_set defs (S : list cand) x s :
+    (forall p, In p defs -> In (snd p) S -> In (fst p) S) ->
+    TDef cand defs x s -> In s S -> In x S.
+  Proof.
+    intros Hc H. induction H as [x s H | x b s H _ IH]; intros Hs.
+    - apply (Hc (x, s) H Hs).
+    - apply (Hc (x, b) H). apply IH. auto.
+  Qed.
+
+  Theorem check_scert_sound rem defs c :
+    check_scert rem defs c = true ->
+    forall a, In a (sc_set c) <-> In a (schwartz cand cand_all dec_cand rem defs).
+  Proof.
+    unfold check_scert. rewrite !andb_true_iff, !forallb_forall.
+    intros [[[[Hrem Hclosed] Hout] Hin] Hroot] a.
+    set (S := sc_set c) in *.
+    assert (Hc : forall p, In p defs -> In (snd p) S -> In (fst p) S).
+    { intros p Hp Hs. specialize (Hclosed p Hp). apply orb_true_iff in Hclosed.
+      destruct Hclosed as [H | H]; [apply negb_true_iff in H; apply (inb_true cand dec_cand) in Hs; congruence | apply (inb_true cand dec_cand); auto]. }
+    (* inside S, every transitive defeat cand joins members with the same root *)
+    assert (Hsame : forall u v, TDef cand defs u v -> In v S -> In u S /\ same_root c u v = true \/ u = v).
+    { intros u v H. induction H as [u v H | u w v H Hwv IH]; intros Hv.
+      - left. assert (Hu : In u S) by (apply (Hc (u, v) H Hv)). split; auto.
+        specialize (Hroot (u, v) H). simpl in Hroot. apply orb_true_iff in Hroot.
+        destruct Hroot as [Hr | Hr]; auto. apply negb_true_iff in Hr.
+        assert (inb cand dec_cand u S = true) by (apply (inb_true cand dec_cand); auto). assert (inb cand dec_cand v S = true) by (apply (inb_true cand dec_cand); auto).
+        rewrite H0, H1 in Hr. discriminate.
+      - destruct (IH Hv) as [[Hw Hwv'] | ->]; [left | left].
+        + assert (Hu : In u S) by (apply (Hc (u, w) H Hw)). split; auto.
+          specialize (Hroot (u, w) H). simpl in Hroot. apply orb_true_iff in Hroot.
+          destruct Hroot as [Hr | Hr].
+          * apply negb_true_iff in Hr. assert (inb cand dec_cand u S = true) by (apply (inb_true cand dec_cand); auto).
+            assert (inb cand dec_cand w S = true) by (apply (inb_true cand dec_cand); auto). rewrite H0, H1 in Hr. discriminate.
+          * unfold same_root in Hr, Hwv' |- *. destruct (root c u), (root c w), (root c v); try discriminate.
+            apply (ceq_true cand dec_cand) in Hr. apply (ceq_true cand dec_cand) in Hwv'. subst. apply (ceq_refl cand dec_cand).
+        + assert (Hu : In u S) by (apply (Hc (u, v) H Hv)). split; auto.
+          specialize (Hroot (u, v) H). simpl in Hroot. apply orb_true_iff in Hroot.
+          destruct Hroot as [Hr | Hr]; auto. apply negb_true_iff in Hr.
+          assert (inb cand dec_cand u S = true) by (apply (inb_true cand dec_cand); auto). assert (inb cand dec_cand v S = true) by (apply (inb_true cand dec_cand); auto).
+          rewrite H0, H1 in Hr. discriminate. }
+    (* members of S reach and are reached from their root *)
+    assert (Hr : forall y, In y S -> exists r, root c y = Some r /\
+                 (r = y \/ TDef cand defs r y) /\ (y = r \/ TDef cand defs y r)).
+    { intros y Hy. specialize (Hin y Hy). unfold root.
+      destruct (lookup y (sc_in c)) as [[r [p1 p2]] |] eqn:E; [ | discriminate].
+      apply andb_true_iff in Hin. destruct Hin as [H1 H2].
+      exists r. split; [reflexivity | split; [apply path_from_to_reach with p1 | apply path_from_to_reach with p2]; auto]. }
+    rewrite (schwartz_in cand cand_all cand_fin dec_cand). split.
+    - intros Ha. split; [apply (inb_true cand dec_cand), Hrem, Ha | ]. intros b Hb.
+      destruct (tdef cand cand_all dec_cand defs a b) eqn:Eab; [left; apply (tdef_iff cand cand_all cand_fin dec_cand); auto | right].
+      intros Hba. destruct (Hsame b a Hba Ha) as [[HbS Hba'] | ->].
+      + destruct (Hr a Ha) as [r [Ea [_ Har]]]. destruct (Hr b HbS) as [r' [Eb [Hrb _]]].
+        unfold same_root in Hba'. rewrite Ea, Eb in Hba'. apply (ceq_true cand dec_cand) in Hba'. subst r'.
+        assert (Hab : a = b \/ TDef cand defs a b).
+        { destruct Har as [-> | Har]; destruct Hrb as [-> | Hrb]; auto; right; eauto using TDef_trans. }
+        destruct Hab as [-> | Hab].
+        * apply (tdef_iff cand cand_all cand_fin dec_cand) in Hba; auto. congruence.
+        * apply (tdef_iff cand cand_all cand_fin dec_cand) in Hab; auto. congruence.
+      + apply (tdef_iff cand cand_all cand_fin dec_cand) in Hba; auto. congruence.
+    - intros [Har Ha]. destruct (inb cand dec_cand a S) eqn:E; [apply (inb_true cand dec_cand); auto | exfalso].
+      specialize (Hout a Har). rewrite E in Hout. simpl in Hout.
+      destruct (lookup a (sc_out c)) as [[| s l] |] eqn:El; try discriminate.
+      apply andb_true_iff in Hout. destruct Hout as [Hs Hp]. apply (inb_true cand dec_cand) in Hs.
+      destruct (path_from_to_reach defs (s :: l) s a Hp) as [-> | Hsa].
+      + apply (inb_true cand dec_cand) in Hs. congruence.
+      + assert (Hsr : In s rem) by (apply (inb_true cand dec_cand), Hrem, Hs).
+        destruct (Ha s Hsr) as [Has | Hn]; [ | contradiction].
+        assert (In a S) by (apply TDef_into_set with defs s; auto).
+        apply (inb_true cand dec_cand) in H. congruence.
+  Qed.
+
+  (* the rounds of step 7, each with its Schwartz-set certificate *)
+  Fixpoint check_rounds (rem : list cand) (defs : list (defeat cand)) (cs : list scert) : option (list cand) :=
+    match cs with
+    | [] => None
+    | c :: cs' =>
+      if check_scert rem defs c then
+        let S := sc_set c in
+        match filter (fun p => inb cand dec_cand (fst p) S && inb cand dec_cand (snd p) S) defs with
+        | [] => Some S
+        | inn => check_rounds rem (remove_all cand dec_cand (weakest cand Vm inn) defs) cs'
+        end
+      else None
+    end.
+
+  Lemma check_rounds_sound rem cs : forall defs W,
+    check_rounds rem defs cs = Some W ->
+    SSD cand Vm (fun x => In x rem) (fun p => In p defs) (fun a => In a W).
+  Proof.
+    induction cs as [| c cs IH]; intros defs W H; simpl in H; [discriminate | ].
+    destruct (check_scert rem defs c) eqn:Ec; [ | discriminate].
+    pose proof (check_scert_sound rem defs c Ec) as HS.
+    (* the defeats inside S are the inner defeats *)
+    assert (Hinn : forall p, In p (filter (fun p => inb cand dec_cand (fst p) (sc_set c) && inb cand dec_cand (snd p) (sc_set c)) defs) <->
+                             In p (inner cand cand_all dec_cand rem defs)).
+    { intros p. unfold inner. rewrite !filter_In, !andb_true_iff, !(inb_true cand dec_cand), !HS. reflexivity. }
+    destruct (filter (fun p => inb cand dec_cand (fst p) (sc_set c) && inb cand dec_cand (snd p) (sc_set c)) defs) as [| q l] eqn:Ef.
+    - inversion H; subst. apply ssd_done.
+      + intros p Hp. apply (inner_Inner cand cand_all cand_fin dec_cand Vm) in Hp.
+        apply Hinn in Hp. inversion Hp.
+      + intros a. rewrite HS. apply schwartz_Schwartz; auto.
+    - apply IH in H. apply ssd_step with (fun p => In p (remove_all cand dec_cand (weakest cand Vm (q :: l)) defs)); auto.
+      + exists q. apply (inner_Inner cand cand_all cand_fin dec_cand Vm). apply Hinn. left. auto.
+      + intros p. rewrite remove_all_in, <- (weakest_Weakest cand cand_all cand_fin dec_cand Vm), !weakest_in.
+        split; intros [H1 H2]; split; auto; intros H3; apply H2; destruct H3 as [H3 H4]; split;
+          [apply Hinn; auto | intros r Hr; apply H4, Hinn; auto | apply Hinn; auto | intros r Hr; apply H4, Hinn; auto].
+  Qed.
+
+  Definition check_certificate (cs : list scert) : option (list cand) :=
+    check_rounds (remaining cand cand_all dec_cand default Vm rl)
+                 (initial_defeats cand cand_all dec_cand default Vm rl) cs.
+
+  (* an accepted certificate determines the outcome defined by Appendix A.5 *)
+  Theorem check_certificate_sound cs W :
+    check_certificate cs = Some W -> debian_outcome cand default rl Vm (fun a => In a W).
+  Proof.
+    intros H. apply check_rounds_sound in H. unfold debian_outcome.
+    apply (SSD_ext cand Vm _ _ _ _ (fun x => remaining_in cand cand_all cand_fin dec_cand default Vm rl x) H).
+    - intros [a b]. cbn beta. etransitivity; [apply initial_defeats_in | ].
+      unfold Defeats0, Remaining. simpl. rewrite !remaining_in; auto. reflexivity.
+    - intros a. reflexivity.
+  Qed.
+
+  (* and so agrees with the counter *)
+  Corollary check_certificate_count cs W :
+    check_certificate cs = Some W ->
+    forall a, In a W <-> In a (rep_winners cand (count cand cand_all dec_cand default rl Vm)).
+  Proof.
+    intros H. apply (count_complete cand cand_all cand_fin dec_cand default rl Vm).
+    apply check_certificate_sound with cs. auto.
+  Qed.
+
+End Certificate.

@@ -1,0 +1,61 @@
+# Majority requirement of every option of every counted vote, determined
+# independently of devotee's output: from the "Majority Requirement"
+# section that the secretary writes on each vote page (quoted), or from
+# the Constitution where the page has no such sentence. Leader elections
+# (section 5.2) have no supermajority. Format:
+#   <year>-<vote> <ratio of option 1>,...,<ratio of option m-1> | <source>
+# The default option (option m) has no requirement.
+2004-001 1,1,1 | leader election: no supermajority (Constitution 5.2)
+2004-002 3,1 | Option 1 requires a 3:1 majority, since it modifies the Social contract, a foundation document.
+2004-003 3 | This proposal requires a 3:1 majority, since it modifies the Social contract, a foundation document.
+2004-004 3,3,3,3,3,1 | All proposals, except F, require a 3:1 majority, since they modify either the Social contract, or the Debian Constitution, both foundation documents. Proposal F does not do so, and has a simple 1:1 majority requirement.
+2005-001 1,1,1,1,1,1 | leader election: no supermajority (Constitution 5.2)
+2005-002 1,1 | This proposal, along with the amendments, has a simple majority requirement.
+2006-001 1,1,3 | Since amendment B would require modification of a foundation document, namely, the Social Contract, it requires a 3:1 majority to pass. (Amendment B is choice 3, "[needs 3:1]" on the ballot.)
+2006-002 1,1,1,1,1,1,1 | leader election: no supermajority (Constitution 5.2)
+2006-003 3 | Since general resolution would require modification of a foundation document, namely, the constitution, it requires a 3:1 majority to pass.
+2006-004 1 | All the amendments need simple majority
+2006-005 1 | All the amendments need simple majority
+2006-006 1,1 | All the amendments need simple majority
+2006-007 1,3 | Amendment A (choice 2) requires a 3:1 majority, since it creates a special exception to a foundation document.
+2007-001 1,1,1,1,1,1,1,1 | leader election: no supermajority (Constitution 5.2)
+2007-002 1 | The proposal needs simple majority.
+2007-003 1 | The proposal needs simple majority.
+2007-004 3,3 | Since this proposal and amendment would require modification of a foundation document, namely, the constitution, it requires a 3:1 majority to pass.
+2008-001 1,1,1 | leader election: no supermajority (Constitution 5.2)
+2008-002 1,1,1 | All the amendments need simple majority
+2008-003 1,3,3,3,1,3 | Amendments A (choice 2), B (choice 3), C (choice 4), and E (choice 6) supersede foundation documents, temporarily or permanently, and thus need a 3:1 majority. The Proposal (choice 1) and Amendment D (choice 5) require a simple majority to pass.
+2009-001 1,1 | leader election: no supermajority (Constitution 5.2)
+2010-001 1,1,1,1 | leader election: no supermajority (Constitution 5.2)
+2010-002 1 | The amendment need simple majority
+2011-001 1 | leader election: no supermajority (Constitution 5.2)
+2012-001 1,1,1 | leader election: no supermajority (Constitution 5.2)
+2012-002 1 | The proposal needs simple majority
+2013-001 1,1,1 | leader election: no supermajority (Constitution 5.2)
+2014-001 1,1 | leader election: no supermajority (Constitution 5.2)
+2014-002 1,1 | The proposal needs simple majority
+2014-003 1,1,1,1 | The proposal needs simple majority
+2014-004 3,3 | The proposals need a 3:1 majority
+2015-001 1,1,1 | leader election: no supermajority (Constitution 5.2)
+2015-003 3 | Constitutional amendment ("TC Supermajority Fix"); 3:1 under section 4.1.2 of the Constitution (the page quotes the text but has no requirement sentence).
+2016-001 1 | leader election: no supermajority (Constitution 5.2)
+2016-002 1 | The proposal needs a simple majority
+2016-003 3 | The proposal needs a 3:1 majority
+2016-004 1,1,1 | The proposals need a simple majority
+2017-001 1,1 | leader election: no supermajority (Constitution 5.2)
+2018-001 1 | leader election: no supermajority (Constitution 5.2)
+2019-001 1,1,1,1 | leader election: no supermajority (Constitution 5.2)
+2019-002 1,1,1,1,1,1,1 | The proposals need a simple majority
+2020-001 1,1,1 | leader election: no supermajority (Constitution 5.2)
+2021-001 1,1 | leader election: no supermajority (Constitution 5.2)
+2021-002 1,1,1,1,1,1,1 | The proposals need a simple majority
+2021-003 3,3 | This General Resolution requires a 3:1 majority. (Both options amend the Constitution under section 4.1.2.)
+2022-001 3,3,1 | Proposal 1 and 2 need a 3:1 super majority
+2022-002 1,1,1 | leader election: no supermajority (Constitution 5.2)
+2022-003 1,1,1,1,3,3 | Proposal 5 and 6 need a 3:1 super majority
+2023-001 1 | leader election: no supermajority (Constitution 5.2)
+2023-002 1,1,1 | All proposal need a simple majority.
+2024-001 1,1 | leader election: no supermajority (Constitution 5.2)
+2025-001 1,1,1,1 | leader election: no supermajority (Constitution 5.2)
+2026-001 1 | leader election: no supermajority (Constitution 5.2)
+2026-002 3,1,1,1,1,1,1,1 | Proposal A needs a 3:1 majority, the other proposals need a simple majority.

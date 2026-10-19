@@ -1,8 +1,9 @@
 # debian-votes-rocq
 
 A Rocq formalisation of the Debian vote-counting procedure (Debian Constitution,
-Appendix A.5), an extracted verified counter, and a recount of every published
-Debian vote against the published outcomes.
+Appendix A.5), an extracted verified counter, a recount of every published
+Debian vote, a differential test of devotee (the program Debian counts its
+votes with), and a verified checker for outcome certificates.
 
 ## The specification (Constitution A.5)
 
@@ -12,7 +13,8 @@ Debian vote against the published outcomes.
    where D is the default option and V(A,D) is the number of voters ranking A
    above D.
 3. Majority: a non-default option A with majority ratio N is dropped unless
-   V(A,D) >= N * V(D,A) and V(A,D) > V(D,A).
+   V(A,D) >= N * V(D,A) and V(A,D) > V(D,A). (Until version 1.6 of the
+   Constitution, 13 December 2015: unless V(A,D) > N * V(D,A).)
 4. Among undropped options, A defeats B if V(A,B) > V(B,A).
 5. A transitively defeats C if A defeats C, or A defeats some B that
    transitively defeats C.
@@ -24,38 +26,45 @@ Debian vote against the published outcomes.
 8. Otherwise the options in the Schwartz set win (the elector with the casting
    vote chooses if there are several).
 
-## What is proved (`DebianVote.v`, 60 lemmas, no axioms)
+## What is proved (`DebianVote.v`, 55 definitions, 104 lemmas, no axioms)
 
 | | Rocq |
 |---|---|
 | ballots, `above`, the pairwise matrix `V` (A.5.1, A.5.4) | `above`, `V`, `above_antisym` |
-| quorum and majority (A.5.2, A.5.3) | `passes_quorum`, `passes_majority`, `remaining`, `default_remaining` |
+| quorum (stored exactly as R², since Debian's R = 3√n/2 is irrational) and majority in both versions (A.5.2, A.5.3), as booleans and as propositions | `passes_quorum`, `passes_majority`, `Quorum`, `Majority`, `remaining_in`, `default_remaining` |
 | transitive defeat (A.5.5) as an inductive relation, and a boolean reachability computation proved sound and complete | `TDef`, `tdef`, `tdef_iff` |
 | the Schwartz set (A.5.6), and its nonemptiness | `schwartz`, `schwartz_in`, `schwartz_nonempty` |
 | weakest defeats and dropping (A.5.7); the weakest set is nonempty; dropping shortens the defeat list | `weaker`, `weakest`, `drop_weakest`, `weakest_nonempty`, `drop_weakest_shorter` |
-| steps 5-8 as an inductive specification | `cssd_spec` |
-| the implementation `cssd` satisfies the specification; the specification is functional | `cssd_correct`, `cssd_spec_functional` |
-| the whole procedure: `count` (from a pairwise matrix), `count_ballots` (from ballots) | `count`, `count_spec`, `count_unique` |
+| steps 5-8 on lists, and the implementation `cssd` | `cssd_spec`, `cssd`, `cssd_correct`, `cssd_spec_functional` |
+| **the whole of A.5 as a specification on sets** (no lists, enumeration of options, or fuel) | `SSD`, `debian_outcome` |
+| the counter computes the outcome, and the outcome is unique | `count_correct`, `debian_outcome_unique`, `count_complete` |
 | the default option is never dropped; there is always a winner; winners are remaining options | `count_default`, `count_nonempty`, `count_winners_remaining` |
 | a Condorcet winner among the remaining options is the unique winner | `count_condorcet` |
+| sequential dropping only elects options of the initial Schwartz set | `count_winners_in_schwartz` |
+| a Condorcet loser never wins (unless it is the only remaining option) | `count_condorcet_loser` |
+| the winners do not depend on the order in which the options are listed | `count_order_independent` |
+| an accepted certificate determines the outcome | `check_certificate_sound`, `check_certificate_count` |
 
 `Print Assumptions` reports every theorem as closed under the global context.
 
 ## Building and running
 
-Tested with Rocq 9.0.1 and OCaml 5.2.1.
+First developed with Rocq 9.0.1 and OCaml 5.2.1; the current version is
+checked with Rocq 9.3.0 and OCaml 4.14.2.
 
     make
-    ./devote_main data/debian.org/vote/2019/vote_002_tally.txt 48 1 1,1,1,1,1,1,1,1
+    ./devote_main data/debian.org/vote/2019/vote_002_tally.txt 1011 1,1,1,1,1,1,1
 
-`make` checks the proofs, extracts `devote.ml`, and builds three OCaml programs
-against it: `devote_main`, `recount` and `random_cycles`. Everything is OCaml;
-there is no other runtime.
+`make` checks the proofs, extracts `devote.ml`, and builds five OCaml programs
+against it: `devote_main`, `recount`, `random_cycles`, `devotee_diff` and
+`certify`. Everything is OCaml (and Perl, to run devotee); there is no other
+runtime.
 
 The driver reads a Debian tally sheet (`V: <ranks> <hmac>` lines; the default
-option is the last column), the quorum R as a fraction, and the majority ratio
-of each option, and prints the beat matrix, the dropped options, the pairwise
-defeats and the winners.
+option is the last column), the number of developers (the quorum is
+R = 3√n/2), the majority ratio of each option, and optionally `strict` for the
+majority rule before 2016; it prints the beat matrix, the dropped options, the
+pairwise defeats and the winners.
 
 ## Data
 
@@ -66,54 +75,96 @@ https://www.debian.org/vote/ into `data/debian.org/vote/<year>/`.
 
 ## Recounting every vote
 
-    make recount        # or ./recount [--verbose]
+    ./recount [--verbose] [--devotee-batch <file>]
 
-runs the verified counter (linked in directly, not through the command line)
-on every tally sheet under `data/` with the quorum and majority ratios stated
-on the published outcome page, and compares the
-beat matrix, the dropped options, the pairwise defeats and the winners with the
-published outcome. It writes `recount_summary.json` (one record per vote) and
+runs the verified counter on every tally sheet with rules determined
+independently of devotee's output:
+
+- the quorum from the number of developers stated on the vote page;
+- the majority ratio of every option from `data/majority_requirements.txt`,
+  which quotes the secretary's "Majority Requirement" section of each page;
+- the majority rule in force (strict before 2016).
+
+It compares the beat matrix, devotee's quorum and ratios, the dropped options,
+the pairwise defeats, the Schwartz set and the winners with the published
+outcome. A field that cannot be compared is an error unless `not_compared`
+lists it with a reason; a published record that contradicts itself is listed
+in `record_inconsistent`. It writes `recount_summary.json` and
 `recount_table.md`.
 
 Result (October 2026): 59 vote pages, 2004 to 2026; 5 were withdrawn before a
 ballot; all 54 that went to a ballot (24 DPL elections, 30 general
-resolutions, 18,477 ballots) agree with the published outcome. One page
-(2004-004, the sarge release GR) is truncated on debian.org after the first
-`<` of the majority section; the verified recount reproduces everything the
-page still shows. The 2004-002 page loses the `< 3` of its one majority line
-the same way; the ratio (3:1 for option 1) is taken from the page's prose.
+resolutions, 18,477 ballots) agree with the published outcome. The matrix and
+the winners are compared for all 54 votes; the dropped options, defeats and
+ratios for 53; the Schwartz set for 49 (four early pages do not list it). The
+2004-004 page is truncated after the first `<` of devotee's majority section.
+In 2006-002, 2018-001 and 2023-002 devotee applied the quorum for a different
+number of developers than the page states (984, 882, 949 against 972, 1001,
+1004); no option was near either threshold.
 
-Findings from the recount:
+## Differential test of devotee
 
-- 30 options were dropped by the majority requirement, none by quorum.
-- The Schwartz set was a singleton with no internal defeat in every vote, so
-  step 7 (dropping the weakest defeats) has never run on a real Debian vote.
-  Every winner was a Condorcet winner among the remaining options.
-- The closest supermajority decision was 2022-001 option 2: 185 votes for and
-  183 needed (61 against, ratio 3:1).
+    sh scripts/fetch_devotee.sh     # devotee at a pinned commit, into devotee/src
+    sh devotee/run_variants.sh      # about five minutes; writes devotee/results.txt
+
+`devotee/run_devotee.pl` runs devotee's counting routine (`winner` in
+`dvt-rslt`) unmodified on batches of profiles; `devotee_diff` compares it with
+the verified counter, and with the Schulze beatpath winners as a third opinion.
+On the 54 real votes devotee and the counter agree. On random profiles they do
+not, because of three defects in devotee, each removed by one patch in
+`devotee/patches/`:
+
+- `fix-closure.patch`: the transitive defeats are computed only in the first
+  round of step 7 (a flag is never reset), so from the second round on the
+  Schwartz set is computed from direct defeats only. Every profile that needs
+  two or more rounds is miscounted, usually with no winner at all.
+- `fix-weakest.patch`: when two defeats have equal winning votes, a stronger
+  one (fewer losing votes) met later is added to the weakest defeats and
+  dropped as well.
+- `fix-majority.patch`: an option with V(A,D) = V(D,A) passes the majority
+  requirement, which since 2016 requires V(A,D) > V(D,A).
+
+With all three patches devotee agrees with the counter on all 40,000 random
+profiles. None of the defects affected a real vote: step 7 has never run, and
+no option has ever had V(A,D) = V(D,A).
 
 ## Random cross-check
 
     ./random_cycles 20000 7
 
-generates random profiles with few voters and many options so that cycles are
-common, and checks that the winners of the verified counter coincide with the
-winners of the Schulze beatpath method (winning-votes strength, losing-votes
-tiebreak), as the two are known to be equivalent. With 20,000 profiles and seed
-7: 337 profiles entered the step 7 loop (at most 4 rounds), 1,819 produced tied
-winners, and all 20,000 agree. The beatpath computation shares no code with the
-extracted counter.
+checks that the winners of the verified counter coincide with the Schulze
+beatpath winners (winning-votes strength, losing-votes tiebreak) on random
+profiles with frequent cycles. With 20,000 profiles and seed 7 (OCaml 4.14;
+the random generator of OCaml 5 differs): 345 profiles entered step 7, at most
+4 rounds, 1,763 produced tied winners, and all 20,000 agree.
+
+## Certificates
+
+    ./certify make  <tally> <developers> <ratios> <strict 0|1>  > vote.cert
+    ./certify check <tally> <developers> <ratios> <strict 0|1> vote.cert
+
+A certificate names, for every round of step 7, the Schwartz set, a path of
+defeats from it to every other remaining option, and for each member a root
+with paths to and from it. The verified checker (`check_certificate`, extracted)
+checks these paths and performs the dropping itself; it never computes a
+transitive closure. `certificates/` holds the certificates of all 54 votes.
+`./certify test-real <batch>` and `./certify test-random 20000 7` check that
+every certificate is accepted and that corrupted certificates are rejected or
+still establish the correct winners.
 
 ## Layout
 
 | | |
 |---|---|
 | `DebianVote.v` | the formalisation |
-| `Extraction.v` | extraction of `count`, `count_ballots` and helpers to `devote.ml` |
-| `tally.ml` | reads a tally sheet and runs the extracted counter on it |
+| `Extraction.v` | extraction of the counter and the certificate checker to `devote.ml` |
+| `tally.ml` | tally sheets, the counting context, the certificate producer |
 | `devote_main.ml` | the command-line driver |
 | `recount.ml` | recount and compare with the published outcomes |
+| `data/majority_requirements.txt` | the majority requirement of every option |
 | `random_cycles.ml` | random cross-check against the beatpath method |
-| `scripts/fetch_debian_votes.sh` | mirror the vote pages and tally sheets |
-| `recount_summary.json`, `recount_table.md` | results of the recount |
+| `devotee_diff.ml`, `devotee/` | differential test of devotee |
+| `certify.ml`, `certificates/` | certificates |
+| `scripts/` | download the vote pages and devotee |
+| `recount_summary.json`, `recount_table.md`, `devotee/results.txt` | results |
 | `test/` | small hand-made tally sheets |

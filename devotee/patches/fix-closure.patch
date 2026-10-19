@@ -1,0 +1,10 @@
+--- a/dvt-rslt
++++ b/dvt-rslt
+@@ -441,6 +441,7 @@
+   my @Schwartz;
+   # Ok, here is what we are here for.
+   while (1) {
++    $done = 0;                  # recompute the transitive defeats every round
+ 
+     # From the list of [undropped] pairwise defeats, we generate a set of
+     # transitive defeats.

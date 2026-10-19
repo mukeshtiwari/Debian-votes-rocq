@@ -1,0 +1,184 @@
+devotee f5b727c 2023-12-27; N=20000 SEED=7
+
+######## devotee all, mode random
+random: 20000 profiles; verified counter entered step 7 in 345 (more than one round in 34)
+agree 20000; disagree 0; devotee produced no result 0
+beatpath winners: equal to the verified counter's in 20000, to devotee's in 20000
+
+######## devotee all, mode random-last
+random, default last: 20000 profiles; verified counter entered step 7 in 1069 (more than one round in 183)
+agree 20000; disagree 0; devotee produced no result 0
+beatpath winners: equal to the verified counter's in 20000, to devotee's in 20000
+
+######## devotee all, mode real
+real votes: 54 profiles; verified counter entered step 7 in 0 (more than one round in 0)
+agree 54; disagree 0; devotee produced no result 0
+beatpath winners: equal to the verified counter's in 54, to devotee's in 54
+
+######## devotee closure+weakest, mode random
+random: 20000 profiles; verified counter entered step 7 in 345 (more than one round in 34)
+agree 11776; disagree 8224; devotee produced no result 0
+beatpath winners: equal to the verified counter's in 20000, to devotee's in 16225
+   8224  steps 2-3: V(A,D) = V(D,A), devotee keeps A
+
+[steps 2-3: V(A,D) = V(D,A), devotee keeps A] profile 1, 6 options (default 6), ballots: 415632 -44213 1-4323 -1--12 3214--
+  verified: dropped 1 3 4 schwartz0 2 5 rounds 0 winners 2 5
+  devotee:  dropped 1 3 schwartz0 2 5 rounds 0 winners 2 5
+  beatpath winners 2 5
+
+[steps 2-3: V(A,D) = V(D,A), devotee keeps A] profile 10015, 7 options (default 7), ballots: 3241522 2143576 -12453- 2--314- -223113
+  verified: dropped 1 schwartz0 2 rounds 0 winners 2
+  devotee:  dropped schwartz0 2 rounds 0 winners 2
+  beatpath winners 2
+
+######## devotee closure+weakest, mode random-last
+random, default last: 20000 profiles; verified counter entered step 7 in 1069 (more than one round in 183)
+agree 20000; disagree 0; devotee produced no result 0
+beatpath winners: equal to the verified counter's in 20000, to devotee's in 20000
+
+######## devotee closure, mode random-last
+random, default last: 20000 profiles; verified counter entered step 7 in 1069 (more than one round in 183)
+agree 19716; disagree 284; devotee produced no result 0
+beatpath winners: equal to the verified counter's in 20000, to devotee's in 19716
+    280  steps 5-8: devotee's winners a strict superset
+      1  steps 5-8: other difference
+      3  steps 5-8: devotee's winners a strict subset
+
+[steps 5-8: devotee's winners a strict superset] profile 10220, 6 options (default 6), ballots: 412339 123549 233119 331429 345129
+  verified: dropped schwartz0 1 2 3 4 5 rounds 2 winners 4 5
+  devotee:  dropped schwartz0 1 2 3 4 5 rounds 2 winners 3 4 5
+  beatpath winners 4 5
+
+[steps 5-8: devotee's winners a strict superset] profile 10662, 7 options (default 7), ballots: 2435219 5412639 1354529 4321539 4132539
+  verified: dropped schwartz0 2 3 4 6 rounds 1 winners 3 4 6
+  devotee:  dropped schwartz0 2 3 4 6 rounds 1 winners 2 3 4 6
+  beatpath winners 3 4 6
+
+[steps 5-8: devotee's winners a strict subset] profile 13289, 7 options (default 7), ballots: 4235149 3234159 4165329 5641239 5431219 2413529 1424439 2412439 2431259
+  verified: dropped schwartz0 1 3 4 5 6 rounds 3 winners 1 4 5
+  devotee:  dropped schwartz0 1 3 4 5 6 rounds 2 winners 5
+  beatpath winners 1 4 5
+
+[steps 5-8: devotee's winners a strict subset] profile 16859, 6 options (default 6), ballots: 234519 251349 351249 314229 312329 314129 123449 222139 342219
+  verified: dropped schwartz0 1 2 3 4 5 rounds 3 winners 1 2 3 4 5
+  devotee:  dropped schwartz0 1 2 3 4 5 rounds 2 winners 1 4 5
+  beatpath winners 1 2 3 4 5
+
+[steps 5-8: other difference] profile 7800, 6 options (default 6), ballots: 342149 112349 352149 143229 352149 514239 241349 321449 222319 314329 113329
+  verified: dropped schwartz0 1 2 3 4 rounds 3 winners 1 3 4
+  devotee:  dropped schwartz0 1 2 3 4 rounds 2 winners 1 2 3
+  beatpath winners 1 3 4
+
+######## devotee unmodified, mode random
+random: 20000 profiles; verified counter entered step 7 in 345 (more than one round in 34)
+agree 11707; disagree 8293; devotee produced no result 0
+beatpath winners: equal to the verified counter's in 20000, to devotee's in 16118
+     44  steps 5-8: devotee's winners a strict superset
+   8224  steps 2-3: V(A,D) = V(D,A), devotee keeps A
+     25  steps 5-8: devotee declares no winner
+
+[steps 2-3: V(A,D) = V(D,A), devotee keeps A] profile 1, 6 options (default 6), ballots: 415632 -44213 1-4323 -1--12 3214--
+  verified: dropped 1 3 4 schwartz0 2 5 rounds 0 winners 2 5
+  devotee:  dropped 1 3 schwartz0 2 5 rounds 0 winners 2 5
+  beatpath winners 2 5
+
+[steps 2-3: V(A,D) = V(D,A), devotee keeps A] profile 10015, 7 options (default 7), ballots: 3241522 2143576 -12453- 2--314- -223113
+  verified: dropped 1 schwartz0 2 rounds 0 winners 2
+  devotee:  dropped schwartz0 2 rounds 0 winners 2
+  beatpath winners 2
+
+[steps 5-8: devotee's winners a strict superset] profile 13279, 6 options (default 6), ballots: 41-323 22311- 153424 1-2534 2-3133
+  verified: dropped 2 schwartz0 1 4 5 rounds 1 winners 1 5
+  devotee:  dropped 2 schwartz0 1 4 5 rounds 1 winners 1 4 5
+  beatpath winners 1 5
+
+[steps 5-8: devotee's winners a strict superset] profile 16072, 7 options (default 7), ballots: 2-12132 41-23-3 45413-2 134-2-5 -123-4-
+  verified: dropped 1 6 schwartz0 2 3 4 5 rounds 1 winners 2 4 5
+  devotee:  dropped 1 6 schwartz0 2 3 4 5 rounds 1 winners 2 3 4 5
+  beatpath winners 2 4 5
+
+[steps 5-8: devotee declares no winner] profile 1721, 6 options (default 6), ballots: 341-2- 123-21 13-123 412513 321343
+  verified: dropped 4 schwartz0 1 2 3 5 rounds 2 winners 1 2 3 5
+  devotee:  dropped 4 schwartz0 1 2 3 5 rounds 1 winners
+  beatpath winners 1 2 3 5
+
+[steps 5-8: devotee declares no winner] profile 3884, 6 options (default 6), ballots: -32421 421-35 136425 3121-- 243135
+  verified: dropped schwartz0 1 2 3 4 5 rounds 2 winners 1 2 3 5
+  devotee:  dropped schwartz0 1 2 3 4 5 rounds 1 winners
+  beatpath winners 1 2 3 5
+
+######## devotee unmodified, mode random-last
+random, default last: 20000 profiles; verified counter entered step 7 in 1069 (more than one round in 183)
+agree 19620; disagree 380; devotee produced no result 0
+beatpath winners: equal to the verified counter's in 20000, to devotee's in 19620
+    209  steps 5-8: devotee's winners a strict superset
+      1  steps 5-8: other difference
+      2  steps 5-8: devotee's winners a strict subset
+    168  steps 5-8: devotee declares no winner
+
+[steps 5-8: devotee declares no winner] profile 10220, 6 options (default 6), ballots: 412339 123549 233119 331429 345129
+  verified: dropped schwartz0 1 2 3 4 5 rounds 2 winners 4 5
+  devotee:  dropped schwartz0 1 2 3 4 5 rounds 1 winners
+  beatpath winners 4 5
+
+[steps 5-8: devotee's winners a strict superset] profile 10662, 7 options (default 7), ballots: 2435219 5412639 1354529 4321539 4132539
+  verified: dropped schwartz0 2 3 4 6 rounds 1 winners 3 4 6
+  devotee:  dropped schwartz0 2 3 4 6 rounds 1 winners 2 3 4 6
+  beatpath winners 3 4 6
+
+[steps 5-8: devotee declares no winner] profile 11137, 6 options (default 6), ballots: 321439 243159 213449 432119 135429
+  verified: dropped schwartz0 1 2 3 4 5 rounds 2 winners 1 2 3 4
+  devotee:  dropped schwartz0 1 2 3 4 5 rounds 1 winners
+  beatpath winners 1 2 3 4
+
+[steps 5-8: devotee's winners a strict superset] profile 11774, 6 options (default 6), ballots: 213349 121129 235419 434129 432519
+  verified: dropped schwartz0 1 2 4 5 rounds 1 winners 1 5
+  devotee:  dropped schwartz0 1 2 4 5 rounds 1 winners 1 2 4 5
+  beatpath winners 1 5
+
+[steps 5-8: devotee's winners a strict subset] profile 16529, 6 options (default 6), ballots: 135249 241439 331229 223139 423519 435129 212329 321349 234129
+  verified: dropped schwartz0 1 2 3 4 5 rounds 2 winners 1 4
+  devotee:  dropped schwartz0 1 2 3 4 5 rounds 1 winners 1
+  beatpath winners 1 4
+
+[steps 5-8: other difference] profile 3674, 5 options (default 5), ballots: 21329 31429 12119 23149 41329 24319 12119 34219 22139 31429
+  verified: dropped schwartz0 1 2 3 4 rounds 2 winners 2 4
+  devotee:  dropped schwartz0 1 2 3 4 rounds 1 winners 1
+  beatpath winners 2 4
+
+[steps 5-8: devotee's winners a strict subset] profile 301, 7 options (default 7), ballots: 6245319 3512649 4316259 2312329 3113429 3231429 1355429 2463159 6534219 1236459 4421359 5142319 2651439 1254639
+  verified: dropped schwartz0 1 2 3 4 6 rounds 3 winners 2 3
+  devotee:  dropped schwartz0 1 2 3 4 6 rounds 1 winners 2
+  beatpath winners 2 3
+
+######## devotee unmodified, mode real
+real votes: 54 profiles; verified counter entered step 7 in 0 (more than one round in 0)
+agree 54; disagree 0; devotee produced no result 0
+beatpath winners: equal to the verified counter's in 54, to devotee's in 54
+
+######## devotee weakest, mode random-last
+random, default last: 20000 profiles; verified counter entered step 7 in 1069 (more than one round in 183)
+agree 19817; disagree 183; devotee produced no result 0
+beatpath winners: equal to the verified counter's in 20000, to devotee's in 19817
+      3  steps 5-8: devotee's winners a strict subset
+    180  steps 5-8: devotee declares no winner
+
+[steps 5-8: devotee declares no winner] profile 10220, 6 options (default 6), ballots: 412339 123549 233119 331429 345129
+  verified: dropped schwartz0 1 2 3 4 5 rounds 2 winners 4 5
+  devotee:  dropped schwartz0 1 2 3 4 5 rounds 1 winners
+  beatpath winners 4 5
+
+[steps 5-8: devotee declares no winner] profile 11137, 6 options (default 6), ballots: 321439 243159 213449 432119 135429
+  verified: dropped schwartz0 1 2 3 4 5 rounds 2 winners 1 2 3 4
+  devotee:  dropped schwartz0 1 2 3 4 5 rounds 1 winners
+  beatpath winners 1 2 3 4
+
+[steps 5-8: devotee's winners a strict subset] profile 16529, 6 options (default 6), ballots: 135249 241439 331229 223139 423519 435129 212329 321349 234129
+  verified: dropped schwartz0 1 2 3 4 5 rounds 2 winners 1 4
+  devotee:  dropped schwartz0 1 2 3 4 5 rounds 1 winners 1
+  beatpath winners 1 4
+
+[steps 5-8: devotee's winners a strict subset] profile 301, 7 options (default 7), ballots: 6245319 3512649 4316259 2312329 3113429 3231429 1355429 2463159 6534219 1236459 4421359 5142319 2651439 1254639
+  verified: dropped schwartz0 1 2 3 4 6 rounds 3 winners 2 3
+  devotee:  dropped schwartz0 1 2 3 4 6 rounds 1 winners 2
+  beatpath winners 2 3

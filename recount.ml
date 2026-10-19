@@ -6,11 +6,18 @@
         else from the HTML page): options, beat matrix, quorum threshold,
         per-option majority ratio and decision, pairwise defeats, Schwartz set,
         winners;
-     2. runs the extracted counter on the tally sheet with the published quorum
-        and majority ratios;
-     3. compares beat matrix, dropped options, defeats and winners.
-   Writes recount_summary.json and recount_table.md.
-   Usage: recount [--verbose] *)
+     2. runs the extracted counter on the tally sheet with rules determined
+        independently of devotee's output: the quorum R = 3 sqrt(n) / 2 from
+        the number n of developers stated on the page (exactly, as R^2 = 9n/4),
+        the majority ratios from data/majority_requirements.txt, and the
+        majority rule of the Constitution in force (strict before 2016);
+     3. compares the beat matrix, devotee's quorum and ratios, the dropped
+        options, the defeats, the Schwartz set and the winners. A field that
+        cannot be compared must be listed, with its reason, in not_compared.
+   Writes recount_summary.json and recount_table.md. With --devotee-batch
+   <file>, also writes every counted vote, with its published quorum and
+   ratios, as a batch for devotee/run_devotee.pl (see devotee_diff.ml).
+   Usage: recount [--verbose] [--devotee-batch <file>] *)
 
 let root = Filename.dirname Sys.executable_name
 let data = Filename.concat root "data/debian.org/vote"
@@ -32,11 +39,30 @@ let tally_name year vid =
    from the first '<' of the devotee output is missing). The second component
    says whether the loss also removed the published dropping decisions, so that
    the set of dropped options cannot be compared. *)
-let ratio_override year vid =
+(* Fields of the published outcome that cannot be compared, with the reason.
+   Every other field must be compared, or the vote is reported as NOT
+   COMPARED. *)
+let not_compared year vid =
+  let truncated = "the page is truncated after the first '<' of devotee's majority section" in
+  let no_schwartz = "the page does not list the Schwartz set" in
   match year, vid with
-  | "2004", "vote_002" -> Some ([1, 3], false)
-  | "2004", "vote_004" -> Some ([1, 3; 2, 3; 3, 3; 4, 3; 5, 3; 6, 1], true)
-  | _ -> None
+  | "2004", "vote_001" | "2004", "vote_003" | "2005", "vote_001" -> ["schwartz", no_schwartz]
+  | "2004", "vote_002" ->
+    ["schwartz", no_schwartz;
+     "ratios", "devotee's '<=' is unescaped in the HTML page and lost as a tag"]
+  | "2004", "vote_004" -> ["dropped", truncated; "defeats", truncated; "schwartz", truncated]
+  | _ -> []
+
+(* Fields in which the published record contradicts itself, with the
+   explanation. They are reported, not counted as recount mismatches. *)
+let record_inconsistent year vid =
+  let quorum stated used = Printf.sprintf
+      "devotee applied the quorum for %d developers, the page states %d" used stated in
+  match year, vid with
+  | "2006", "vote_002" -> ["quorum", quorum 972 984]
+  | "2018", "vote_001" -> ["quorum", quorum 1001 882]
+  | "2023", "vote_002" -> ["quorum", quorum 1004 949]
+  | _ -> []
 
 (* ---------- text utilities ---------- *)
 
@@ -96,6 +122,31 @@ let text_of path =
 
 let is_digits t = t <> "" && String.for_all (fun c -> c >= '0' && c <= '9') t
 let is_space c = c = ' ' || c = '\t' || c = '\n' || c = '\r'
+
+(* ---------- the rules of each vote ---------- *)
+
+(* data/majority_requirements.txt: "<year>-<vote> r1,...,r(m-1) | source" *)
+let requirements =
+  let t = Hashtbl.create 64 in
+  let ic = open_in (Filename.concat root "data/majority_requirements.txt") in
+  (try
+     while true do
+       let l = input_line ic in
+       if l <> "" && l.[0] <> '#' then
+         match String.split_on_char ' ' l with
+         | key :: rs :: _ -> Hashtbl.replace t key (List.map int_of_string (String.split_on_char ',' rs))
+         | _ -> ()
+     done
+   with End_of_file -> ());
+  close_in ic; t
+
+(* the number of developers that the vote page states *)
+let developer_count page =
+  let s = String.lowercase_ascii (read_file page) in
+  try
+    ignore (Str.search_forward (Str.regexp "current developer count = *\\([0-9]+\\)") s 0);
+    int_of_string (Str.matched_group 1 s)
+  with Not_found -> failwith ("no developer count on " ^ page)
 
 (* ---------- the published outcome ---------- *)
 
@@ -237,15 +288,6 @@ let merge a b =
     defeats = l a.defeats b.defeats; schwartz = l a.schwartz b.schwartz;
     winners = l a.winners b.winners }
 
-(* the quorum threshold as an exact fraction *)
-let fraction_of s =
-  match String.index_opt s '.' with
-  | None -> (int_of_string s, 1)
-  | Some i ->
-    let frac = sub_from s (i + 1) in
-    let den = int_of_float (10. ** float_of_int (String.length frac)) in
-    (int_of_string (String.sub s 0 i ^ frac), den)
-
 (* ---------- output ---------- *)
 
 let json_string s =
@@ -277,6 +319,10 @@ let page_title page =
 
 let () =
   let verbose = Array.exists (fun a -> a = "--verbose") Sys.argv in
+  let batch =
+    let rec go i = if i + 1 >= Array.length Sys.argv then None
+      else if Sys.argv.(i) = "--devotee-batch" then Some (open_out Sys.argv.(i + 1)) else go (i + 1) in
+    go 1 in
   let years = List.sort compare (List.filter (fun d -> Sys.is_directory (Filename.concat data d))
                                    (Array.to_list (Sys.readdir data))) in
   let is_vote f = Str.string_match (Str.regexp "^vote_[0-9][0-9][0-9][0-9]?$") f 0 in
@@ -298,54 +344,95 @@ let () =
           end else begin
             let pub = parse_outcome (text_of src) in
             let pub = if pub.beat = None && src <> page then merge pub (parse_outcome (text_of page)) else pub in
-            let pub, from_prose = match ratio_override year vid with
-              | Some (rs, incomplete) -> ({ pub with ratios = rs }, incomplete) | None -> (pub, false) in
+            let key = Printf.sprintf "%s-%s" year (String.sub vid 5 (String.length vid - 5)) in
             let m = match pub.beat with
               | Some bm -> Array.length bm
               | None -> List.fold_left (fun a (i, _) -> max a i) 0 pub.options in
             if m = 0 then row.status <- "could not parse outcome"
             else begin
-              let qn, qd = match pub.quorum with Some q -> fraction_of q | None -> (0, 1) in
-              let res = Tally.count_file tally qn qd pub.ratios in
+              (* the rules, independently of devotee's output: the quorum from the
+                 published number of developers, the majority ratios from
+                 data/majority_requirements.txt, the majority rule by date *)
+              let ndev = developer_count page in
+              let ratios = match Hashtbl.find_opt requirements key with
+                | Some rs when List.length rs = m - 1 -> List.mapi (fun i r -> (i + 1, r)) rs
+                | _ -> failwith ("no majority requirement for " ^ key) in
+              let strict = int_of_string year <= 2015 in
+              let res = Tally.count_file ~strict tally (9 * ndev) 4 ratios in
+              Option.iter (fun oc ->
+                  Printf.fprintf oc "P %s %d %s %s %d\n" key m
+                    (match pub.quorum with Some q -> q | None -> "0")
+                    (String.concat "," (List.map (fun (_, r) -> string_of_int r) ratios)) ndev;
+                  List.iter (fun b -> output_string oc (b ^ "\n")) (Tally.read_ballots tally);
+                  output_string oc "E\n") batch;
               let res_beat = Array.map Array.copy res.beat in
               let rem = res.remaining in
               let check_beat = match pub.beat with
                 | Some bm -> Some (bm = res_beat && Array.length bm = res.m) | None -> None in
+              (* devotee's published quorum against 3 sqrt(n) / 2 *)
+              let check_quorum = match pub.quorum with
+                | Some q -> Some (Float.abs (float_of_string q -. 1.5 *. sqrt (float_of_int ndev)) < 1e-6)
+                | None -> None in
+              (* the published ratios, where devotee printed them, against ours *)
+              let check_ratios =
+                if pub.ratios = [] then None
+                else Some (List.for_all (fun (i, r) -> List.assoc_opt i ratios = Some r) pub.ratios) in
               let pub_dropped = sorted_unique (pub.maj_dropped @ pub.quorum_dropped) in
-              let check_dropped =
-                if from_prose then None  (* the published per-option decisions are truncated *)
-                else Some (pub_dropped = sorted_unique res.dropped) in
+              let check_dropped = Some (pub_dropped = sorted_unique res.dropped) in
               let pub_def_rem = List.filter (fun (a, b) -> List.mem a rem && List.mem b rem) pub.defeats in
               let check_defeats =
-                if pub.defeats = [] then None
-                else Some (pub_def_rem = sorted_unique res.defeats) in
+                if pub.defeats <> [] then Some (pub_def_rem = sorted_unique res.defeats)
+                else if List.length rem <= 1 then Some (res.defeats = [])  (* nothing to defeat *)
+                else None in
+              let check_schwartz =
+                if pub.schwartz = [] then None else Some (pub.schwartz = sorted_unique res.schwartz0) in
               let check_winners =
                 if pub.winners = [] then None else Some (pub.winners = sorted_unique res.winners) in
-              let checks = [check_beat; check_dropped; check_defeats; check_winners] in
-              let ok = List.for_all (fun c -> c <> Some false) checks in
-              row.status <- (if not ok then "MISMATCH"
-                             else if from_prose then "OK (published record incomplete)" else "OK");
+              let checks = ["matrix", check_beat; "quorum", check_quorum; "ratios", check_ratios;
+                            "dropped", check_dropped; "defeats", check_defeats;
+                            "schwartz", check_schwartz; "winners", check_winners] in
+              (* a field that is not compared is an error unless it is listed,
+                 with the reason, in not_compared *)
+              let excused = not_compared year vid and inconsistent = record_inconsistent year vid in
+              let checks = List.map (fun (f, c) -> (f, if List.mem_assoc f excused then None else c)) checks in
+              let failed = List.filter_map (fun (f, c) ->
+                  if c = Some false && not (List.mem_assoc f inconsistent) then Some f else None) checks in
+              let missing = List.filter_map (fun (f, c) -> if c = None && not (List.mem_assoc f excused)
+                                                then Some f else None) checks in
+              (* an explanation that is not needed is an error too *)
+              let stale = List.filter (fun (f, _) -> List.assoc_opt f checks <> Some (Some false)) inconsistent in
+              row.status <- (if failed <> [] then "MISMATCH in " ^ String.concat ", " failed
+                             else if missing <> [] then "NOT COMPARED: " ^ String.concat ", " missing
+                             else if stale <> [] then "STALE EXCEPTION: " ^ String.concat ", " (List.map fst stale)
+                             else if inconsistent <> [] then "OK (published record inconsistent: "
+                                                             ^ String.concat ", " (List.map fst inconsistent) ^ ")"
+                             else if excused <> [] then "OK (published record incomplete)" else "OK");
               row.title <- page_title page; row.ballots <- res.n_ballots; row.options <- m;
               row.dropped <- res.dropped; row.winner <- res.winners;
               row.fields <- [
                 "title", json_string row.title;
                 "ballots", string_of_int res.n_ballots;
                 "options", string_of_int m;
+                "developers", string_of_int ndev;
                 "quorum", (match pub.quorum with Some q -> json_string q | None -> "null");
+                "majority_rule", json_string (if strict then "v1.0-1.5: V(A,D) > N V(D,A)"
+                                              else "v1.6+: V(A,D) >= N V(D,A) and V(A,D) > V(D,A)");
                 "ratios", "{" ^ String.concat ", " (List.map (fun (i, r) ->
+                    Printf.sprintf "\"%d\": %d" i r) ratios) ^ "}";
+                "ratios_pub", "{" ^ String.concat ", " (List.map (fun (i, r) ->
                     Printf.sprintf "\"%d\": %d" i r) (List.sort compare pub.ratios)) ^ "}";
-                "ratios_from_prose", string_of_bool from_prose;
                 "dropped", json_ints res.dropped;
                 "winner_pub", (if pub.winners = [] then "null" else json_ints pub.winners);
-                "winner_ours", json_ints res.winners;
-                "check_beat", json_check check_beat;
-                "check_dropped", json_check check_dropped;
-                "check_defeats", json_check check_defeats;
-                "check_winners", json_check check_winners;
-                "defeats_listed_for_dropped", string_of_bool (List.length pub.defeats > List.length pub_def_rem);
-                "rounds", string_of_int res.rounds;
-                "schwartz0", json_ints res.schwartz0;
-                "schwartz_pub", json_ints pub.schwartz ]
+                "winner_ours", json_ints res.winners ]
+                @ List.map (fun (f, c) -> ("check_" ^ f, json_check c)) checks
+                @ [ "not_compared", "{" ^ String.concat ", " (List.map (fun (f, why) ->
+                      json_string f ^ ": " ^ json_string why) excused) ^ "}";
+                    "record_inconsistent", "{" ^ String.concat ", " (List.map (fun (f, why) ->
+                      json_string f ^ ": " ^ json_string why) inconsistent) ^ "}";
+                    "defeats_listed_for_dropped", string_of_bool (List.length pub.defeats > List.length pub_def_rem);
+                    "rounds", string_of_int res.rounds;
+                    "schwartz0", json_ints res.schwartz0;
+                    "schwartz_pub", json_ints pub.schwartz ]
             end
           end;
           if verbose || not (String.length row.status >= 2 && String.sub row.status 0 2 = "OK") then
@@ -374,4 +461,5 @@ let () =
           r.ballots r.options
           (if r.dropped = [] then "-" else String.trim (Tally.ints r.dropped))
           (String.trim (Tally.ints r.winner)) r.status) rows;
-  close_out oc
+  close_out oc;
+  Option.iter close_out batch

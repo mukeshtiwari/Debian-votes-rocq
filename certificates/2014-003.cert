@@ -1,0 +1,8 @@
+round
+schwartz 4
+out 1 : 4 1
+out 2 : 4 2
+out 3 : 4 3
+out 5 : 4 5
+in 4 root 4 : 4 | 4
+end

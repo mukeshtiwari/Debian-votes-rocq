@@ -1,0 +1,9 @@
+round
+schwartz 7
+out 1 : 7 1
+out 2 : 7 2
+out 3 : 7 3
+out 4 : 7 4
+out 8 : 7 8
+in 7 root 7 : 7 | 7
+end

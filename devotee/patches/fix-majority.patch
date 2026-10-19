@@ -1,0 +1,18 @@
+--- a/dvt-rslt
++++ b/dvt-rslt
+@@ -348,6 +348,15 @@
+   print MJRT_OUT "              <h3>Majority</h3>\n";
+   print MJRT_OUT "              <ul>\n";
+   foreach my $i (0..($max_choices - 2)) {
++    # Constitution A.5.3 (since v1.6): A is dropped unless V(A,D) >= N * V(D,A)
++    # and V(A,D) > V(D,A); the ratio test below only checks the first
++    if (!$Drop{$i} &&
++        !($Beat_Matrix[$i][$max_choices - 1] > $Beat_Matrix[$max_choices - 1][$i])) {
++      $Drop{$i}++;
++      print RESULTS "Dropping Option ", &encode_base36($i + 1),
++        " because of Majority. (not strictly above the default)\n";
++      next;
++    }
+     next unless $Beat_Matrix[$max_choices - 1][$i];
+     next if $Drop{$i};
+ 

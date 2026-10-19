@@ -1,0 +1,29 @@
+--- a/dvt-rslt
++++ b/dvt-rslt
+@@ -577,7 +577,7 @@
+               $Weakest{$weak_count}{'Winner'}  = $i;
+               $Weakest{$weak_count}{'Loser'}   = $j;
+               $weak_count++;
+-            } else {
++            } elsif ($Weakest{0}{'against'} == $Defeats{$i}{$j}{'against'}) {
+               $Weakest{$weak_count}{'for'}     = $Defeats{$i}{$j}{'for'};
+               $Weakest{$weak_count}{'against'} = $Defeats{$i}{$j}{'against'};
+               $Weakest{$weak_count}{'Winner'}  = $i;
+@@ -601,7 +601,7 @@
+             $Weakest{$weak_count}{'Winner'}  = $j;
+             $Weakest{$weak_count}{'Loser'}   = $i;
+             $weak_count++;
+-          } elsif ($Weakest{0}{'Low'} == $Defeats{$j}{$i}{'for'}) {
++          } elsif ($Weakest{0}{'for'} == $Defeats{$j}{$i}{'for'}) {
+             if ($Weakest{0}{'against'} < $Defeats{$j}{$i}{'against'}) {
+               undef %Weakest;
+               $weak_count = 0;
+@@ -610,7 +610,7 @@
+               $Weakest{$weak_count}{'Winner'} = $j;
+               $Weakest{$weak_count}{'Loser'}  = $i;
+               $weak_count++;
+-            } else {
++            } elsif ($Weakest{0}{'against'} == $Defeats{$j}{$i}{'against'}) {
+               $Weakest{$weak_count}{'for'}     = $Defeats{$j}{$i}{'for'};
+               $Weakest{$weak_count}{'against'} = $Defeats{$j}{$i}{'against'};
+               $Weakest{$weak_count}{'Winner'}  = $j;

@@ -13,3 +13,7 @@ devote.mli
 *.o
 recount
 random_cycles
+devotee_diff
+devotee/src/
+.Makefile.coq.d
+certify

@@ -1,0 +1,6 @@
+round
+schwartz 3
+out 2 : 3 2
+out 4 : 3 4
+in 3 root 3 : 3 | 3
+end
