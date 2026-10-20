@@ -17,7 +17,11 @@
    Writes recount_summary.json and recount_table.md. With --devotee-batch
    <file>, also writes every counted vote, with its published quorum and
    ratios, as a batch for devotee/run_devotee.pl (see devotee_diff.ml).
-   Usage: recount [--verbose] [--devotee-batch <file>] *)
+   With --matrices, also prints for every vote the pairwise matrix V computed
+   by the verified counter, and for every option V(A,D), V(D,A), its majority
+   ratio, how far it was from the majority threshold and from the quorum, and
+   whether it remains; then the winners.
+   Usage: recount [--verbose] [--matrices] [--devotee-batch <file>] *)
 
 open Votes
 
@@ -274,8 +278,41 @@ let page_title page =
     String.trim (Str.global_replace (Str.regexp "[ \t\n\r]+") " " (Str.matched_group 1 s))
   with Not_found -> ""
 
+(* the verified counter's view of one vote: the pairwise matrix V(row, col),
+   and for every option how far it was from the majority threshold and the
+   quorum (positive: passed by that much; the majority rule needs V(A,D) >
+   N V(D,A) before 2016, and V(A,D) >= N V(D,A) and V(A,D) > V(D,A) since) *)
+let print_matrix ~key ~title ~ndev ~ratios ~strict (r : Tally.result) =
+  let m = r.m and d = r.m - 1 in
+  let quorum = 1.5 *. sqrt (float_of_int ndev) in
+  Printf.printf "==== %s  %s\n" key title;
+  Printf.printf "%d ballots, %d options (option %d is the default); %d developers, quorum %.2f; \
+                 majority rule %s\n" r.n_ballots m m ndev quorum
+    (if strict then "of Constitution v1.0-1.5" else "of Constitution v1.6+");
+  Printf.printf "pairwise matrix V(row, col): voters ranking row above col\n      ";
+  for c = 1 to m do Printf.printf "%6d" c done;
+  print_newline ();
+  for x = 0 to m - 1 do
+    Printf.printf "%6d" (x + 1);
+    for y = 0 to m - 1 do
+      if x = y then Printf.printf "%6s" "-" else Printf.printf "%6d" r.beat.(x).(y)
+    done;
+    print_newline ()
+  done;
+  Printf.printf "option  V(A,D)  V(D,A)  ratio  majority margin  quorum margin  result\n";
+  for x = 0 to d - 1 do
+    let a = r.beat.(x).(d) and b = r.beat.(d).(x) in
+    let n = match List.assoc_opt (x + 1) ratios with Some n -> n | None -> 1 in
+    let margin = if strict then a - n * b else min (a - n * b) (a - b) in
+    Printf.printf "%6d  %6d  %6d  %5s  %15d  %13.2f  %s\n" (x + 1) a b (Printf.sprintf "%d:1" n)
+      margin (float_of_int a -. quorum)
+      (if List.mem (x + 1) r.dropped then "dropped" else "remains")
+  done;
+  Printf.printf "winners:%s\n\n" (Tally.ints r.winners)
+
 let () =
   let verbose = Array.exists (fun a -> a = "--verbose") Sys.argv in
+  let matrices = Array.exists (fun a -> a = "--matrices") Sys.argv in
   let batch =
     let rec go i = if i + 1 >= Array.length Sys.argv then None
       else if Sys.argv.(i) = "--devotee-batch" then Some (open_out Sys.argv.(i + 1)) else go (i + 1) in
@@ -316,6 +353,7 @@ let () =
                 | _ -> failwith ("no majority requirement for " ^ key) in
               let strict = int_of_string year <= 2015 in
               let res = Tally.count_file ~strict tally (9 * ndev) 4 ratios in
+              if matrices then print_matrix ~key ~title:(page_title page) ~ndev ~ratios ~strict res;
               Option.iter (fun oc ->
                   Printf.fprintf oc "P %s %d %s %s %d\n" key m
                     (match pub.quorum with Some q -> q | None -> "0")

@@ -83,7 +83,7 @@ https://www.debian.org/vote/ into `data/debian.org/vote/<year>/`.
 
 ## Recounting every vote
 
-    ./recount [--verbose] [--devotee-batch <file>]
+    ./recount [--verbose] [--matrices] [--devotee-batch <file>]
 
 runs the verified counter on every tally sheet with rules determined
 independently of devotee's output:
@@ -99,6 +99,14 @@ outcome. A field that cannot be compared is an error unless `not_compared`
 lists it with a reason; a published record that contradicts itself is listed
 in `record_inconsistent`. It writes `recount_summary.json` and
 `recount_table.md`.
+
+With `--matrices` it also prints, for every vote, the pairwise matrix V
+computed by the verified counter and, for every option, V(A,D), V(D,A), its
+majority ratio, its margin to the majority threshold and to the quorum
+(positive: passed by that much), whether it remains, and the winners; for
+example `./recount --matrices > matrices.txt`. The close calls reported in
+the paper (2022-001 option 2, margin 2; 2006-005 option 1, quorum margin
+0.57) can be read off this output.
 
 Result (October 2026): 59 vote pages, 2004 to 2026; 5 were withdrawn before a
 ballot; all 54 that went to a ballot (24 DPL elections, 30 general
