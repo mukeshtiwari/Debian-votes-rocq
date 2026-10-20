@@ -102,11 +102,13 @@ in `record_inconsistent`. It writes `recount_summary.json` and
 
 Result (October 2026): 59 vote pages, 2004 to 2026; 5 were withdrawn before a
 ballot; all 54 that went to a ballot (24 DPL elections, 30 general
-resolutions, 18,477 ballots) agree with the published outcome. The matrix and
-the winners are compared for all 54 votes; the dropped options, defeats and
-ratios for 53; the Schwartz set for 49 (four early pages do not list it). The
-2004-004 page is truncated after the first `<` of devotee's majority section.
-In 2006-002, 2018-001 and 2023-002 devotee applied the quorum for a different
+resolutions, 18,477 ballots) agree with the published outcome. The matrix,
+the majority ratios, the dropped options and the winners are compared for all
+54 votes; the defeats for 53 and the Schwartz set for 49 (the 2004-004 page
+does not list the defeats, and five early pages do not list the Schwartz set).
+devotee's output is pasted into the 2004 pages without escaping, so they
+contain a bare `<` (as in `<= 3`); browsers show it as text, and so does
+`recount`. In 2006-002, 2018-001 and 2023-002 devotee applied the quorum for a different
 number of developers than the page states (984, 882, 949 against 972, 1001,
 1004); no option was near either threshold.
 

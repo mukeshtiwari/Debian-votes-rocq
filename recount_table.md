@@ -1,11 +1,11 @@
 | Year | Vote | Title | Ballots | Options | Dropped (quorum/majority) | Winner | Published outcome |
 |---|---|---|---|---|---|---|---|
-| 2004 | vote_001 | Debian Project Leader Elections 2004 | 482 | 4 | 1 | 3 | OK (published record incomplete) |
-| 2004 | vote_002 | General Resolution: Status of the non-free section | 482 | 3 | 1 | 2 | OK (published record incomplete) |
-| 2004 | vote_003 | General Resolution: Editorial amendments to the social contract | 214 | 2 | - | 1 | OK (published record incomplete) |
-| 2004 | vote_004 | General Resolution: Sarge Release Schedule in view of GR 2004-003 | 396 | 7 | 3 4 5 6 | 2 | OK (published record incomplete) |
+| 2004 | vote_001 | Debian Project Leader Elections 2004 | 482 | 4 | 1 | 3 | OK (some fields not published) |
+| 2004 | vote_002 | General Resolution: Status of the non-free section | 482 | 3 | 1 | 2 | OK (some fields not published) |
+| 2004 | vote_003 | General Resolution: Editorial amendments to the social contract | 214 | 2 | - | 1 | OK (some fields not published) |
+| 2004 | vote_004 | General Resolution: Sarge Release Schedule in view of GR 2004-003 | 396 | 7 | 3 4 5 6 | 2 | OK (some fields not published) |
 | 2004 | vote_005 | | | | | | withdrawn (no ballots) |
-| 2005 | vote_001 | Debian Project Leader Elections 2005 | 504 | 7 | 1 | 3 | OK (published record incomplete) |
+| 2005 | vote_001 | Debian Project Leader Elections 2005 | 504 | 7 | 1 | 3 | OK (some fields not published) |
 | 2005 | vote_002 | General Resolution: Declassification of debian-private list archives | 298 | 3 | - | 2 | OK |
 | 2006 | vote_001 | General Resolution: Why the GNU Free Documentation License is not suitable for Debian main | 369 | 4 | 3 | 2 | OK |
 | 2006 | vote_002 | Debian Project Leader Elections 2006 | 421 | 8 | 2 6 | 4 | OK (published record inconsistent: quorum) |

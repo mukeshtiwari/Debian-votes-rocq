@@ -25,14 +25,12 @@ open Votes
    Every other field must be compared, or the vote is reported as NOT
    COMPARED. *)
 let not_compared year vid =
-  let truncated = "the page is truncated after the first '<' of devotee's majority section" in
   let no_schwartz = "the page does not list the Schwartz set" in
   match year, vid with
-  | "2004", "vote_001" | "2004", "vote_003" | "2005", "vote_001" -> ["schwartz", no_schwartz]
-  | "2004", "vote_002" ->
-    ["schwartz", no_schwartz;
-     "ratios", "devotee's '<=' is unescaped in the HTML page and lost as a tag"]
-  | "2004", "vote_004" -> ["dropped", truncated; "defeats", truncated; "schwartz", truncated]
+  | "2004", "vote_001" | "2004", "vote_002" | "2004", "vote_003" | "2005", "vote_001" ->
+    ["schwartz", no_schwartz]
+  | "2004", "vote_004" ->
+    ["defeats", "the page does not list the pairwise defeats"; "schwartz", no_schwartz]
   | _ -> []
 
 (* Fields in which the published record contradicts itself, with the
@@ -91,6 +89,9 @@ let text_of path =
     else begin
       let i = match find (String.lowercase_ascii s) "quorum" with Some i -> i | None -> 0 in
       let s = sub_from s (max 0 (i - 200)) in
+      (* devotee's output is pasted into the pages unescaped: a '<' that does
+         not start a tag (as in "<= 3") is text, as a browser displays it *)
+      let s = Str.global_replace (Str.regexp "<\\([^a-zA-Z/!]\\)") "&lt;\\1" s in
       let s = Str.global_replace (Str.regexp "<[^>]+>") " " s in
       let s = unescape s in
       Str.global_replace (Str.regexp "[ \t]+") " " s
@@ -194,7 +195,7 @@ let parse_outcome txt =
         let line = group (List.nth g 1) in
         let rs =
           try
-            ignore (Str.search_forward (Str.regexp "(\\([0-9]+\\)/\\([0-9]+\\))[ \t]*<[ \t]*\\([0-9]+\\)") line 0);
+            ignore (Str.search_forward (Str.regexp "(\\([0-9]+\\)/\\([0-9]+\\))[ \t]*<=?[ \t]*\\([0-9]+\\)") line 0);
             (i, int_of_string (Str.matched_group 3 line)) :: rs
           with Not_found -> rs in
         (i :: md, rs)) ([], ratios) drops in
@@ -358,7 +359,7 @@ let () =
                              else if stale <> [] then "STALE EXCEPTION: " ^ String.concat ", " (List.map fst stale)
                              else if inconsistent <> [] then "OK (published record inconsistent: "
                                                              ^ String.concat ", " (List.map fst inconsistent) ^ ")"
-                             else if excused <> [] then "OK (published record incomplete)" else "OK");
+                             else if excused <> [] then "OK (some fields not published)" else "OK");
               row.title <- page_title page; row.ballots <- res.n_ballots; row.options <- m;
               row.dropped <- res.dropped; row.winner <- res.winners;
               row.fields <- [
