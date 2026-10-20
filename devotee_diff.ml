@@ -73,7 +73,7 @@ let devotee profs =
   let cmd = Printf.sprintf "perl %s %s %s > %s"
       (Filename.quote (Filename.concat root "devotee/run_devotee.pl"))
       (Filename.quote (match Sys.getenv_opt "DVT_RSLT" with
-                       | Some f -> f | None -> Filename.concat root "devotee/upstream/dvt-rslt"))
+                       | Some f -> f | None -> Filename.concat root "devotee/upstream/dvt-rslt.pl"))
       (Filename.quote batch) (Filename.quote out) in
   if Sys.command cmd <> 0 then failwith "run_devotee.pl failed";
   let tbl = Hashtbl.create 1024 in

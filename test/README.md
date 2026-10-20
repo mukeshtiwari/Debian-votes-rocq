@@ -7,6 +7,7 @@
 | `devotee_weakest_tally.txt` | devotee defect 2: a stronger defeat dropped as one of the weakest |
 | `devotee_majority_tally.txt` | devotee defect 3: an option that ties the default option passes step 3 |
 | `devotee_cases.batch` | the three devotee cases as a batch for `devotee/run_devotee.pl` |
+| `devotee_results/` | devotee's own results files for the three cases |
 
 The default option is the last column of every ballot. No quorum, majority
 ratio 1 for every option.
@@ -17,7 +18,7 @@ The batch file is read by both programs, which print one line per case in
 the same format:
 
     ./devote_main --batch test/devotee_cases.batch
-    perl devotee/run_devotee.pl devotee/upstream/dvt-rslt test/devotee_cases.batch
+    perl devotee/run_devotee.pl devotee/upstream/dvt-rslt.pl test/devotee_cases.batch
 
 The verified counter prints
 
@@ -39,3 +40,16 @@ The tally sheets can also be counted one at a time:
     ./devote_main test/devotee_closure_tally.txt  0 1,1,1,1,1,1
     ./devote_main test/devotee_weakest_tally.txt  0 1,1,1,1,1,1,1
     ./devote_main test/devotee_majority_tally.txt 0 1,1
+
+## Auditing devotee's output
+
+`devotee_results/` holds devotee's results files for the three cases,
+produced with
+
+    DVT_KEEP=test/devotee_results perl devotee/run_devotee.pl devotee/upstream/dvt-rslt.pl test/devotee_cases.batch
+
+The verified audit names the lines that violate Appendix A.5:
+
+    ./audit --files test/devotee_results/closure_results.txt  test/devotee_closure_tally.txt  0 1,1,1,1,1
+    ./audit --files test/devotee_results/weakest_results.txt  test/devotee_weakest_tally.txt  0 1,1,1,1,1,1
+    ./audit --files test/devotee_results/majority_results.txt test/devotee_majority_tally.txt 0 1

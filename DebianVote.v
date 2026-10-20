@@ -1040,6 +1040,15 @@ Section Debian.
              | intros [_ H]; exact H | intros H; split; [apply cand_fin | exact H]].
   Qed.
 
+  Lemma passes_quorum_iff x : passes_quorum x = true <-> Quorum x.
+  Proof. unfold passes_quorum, Quorum. rewrite orb_true_iff, ceq_true, Nat.leb_le. reflexivity. Qed.
+
+  Lemma passes_majority_iff x : passes_majority x = true <-> Majority x.
+  Proof.
+    unfold passes_majority, Majority. rewrite orb_true_iff, ceq_true.
+    destruct (strict_majority rl); rewrite ?andb_true_iff, ?Nat.leb_le, ?Nat.ltb_lt; reflexivity.
+  Qed.
+
   Lemma default_remaining : In default remaining.
   Proof.
     unfold remaining. apply filter_In. split; [apply cand_fin | ].
@@ -1499,3 +1508,135 @@ Section Certificate.
   Qed.
 
 End Certificate.
+
+(* ========================================================================= *)
+(*  Auditing a published result                                             *)
+(* ========================================================================= *)
+
+(* devotee's results file is a list of claims about one vote: the pairwise
+   counts, which options reach the quorum and the majority, the defeats, the
+   Schwartz set and the winners. Each claim is stated here with the
+   definitions of the specification (holds), checked by a boolean function
+   (audit), and the two are proved to agree in both directions
+   (audit_correct): the checker accepts a claim exactly when it is true.
+   Turning the lines of a results file into claims is done by an untrusted
+   program; each verdict on a claim is verified. *)
+
+Section Audit.
+
+  Variable cand : Type.
+  Variable cand_all : list cand.
+  Hypothesis cand_fin : forall c, In c cand_all.
+  Hypothesis dec_cand : forall x y : cand, {x = y} + {x <> y}.
+  Variable default : cand.
+  Variable rl : rules cand.
+  Variable Vm : cand -> cand -> nat.
+
+  Inductive claim :=
+  | CMatrix (x y : cand) (v : nat)        (* V(x,y) = v *)
+  | CQuorum (x : cand) (pass : bool)      (* x reaches / fails the quorum *)
+  | CRatio (x : cand) (n : nat)           (* the majority ratio of x is n *)
+  | CMajority (x : cand) (pass : bool)    (* x passes / fails the majority *)
+  | CDefeat (a b : cand)                  (* a defeats b among the remaining options *)
+  | CDefeats (l : list (defeat cand))     (* l lists all the defeats *)
+  | CSchwartz (l : list cand)             (* l is the initial Schwartz set *)
+  | CWinners (l : list cand).             (* l is the set of winners *)
+
+  (* the step of Appendix A.5 a claim is about *)
+  Definition claim_step (c : claim) : nat :=
+    match c with
+    | CMatrix _ _ _ => 1 | CQuorum _ _ => 2 | CRatio _ _ => 3 | CMajority _ _ => 3
+    | CDefeat _ _ => 4 | CDefeats _ => 4 | CSchwartz _ => 6 | CWinners _ => 8
+    end.
+
+  (* what a claim says, in terms of the specification *)
+  Definition holds (c : claim) : Prop :=
+    match c with
+    | CMatrix x y v => Vm x y = v
+    | CQuorum x b => if b then Quorum cand default Vm rl x else ~ Quorum cand default Vm rl x
+    | CRatio x n => ratio cand rl x = n
+    | CMajority x b => if b then Majority cand default Vm rl x else ~ Majority cand default Vm rl x
+    | CDefeat a b => Defeats0 cand default rl Vm (a, b)
+    | CDefeats l => forall p, In p l <-> Defeats0 cand default rl Vm p
+    | CSchwartz l => forall a, In a l <->
+                       Schwartz cand (Remaining cand default rl Vm) (Defeats0 cand default rl Vm) a
+    | CWinners l => forall W, debian_outcome cand default rl Vm W -> forall a, In a l <-> W a
+    end.
+
+  Definition rem0 := remaining cand cand_all dec_cand default Vm rl.
+  Definition defs0 := initial_defeats cand cand_all dec_cand default Vm rl.
+
+  (* l and m have the same members *)
+  Definition same_cands (l m : list cand) : bool :=
+    forallb (fun a => inb cand dec_cand a m) l && forallb (fun a => inb cand dec_cand a l) m.
+  Definition same_defeats (l m : list (defeat cand)) : bool :=
+    forallb (fun p => dinb cand dec_cand p m) l && forallb (fun p => dinb cand dec_cand p l) m.
+
+  Definition audit (c : claim) : bool :=
+    match c with
+    | CMatrix x y v => Vm x y =? v
+    | CQuorum x b => Bool.eqb (passes_quorum cand dec_cand default Vm rl x) b
+    | CRatio x n => ratio cand rl x =? n
+    | CMajority x b => Bool.eqb (passes_majority cand dec_cand default Vm rl x) b
+    | CDefeat a b => inb cand dec_cand a rem0 && inb cand dec_cand b rem0 && (Vm b a <? Vm a b)
+    | CDefeats l => same_defeats l defs0
+    | CSchwartz l => same_cands l (schwartz cand cand_all dec_cand rem0 defs0)
+    | CWinners l => same_cands l (rep_winners cand (count cand cand_all dec_cand default rl Vm))
+    end.
+
+  Lemma same_cands_iff l m : same_cands l m = true <-> forall a, In a l <-> In a m.
+  Proof.
+    unfold same_cands. rewrite andb_true_iff, !forallb_forall. split.
+    - intros [H1 H2] a. split; intros H; [apply (inb_true cand dec_cand), H1 | apply (inb_true cand dec_cand), H2]; auto.
+    - intros H. split; intros a Ha; apply (inb_true cand dec_cand), H; auto.
+  Qed.
+
+  Lemma same_defeats_iff l m : same_defeats l m = true <-> forall p, In p l <-> In p m.
+  Proof.
+    unfold same_defeats. rewrite andb_true_iff, !forallb_forall. split.
+    - intros [H1 H2] p. split; intros H; [apply (dinb_true cand dec_cand), H1 | apply (dinb_true cand dec_cand), H2]; auto.
+    - intros H. split; intros p Hp; apply (dinb_true cand dec_cand), H; auto.
+  Qed.
+
+  Lemma rem0_in x : In x rem0 <-> Remaining cand default rl Vm x.
+  Proof. apply remaining_in; auto. Qed.
+
+  Lemma defs0_in p : In p defs0 <-> Defeats0 cand default rl Vm p.
+  Proof.
+    destruct p as [a b]. unfold defs0. etransitivity; [apply initial_defeats_in | ].
+    unfold Defeats0. simpl. rewrite <- !rem0_in. reflexivity.
+  Qed.
+
+  Lemma schwartz0_in a :
+    In a (schwartz cand cand_all dec_cand rem0 defs0) <->
+    Schwartz cand (Remaining cand default rl Vm) (Defeats0 cand default rl Vm) a.
+  Proof.
+    rewrite (schwartz_Schwartz cand cand_all cand_fin dec_cand). split; apply Schwartz_ext;
+      intros; rewrite ?rem0_in, ?defs0_in; reflexivity.
+  Qed.
+
+  (* the checker accepts a claim exactly when the claim is true *)
+  Theorem audit_correct c : audit c = true <-> holds c.
+  Proof.
+    destruct c as [x y v | x b | x n | x b | a b | l | l | l]; simpl.
+    - apply Nat.eqb_eq.
+    - destruct b; rewrite ?Bool.eqb_true_iff.
+      + apply (passes_quorum_iff cand dec_cand).
+      + rewrite <- (passes_quorum_iff cand dec_cand). split; [congruence | ].
+        destruct (passes_quorum cand dec_cand default Vm rl x); tauto.
+    - apply Nat.eqb_eq.
+    - destruct b; rewrite ?Bool.eqb_true_iff.
+      + apply (passes_majority_iff cand dec_cand).
+      + rewrite <- (passes_majority_iff cand dec_cand). split; [congruence | ].
+        destruct (passes_majority cand dec_cand default Vm rl x); tauto.
+    - rewrite !andb_true_iff, !(inb_true cand dec_cand), Nat.ltb_lt, !rem0_in.
+      unfold Defeats0. simpl. tauto.
+    - rewrite same_defeats_iff. split; intros H p; rewrite H; [apply defs0_in | symmetry; apply defs0_in].
+    - rewrite same_cands_iff. split; intros H a; rewrite H; [apply schwartz0_in | symmetry; apply schwartz0_in].
+    - rewrite same_cands_iff. split.
+      + intros H W HW a. rewrite H. symmetry.
+        apply (count_complete cand cand_all cand_fin dec_cand default rl Vm W HW).
+      + intros H a. exact (H _ (count_correct cand cand_all cand_fin dec_cand default rl Vm) a).
+  Qed.
+
+End Audit.

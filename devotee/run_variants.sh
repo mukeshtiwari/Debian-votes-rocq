@@ -17,7 +17,7 @@ trap 'rm -rf "$tmp"' EXIT
 variant() {   # variant <name> <patch>...
   name=$1; shift
   mkdir -p "$tmp/$name"
-  cp devotee/upstream/dvt-rslt "$tmp/$name/dvt-rslt"
+  cp devotee/upstream/dvt-rslt.pl "$tmp/$name/dvt-rslt"
   for p in "$@"; do patch -s "$tmp/$name/dvt-rslt" < "devotee/patches/$p"; done
 }
 variant unmodified

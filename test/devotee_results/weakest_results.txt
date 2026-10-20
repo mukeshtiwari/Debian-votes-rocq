@@ -1,0 +1,100 @@
+Starting results calculation at Tue Oct 20 09:39:54 2026
+
+Option 1 "O1"
+Option 2 "O2"
+Option 3 "O3"
+Option 4 "O4"
+Option 5 "O5"
+Option 6 "O6"
+Option 7 "O7"
+
+In the following table, tally[row x][col y] represents the votes that
+option x received over option y.
+
+                  Option
+              1     2     3     4     5     6     7 
+            ===   ===   ===   ===   ===   ===   === 
+Option 1            2     2     2     4     1     5 
+Option 2      3           2     3     4     1     5 
+Option 3      3     3           2     3     2     5 
+Option 4      3     2     3           4     3     5 
+Option 5      0     1     1     1           0     5 
+Option 6      4     3     2     2     5           5 
+Option 7      0     0     0     0     0     0       
+
+
+
+Looking at row 2, column 1, O2
+received 3 votes over O1
+
+Looking at row 1, column 2, O1
+received 2 votes over O2.
+
+Option 1 Reached quorum: 5 > 0
+Option 2 Reached quorum: 5 > 0
+Option 3 Reached quorum: 5 > 0
+Option 4 Reached quorum: 5 > 0
+Option 5 Reached quorum: 5 > 0
+Option 6 Reached quorum: 5 > 0
+
+
+
+
+  Option 2 defeats Option 1 by (   3 -    2) =    1 votes.
+  Option 3 defeats Option 1 by (   3 -    2) =    1 votes.
+  Option 4 defeats Option 1 by (   3 -    2) =    1 votes.
+  Option 1 defeats Option 5 by (   4 -    0) =    4 votes.
+  Option 6 defeats Option 1 by (   4 -    1) =    3 votes.
+  Option 1 defeats Option 7 by (   5 -    0) =    5 votes.
+  Option 3 defeats Option 2 by (   3 -    2) =    1 votes.
+  Option 2 defeats Option 4 by (   3 -    2) =    1 votes.
+  Option 2 defeats Option 5 by (   4 -    1) =    3 votes.
+  Option 6 defeats Option 2 by (   3 -    1) =    2 votes.
+  Option 2 defeats Option 7 by (   5 -    0) =    5 votes.
+  Option 4 defeats Option 3 by (   3 -    2) =    1 votes.
+  Option 3 defeats Option 5 by (   3 -    1) =    2 votes.
+  Option 3 defeats Option 7 by (   5 -    0) =    5 votes.
+  Option 4 defeats Option 5 by (   4 -    1) =    3 votes.
+  Option 4 defeats Option 6 by (   3 -    2) =    1 votes.
+  Option 4 defeats Option 7 by (   5 -    0) =    5 votes.
+  Option 6 defeats Option 5 by (   5 -    0) =    5 votes.
+  Option 5 defeats Option 7 by (   5 -    0) =    5 votes.
+  Option 6 defeats Option 7 by (   5 -    0) =    5 votes.
+
+
+The Schwartz Set contains:
+	 Option 2 "O2"
+	 Option 3 "O3"
+	 Option 4 "O4"
+	 Option 6 "O6"
+
+
+Weakest Defeat(s): 
+	Option 3 beats Option 2 by  (3 - 2)	= 1 votes
+	Option 2 beats Option 4 by  (3 - 2)	= 1 votes
+	Option 3 beats Option 2 by  (3 - 2)	= 1 votes
+	Option 4 beats Option 3 by  (3 - 2)	= 1 votes
+	Option 4 beats Option 6 by  (3 - 2)	= 1 votes
+	Option 6 beats Option 2 by  (3 - 1)	= 2 votes
+Deleting weakest defeat(s)
+
+The Schwartz Set contains:
+	 Option 2 "O2"
+	 Option 3 "O3"
+	 Option 4 "O4"
+	 Option 6 "O6"
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The winners are:
+	 Option 2 "O2"
+	 Option 3 "O3"
+	 Option 4 "O4"
+	 Option 6 "O6"
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+

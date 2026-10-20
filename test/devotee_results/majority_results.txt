@@ -1,0 +1,46 @@
+Starting results calculation at Tue Oct 20 09:39:54 2026
+
+Option 1 "O1"
+Option 2 "O2"
+
+In the following table, tally[row x][col y] represents the votes that
+option x received over option y.
+
+                  Option
+              1     2 
+            ===   === 
+Option 1            1 
+Option 2      1       
+
+
+
+Looking at row 2, column 1, O2
+received 1 votes over O1
+
+Looking at row 1, column 2, O1
+received 1 votes over O2.
+
+Option 1 Reached quorum: 1 > 0
+
+
+Option 1 passes Majority.               1.000 (1/1) >= 1
+
+
+
+
+The Schwartz Set contains:
+	 Option 1 "O1"
+	 Option 2 "O2"
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The winners are:
+	 Option 1 "O1"
+	 Option 2 "O2"
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+

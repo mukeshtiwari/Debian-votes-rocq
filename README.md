@@ -26,7 +26,7 @@ votes with), and a verified checker for outcome certificates.
 8. Otherwise the options in the Schwartz set win (the elector with the casting
    vote chooses if there are several).
 
-## What is proved (`DebianVote.v`, 55 definitions, 104 lemmas, no axioms)
+## What is proved (`DebianVote.v`, 63 definitions, 112 lemmas, no axioms)
 
 | | Rocq |
 |---|---|
@@ -44,6 +44,7 @@ votes with), and a verified checker for outcome certificates.
 | a Condorcet loser never wins (unless it is the only remaining option) | `count_condorcet_loser` |
 | the winners do not depend on the order in which the options are listed | `count_order_independent` |
 | an accepted certificate determines the outcome | `check_certificate_sound`, `check_certificate_count` |
+| the audit of a published result accepts a claim exactly when it holds | `holds`, `audit`, `audit_correct` |
 
 `Print Assumptions` reports every theorem as closed under the global context.
 
@@ -113,7 +114,7 @@ number of developers than the page states (984, 882, 949 against 972, 1001,
     sh devotee/run_variants.sh      # about five minutes; writes devotee/results.txt
 
 `devotee/upstream/` holds an unmodified copy of devotee's counting script
-`dvt-rslt` and its module `Devotee.pm` (GPL-2, commit f5b727c of
+`dvt-rslt` (as `dvt-rslt.pl`) and its module `Devotee.pm` (GPL-2, commit f5b727c of
 https://salsa.debian.org/debian/devotee; `sh scripts/fetch_devotee.sh`
 checks the copy against upstream). `devotee/run_devotee.pl` runs devotee's
 counting routine (`winner` in `dvt-rslt`) unmodified on batches of profiles; `devotee_diff` compares it with
@@ -160,12 +161,35 @@ transitive closure. `certificates/` holds the certificates of all 54 votes.
 every certificate is accepted and that corrupted certificates are rejected or
 still establish the correct winners.
 
+## Auditing a published result
+
+    ./audit 2026 002        # one vote
+    ./audit --all           # every vote with a devotee results file
+    ./audit --files <results.txt> <tally.txt> <developers> <ratio_1,...> [strict]
+
+reads devotee's results file line by line and turns each line into claims: a
+pairwise count, an option reaching or failing the quorum, its majority ratio,
+it passing or failing the majority, a defeat, the complete list of defeats,
+the Schwartz set, the winners. Each claim is checked by the extracted function
+`audit`, which is proved to accept a claim exactly when it holds under
+Appendix A.5 (`audit_correct`); the report gives, for every line, OK or the
+step of A.5 it violates. The rules are determined as in the recount. Reading
+lines into claims is not verified.
+
+All 46 results files pass (783 lines, 2,210 claims). On devotee's own output
+for the three test cases (`test/devotee_results/`) the audit names the lines
+that violate A.5:
+
+    ./audit --files test/devotee_results/majority_results.txt test/devotee_majority_tally.txt 0 1
+      line  26  VIOLATES  Option 1 passes Majority.               1.000 (1/1) >= 1
+                step 3: false: option 1 passes the majority requirement
+
 ## Layout
 
 | | |
 |---|---|
 | `DebianVote.v` | the formalisation |
-| `Extraction.v` | extraction of the counter and the certificate checker to `devote.ml` |
+| `Extraction.v` | extraction of the counter, the certificate checker and the audit to `devote.ml` |
 | `tally.ml` | tally sheets, the counting context, the certificate producer |
 | `devote_main.ml` | the command-line driver |
 | `recount.ml` | recount and compare with the published outcomes |
@@ -173,6 +197,7 @@ still establish the correct winners.
 | `random_cycles.ml` | random cross-check against the beatpath method |
 | `devotee_diff.ml`, `devotee/` | differential test of devotee |
 | `certify.ml`, `certificates/` | certificates |
+| `votes.ml`, `audit.ml` | the rules of each vote; the line-by-line audit |
 | `scripts/` | download the vote pages; check `devotee/upstream` against upstream |
 | `recount_summary.json`, `recount_table.md`, `devotee/results.txt` | results |
 | `test/` | small hand-made tally sheets |

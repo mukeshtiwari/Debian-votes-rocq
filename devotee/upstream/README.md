@@ -7,7 +7,7 @@ Unmodified files from devotee, the program Debian uses to count its votes:
 
 | file | role |
 |---|---|
-| `dvt-rslt` | the count: `winner` computes the outcome of a vote |
+| `dvt-rslt.pl` | upstream's `dvt-rslt`, renamed: `winner` computes the outcome of a vote |
 | `lib/Devotee.pm` | devotee's configuration module, needed only to run `dvt-rslt` on its own |
 
 devotee is Copyright 2003, 2004 Manoj Srivastava and others, and is
@@ -23,5 +23,5 @@ upstream commit.
 To run `dvt-rslt` on its own, as Debian does, give it a devotee configuration
 (see the upstream `examples/devotee.conf`) and switch off signing:
 
-    perl -I devotee/upstream/lib devotee/upstream/dvt-rslt --config_file=vote.conf \
+    perl -I devotee/upstream/lib devotee/upstream/dvt-rslt.pl --config_file=vote.conf \
          --noneed_gpg --noneed_pgp --noneed_ldap --nosign_ack

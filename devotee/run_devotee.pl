@@ -16,7 +16,8 @@
 # (n, the number of developers, is used only by the verified side.)
 # For each profile one line is printed:
 #     R <id> dropped=<opts> rounds=<n> schwartz0=<opts> winners=<opts>
-# with options numbered from 1 as on debian.org.
+# with options numbered from 1 as on debian.org. With DVT_KEEP=<dir> set,
+# devotee's results file of each profile is kept as <dir>/<id>_results.txt.
 
 use strict;
 use File::Temp qw(tempdir);
@@ -69,6 +70,13 @@ sub run_one {
     # winner leaves its bareword handles open; close them to flush the output
     close($_) for (*main::RESULTS, *main::RSLT_OUT, *main::QURM_OUT,
                    *main::MJRT_OUT, *main::GRAPH, *main::TALLY, *main::QUORUM);
+  }
+  # with DVT_KEEP=<dir>, keep devotee's results file as <dir>/<id>_results.txt
+  if ($ENV{DVT_KEEP}) {
+    open(my $in, '<', "$dir/results.txt") or die;
+    open(my $out, '>', "$ENV{DVT_KEEP}/${id}_results.txt") or die "cannot write to $ENV{DVT_KEEP}: $!";
+    print $out $_ while <$in>;
+    close $in; close $out;
   }
   open(my $r, '<', "$dir/results.txt") or die;
   my (@dropped, @winners, @schwartz0, $rounds, $in_w, $in_s);

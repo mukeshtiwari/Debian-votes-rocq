@@ -12,7 +12,9 @@ tmp=$(mktemp -d)
 trap 'rm -rf "$tmp"' EXIT
 git clone -q "$REPO" "$tmp/devotee"
 git -C "$tmp/devotee" checkout -q "$COMMIT"
-for f in dvt-rslt lib/Devotee.pm COPYING LICENSE; do
+# dvt-rslt is kept here as dvt-rslt.pl
+cmp "$tmp/devotee/dvt-rslt" devotee/upstream/dvt-rslt.pl
+for f in lib/Devotee.pm COPYING LICENSE; do
   cmp "$tmp/devotee/$f" "devotee/upstream/$f"
 done
 echo "devotee/upstream matches devotee $(git -C "$tmp/devotee" log -1 --format='%h %ad' --date=short)"

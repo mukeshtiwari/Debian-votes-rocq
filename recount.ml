@@ -19,26 +19,8 @@
    ratios, as a batch for devotee/run_devotee.pl (see devotee_diff.ml).
    Usage: recount [--verbose] [--devotee-batch <file>] *)
 
-let root = Filename.dirname Sys.executable_name
-let data = Filename.concat root "data/debian.org/vote"
+open Votes
 
-(* tally sheets of the first years have descriptive names *)
-let tally_name year vid =
-  match year, vid with
-  | "2003", "vote_0003" -> "gr_sec415_tally.txt"
-  | "2004", "vote_001" -> "leader2004_tally.txt"
-  | "2004", "vote_002" -> "gr_non_free_tally.txt"
-  | "2004", "vote_003" -> "gr_editorial_tally.txt"
-  | "2004", "vote_004" -> "gr_sarge_tally.txt"
-  | "2005", "vote_001" -> "leader2005_tally.txt"
-  | ("2003" | "2004"), _ -> "none"
-  | _ -> vid ^ "_tally.txt"
-
-(* majority ratios that the published page states in prose but whose
-   per-option lines are lost to an HTML escaping error on the page (the text
-   from the first '<' of the devotee output is missing). The second component
-   says whether the loss also removed the published dropping decisions, so that
-   the set of dropped options cannot be compared. *)
 (* Fields of the published outcome that cannot be compared, with the reason.
    Every other field must be compared, or the vote is reported as NOT
    COMPARED. *)
@@ -65,11 +47,6 @@ let record_inconsistent year vid =
   | _ -> []
 
 (* ---------- text utilities ---------- *)
-
-let read_file path =
-  let ic = open_in_bin path in
-  let s = really_input_string ic (in_channel_length ic) in
-  close_in ic; s
 
 let ends_with s suf =
   let n = String.length s and k = String.length suf in
@@ -122,31 +99,6 @@ let text_of path =
 
 let is_digits t = t <> "" && String.for_all (fun c -> c >= '0' && c <= '9') t
 let is_space c = c = ' ' || c = '\t' || c = '\n' || c = '\r'
-
-(* ---------- the rules of each vote ---------- *)
-
-(* data/majority_requirements.txt: "<year>-<vote> r1,...,r(m-1) | source" *)
-let requirements =
-  let t = Hashtbl.create 64 in
-  let ic = open_in (Filename.concat root "data/majority_requirements.txt") in
-  (try
-     while true do
-       let l = input_line ic in
-       if l <> "" && l.[0] <> '#' then
-         match String.split_on_char ' ' l with
-         | key :: rs :: _ -> Hashtbl.replace t key (List.map int_of_string (String.split_on_char ',' rs))
-         | _ -> ()
-     done
-   with End_of_file -> ());
-  close_in ic; t
-
-(* the number of developers that the vote page states *)
-let developer_count page =
-  let s = String.lowercase_ascii (read_file page) in
-  try
-    ignore (Str.search_forward (Str.regexp "current developer count = *\\([0-9]+\\)") s 0);
-    int_of_string (Str.matched_group 1 s)
-  with Not_found -> failwith ("no developer count on " ^ page)
 
 (* ---------- the published outcome ---------- *)
 

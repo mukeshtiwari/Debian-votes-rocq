@@ -16,3 +16,5 @@ random_cycles
 devotee_diff
 .Makefile.coq.d
 certify
+audit
+.DS_Store
