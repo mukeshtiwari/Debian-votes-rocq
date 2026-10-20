@@ -48,7 +48,10 @@ produced with
 
     DVT_KEEP=test/devotee_results perl devotee/run_devotee.pl devotee/upstream/dvt-rslt.pl test/devotee_cases.batch
 
-The verified audit names the lines that violate Appendix A.5:
+The verified audit names the lines that violate Appendix A.5 and says why
+(line 70 of the closure case: the Schwartz set after the first round; line 78
+of the weakest case: a defeat that is not among the weakest; line 26 of the
+majority case: an option that only ties the default option):
 
     ./audit --files test/devotee_results/closure_results.txt  test/devotee_closure_tally.txt  0 1,1,1,1,1
     ./audit --files test/devotee_results/weakest_results.txt  test/devotee_weakest_tally.txt  0 1,1,1,1,1,1

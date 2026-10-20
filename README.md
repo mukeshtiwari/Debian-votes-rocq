@@ -26,7 +26,7 @@ votes with), and a verified checker for outcome certificates.
 8. Otherwise the options in the Schwartz set win (the elector with the casting
    vote chooses if there are several).
 
-## What is proved (`DebianVote.v`, 63 definitions, 112 lemmas, no axioms)
+## What is proved (`DebianVote.v`, 77 definitions, 125 lemmas, no axioms)
 
 | | Rocq |
 |---|---|
@@ -44,7 +44,8 @@ votes with), and a verified checker for outcome certificates.
 | a Condorcet loser never wins (unless it is the only remaining option) | `count_condorcet_loser` |
 | the winners do not depend on the order in which the options are listed | `count_order_independent` |
 | an accepted certificate determines the outcome | `check_certificate_sound`, `check_certificate_count` |
-| the audit of a published result accepts a claim exactly when it holds | `holds`, `audit`, `audit_correct` |
+| the audit of a published result accepts a claim exactly when it holds, including claims about every round of step 7 | `holds`, `RoundDefs`, `audit`, `audit_correct` |
+| the audit explains a violation: the evidence it finds really refutes the claim | `refutes`, `explain`, `explain_sound`, `refutes_not_holds` |
 
 `Print Assumptions` reports every theorem as closed under the global context.
 
@@ -170,19 +171,36 @@ still establish the correct winners.
 reads devotee's results file line by line and turns each line into claims: a
 pairwise count, an option reaching or failing the quorum, its majority ratio,
 it passing or failing the majority, a defeat, the complete list of defeats,
-the Schwartz set, the winners. Each claim is checked by the extracted function
-`audit`, which is proved to accept a claim exactly when it holds under
-Appendix A.5 (`audit_correct`); the report gives, for every line, OK or the
-step of A.5 it violates. The rules are determined as in the recount. Reading
-lines into claims is not verified.
+the Schwartz set (initially and after every round of step 7), the weakest
+defeats of every round, and the winners. Each claim is checked by the
+extracted function `audit`, which is proved to accept a claim exactly when it
+holds under Appendix A.5 (`audit_correct`). For every false claim the
+extracted function `explain` returns evidence, and `explain_sound` proves
+that the evidence really refutes the claim: the true count, the vote numbers
+behind a quorum or majority decision, a weaker defeat, an option that
+transitively defeats a wrongly listed member of the Schwartz set, and so on.
+The report gives, for every line, OK or the step of A.5 it violates and why.
+The rules are determined as in the recount. Reading lines into claims, and the
+wording of the reasons, are not verified.
 
 All 46 results files pass (783 lines, 2,210 claims). On devotee's own output
-for the three test cases (`test/devotee_results/`) the audit names the lines
-that violate A.5:
+for the three test cases (`test/devotee_results/`) the audit names the first
+line where devotee goes wrong, and why:
 
-    ./audit --files test/devotee_results/majority_results.txt test/devotee_majority_tally.txt 0 1
+    two-ballot example
       line  26  VIOLATES  Option 1 passes Majority.               1.000 (1/1) >= 1
                 step 3: false: option 1 passes the majority requirement
+                because: V(1,D) = 1 is not greater than V(D,1) = 1
+    closure example
+      line  70  VIOLATES  The Schwartz Set contains:
+                step 6: false: after 1 round of dropping, the Schwartz set is {}
+                because: option 1 is in the Schwartz set: every option that transitively
+                defeats it is transitively defeated by it
+    weakest-defeat example
+      line  78  VIOLATES  Option 6 beats Option 2 by  (3 - 1)	= 2 votes
+                step 7: false: in round 1, 6 beats 2 is one of the weakest defeats
+                because: 2 beats 4 (3 to 2) is weaker than 6 beats 2 (3 to 1): the same
+                winning votes and more losing votes
 
 ## Layout
 

@@ -51,7 +51,9 @@ let parse lines =
       then go (i + 1) ((grp 1 lines.(i) - 1) :: acc)
       else List.rev acc in
     go (header + 1) [] in
-  let seen_schwartz = ref false in
+  (* rounds of step 7: devotee prints the Schwartz set of every round, and
+     between two rounds the weakest defeats that it drops *)
+  let round = ref 0 and weak = ref None and weak_blocks = ref [] in
   Array.iteri (fun i l ->
       if matches (re "tally\\[row x\\]") l then in_matrix := true
       else if !in_matrix && Str.string_match (re "^Option \\([0-9]+\\)\\([ 0-9]+\\)$") l 0 then begin
@@ -85,9 +87,18 @@ let parse lines =
         defeats := (a, b) :: !defeats; defeat_lines := (i + 1) :: !defeat_lines;
         add i [CDefeat (a, b); CMatrix (a, b, va); CMatrix (b, a, vb)]
       end
-      else if matches (re "^The Schwartz Set contains") l && not !seen_schwartz then begin
-        seen_schwartz := true;
-        add i [CSchwartz (set_after i)]
+      else if matches (re "^The Schwartz Set contains") l then
+        add i [if !round = 0 then CSchwartz (set_after i) else CRoundSchwartz (!round, set_after i)]
+      else if matches (re "^Weakest Defeat") l then weak := Some (i, !round, [])
+      else if !weak <> None &&
+              matches (re "Option \\([0-9]+\\) beats Option \\([0-9]+\\) by *( *\\([0-9]+\\) *- *\\([0-9]+\\))") l then begin
+        let a = grp 1 l - 1 and b = grp 2 l - 1 and va = grp 3 l and vb = grp 4 l in
+        (match !weak with Some (h, k, ps) -> weak := Some (h, k, (a, b) :: ps) | None -> ());
+        add i [CWeakestIn (!round, (a, b)); CMatrix (a, b, va); CMatrix (b, a, vb)]
+      end
+      else if matches (re "^Deleting weakest") l then begin
+        (match !weak with Some (h, k, ps) -> weak_blocks := (h, k, List.rev ps) :: !weak_blocks | None -> ());
+        weak := None; incr round
       end
       else if matches (re "^The winners? \\(are\\|is\\)") l then
         add i [CWinners (set_after i)]) lines;
@@ -97,7 +108,12 @@ let parse lines =
     if !defeats = [] then []
     else [{ line = List.fold_left min max_int !defeat_lines; text = "(all the defeat lines together)";
             claims = [CDefeats (List.rev !defeats)] }] in
-  (m, per_line @ whole, List.sort_uniq compare !defeat_lines)
+  (* the weakest-defeat lines of a round, taken together, claim to list all
+     the weakest defeats of that round *)
+  let weakest_all = List.rev_map (fun (h, k, ps) ->
+      { line = h + 1; text = Printf.sprintf "(all the weakest defeats of round %d together)" (k + 1);
+        claims = [CWeakestAll (k, ps)] }) !weak_blocks in
+  (m, per_line @ whole @ weakest_all, List.sort_uniq compare !defeat_lines)
 
 (* ---------- describing claims ---------- *)
 
@@ -111,7 +127,60 @@ let describe = function
   | CDefeat (a, b) -> Printf.sprintf "option %d defeats option %d" (a + 1) (b + 1)
   | CDefeats l -> Printf.sprintf "these %d defeats are all the defeats" (List.length l)
   | CSchwartz l -> "the Schwartz set is " ^ set l
+  | CRoundSchwartz (k, l) ->
+    Printf.sprintf "after %d round%s of dropping, the Schwartz set is %s" k (if k = 1 then "" else "s") (set l)
+  | CWeakestIn (k, (a, b)) ->
+    Printf.sprintf "in round %d, %d beats %d is one of the weakest defeats" (k + 1) (a + 1) (b + 1)
+  | CWeakestAll (k, l) ->
+    Printf.sprintf "these %d defeats are the weakest of round %d" (List.length (List.sort_uniq compare l)) (k + 1)
   | CWinners l -> "the winners are " ^ set l
+
+(* ---------- explaining a violation ---------- *)
+
+(* the reason, from the evidence found by the verified function explain:
+   every fact stated here is one that explain_sound guarantees; only the
+   wording, and the path drawn for EBeatenBy, come from this program *)
+let reason (c : Tally.ctx) cl ev =
+  let o x = x + 1 in
+  let pair (a, b) = Printf.sprintf "%d beats %d (%d to %d)" (o a) (o b) (c.vm a b) (c.vm b a) in
+  let round_of = function CRoundSchwartz (k, _) -> k | _ -> 0 in
+  match cl, ev with
+  | CMatrix (x, y, _), EValue w -> Printf.sprintf "the ballots give V(%d,%d) = %d" (o x) (o y) w
+  | CRatio (x, _), EValue w -> Printf.sprintf "option %d needs a %d:1 majority" (o x) w
+  | CQuorum (x, b), ENumbers (f, _) ->
+    let r = sqrt (float_of_int c.rl.quorum_num /. float_of_int c.rl.quorum_den) in
+    Printf.sprintf "V(%d,D) = %d is %s the quorum %.2f" (o x) f (if b then "below" else "at least")  r
+  | CMajority (x, b), ENumbers (f, g) ->
+    let n = c.rl.ratio x in
+    if not b then Printf.sprintf "V(%d,D) = %d and V(D,%d) = %d meet the %d:1 requirement" (o x) f (o x) g n
+    else if c.rl.strict_majority then
+      Printf.sprintf "V(%d,D) = %d is not greater than %d x V(D,%d) = %d" (o x) f n (o x) (n * g)
+    else if not (g < f) then
+      Printf.sprintf "V(%d,D) = %d is not greater than V(D,%d) = %d" (o x) f (o x) g
+    else Printf.sprintf "V(%d,D) = %d is less than %d x V(D,%d) = %d" (o x) f n (o x) (n * g)
+  | CDefeat _, ENotRemaining x -> Printf.sprintf "option %d is dropped in step 2 or 3" (o x)
+  | CDefeat (a, b), ENotStronger (va, vb) ->
+    Printf.sprintf "V(%d,%d) = %d is not greater than V(%d,%d) = %d" (o a) (o b) va (o b) (o a) vb
+  | CDefeats _, EMissingDefeat p -> pair p ^ " is a defeat but is not listed"
+  | CDefeats _, EExtraDefeat p -> Printf.sprintf "%d beats %d is listed but is not a defeat" (o (fst p)) (o (snd p))
+  | CWeakestAll _, EMissingDefeat p -> pair p ^ " is one of the weakest defeats but is not listed"
+  | CWeakestAll _, EExtraDefeat p -> pair p ^ " is listed but is not one of the weakest defeats"
+  | (CSchwartz _ | CRoundSchwartz _), EMissing x ->
+    Printf.sprintf "option %d is in the Schwartz set: every option that transitively defeats it is transitively defeated by it" (o x)
+  | (CSchwartz _ | CRoundSchwartz _), ENotRemaining x -> Printf.sprintf "option %d is dropped in step 2 or 3" (o x)
+  | (CSchwartz _ | CRoundSchwartz _), EBeatenBy (x, b) ->
+    let defs = rdefs c.cands c.dec c.default c.rl c.vm (round_of cl) in
+    let path = Tally.path_to (Tally.bfs (List.length c.cands) defs [b]) x in
+    Printf.sprintf "option %d is not in it: %d transitively defeats %d (%s), and %d does not transitively defeat %d" (o x) (o b) (o x)
+      (String.concat " -> " (List.map (fun y -> string_of_int (o y)) path)) (o x) (o b)
+  | CWeakestIn _, ENotInner p -> pair p ^ " is not a defeat between two members of the Schwartz set"
+  | CWeakestIn (_, p), EWeaker q ->
+    Printf.sprintf "%s is weaker than %s: %s" (pair q) (pair p)
+      (if c.vm (fst q) (snd q) < c.vm (fst p) (snd p) then "fewer winning votes"
+       else "the same winning votes and more losing votes")
+  | CWinners _, EMissing x -> Printf.sprintf "option %d is a winner" (o x)
+  | CWinners _, EExtra x -> Printf.sprintf "option %d is not a winner" (o x)
+  | _ -> "(no explanation)"
 
 (* ---------- auditing ---------- *)
 
@@ -120,6 +189,7 @@ type summary = { n_lines : int; n_claims : int; n_violated : int }
 let audit_file ~label ~results ~ballots ~ndev ~ratios ~strict ~verbose =
   let lines = Array.of_list (String.split_on_char '\n' (Votes.read_file results)) in
   let m, items, _ = parse lines in
+  let items = List.stable_sort (fun a b -> compare a.line b.line) items in
   let c = Tally.context ~m ~strict ballots (9 * ndev) 4 (List.mapi (fun i r -> (i + 1, r)) ratios) in
   let check cl = audit c.cands c.dec c.default c.rl c.vm cl in
   Printf.printf "%s: %s\n" label results;
@@ -133,8 +203,11 @@ let audit_file ~label ~results ~ballots ~ndev ~ratios ~strict ~verbose =
       nviol := !nviol + List.length bad;
       if bad <> [] then begin
         Printf.printf "  line %3d  VIOLATES  %s\n" it.line (String.trim it.text);
-        List.iter (fun cl -> Printf.printf "            step %d: false: %s\n"
-                      (claim_step cl) (describe cl)) bad
+        List.iter (fun cl ->
+            Printf.printf "            step %d: false: %s\n" (claim_step cl) (describe cl);
+            match explain c.cands c.dec c.default c.rl c.vm cl with
+            | Some ev -> Printf.printf "            because: %s\n" (reason c cl ev)
+            | None -> ()) bad
       end else if verbose then begin
         let steps = List.sort_uniq compare (List.map claim_step it.claims) in
         Printf.printf "  line %3d  OK  (step%s %s)  %s\n" it.line (if List.length steps > 1 then "s" else "")

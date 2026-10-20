@@ -1533,20 +1533,33 @@ Section Audit.
   Variable Vm : cand -> cand -> nat.
 
   Inductive claim :=
-  | CMatrix (x y : cand) (v : nat)        (* V(x,y) = v *)
-  | CQuorum (x : cand) (pass : bool)      (* x reaches / fails the quorum *)
-  | CRatio (x : cand) (n : nat)           (* the majority ratio of x is n *)
-  | CMajority (x : cand) (pass : bool)    (* x passes / fails the majority *)
-  | CDefeat (a b : cand)                  (* a defeats b among the remaining options *)
-  | CDefeats (l : list (defeat cand))     (* l lists all the defeats *)
-  | CSchwartz (l : list cand)             (* l is the initial Schwartz set *)
-  | CWinners (l : list cand).             (* l is the set of winners *)
+  | CMatrix (x y : cand) (v : nat)              (* V(x,y) = v *)
+  | CQuorum (x : cand) (pass : bool)            (* x reaches / fails the quorum *)
+  | CRatio (x : cand) (n : nat)                 (* the majority ratio of x is n *)
+  | CMajority (x : cand) (pass : bool)          (* x passes / fails the majority *)
+  | CDefeat (a b : cand)                        (* a defeats b among the remaining options *)
+  | CDefeats (l : list (defeat cand))           (* l lists all the defeats *)
+  | CSchwartz (l : list cand)                   (* l is the initial Schwartz set *)
+  | CRoundSchwartz (k : nat) (l : list cand)    (* l is the Schwartz set in round k of step 7 *)
+  | CWeakestIn (k : nat) (p : defeat cand)      (* p is one of the weakest defeats of round k *)
+  | CWeakestAll (k : nat) (l : list (defeat cand))  (* l lists the weakest defeats of round k *)
+  | CWinners (l : list cand).                   (* l is the set of winners *)
 
   (* the step of Appendix A.5 a claim is about *)
   Definition claim_step (c : claim) : nat :=
     match c with
     | CMatrix _ _ _ => 1 | CQuorum _ _ => 2 | CRatio _ _ => 3 | CMajority _ _ => 3
-    | CDefeat _ _ => 4 | CDefeats _ => 4 | CSchwartz _ => 6 | CWinners _ => 8
+    | CDefeat _ _ => 4 | CDefeats _ => 4 | CSchwartz _ => 6 | CRoundSchwartz _ _ => 6
+    | CWeakestIn _ _ => 7 | CWeakestAll _ _ => 7 | CWinners _ => 8
+    end.
+
+  (* the defeats left after k rounds of step 7 (once no defeat is left inside
+     the Schwartz set, a round drops nothing) *)
+  Fixpoint RoundDefs (k : nat) : defeat cand -> Prop :=
+    match k with
+    | O => Defeats0 cand default rl Vm
+    | S k' => fun p => RoundDefs k' p /\
+               ~ Weakest cand Vm (Remaining cand default rl Vm) (RoundDefs k') p
     end.
 
   (* what a claim says, in terms of the specification *)
@@ -1560,11 +1573,28 @@ Section Audit.
     | CDefeats l => forall p, In p l <-> Defeats0 cand default rl Vm p
     | CSchwartz l => forall a, In a l <->
                        Schwartz cand (Remaining cand default rl Vm) (Defeats0 cand default rl Vm) a
+    | CRoundSchwartz k l => forall a, In a l <->
+                       Schwartz cand (Remaining cand default rl Vm) (RoundDefs k) a
+    | CWeakestIn k p => Weakest cand Vm (Remaining cand default rl Vm) (RoundDefs k) p
+    | CWeakestAll k l => forall p, In p l <->
+                       Weakest cand Vm (Remaining cand default rl Vm) (RoundDefs k) p
     | CWinners l => forall W, debian_outcome cand default rl Vm W -> forall a, In a l <-> W a
     end.
 
   Definition rem0 := remaining cand cand_all dec_cand default Vm rl.
   Definition defs0 := initial_defeats cand cand_all dec_cand default Vm rl.
+
+  (* the defeats after k rounds, as computed by the counter *)
+  Fixpoint rdefs (k : nat) : list (defeat cand) :=
+    match k with
+    | O => defs0
+    | S k' => drop_weakest cand cand_all dec_cand Vm rem0 (rdefs k')
+    end.
+
+  Definition schwartz_k k := schwartz cand cand_all dec_cand rem0 (rdefs k).
+  Definition inner_k k := inner cand cand_all dec_cand rem0 (rdefs k).
+  Definition weakest_k k := weakest cand Vm (inner_k k).
+  Definition winners0 := rep_winners cand (count cand cand_all dec_cand default rl Vm).
 
   (* l and m have the same members *)
   Definition same_cands (l m : list cand) : bool :=
@@ -1580,8 +1610,11 @@ Section Audit.
     | CMajority x b => Bool.eqb (passes_majority cand dec_cand default Vm rl x) b
     | CDefeat a b => inb cand dec_cand a rem0 && inb cand dec_cand b rem0 && (Vm b a <? Vm a b)
     | CDefeats l => same_defeats l defs0
-    | CSchwartz l => same_cands l (schwartz cand cand_all dec_cand rem0 defs0)
-    | CWinners l => same_cands l (rep_winners cand (count cand cand_all dec_cand default rl Vm))
+    | CSchwartz l => same_cands l (schwartz_k 0)
+    | CRoundSchwartz k l => same_cands l (schwartz_k k)
+    | CWeakestIn k p => dinb cand dec_cand p (weakest_k k)
+    | CWeakestAll k l => same_defeats l (weakest_k k)
+    | CWinners l => same_cands l winners0
     end.
 
   Lemma same_cands_iff l m : same_cands l m = true <-> forall a, In a l <-> In a m.
@@ -1607,18 +1640,51 @@ Section Audit.
     unfold Defeats0. simpl. rewrite <- !rem0_in. reflexivity.
   Qed.
 
-  Lemma schwartz0_in a :
-    In a (schwartz cand cand_all dec_cand rem0 defs0) <->
-    Schwartz cand (Remaining cand default rl Vm) (Defeats0 cand default rl Vm) a.
+  Lemma rdefs_in k p : In p (rdefs k) <-> RoundDefs k p.
   Proof.
-    rewrite (schwartz_Schwartz cand cand_all cand_fin dec_cand). split; apply Schwartz_ext;
-      intros; rewrite ?rem0_in, ?defs0_in; reflexivity.
+    revert p. induction k as [| k IH]; intros p; simpl; [apply defs0_in | ].
+    rewrite (drop_weakest_in cand cand_all cand_fin dec_cand Vm), IH.
+    assert (HW : forall q, Weakest cand Vm (fun x => In x rem0) (fun q => In q (rdefs k)) q <->
+                           Weakest cand Vm (Remaining cand default rl Vm) (RoundDefs k) q).
+    { intros q. split; apply Weakest_ext; intros; rewrite ?rem0_in, ?IH; reflexivity. }
+    split; intros [H1 H2]; split; auto; intros H3; apply H2;
+      [apply (proj2 (HW p)) | apply (proj1 (HW p))]; exact H3.
   Qed.
+
+  Lemma schwartz_k_in k a :
+    In a (schwartz_k k) <-> Schwartz cand (Remaining cand default rl Vm) (RoundDefs k) a.
+  Proof.
+    unfold schwartz_k. rewrite (schwartz_Schwartz cand cand_all cand_fin dec_cand).
+    split; apply Schwartz_ext; intros; rewrite ?rem0_in, ?rdefs_in; reflexivity.
+  Qed.
+
+  Lemma inner_k_in k p :
+    In p (inner_k k) <-> Inner cand (Remaining cand default rl Vm) (RoundDefs k) p.
+  Proof.
+    unfold inner_k. rewrite (inner_Inner cand cand_all cand_fin dec_cand Vm).
+    split; apply Inner_ext; intros; rewrite ?rem0_in, ?rdefs_in; reflexivity.
+  Qed.
+
+  Lemma weakest_k_in k p :
+    In p (weakest_k k) <-> Weakest cand Vm (Remaining cand default rl Vm) (RoundDefs k) p.
+  Proof.
+    unfold weakest_k, inner_k. rewrite (weakest_Weakest cand cand_all cand_fin dec_cand Vm).
+    split; apply Weakest_ext; intros; rewrite ?rem0_in, ?rdefs_in; reflexivity.
+  Qed.
+
+  Lemma winners0_in W a :
+    debian_outcome cand default rl Vm W -> (In a winners0 <-> W a).
+  Proof.
+    intros HW. symmetry. apply (count_complete cand cand_all cand_fin dec_cand default rl Vm W HW).
+  Qed.
+
+  Lemma winners0_outcome : debian_outcome cand default rl Vm (fun a => In a winners0).
+  Proof. apply (count_correct cand cand_all cand_fin dec_cand default rl Vm). Qed.
 
   (* the checker accepts a claim exactly when the claim is true *)
   Theorem audit_correct c : audit c = true <-> holds c.
   Proof.
-    destruct c as [x y v | x b | x n | x b | a b | l | l | l]; simpl.
+    destruct c as [x y v | x b | x n | x b | a b | l | l | k l | k p | k l | l]; simpl.
     - apply Nat.eqb_eq.
     - destruct b; rewrite ?Bool.eqb_true_iff.
       + apply (passes_quorum_iff cand dec_cand).
@@ -1632,11 +1698,267 @@ Section Audit.
     - rewrite !andb_true_iff, !(inb_true cand dec_cand), Nat.ltb_lt, !rem0_in.
       unfold Defeats0. simpl. tauto.
     - rewrite same_defeats_iff. split; intros H p; rewrite H; [apply defs0_in | symmetry; apply defs0_in].
-    - rewrite same_cands_iff. split; intros H a; rewrite H; [apply schwartz0_in | symmetry; apply schwartz0_in].
+    - rewrite same_cands_iff. split; intros H a; rewrite H; [apply (schwartz_k_in 0) | symmetry; apply (schwartz_k_in 0)].
+    - rewrite same_cands_iff. split; intros H a; rewrite H; [apply schwartz_k_in | symmetry; apply schwartz_k_in].
+    - rewrite (dinb_true cand dec_cand). apply weakest_k_in.
+    - rewrite same_defeats_iff. split; intros H q; rewrite H; [apply weakest_k_in | symmetry; apply weakest_k_in].
     - rewrite same_cands_iff. split.
-      + intros H W HW a. rewrite H. symmetry.
-        apply (count_complete cand cand_all cand_fin dec_cand default rl Vm W HW).
-      + intros H a. exact (H _ (count_correct cand cand_all cand_fin dec_cand default rl Vm) a).
+      + intros H W HW a. rewrite H. apply winners0_in. auto.
+      + intros H a. exact (H _ winners0_outcome a).
+  Qed.
+
+  (* -- explanations ------------------------------------------------------- *)
+
+  (* Why a claim is false. Each piece of evidence states a fact about the
+     vote (refutes) that contradicts the claim; explain finds such evidence
+     for a false claim, and explain_sound proves that what it finds is right. *)
+  Inductive evidence :=
+  | EValue (v : nat)                   (* the true count, or the true majority ratio *)
+  | ENumbers (for_ against : nat)      (* V(x,D) and V(D,x), which decide the other way *)
+  | ENotRemaining (x : cand)           (* x does not survive steps 2 and 3 *)
+  | ENotStronger (va vb : nat)         (* V(a,b) = va and V(b,a) = vb, with vb >= va *)
+  | EMissing (x : cand)                (* x belongs to the set but is not listed *)
+  | EExtra (x : cand)                  (* x is listed but does not belong to the set *)
+  | EBeatenBy (x b : cand)             (* b transitively defeats x, and x does not
+                                          transitively defeat b: x is not in the Schwartz set *)
+  | EMissingDefeat (p : defeat cand)   (* p belongs to the set of defeats but is not listed *)
+  | EExtraDefeat (p : defeat cand)     (* p is listed but does not belong *)
+  | ENotInner (p : defeat cand)        (* p is not a defeat between two members of the Schwartz set *)
+  | EWeaker (q : defeat cand).         (* q is a defeat inside the Schwartz set that is weaker *)
+
+  Definition schwartz_refutes (D : defeat cand -> Prop) (l : list cand) (e : evidence) : Prop :=
+    match e with
+    | EMissing x => Schwartz cand (Remaining cand default rl Vm) D x /\ ~ In x l
+    | ENotRemaining x => In x l /\ ~ Remaining cand default rl Vm x
+    | EBeatenBy x b => In x l /\ Remaining cand default rl Vm b /\ TD cand D b x /\ ~ TD cand D x b
+    | _ => False
+    end.
+
+  (* the fact that a piece of evidence states about a claim *)
+  Definition refutes (c : claim) (e : evidence) : Prop :=
+    match c, e with
+    | CMatrix x y v, EValue w => Vm x y = w /\ w <> v
+    | CQuorum x b, ENumbers f _ =>
+        Vm x default = f /\ (if b then ~ Quorum cand default Vm rl x else Quorum cand default Vm rl x)
+    | CRatio x n, EValue w => ratio cand rl x = w /\ w <> n
+    | CMajority x b, ENumbers f g =>
+        Vm x default = f /\ Vm default x = g /\
+        (if b then ~ Majority cand default Vm rl x else Majority cand default Vm rl x)
+    | CDefeat a b, ENotRemaining x => (x = a \/ x = b) /\ ~ Remaining cand default rl Vm x
+    | CDefeat a b, ENotStronger va vb => Vm a b = va /\ Vm b a = vb /\ va <= vb
+    | CDefeats l, EMissingDefeat p => Defeats0 cand default rl Vm p /\ ~ In p l
+    | CDefeats l, EExtraDefeat p => In p l /\ ~ Defeats0 cand default rl Vm p
+    | CSchwartz l, e => schwartz_refutes (Defeats0 cand default rl Vm) l e
+    | CRoundSchwartz k l, e => schwartz_refutes (RoundDefs k) l e
+    | CWeakestIn k p, ENotInner _ => ~ Inner cand (Remaining cand default rl Vm) (RoundDefs k) p
+    | CWeakestIn k p, EWeaker q =>
+        Inner cand (Remaining cand default rl Vm) (RoundDefs k) q /\ weaker cand Vm q p = true
+    | CWeakestAll k l, EMissingDefeat p =>
+        Weakest cand Vm (Remaining cand default rl Vm) (RoundDefs k) p /\ ~ In p l
+    | CWeakestAll k l, EExtraDefeat p =>
+        In p l /\ ~ Weakest cand Vm (Remaining cand default rl Vm) (RoundDefs k) p
+    | CWinners l, EMissing x => (forall W, debian_outcome cand default rl Vm W -> W x) /\ ~ In x l
+    | CWinners l, EExtra x => In x l /\ (forall W, debian_outcome cand default rl Vm W -> ~ W x)
+    | _, _ => False
+    end.
+
+  Lemma schwartz_refutes_not D l e :
+    schwartz_refutes D l e -> ~ (forall a, In a l <-> Schwartz cand (Remaining cand default rl Vm) D a).
+  Proof.
+    destruct e; simpl; intros H Hl; try contradiction.
+    - destruct H as [H1 H2]. apply H2. apply Hl in H1. destruct H1 as [H1 _]. exact H1.
+    - destruct H as [H1 H2]. apply H2, Hl, H1.
+    - destruct H as [H1 [H2 [H3 H4]]]. apply Hl in H1. destruct H1 as [_ H1].
+      destruct (H1 b H2) as [H5 | H5]; contradiction.
+  Qed.
+
+  (* evidence really contradicts the claim *)
+  Theorem refutes_not_holds c e : refutes c e -> ~ holds c.
+  Proof.
+    destruct c as [x y v | x b | x n | x b | a b | l | l | k l | k p | k l | l]; simpl;
+      try (apply schwartz_refutes_not); destruct e; simpl; try tauto.
+    - intros [H1 H2] H. congruence.
+    - destruct b; tauto.
+    - intros [H1 H2] H. congruence.
+    - destruct b; tauto.
+    - intros [[-> | ->] H] [Ha [Hb _]]; contradiction.
+    - intros [H1 [H2 H3]] [_ [_ H]]. simpl in H. lia.
+    - intros [H1 H2] H. apply H2, H, H1.
+    - intros [H1 H2] H. apply H2, H, H1.
+    - intros H [H1 _]. contradiction.
+    - intros [H1 H2] [_ H]. specialize (H _ H1). congruence.
+    - intros [H1 H2] H. apply H2, H, H1.
+    - intros [H1 H2] H. apply H2, H, H1.
+    - intros [H1 H2] H. apply H2. apply (H _ winners0_outcome). apply H1, winners0_outcome.
+    - intros [H1 H2] H. apply (H2 _ winners0_outcome). apply (H _ winners0_outcome). exact H1.
+  Qed.
+
+  (* the first member of l that is not in m *)
+  Definition first_not_in (l m : list cand) : option cand :=
+    find (fun a => negb (inb cand dec_cand a m)) l.
+  Definition first_defeat_not_in (l m : list (defeat cand)) : option (defeat cand) :=
+    find (fun p => negb (dinb cand dec_cand p m)) l.
+
+  Definition explain_defeats (l truth : list (defeat cand)) : option evidence :=
+    match first_defeat_not_in l truth with
+    | Some p => Some (EExtraDefeat p)
+    | None => match first_defeat_not_in truth l with
+              | Some p => Some (EMissingDefeat p)
+              | None => None
+              end
+    end.
+
+  Definition explain_schwartz (k : nat) (l : list cand) : option evidence :=
+    match first_not_in l (schwartz_k k) with
+    | Some x =>
+        if inb cand dec_cand x rem0 then
+          match find (fun b => tdef cand cand_all dec_cand (rdefs k) b x &&
+                               negb (tdef cand cand_all dec_cand (rdefs k) x b)) rem0 with
+          | Some b => Some (EBeatenBy x b)
+          | None => None
+          end
+        else Some (ENotRemaining x)
+    | None => match first_not_in (schwartz_k k) l with
+              | Some x => Some (EMissing x)
+              | None => None
+              end
+    end.
+
+  Definition explain (c : claim) : option evidence :=
+    match c with
+    | CMatrix x y v => if Vm x y =? v then None else Some (EValue (Vm x y))
+    | CQuorum x b =>
+        if Bool.eqb (passes_quorum cand dec_cand default Vm rl x) b then None
+        else Some (ENumbers (Vm x default) (Vm default x))
+    | CRatio x n => if ratio cand rl x =? n then None else Some (EValue (ratio cand rl x))
+    | CMajority x b =>
+        if Bool.eqb (passes_majority cand dec_cand default Vm rl x) b then None
+        else Some (ENumbers (Vm x default) (Vm default x))
+    | CDefeat a b =>
+        if inb cand dec_cand a rem0 then
+          if inb cand dec_cand b rem0 then
+            if Vm b a <? Vm a b then None else Some (ENotStronger (Vm a b) (Vm b a))
+          else Some (ENotRemaining b)
+        else Some (ENotRemaining a)
+    | CDefeats l => explain_defeats l defs0
+    | CSchwartz l => explain_schwartz 0 l
+    | CRoundSchwartz k l => explain_schwartz k l
+    | CWeakestIn k p =>
+        if dinb cand dec_cand p (inner_k k) then
+          match find (fun q => weaker cand Vm q p) (inner_k k) with
+          | Some q => Some (EWeaker q)
+          | None => None
+          end
+        else Some (ENotInner p)
+    | CWeakestAll k l => explain_defeats l (weakest_k k)
+    | CWinners l =>
+        match first_not_in l winners0 with
+        | Some x => Some (EExtra x)
+        | None => match first_not_in winners0 l with
+                  | Some x => Some (EMissing x)
+                  | None => None
+                  end
+        end
+    end.
+
+  Lemma first_not_in_some l m x :
+    first_not_in l m = Some x -> In x l /\ ~ In x m.
+  Proof.
+    unfold first_not_in. intros H. apply find_some in H. destruct H as [H1 H2].
+    split; auto. apply negb_true_iff in H2. intros H. apply (inb_true cand dec_cand) in H. congruence.
+  Qed.
+
+  Lemma first_defeat_not_in_some l m p :
+    first_defeat_not_in l m = Some p -> In p l /\ ~ In p m.
+  Proof.
+    unfold first_defeat_not_in. intros H. apply find_some in H. destruct H as [H1 H2].
+    split; auto. apply negb_true_iff in H2. intros H. apply (dinb_true cand dec_cand) in H. congruence.
+  Qed.
+
+  Lemma explain_defeats_sound l truth (P : defeat cand -> Prop) e :
+    (forall p, In p truth <-> P p) -> explain_defeats l truth = Some e ->
+    match e with
+    | EExtraDefeat p => In p l /\ ~ P p
+    | EMissingDefeat p => P p /\ ~ In p l
+    | _ => False
+    end.
+  Proof.
+    intros HP. unfold explain_defeats.
+    destruct (first_defeat_not_in l truth) as [p |] eqn:E1.
+    - intros H. inversion H; subst. apply first_defeat_not_in_some in E1.
+      destruct E1 as [H1 H2]. split; auto. rewrite <- HP. auto.
+    - destruct (first_defeat_not_in truth l) as [p |] eqn:E2; intros H; inversion H; subst.
+      apply first_defeat_not_in_some in E2. destruct E2 as [H1 H2]. split; auto. apply HP. auto.
+  Qed.
+
+  Lemma explain_schwartz_sound k l e :
+    explain_schwartz k l = Some e -> schwartz_refutes (RoundDefs k) l e.
+  Proof.
+    unfold explain_schwartz.
+    destruct (first_not_in l (schwartz_k k)) as [x |] eqn:E1.
+    - apply first_not_in_some in E1. destruct E1 as [Hx Hnx].
+      destruct (inb cand dec_cand x rem0) eqn:Er.
+      + destruct (find _ rem0) as [b |] eqn:Eb; intros H; inversion H; subst. simpl.
+        apply find_some in Eb. destruct Eb as [Hb Hf]. apply andb_true_iff in Hf.
+        destruct Hf as [Hbx Hxb]. apply negb_true_iff in Hxb.
+        split; [auto | split; [apply rem0_in; auto | split]].
+        * apply (TD_ext cand (fun p => In p (rdefs k))); [intros; apply rdefs_in | ].
+          apply (TDef_TD cand), (tdef_iff cand cand_all cand_fin dec_cand). auto.
+        * intros Hn. apply (TD_ext cand (RoundDefs k) (fun p => In p (rdefs k))) in Hn;
+            [ | intros; symmetry; apply rdefs_in].
+          apply (TDef_TD cand), (tdef_iff cand cand_all cand_fin dec_cand) in Hn. congruence.
+      + intros H. inversion H; subst. simpl. split; auto. rewrite <- rem0_in.
+        intros Hn. apply (inb_true cand dec_cand) in Hn. congruence.
+    - destruct (first_not_in (schwartz_k k) l) as [x |] eqn:E2; intros H; inversion H; subst. simpl.
+      apply first_not_in_some in E2. destruct E2 as [H1 H2]. split; auto. apply schwartz_k_in. auto.
+  Qed.
+
+  (* what explain finds really refutes the claim *)
+  Theorem explain_sound c e : explain c = Some e -> refutes c e.
+  Proof.
+    destruct c as [x y v | x b | x n | x b | a b | l | l | k l | k p | k l | l]; simpl.
+    - destruct (Vm x y =? v) eqn:E; intros H; inversion H; subst. simpl.
+      split; auto. apply Nat.eqb_neq. auto.
+    - destruct (Bool.eqb _ b) eqn:E; intros H; inversion H; subst. simpl. split; auto.
+      destruct b, (passes_quorum cand dec_cand default Vm rl x) eqn:Q; simpl in E; try discriminate;
+        rewrite <- (passes_quorum_iff cand dec_cand); congruence.
+    - destruct (ratio cand rl x =? n) eqn:E; intros H; inversion H; subst. simpl.
+      split; auto. apply Nat.eqb_neq. auto.
+    - destruct (Bool.eqb _ b) eqn:E; intros H; inversion H; subst. simpl. split; [auto | split; auto].
+      destruct b, (passes_majority cand dec_cand default Vm rl x) eqn:Q; simpl in E; try discriminate;
+        rewrite <- (passes_majority_iff cand dec_cand); congruence.
+    - destruct (inb cand dec_cand a rem0) eqn:Ea.
+      + destruct (inb cand dec_cand b rem0) eqn:Eb.
+        * destruct (Vm b a <? Vm a b) eqn:E; intros H; inversion H; subst. simpl.
+          apply Nat.ltb_ge in E. auto.
+        * intros H; inversion H; subst. simpl. split; [right; auto | ]. rewrite <- rem0_in.
+          intros Hn. apply (inb_true cand dec_cand) in Hn. congruence.
+      + intros H; inversion H; subst. simpl. split; [left; auto | ]. rewrite <- rem0_in.
+        intros Hn. apply (inb_true cand dec_cand) in Hn. congruence.
+    - intros H. pose proof (explain_defeats_sound l defs0 _ e defs0_in H) as He.
+      destruct e; simpl; tauto.
+    - intros H. exact (explain_schwartz_sound 0 l e H).
+    - intros H. exact (explain_schwartz_sound k l e H).
+    - destruct (dinb cand dec_cand p (inner_k k)) eqn:Ei.
+      + destruct (find _ (inner_k k)) as [q |] eqn:Eq; intros H; inversion H; subst. simpl.
+        apply find_some in Eq. destruct Eq as [Hq Hw]. split; auto. apply inner_k_in. auto.
+      + intros H; inversion H; subst. simpl. rewrite <- inner_k_in.
+        intros Hn. apply (dinb_true cand dec_cand) in Hn. congruence.
+    - intros H. pose proof (explain_defeats_sound l (weakest_k k) _ e (weakest_k_in k) H) as He.
+      destruct e; simpl; tauto.
+    - destruct (first_not_in l winners0) as [x |] eqn:E1.
+      + intros H; inversion H; subst. simpl. apply first_not_in_some in E1. destruct E1 as [H1 H2].
+        split; auto. intros W HW Hx. apply H2. apply (winners0_in W x HW). auto.
+      + destruct (first_not_in winners0 l) as [x |] eqn:E2; intros H; inversion H; subst. simpl.
+        apply first_not_in_some in E2. destruct E2 as [H1 H2]. split; auto.
+        intros W HW. apply (winners0_in W x HW). auto.
+  Qed.
+
+  (* a claim that explain refutes is false, and the audit rejects it *)
+  Corollary explain_rejects c e : explain c = Some e -> audit c = false.
+  Proof.
+    intros H. destruct (audit c) eqn:E; auto. exfalso.
+    apply (refutes_not_holds c e (explain_sound c e H)). apply audit_correct. auto.
   Qed.
 
 End Audit.
