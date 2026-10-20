@@ -36,12 +36,16 @@ let not_compared year vid =
 (* Fields in which the published record contradicts itself, with the
    explanation. They are reported, not counted as recount mismatches. *)
 let record_inconsistent year vid =
-  let quorum stated used = Printf.sprintf
-      "devotee applied the quorum for %d developers, the page states %d" used stated in
   match year, vid with
-  | "2006", "vote_002" -> ["quorum", quorum 972 984]
-  | "2018", "vote_001" -> ["quorum", quorum 1001 882]
-  | "2023", "vote_002" -> ["quorum", quorum 1004 949]
+  | "2006", "vote_002" ->
+    ["quorum", "the page states 972 developers, but devotee's output on the page \
+                applies the quorum for 984"]
+  | "2018", "vote_001" ->
+    ["quorum", "the page and devotee's output on it use 1001 developers, but the \
+                results file applies the quorum for 882"]
+  | "2023", "vote_002" ->
+    ["quorum", "the page and devotee's output on it use 1004 developers, but the \
+                results file applies the quorum for 949"]
   | _ -> []
 
 (* ---------- text utilities ---------- *)

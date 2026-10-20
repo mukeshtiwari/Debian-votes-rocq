@@ -108,9 +108,11 @@ the majority ratios, the dropped options and the winners are compared for all
 does not list the defeats, and five early pages do not list the Schwartz set).
 devotee's output is pasted into the 2004 pages without escaping, so they
 contain a bare `<` (as in `<= 3`); browsers show it as text, and so does
-`recount`. In 2006-002, 2018-001 and 2023-002 devotee applied the quorum for a different
-number of developers than the page states (984, 882, 949 against 972, 1001,
-1004); no option was near either threshold.
+`recount`. In three votes the published record gives two different quorums:
+the 2006-002 page states 972 developers but devotee's output on it applies
+the quorum for 984; for 2018-001 and 2023-002 the page is consistent, but the
+results file written when the vote closed applies the quorum for 882 and 949
+developers instead of 1001 and 1004. No option was near either threshold.
 
 ## Differential test of devotee
 
