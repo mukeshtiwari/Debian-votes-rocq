@@ -109,7 +109,7 @@ the paper (2022-001 option 2, margin 2; 2006-005 option 1, quorum margin
 0.57) can be read off this output.
 
 Result (October 2026): 59 vote pages, 2004 to 2026; 5 were withdrawn before a
-ballot; all 54 that went to a ballot (24 DPL elections, 30 general
+ballot; all 54 that went to a ballot (23 DPL elections, 31 general
 resolutions, 18,477 ballots) agree with the published outcome. The matrix,
 the majority ratios, the dropped options and the winners are compared for all
 54 votes; the defeats for 53 and the Schwartz set for 49 (the 2004-004 page

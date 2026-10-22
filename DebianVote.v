@@ -66,14 +66,17 @@ Section Debian.
   Qed.
 
   (* ----------------------------------------------------------------------- *)
-  (*  Ballots and the pairwise matrix V (A.5.1, A.5.4)                      *)
+  (*  Ballots and the pairwise matrix V (A.5.1, A.5.3.1)                    *)
   (* ----------------------------------------------------------------------- *)
 
   (* A ballot gives each option a rank; 0 means "not ranked"; 1 is the
-     highest preference. Equal ranks are allowed. *)
+     highest preference. Equal ranks are allowed. A.5.1: "Each voter's ballot
+     ranks the options being voted on. Not all options need be ranked." *)
   Definition ballot := cand -> nat.
 
-  (* x is ranked above y on ballot b *)
+  (* x is ranked above y on ballot b. A.5.1: "Ranked options are considered
+     preferred to all unranked options. Voters may rank options equally.
+     Unranked options are considered to be ranked equally with one another." *)
   Definition above (b : ballot) (x y : cand) : bool :=
     match b x, b y with
     | 0, _ => false                   (* unranked is never above anything *)
@@ -81,7 +84,9 @@ Section Debian.
     | S rx, S ry => rx <? ry          (* smaller rank number = higher preference *)
     end.
 
-  (* V(x,y): the number of voters who rank x above y *)
+  (* V(x,y): the number of voters who rank x above y (one ballot per voter).
+     A.5.3.1: "Given two options A and B, V(A,B) is the number of voters who
+     prefer option A over option B." *)
   Definition V (bs : list ballot) (x y : cand) : nat :=
     length (filter (fun b => above b x y) bs).
 
@@ -115,8 +120,10 @@ Section Debian.
   (*  Transitive defeat (A.5.5), relative to a current list of defeats       *)
   (* ----------------------------------------------------------------------- *)
 
-  (* A.5.5, as stated: A transitively defeats C if A defeats C, or A defeats
-     some B that transitively defeats C. *)
+  (* A.5.5.1, as stated: "An option A transitively defeats an option C if A
+     defeats C or if there is some other option B where A defeats B AND B
+     transitively defeats C." B need not be required to differ from A and C:
+     no option defeats itself, and if B = C then A defeats C directly. *)
   Inductive TDef (defs : list defeat) : cand -> cand -> Prop :=
   | tdef_direct a c : In (a, c) defs -> TDef defs a c
   | tdef_via a b c : In (a, b) defs -> TDef defs b c -> TDef defs a c.
@@ -349,7 +356,12 @@ Section Debian.
   (*  The Schwartz set (A.5.6)                                               *)
   (* ----------------------------------------------------------------------- *)
 
-  (* the Schwartz set of the current defeats, among the remaining options *)
+  (* the Schwartz set of the current defeats, among the remaining options.
+     A.5.6.1: "An option A is in the Schwartz set if for all options B, either
+     A transitively defeats B, or B does not transitively defeat A." Options
+     dropped in steps 2 and 3 are "dropped from consideration", so neither A
+     nor B ranges over them (no defeat involves a dropped option, so read
+     literally the text would put every dropped option in the Schwartz set). *)
   Definition schwartz (rem : list cand) (defs : list defeat) : list cand :=
     filter (fun a => forallb (fun b => tdef defs a b || negb (tdef defs b a)) rem) rem.
 
@@ -443,33 +455,42 @@ Section Debian.
   (*  Weakest defeats and sequential dropping (A.5.7, A.5.8)                 *)
   (* ----------------------------------------------------------------------- *)
 
-  (* (A,X) is weaker than (B,Y): A.5.7 *)
+  (* (A,X) is weaker than (B,Y). A.5.7.1: "A defeat (A,X) is weaker than a
+     defeat (B,Y) if V(A,X) is less than V(B,Y). Also, (A,X) is weaker than
+     (B,Y) if V(A,X) is equal to V(B,Y) and V(X,A) is greater than V(Y,B)." *)
   Definition weaker (p q : defeat) : bool :=
     let '(a, x) := p in let '(b, y) := q in
     (Vm a x <? Vm b y) || ((Vm a x =? Vm b y) && (Vm y b <? Vm x a)).
 
-  (* the defeats between options of the Schwartz set *)
+  (* the defeats between options of the Schwartz set; A.5.7: "If there are
+     defeats between options in the Schwartz set, ..." *)
   Definition inner (rem : list cand) (defs : list defeat) : list defeat :=
     let S := schwartz rem defs in
     filter (fun p => inb (fst p) S && inb (snd p) S) defs.
 
-  (* the weakest among a list of defeats: those with nothing weaker *)
+  (* the weakest among a list of defeats: those with nothing weaker.
+     A.5.7.2: "A weakest defeat is a defeat that has no other defeat weaker
+     than it. There may be more than one such defeat." *)
   Definition weakest (l : list defeat) : list defeat :=
     filter (fun p => forallb (fun q => negb (weaker q p)) l) l.
 
   Definition remove_all (l : list defeat) (defs : list defeat) : list defeat :=
     filter (fun p => negb (existsb (deq p) l)) defs.
 
-  (* one round of A.5.7: drop the weakest defeats within the Schwartz set *)
+  (* one round of A.5.7: "we drop the weakest such defeats from the list of
+     pairwise defeats". "Such" refers to the defeats within the Schwartz set,
+     so "weakest" is taken among those (inner), and all of them are dropped *)
   Definition drop_weakest (rem : list cand) (defs : list defeat) : list defeat :=
     remove_all (weakest (inner rem defs)) defs.
 
   (* The specification of steps 5-8, as a relation between the current list
      of defeats and the resulting winners. *)
   Inductive cssd_spec (rem : list cand) : list defeat -> list cand -> Prop :=
+  (* A.5.8: no defeats within the Schwartz set; its options are the winners *)
   | cssd_done defs :
       inner rem defs = [] ->
       cssd_spec rem defs (schwartz rem defs)
+  (* A.5.7: drop the weakest inner defeats "and return to step 5" *)
   | cssd_step defs W :
       inner rem defs <> [] ->
       cssd_spec rem (drop_weakest rem defs) W ->
@@ -671,24 +692,40 @@ Section Debian.
      options, no fuel and no order. This is the specification a reader checks
      against the Constitution; cssd_spec above is the bridge to the program. *)
 
+  (* A.5.5.1: "An option A transitively defeats an option C if A defeats C or
+     if there is some other option B where A defeats B AND B transitively
+     defeats C." (see TDef) *)
   Inductive TD (D : defeat -> Prop) : cand -> cand -> Prop :=
   | td_direct a c : D (a, c) -> TD D a c
   | td_via a b c : D (a, b) -> TD D b c -> TD D a c.
 
+  (* A.5.6.1: "An option A is in the Schwartz set if for all options B, either
+     A transitively defeats B, or B does not transitively defeat A." A and B
+     range over the options still under consideration (see schwartz) *)
   Definition Schwartz (R : cand -> Prop) (D : defeat -> Prop) (a : cand) : Prop :=
     R a /\ forall b, R b -> TD D a b \/ ~ TD D b a.
 
+  (* A.5.7: "defeats between options in the Schwartz set" *)
   Definition Inner (R : cand -> Prop) (D : defeat -> Prop) (p : defeat) : Prop :=
     D p /\ Schwartz R D (fst p) /\ Schwartz R D (snd p).
 
+  (* A.5.7.2: "A weakest defeat is a defeat that has no other defeat weaker
+     than it", among the defeats of A.5.7 ("the weakest such defeats");
+     weaker is A.5.7.1 *)
   Definition Weakest (R : cand -> Prop) (D : defeat -> Prop) (p : defeat) : Prop :=
     Inner R D p /\ forall q, Inner R D q -> weaker q p = false.
 
   Inductive SSD (R : cand -> Prop) : (defeat -> Prop) -> (cand -> Prop) -> Prop :=
+  (* A.5.8: "If there are no defeats within the Schwartz set, then the winner
+     is chosen from the options in the Schwartz set." W is that set; the
+     casting vote among several winners is outside the count *)
   | ssd_done D W :
       (forall p, ~ Inner R D p) ->
       (forall a, W a <-> Schwartz R D a) ->
       SSD R D W
+  (* A.5.7: "If there are defeats between options in the Schwartz set, we
+     drop the weakest such defeats from the list of pairwise defeats, and
+     return to step 5." D' is D without its weakest inner defeats *)
   | ssd_step D D' W :
       (exists p, Inner R D p) ->
       (forall p, D' p <-> D p /\ ~ Weakest R D p) ->
@@ -1008,24 +1045,38 @@ Section Debian.
 
   Variable rl : rules.
 
-  (* A.5.2, on the square of the quorum *)
+  (* A.5.2, on the square of the quorum (see Quorum) *)
   Definition passes_quorum (x : cand) : bool :=
     ceq x default || (quorum_num rl <=? quorum_den rl * (Vm x default * Vm x default)).
 
-  (* A.5.3, in the version given by strict_majority *)
+  (* A.5.3, in the version given by strict_majority (see Majority) *)
   Definition passes_majority (x : cand) : bool :=
     ceq x default ||
     (if strict_majority rl then ratio rl x * Vm default x <? Vm x default
      else (ratio rl x * Vm default x <=? Vm x default) && (Vm default x <? Vm x default)).
 
-  (* the options that survive steps 2 and 3 *)
+  (* the options that survive steps 2 and 3 (A.5.2, A.5.3) *)
   Definition remaining : list cand :=
     filter (fun x => passes_quorum x && passes_majority x) cand_all.
 
   (* Steps 2 and 3 as propositions, transcribing the text *)
+
+  (* A.5.2: "If the ballot has a quorum requirement R any options other than
+     the default option which do not receive at least R votes ranking that
+     option above the default option are dropped from consideration."
+     V(x,D) >= R iff V(x,D)^2 >= R^2 = quorum_num / quorum_den; a ballot
+     without a quorum requirement has quorum_num = 0 *)
   Definition Quorum (x : cand) : Prop :=
     x = default \/ quorum_num rl <= quorum_den rl * (Vm x default * Vm x default).
 
+  (* A.5.3: "Any (non-default) option which does not defeat the default option
+     by its required majority ratio is dropped from consideration."
+     A.5.3.2 (since version 1.6): "An option A defeats the default option D by
+     a majority ratio N, if V(A,D) is greater or equal to N * V(D,A) and V(A,D)
+     is strictly greater than V(D,A)." Versions 1.0 to 1.5 (strict_majority):
+     "if V(A,D) is strictly greater than N * V(D,A)".
+     A.5.3.3: "If a supermajority of S:1 is required for A, its majority ratio
+     is S; otherwise, its majority ratio is 1." (ratio rl x) *)
   Definition Majority (x : cand) : Prop :=
     x = default \/
     (if strict_majority rl then ratio rl x * Vm default x < Vm x default
@@ -1055,7 +1106,10 @@ Section Debian.
     unfold passes_quorum, passes_majority. rewrite ceq_refl. reflexivity.
   Qed.
 
-  (* the initial list of pairwise defeats among the remaining options *)
+  (* the initial list of pairwise defeats among the remaining options.
+     A.5.4: "From the list of undropped options, we generate a list of
+     pairwise defeats." A.5.4.1: "An option A defeats an option B, if V(A,B)
+     is strictly greater than V(B,A)." *)
   Definition initial_defeats : list defeat :=
     flat_map (fun a => map (fun b => (a, b))
                            (filter (fun b => Vm b a <? Vm a b) remaining))
@@ -1172,10 +1226,13 @@ Section Procedure.
   (*  The whole of Appendix A.5 as a specification on sets                  *)
   (* ----------------------------------------------------------------------- *)
 
-  (* the options that survive steps 2 and 3, and the defeats of step 4 *)
+  (* the options that survive steps 2 and 3 (A.5.2, A.5.3) *)
   Definition Remaining Vm (x : cand) : Prop :=
     Quorum cand default Vm rl x /\ Majority cand default Vm rl x.
 
+  (* the defeats of step 4. A.5.4: "From the list of undropped options, we
+     generate a list of pairwise defeats." A.5.4.1: "An option A defeats an
+     option B, if V(A,B) is strictly greater than V(B,A)." *)
   Definition Defeats0 Vm (p : defeat cand) : Prop :=
     Remaining Vm (fst p) /\ Remaining Vm (snd p) /\ Vm (snd p) (fst p) < Vm (fst p) (snd p).
 
